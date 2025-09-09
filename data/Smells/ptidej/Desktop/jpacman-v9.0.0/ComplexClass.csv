@@ -1,0 +1,6 @@
+FullClassPath,AntiPattern
+nl.tudelft.jpacman.level.Level,ComplexClass
+nl.tudelft.jpacman.level.MapParser,ComplexClass
+nl.tudelft.jpacman.level.Level,ComplexClass
+nl.tudelft.jpacman.npc.ghost.Navigation,ComplexClass
+nl.tudelft.jpacman.Launcher,ComplexClass

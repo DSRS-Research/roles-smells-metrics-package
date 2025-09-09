@@ -1,0 +1,1006 @@
+Project Name,Package Name,Type Name,Method Name,Implementation Smell,Cause of the Smell,Method start line no
+ipscan-3.7.3,net.azib.ipscan.di,InjectorTest,requireAll,Magic Number,The method contains a magic number: 3,29
+ipscan-3.7.3,net.azib.ipscan.di,Injector,requireAll,Long Statement,The length of the statement "return instances.entrySet().stream().filter(e -> type.isAssignableFrom(e.getKey())).map(e -> (T)e.getValue()).collect(toList());" is 128.,31
+ipscan-3.7.3,net.azib.ipscan.di,Injector,createInstance,Long Statement,The length of the statement "Constructor<T> constructor=(Constructor<T>)stream(type.getConstructors()).max(comparing(Constructor::getParameterCount)).orElseThrow(() -> new InjectException("No public constructors"));" is 186.,35
+ipscan-3.7.3,net.azib.ipscan.di,Injector,createInstance,Long Statement,The length of the statement "throw new InjectException("Cannot create " + type.getName() + "` deps: "+ Arrays.toString(constructor.getGenericParameterTypes())`e);" is 133.,35
+ipscan-3.7.3,net.azib.ipscan.di,Injector,resolveDeps,Long Statement,The length of the statement "return stream(constructor.getGenericParameterTypes()).map(t -> isCollection(t) ? requireAll(collectionItemType(t)) : require(toClass(t))).toArray();" is 148.,47
+ipscan-3.7.3,net.azib.ipscan.core,ScanningSubjectTest,initTest,Magic Number,The method contains a magic number: 1000,27
+ipscan-3.7.3,net.azib.ipscan.core,ScanningSubjectTest,adaptedPortTimeoutUsingReplies,Magic Number,The method contains a magic number: 100,38
+ipscan-3.7.3,net.azib.ipscan.core,ScanningSubjectTest,adaptedPortTimeoutUsingReplies,Magic Number,The method contains a magic number: 200,38
+ipscan-3.7.3,net.azib.ipscan.core,ScanningSubjectTest,adaptedPortTimeoutUsingReplies,Magic Number,The method contains a magic number: 300,38
+ipscan-3.7.3,net.azib.ipscan.core,ScanningSubjectTest,adaptedPortTimeoutUsingReplies,Magic Number,The method contains a magic number: 300,38
+ipscan-3.7.3,net.azib.ipscan.core,ScanningSubjectTest,adaptedPortTimeoutUsingReplies,Magic Number,The method contains a magic number: 3,38
+ipscan-3.7.3,net.azib.ipscan.core,ScanningSubjectTest,adaptedPortTimeoutUsingReplies,Magic Number,The method contains a magic number: 500,38
+ipscan-3.7.3,net.azib.ipscan.core,ScanningSubjectTest,adaptedPortTimeoutUsingReplies,Magic Number,The method contains a magic number: 300,38
+ipscan-3.7.3,net.azib.ipscan.core,ScanningSubjectTest,adaptedPortTimeoutUsingReplies,Magic Number,The method contains a magic number: 3,38
+ipscan-3.7.3,net.azib.ipscan.core,ScanningSubjectTest,forcedAdaptedTimeout,Magic Number,The method contains a magic number: 100,69
+ipscan-3.7.3,net.azib.ipscan.core,ScanningSubjectTest,forcedAdaptedTimeout,Magic Number,The method contains a magic number: 100,69
+ipscan-3.7.3,net.azib.ipscan.core,ScanningSubjectTest,forcedAdaptedTimeout,Magic Number,The method contains a magic number: 3,69
+ipscan-3.7.3,net.azib.ipscan.core,ScanningSubjectTest,adaptedTimeoutTooShort,Magic Number,The method contains a magic number: 100,80
+ipscan-3.7.3,net.azib.ipscan.core,ScannerDispatcherThreadTest,testConstruction,Long Statement,The length of the statement "ScannerDispatcherThread thread=new ScannerDispatcherThread(feeder`new Scanner(registry)`null`null`scanningResults`config`null);" is 127.,32
+ipscan-3.7.3,net.azib.ipscan.core,ScannerDispatcherThreadTest,testConstruction,Long Statement,The length of the statement "assertTrue("ScannerThread should not clear the results - otherwise rescanning will not work"`scanningResults.areResultsAvailable());" is 132.,32
+ipscan-3.7.3,net.azib.ipscan.core,ScannerDispatcherThreadTest,testConstruction,Magic Number,The method contains a magic number: 10,32
+ipscan-3.7.3,net.azib.ipscan.core,PortIteratorTest,testSize,Magic Number,The method contains a magic number: 5,33
+ipscan-3.7.3,net.azib.ipscan.core,PortIteratorTest,testSize,Magic Number,The method contains a magic number: 65000,33
+ipscan-3.7.3,net.azib.ipscan.core,PortIteratorTest,iterateToString,Magic Number,The method contains a magic number: 64,66
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultComparatorTest,compareDifferentTypes,Long Statement,The length of the statement "assertTrue(comparator.compare(res(new NumericRangeList(asList(1`2`3)`false))`res(new NumericRangeList(asList(5`6)`false))) > 0);" is 128.,27
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultComparatorTest,compareDifferentTypes,Magic Number,The method contains a magic number: 12,27
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultComparatorTest,compareDifferentTypes,Magic Number,The method contains a magic number: 125,27
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultComparatorTest,compareDifferentTypes,Magic Number,The method contains a magic number: 9090,27
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultComparatorTest,compareDifferentTypes,Magic Number,The method contains a magic number: 9090,27
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultComparatorTest,compareDifferentTypes,Magic Number,The method contains a magic number: 9090,27
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultComparatorTest,compareDifferentTypes,Magic Number,The method contains a magic number: 154,27
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultComparatorTest,compareDifferentTypes,Magic Number,The method contains a magic number: 155,27
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultComparatorTest,compareDifferentTypes,Magic Number,The method contains a magic number: 2,27
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultComparatorTest,compareDifferentTypes,Magic Number,The method contains a magic number: 3,27
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultComparatorTest,compareDifferentTypes,Magic Number,The method contains a magic number: 5,27
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultComparatorTest,compareDifferentTypes,Magic Number,The method contains a magic number: 6,27
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultComparatorTest,compareDifferentTypes,Magic Number,The method contains a magic number: 123,27
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultComparatorTest,compareDifferentTypes,Magic Number,The method contains a magic number: 99,27
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultComparatorTest,compareDifferentTypes,Magic Number,The method contains a magic number: 125,27
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultComparatorTest,compareDifferentTypes,Magic Number,The method contains a magic number: 13,27
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultComparatorTest,compareDifferentTypes,Magic Number,The method contains a magic number: 125,27
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultComparatorTest,compareDifferentTypes,Magic Number,The method contains a magic number: 13,27
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultComparatorTest,differentIndexesSupported,Magic Number,The method contains a magic number: 2,57
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultComparatorTest,descendingWorks,Magic Number,The method contains a magic number: 2,69
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultComparatorTest,sortingWorksInBothDirections,Long Statement,The length of the statement "ScanningResult[] results={res(NotScanned.VALUE)`res(NotAvailable.VALUE)`res(15)`res(NotScanned.VALUE)`res(1)`res(NotAvailable.VALUE)`res("a")};" is 143.,104
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultComparatorTest,sortingWorksInBothDirections,Magic Number,The method contains a magic number: 15,104
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultComparatorTest,sortingWorksInBothDirections,Magic Number,The method contains a magic number: 15,104
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultComparatorTest,sortingWorksInBothDirections,Magic Number,The method contains a magic number: 2,104
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultComparatorTest,sortingWorksInBothDirections,Magic Number,The method contains a magic number: 3,104
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultComparatorTest,sortingWorksInBothDirections,Magic Number,The method contains a magic number: 4,104
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultComparatorTest,sortingWorksInBothDirections,Magic Number,The method contains a magic number: 5,104
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultComparatorTest,sortingWorksInBothDirections,Magic Number,The method contains a magic number: 6,104
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultComparatorTest,sortingWorksInBothDirections,Magic Number,The method contains a magic number: 15,104
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultComparatorTest,sortingWorksInBothDirections,Magic Number,The method contains a magic number: 2,104
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultComparatorTest,sortingWorksInBothDirections,Magic Number,The method contains a magic number: 3,104
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultComparatorTest,sortingWorksInBothDirections,Magic Number,The method contains a magic number: 5,104
+ipscan-3.7.3,net.azib.ipscan.core,ScannerTest,setUp,Long Statement,The length of the statement "when(fetcherRegistry.getSelectedFetchers()).thenReturn(Arrays.asList(new Fetcher[]{new FakeFetcher()`new AnotherFakeFetcher()`new AddressAbortingFetcher()`new FailingFetcher()}));" is 179.,34
+ipscan-3.7.3,net.azib.ipscan.core,ScannerTest,testScan,Magic Number,The method contains a magic number: 4,44
+ipscan-3.7.3,net.azib.ipscan.core,ScannerTest,testScan,Magic Number,The method contains a magic number: 4,44
+ipscan-3.7.3,net.azib.ipscan.core,ScannerTest,testScan,Magic Number,The method contains a magic number: 2,44
+ipscan-3.7.3,net.azib.ipscan.core,ScannerTest,testScan,Magic Number,The method contains a magic number: 3,44
+ipscan-3.7.3,net.azib.ipscan.core,ScannerTest,testScanInterrupted,Long Statement,The length of the statement "when(fetcherRegistry.getSelectedFetchers()).thenReturn(Arrays.asList(new Fetcher[]{new PlainValueFetcher()`new InterruptedFetcher()`new PlainValueFetcher()}));" is 159.,59
+ipscan-3.7.3,net.azib.ipscan.core,ScannerTest,testScanInterrupted,Magic Number,The method contains a magic number: 3,59
+ipscan-3.7.3,net.azib.ipscan.core,ScannerTest,testScanInterrupted,Magic Number,The method contains a magic number: 3,59
+ipscan-3.7.3,net.azib.ipscan.core,ScannerTest,testScanInterrupted,Magic Number,The method contains a magic number: 2,59
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultListTest,testStatisticsInCaseOfNormalFlow,Magic Number,The method contains a magic number: 2,61
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultListTest,testStatisticsInCaseOfNormalFlow,Magic Number,The method contains a magic number: 2,61
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultListTest,testStatisticsInCaseOfNormalFlow,Magic Number,The method contains a magic number: 2,61
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultListTest,testCreateResult,Magic Number,The method contains a magic number: 4,115
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultListTest,testCreateResult,Magic Number,The method contains a magic number: 2,115
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultListTest,testRegisterResult,Magic Number,The method contains a magic number: 2,134
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultListTest,testRegisterResult,Magic Number,The method contains a magic number: 2,134
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultListTest,testRegisterResult,Magic Number,The method contains a magic number: 2,134
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultListTest,testRegisterResult,Magic Number,The method contains a magic number: 4,134
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultListTest,testInitNewScan,Long Statement,The length of the statement "assertTrue("initNewScan() must not clear results - otherwise rescanning will be broken"`scanningResults.areResultsAvailable());" is 127.,194
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultListTest,testCachedFetchers,Magic Number,The method contains a magic number: 4,215
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultListTest,testRemove,Magic Number,The method contains a magic number: 2,222
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultListTest,testRemove,Magic Number,The method contains a magic number: 3,222
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultListTest,testSort,Magic Number,The method contains a magic number: 2,245
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultListTest,testSort,Magic Number,The method contains a magic number: 2,245
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultListTest,testSort,Magic Number,The method contains a magic number: 3,245
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultListTest,testSort,Magic Number,The method contains a magic number: 3,245
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultListTest,testSort,Magic Number,The method contains a magic number: 2,245
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultListTest,testGetResultAsString,Magic Number,The method contains a magic number: 2,271
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultListTest,testGetResultAsString,Magic Number,The method contains a magic number: 3,271
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultListTest,testGetResultAsString,Magic Number,The method contains a magic number: 2,271
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultListTest,testGetResultAsString,Magic Number,The method contains a magic number: 3,271
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultListTest,testFindText,Magic Number,The method contains a magic number: 123456789L,290
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultListTest,testFindText,Magic Number,The method contains a magic number: 2,290
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultListTest,testFindText,Magic Number,The method contains a magic number: 2,290
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultListTest,testFindText,Magic Number,The method contains a magic number: 3,290
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultListTest,testFindText,Magic Number,The method contains a magic number: 3,290
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultListTest,testFindText,Magic Number,The method contains a magic number: 4,290
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultListTest,testFindText,Magic Number,The method contains a magic number: 4,290
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultListTest,testFindText,Magic Number,The method contains a magic number: 5,290
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultListTest,testFindText,Magic Number,The method contains a magic number: 5,290
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultListTest,testFindText,Magic Number,The method contains a magic number: 2,290
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultListTest,testFindText,Magic Number,The method contains a magic number: 3,290
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultListTest,testFindText,Magic Number,The method contains a magic number: 2,290
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultListTest,testFindText,Magic Number,The method contains a magic number: 5,290
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultListTest,testFindText,Magic Number,The method contains a magic number: 2,290
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultListTest,testScanTime,Magic Number,The method contains a magic number: 10,312
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultListTest,testScanTime,Magic Number,The method contains a magic number: 10,312
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultListTest,testScanTime,Magic Number,The method contains a magic number: 10,312
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultListTest,testScanTime,Magic Number,The method contains a magic number: 20,312
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultListTest,testScanTime,Magic Number,The method contains a magic number: 10,312
+ipscan-3.7.3,net.azib.ipscan.core,PortIterator,PortIterator,Magic Number,The method contains a magic number: 65536,28
+ipscan-3.7.3,net.azib.ipscan.core,ScannerDispatcherThread,ScannerDispatcherThread,Long Parameter List,The method has 7 parameters. ,47
+ipscan-3.7.3,net.azib.ipscan.core,ScannerDispatcherThread,run,Empty catch clause,The method has an empty catch block.,76
+ipscan-3.7.3,net.azib.ipscan.core,ScannerDispatcherThread,run,Empty catch clause,The method has an empty catch block.,76
+ipscan-3.7.3,net.azib.ipscan.core,ScannerDispatcherThread,run,Magic Number,The method contains a magic number: 100,76
+ipscan-3.7.3,net.azib.ipscan.core,ScannerDispatcherThreadFactory,createScannerThread,Long Statement,The length of the statement "return new ScannerDispatcherThread(feeder`scanner`stateMachine`progressCallback`scanningResults`scannerConfig`resultsCallback);" is 127.,33
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResult,toString,Magic Number,The method contains a magic number: 1024,110
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultList,registerAtIndex,Long Statement,The length of the statement "if (resultIndexes.put(result.getAddress()`index) != null) throw new IllegalStateException(result.getAddress() + " is already registered in the list");" is 150.,105
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultComparator,compare,Complex Conditional,The conditional expression val1.getClass() == val2.getClass() && !(val1 instanceof String) && val1 instanceof Comparable is complex.,18
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultComparator,compare,Complex Method,Cyclomatic complexity of the method is 8,18
+ipscan-3.7.3,net.azib.ipscan.core,LibraryLoader,loadLibrary,Magic Number,The method contains a magic number: 4096,18
+ipscan-3.7.3,net.azib.ipscan.core,ScanningSubject,getAdaptedPortTimeout,Magic Number,The method contains a magic number: 3,133
+ipscan-3.7.3,net.azib.ipscan.core.net,ICMPSharedPingerTest,testPing,Magic Number,The method contains a magic number: 1000,18
+ipscan-3.7.3,net.azib.ipscan.core.net,ICMPSharedPingerTest,testPing,Magic Number,The method contains a magic number: 3,18
+ipscan-3.7.3,net.azib.ipscan.core.net,ICMPSharedPingerTest,testPing,Magic Number,The method contains a magic number: 50,18
+ipscan-3.7.3,net.azib.ipscan.core.net,JavaPingerTest,pingAlive,Magic Number,The method contains a magic number: 3,15
+ipscan-3.7.3,net.azib.ipscan.core.net,JavaPingerTest,pingAlive,Magic Number,The method contains a magic number: 10,15
+ipscan-3.7.3,net.azib.ipscan.core.net,JavaPinger,ping,Empty catch clause,The method has an empty catch block.,15
+ipscan-3.7.3,net.azib.ipscan.core.net,PingerRegistry,checkSelectedPinger,Magic Number,The method contains a magic number: 250,81
+ipscan-3.7.3,net.azib.ipscan.core.net,PingResult,addReply,Magic Number,The method contains a magic number: 2,30
+ipscan-3.7.3,net.azib.ipscan.core.net,PingResult,getPacketLossPercent,Magic Number,The method contains a magic number: 100,59
+ipscan-3.7.3,net.azib.ipscan.core.net,PingResult,getPacketLossPercent,Magic Number,The method contains a magic number: 100,59
+ipscan-3.7.3,net.azib.ipscan.core.net,UDPPinger,ping,Empty catch clause,The method has an empty catch block.,35
+ipscan-3.7.3,net.azib.ipscan.core.net,UDPPinger,ping,Magic Number,The method contains a magic number: 8,35
+ipscan-3.7.3,net.azib.ipscan.core.net,ICMPSharedPinger,ping,Empty catch clause,The method has an empty catch block.,80
+ipscan-3.7.3,net.azib.ipscan.core.net,ICMPSharedPinger,ping,Magic Number,The method contains a magic number: 84,80
+ipscan-3.7.3,net.azib.ipscan.core.net,ICMPSharedPinger,ping,Magic Number,The method contains a magic number: 5,80
+ipscan-3.7.3,net.azib.ipscan.core.net,ICMPSharedPinger,ping,Magic Number,The method contains a magic number: 56,80
+ipscan-3.7.3,net.azib.ipscan.core.net,ICMPSharedPinger,ping,Magic Number,The method contains a magic number: 0xFFFF,80
+ipscan-3.7.3,net.azib.ipscan.core.net,ICMPSharedPinger,ping,Magic Number,The method contains a magic number: 15,80
+ipscan-3.7.3,net.azib.ipscan.core.net,CombinedUnprivilegedPinger,ping,Magic Number,The method contains a magic number: 2,30
+ipscan-3.7.3,net.azib.ipscan.core.net,TCPPinger,ping,Complex Conditional,The conditional expression e instanceof ConnectException && !msg.contains("nvalid") || msg.contains("refused") is complex.,36
+ipscan-3.7.3,net.azib.ipscan.core.net,TCPPinger,ping,Complex Conditional,The conditional expression e instanceof NoRouteToHostException || msg.contains("route to host") || msg.contains("down")|| msg.contains("unreachable")|| msg.contains("closed") is complex.,36
+ipscan-3.7.3,net.azib.ipscan.core.net,TCPPinger,ping,Empty catch clause,The method has an empty catch block.,36
+ipscan-3.7.3,net.azib.ipscan.core.net,TCPPinger,ping,Long Statement,The length of the statement "else if (e instanceof NoRouteToHostException || msg.contains("route to host") || msg.contains("down")|| msg.contains("unreachable")|| msg.contains("closed")) {" is 159.,36
+ipscan-3.7.3,net.azib.ipscan.core.net,TCPPinger,ping,Magic Number,The method contains a magic number: 32,36
+ipscan-3.7.3,net.azib.ipscan.core.net,TCPPinger,ping,Magic Number,The method contains a magic number: 2,36
+ipscan-3.7.3,net.azib.ipscan.core.net,WindowsPinger,ping4,Complex Conditional,The conditional expression numReplies > 0 && echoReply.status == 0 && Arrays.equals(echoReply.address.bytes`ipaddr.bytes) is complex.,49
+ipscan-3.7.3,net.azib.ipscan.core.net,WindowsPinger,ping4,Magic Number,The method contains a magic number: 32,49
+ipscan-3.7.3,net.azib.ipscan.core.net,WindowsPinger,ping4,Magic Number,The method contains a magic number: 10,49
+ipscan-3.7.3,net.azib.ipscan.core.net,WindowsPinger,ping4,Magic Number,The method contains a magic number: 0xFF,49
+ipscan-3.7.3,net.azib.ipscan.core.net,WindowsPinger,ping6,Complex Conditional,The conditional expression numReplies > 0 && echoReply.status == 0 && Arrays.equals(echoReply.addressBytes`ipaddr.bytes) is complex.,77
+ipscan-3.7.3,net.azib.ipscan.core.net,WindowsPinger,ping6,Long Statement,The length of the statement "int numReplies=dll.Icmp6SendEcho2(handle`null`null`null`anyIp6SourceAddr`toIp6Addr(subject.getAddress())`sendData`(short)sendDataSize`null`replyData`replyDataSize`timeout);" is 172.,77
+ipscan-3.7.3,net.azib.ipscan.core.net,WindowsPinger,ping6,Magic Number,The method contains a magic number: 32,77
+ipscan-3.7.3,net.azib.ipscan.core.net,WindowsPinger,ping6,Magic Number,The method contains a magic number: 10,77
+ipscan-3.7.3,net.azib.ipscan.core.net,WindowsPinger,main,Magic Number,The method contains a magic number: 5000,110
+ipscan-3.7.3,net.azib.ipscan.core.net,WinIpHlpDll,IcmpSendEcho,Long Parameter List,The method has 8 parameters. ,57
+ipscan-3.7.3,net.azib.ipscan.core.net,WinIpHlpDll,Icmp6SendEcho2,Long Parameter List,The method has 12 parameters. ,71
+ipscan-3.7.3,net.azib.ipscan.core.values,NumericRangeListTest,testToString,Magic Number,The method contains a magic number: 2,21
+ipscan-3.7.3,net.azib.ipscan.core.values,NumericRangeListTest,testToString,Magic Number,The method contains a magic number: 2,21
+ipscan-3.7.3,net.azib.ipscan.core.values,NumericRangeListTest,testToString,Magic Number,The method contains a magic number: 3,21
+ipscan-3.7.3,net.azib.ipscan.core.values,NumericRangeListTest,testToString,Magic Number,The method contains a magic number: 2,21
+ipscan-3.7.3,net.azib.ipscan.core.values,NumericRangeListTest,testToString,Magic Number,The method contains a magic number: 3,21
+ipscan-3.7.3,net.azib.ipscan.core.values,NumericRangeListTest,testToString,Magic Number,The method contains a magic number: 2,21
+ipscan-3.7.3,net.azib.ipscan.core.values,NumericRangeListTest,testToString,Magic Number,The method contains a magic number: 3,21
+ipscan-3.7.3,net.azib.ipscan.core.values,NumericRangeListTest,testToString,Magic Number,The method contains a magic number: 5,21
+ipscan-3.7.3,net.azib.ipscan.core.values,NumericRangeListTest,testToString,Magic Number,The method contains a magic number: 6,21
+ipscan-3.7.3,net.azib.ipscan.core.values,NumericRangeListTest,testToString,Magic Number,The method contains a magic number: 15,21
+ipscan-3.7.3,net.azib.ipscan.core.values,NumericRangeListTest,testToString,Magic Number,The method contains a magic number: 5,21
+ipscan-3.7.3,net.azib.ipscan.core.values,NumericRangeListTest,testToString,Magic Number,The method contains a magic number: 6,21
+ipscan-3.7.3,net.azib.ipscan.core.values,NumericRangeListTest,testToString,Magic Number,The method contains a magic number: 7,21
+ipscan-3.7.3,net.azib.ipscan.core.values,NumericRangeListTest,testToString,Magic Number,The method contains a magic number: 8,21
+ipscan-3.7.3,net.azib.ipscan.core.values,NumericRangeListTest,testToString,Magic Number,The method contains a magic number: 15,21
+ipscan-3.7.3,net.azib.ipscan.core.values,NumericRangeListTest,testToString,Magic Number,The method contains a magic number: 103,21
+ipscan-3.7.3,net.azib.ipscan.core.values,NumericRangeListTest,testToString,Magic Number,The method contains a magic number: 85,21
+ipscan-3.7.3,net.azib.ipscan.core.values,NumericRangeListTest,testToString,Magic Number,The method contains a magic number: 89,21
+ipscan-3.7.3,net.azib.ipscan.core.values,NumericRangeListTest,testCompateTo,Long Statement,The length of the statement "assertTrue(new NumericRangeList(Arrays.asList(255)`false).compareTo(new NumericRangeList(Arrays.asList(255)`false)) == 0);" is 122.,34
+ipscan-3.7.3,net.azib.ipscan.core.values,NumericRangeListTest,testCompateTo,Long Statement,The length of the statement "assertTrue(new NumericRangeList(Arrays.asList(1`2)`false).compareTo(new NumericRangeList(Arrays.asList(8080)`false)) > 0);" is 122.,34
+ipscan-3.7.3,net.azib.ipscan.core.values,NumericRangeListTest,testCompateTo,Long Statement,The length of the statement "assertTrue(new NumericRangeList(Arrays.asList(22`25`27`28)`false).compareTo(new NumericRangeList(Arrays.asList(22`25`26`300)`false)) > 0);" is 138.,34
+ipscan-3.7.3,net.azib.ipscan.core.values,NumericRangeListTest,testCompateTo,Magic Number,The method contains a magic number: 22,34
+ipscan-3.7.3,net.azib.ipscan.core.values,NumericRangeListTest,testCompateTo,Magic Number,The method contains a magic number: 80,34
+ipscan-3.7.3,net.azib.ipscan.core.values,NumericRangeListTest,testCompateTo,Magic Number,The method contains a magic number: 80,34
+ipscan-3.7.3,net.azib.ipscan.core.values,NumericRangeListTest,testCompateTo,Magic Number,The method contains a magic number: 22,34
+ipscan-3.7.3,net.azib.ipscan.core.values,NumericRangeListTest,testCompateTo,Magic Number,The method contains a magic number: 255,34
+ipscan-3.7.3,net.azib.ipscan.core.values,NumericRangeListTest,testCompateTo,Magic Number,The method contains a magic number: 255,34
+ipscan-3.7.3,net.azib.ipscan.core.values,NumericRangeListTest,testCompateTo,Magic Number,The method contains a magic number: 2,34
+ipscan-3.7.3,net.azib.ipscan.core.values,NumericRangeListTest,testCompateTo,Magic Number,The method contains a magic number: 8080,34
+ipscan-3.7.3,net.azib.ipscan.core.values,NumericRangeListTest,testCompateTo,Magic Number,The method contains a magic number: 22,34
+ipscan-3.7.3,net.azib.ipscan.core.values,NumericRangeListTest,testCompateTo,Magic Number,The method contains a magic number: 25,34
+ipscan-3.7.3,net.azib.ipscan.core.values,NumericRangeListTest,testCompateTo,Magic Number,The method contains a magic number: 27,34
+ipscan-3.7.3,net.azib.ipscan.core.values,NumericRangeListTest,testCompateTo,Magic Number,The method contains a magic number: 28,34
+ipscan-3.7.3,net.azib.ipscan.core.values,NumericRangeListTest,testCompateTo,Magic Number,The method contains a magic number: 22,34
+ipscan-3.7.3,net.azib.ipscan.core.values,NumericRangeListTest,testCompateTo,Magic Number,The method contains a magic number: 25,34
+ipscan-3.7.3,net.azib.ipscan.core.values,NumericRangeListTest,testCompateTo,Magic Number,The method contains a magic number: 26,34
+ipscan-3.7.3,net.azib.ipscan.core.values,NumericRangeListTest,testCompateTo,Magic Number,The method contains a magic number: 300,34
+ipscan-3.7.3,net.azib.ipscan.core.values,InetAddressHolderTest,testEqualsHashCode,Magic Number,The method contains a magic number: 192,43
+ipscan-3.7.3,net.azib.ipscan.core.values,InetAddressHolderTest,testEqualsHashCode,Magic Number,The method contains a magic number: 168,43
+ipscan-3.7.3,net.azib.ipscan.core.values,IntegerWithUnitTest,testToString,Magic Number,The method contains a magic number: 151,22
+ipscan-3.7.3,net.azib.ipscan.core.values,IntegerWithUnitTest,testEquals,Magic Number,The method contains a magic number: 666,27
+ipscan-3.7.3,net.azib.ipscan.core.values,IntegerWithUnitTest,testEquals,Magic Number,The method contains a magic number: 666,27
+ipscan-3.7.3,net.azib.ipscan.core.values,IntegerWithUnitTest,testEquals,Magic Number,The method contains a magic number: 42,27
+ipscan-3.7.3,net.azib.ipscan.core.values,IntegerWithUnitTest,testEquals,Magic Number,The method contains a magic number: 42,27
+ipscan-3.7.3,net.azib.ipscan.core.values,IntegerWithUnitTest,testEquals,Magic Number,The method contains a magic number: 42,27
+ipscan-3.7.3,net.azib.ipscan.core.values,IntegerWithUnitTest,testEquals,Magic Number,The method contains a magic number: 43,27
+ipscan-3.7.3,net.azib.ipscan.core.values,IntegerWithUnitTest,testHashCode,Magic Number,The method contains a magic number: 3,35
+ipscan-3.7.3,net.azib.ipscan.core.values,IntegerWithUnitTest,testHashCode,Magic Number,The method contains a magic number: 3,35
+ipscan-3.7.3,net.azib.ipscan.core.values,IntegerWithUnitTest,testHashCode,Magic Number,The method contains a magic number: 31,35
+ipscan-3.7.3,net.azib.ipscan.core.values,IntegerWithUnitTest,testHashCode,Magic Number,The method contains a magic number: 31,35
+ipscan-3.7.3,net.azib.ipscan.core.values,IntegerWithUnitTest,testCompareTo,Magic Number,The method contains a magic number: 123456789,41
+ipscan-3.7.3,net.azib.ipscan.core.values,IntegerWithUnitTest,testCompareTo,Magic Number,The method contains a magic number: 123456,41
+ipscan-3.7.3,net.azib.ipscan.core.values,IntegerWithUnitTest,testCompareTo,Magic Number,The method contains a magic number: 12,41
+ipscan-3.7.3,net.azib.ipscan.core.values,IntegerWithUnitTest,testCompareTo,Magic Number,The method contains a magic number: 123456,41
+ipscan-3.7.3,net.azib.ipscan.core.values,IntegerWithUnitTest,testCompareTo,Magic Number,The method contains a magic number: 12,41
+ipscan-3.7.3,net.azib.ipscan.core.values,IntegerWithUnitTest,testCompareTo,Magic Number,The method contains a magic number: 211082,41
+ipscan-3.7.3,net.azib.ipscan.core.values,InetAddressHolder,compareTo,Magic Number,The method contains a magic number: 0xFF,26
+ipscan-3.7.3,net.azib.ipscan.core.values,InetAddressHolder,compareTo,Magic Number,The method contains a magic number: 0xFF,26
+ipscan-3.7.3,net.azib.ipscan.core.state,StateMachineTest,stop,Magic Number,The method contains a magic number: 2,83
+ipscan-3.7.3,net.azib.ipscan.core.state,StateMachineTest,stop,Magic Number,The method contains a magic number: 3,83
+ipscan-3.7.3,net.azib.ipscan.fetchers,IPFetcherTest,testScan,Long Statement,The length of the statement "assertEquals(InetAddress.getLocalHost().getHostAddress()`fetcher.scan(new ScanningSubject(InetAddress.getLocalHost())).toString());" is 131.,24
+ipscan-3.7.3,net.azib.ipscan.fetchers,HostnameFetcherTest,resolveForReal,Empty catch clause,The method has an empty catch block.,25
+ipscan-3.7.3,net.azib.ipscan.fetchers,HostnameFetcherTest,resolveForReal,Long Statement,The length of the statement "if (!InetAddress.getLocalHost().getCanonicalHostName().equals(InetAddress.getLocalHost().getHostAddress())) assertEquals(InetAddress.getLocalHost().getCanonicalHostName()`fetcher.scan(new ScanningSubject(InetAddress.getLocalHost())));" is 234.,25
+ipscan-3.7.3,net.azib.ipscan.fetchers,HostnameFetcherTest,resolveForReal,Long Statement,The length of the statement "if (inexistentAddress.getHostName().equals("192.168.253.253")) assertNull(fetcher.scan(new ScanningSubject(inexistentAddress)));" is 128.,25
+ipscan-3.7.3,net.azib.ipscan.fetchers,MACFetcherTest,extractMACAddsLeadingZeroesOnOsX,Long Statement,The length of the statement "assertEquals("C4:2C:03:08:1E:89"`UnixMACFetcher.extractMAC("? (10.10.10.96) at c4:2c:3:8:1e:89 on en0 ifscope permanent [ethernet]"));" is 134.,13
+ipscan-3.7.3,net.azib.ipscan.fetchers,PortsFetcherTest,scanInterrupted,Magic Number,The method contains a magic number: 3000,59
+ipscan-3.7.3,net.azib.ipscan.fetchers,PortsFetcherTest,scanInterrupted,Magic Number,The method contains a magic number: 3000,59
+ipscan-3.7.3,net.azib.ipscan.fetchers,PortsFetcherTest,scanWithResults,Magic Number,The method contains a magic number: 65431,84
+ipscan-3.7.3,net.azib.ipscan.fetchers,PortsFetcherTest,run,Magic Number,The method contains a magic number: 65431,88
+ipscan-3.7.3,net.azib.ipscan.fetchers,FetcherRegistryTest,setUp,Long Statement,The length of the statement "fetcherRegistry=new FetcherRegistry(asList(ipFetcher`pingFetcher`hostnameFetcher`commentFetcher`portsFetcher)`preferences`null);" is 128.,29
+ipscan-3.7.3,net.azib.ipscan.fetchers,FetcherRegistryTest,testCreate,Magic Number,The method contains a magic number: 5,47
+ipscan-3.7.3,net.azib.ipscan.fetchers,FetcherRegistryTest,testCreate,Magic Number,The method contains a magic number: 4,47
+ipscan-3.7.3,net.azib.ipscan.fetchers,FetcherRegistryTest,testGetSelectedFetcherIndex,Magic Number,The method contains a magic number: 2,60
+ipscan-3.7.3,net.azib.ipscan.fetchers,FetcherRegistryTest,testGetSelectedFetcherIndex,Magic Number,The method contains a magic number: 3,60
+ipscan-3.7.3,net.azib.ipscan.fetchers,FetcherRegistryTest,testLoadPreferences,Magic Number,The method contains a magic number: 4,69
+ipscan-3.7.3,net.azib.ipscan.fetchers,FetcherRegistryTest,testLoadPreferences,Magic Number,The method contains a magic number: 2,69
+ipscan-3.7.3,net.azib.ipscan.fetchers,FetcherRegistryTest,testUpdateSelectedFetchers,Long Statement,The length of the statement "assertEquals(commentFetcher.getId() + "###" + ipFetcher.getId()`preferences.get(FetcherRegistry.PREFERENCE_SELECTED_FETCHERS`null));" is 132.,87
+ipscan-3.7.3,net.azib.ipscan.fetchers,FetcherRegistryTest,testUpdateSelectedFetchers,Magic Number,The method contains a magic number: 2,87
+ipscan-3.7.3,net.azib.ipscan.fetchers,MACVendorFetcher,init,Long Statement,The length of the statement "try (BufferedReader reader=new BufferedReader(new InputStreamReader(getClass().getResourceAsStream("/mac-vendors.txt")))){" is 122.,25
+ipscan-3.7.3,net.azib.ipscan.fetchers,MACVendorFetcher,init,Magic Number,The method contains a magic number: 2,25
+ipscan-3.7.3,net.azib.ipscan.fetchers,MACVendorFetcher,init,Magic Number,The method contains a magic number: 2,25
+ipscan-3.7.3,net.azib.ipscan.fetchers,MACVendorFetcher,init,Magic Number,The method contains a magic number: 4,25
+ipscan-3.7.3,net.azib.ipscan.fetchers,MACVendorFetcher,init,Magic Number,The method contains a magic number: 4,25
+ipscan-3.7.3,net.azib.ipscan.fetchers,MACVendorFetcher,init,Magic Number,The method contains a magic number: 6,25
+ipscan-3.7.3,net.azib.ipscan.fetchers,MACVendorFetcher,init,Magic Number,The method contains a magic number: 6,25
+ipscan-3.7.3,net.azib.ipscan.fetchers,MACVendorFetcher,findMACVendor,Magic Number,The method contains a magic number: 8,49
+ipscan-3.7.3,net.azib.ipscan.fetchers,WebDetectFetcher,WebDetectFetcher,Magic Number,The method contains a magic number: 80,18
+ipscan-3.7.3,net.azib.ipscan.fetchers,PortTextFetcher,scan,Empty catch clause,The method has an empty catch block.,54
+ipscan-3.7.3,net.azib.ipscan.fetchers,PortTextFetcher,scan,Empty catch clause,The method has an empty catch block.,54
+ipscan-3.7.3,net.azib.ipscan.fetchers,PortTextFetcher,scan,Empty catch clause,The method has an empty catch block.,54
+ipscan-3.7.3,net.azib.ipscan.fetchers,PortTextFetcher,scan,Magic Number,The method contains a magic number: 2,54
+ipscan-3.7.3,net.azib.ipscan.fetchers,PortTextFetcher,getPortIterator,Long Statement,The length of the statement "@SuppressWarnings("unchecked") SortedSet<Integer> openPorts=(SortedSet<Integer>)subject.getParameter(PARAMETER_OPEN_PORTS);" is 123.,99
+ipscan-3.7.3,net.azib.ipscan.fetchers,PortsFetcher,scanPorts,Magic Number,The method contains a magic number: 32,66
+ipscan-3.7.3,net.azib.ipscan.fetchers,PortsFetcher,scanPorts,Magic Number,The method contains a magic number: 16,66
+ipscan-3.7.3,net.azib.ipscan.fetchers,FetcherRegistry,saveSelectedFetchers,Magic Number,The method contains a magic number: 3,77
+ipscan-3.7.3,net.azib.ipscan.fetchers,HTTPProxyFetcher,HTTPProxyFetcher,Magic Number,The method contains a magic number: 3128,19
+ipscan-3.7.3,net.azib.ipscan.fetchers,HTTPSenderFetcher,HTTPSenderFetcher,Magic Number,The method contains a magic number: 80,17
+ipscan-3.7.3,net.azib.ipscan.fetchers,NetBIOSInfoFetcher,scan,Long Statement,The length of the statement "return (groupName != null ? groupName + "\\" : "") + (userName != null ? userName + "@" : "") + computerName+ " ["+ macAddress+ "]";" is 132.,34
+ipscan-3.7.3,net.azib.ipscan.fetchers,NetBIOSInfoFetcher,scan,Magic Number,The method contains a magic number: 2,34
+ipscan-3.7.3,net.azib.ipscan.fetchers,NetBIOSInfoFetcher,scan,Magic Number,The method contains a magic number: 3,34
+ipscan-3.7.3,net.azib.ipscan.fetchers,WinMACFetcher,resolveMAC,Magic Number,The method contains a magic number: 8,15
+ipscan-3.7.3,net.azib.ipscan.fetchers,WinMACFetcher,resolveMAC,Magic Number,The method contains a magic number: 4,15
+ipscan-3.7.3,net.azib.ipscan.fetchers,WinMACFetcher,resolveMAC,Magic Number,The method contains a magic number: 8,15
+ipscan-3.7.3,net.azib.ipscan.fetchers,UnixMACFetcher,resolveMAC,Complex Conditional,The conditional expression netif.isUp() && !netif.isVirtual() && !netif.isLoopback() is complex.,22
+ipscan-3.7.3,net.azib.ipscan.util,SequenceIteratorTest,twoIterators,Magic Number,The method contains a magic number: 2,31
+ipscan-3.7.3,net.azib.ipscan.util,SequenceIteratorTest,twoIterators,Magic Number,The method contains a magic number: 3,31
+ipscan-3.7.3,net.azib.ipscan.util,SequenceIteratorTest,twoIterators,Magic Number,The method contains a magic number: 2,31
+ipscan-3.7.3,net.azib.ipscan.util,SequenceIteratorTest,twoIterators,Magic Number,The method contains a magic number: 3,31
+ipscan-3.7.3,net.azib.ipscan.util,SequenceIteratorTest,firstEmpty,Magic Number,The method contains a magic number: 3,43
+ipscan-3.7.3,net.azib.ipscan.util,SequenceIteratorTest,firstEmpty,Magic Number,The method contains a magic number: 3,43
+ipscan-3.7.3,net.azib.ipscan.util,InetAddressUtilsTest,findIPs,Long Statement,The length of the statement "Matcher matcher=InetAddressUtils.HOSTNAME_REGEX.matcher("Hello` my IP is 10.10.10.123` not 128.92.34.56. Isn't it cool?");" is 122.,33
+ipscan-3.7.3,net.azib.ipscan.util,InetAddressUtilsTest,findHostnames,Long Statement,The length of the statement "Matcher matcher=InetAddressUtils.HOSTNAME_REGEX.matcher("Angry IP Scanner's official site is https://angryip.org` not http://www.angryziber.com. Isn't it cool?");" is 162.,43
+ipscan-3.7.3,net.azib.ipscan.util,InetAddressUtilsTest,testStartRangeByNetmask,Long Statement,The length of the statement "assertEquals("127.0.1.64"`InetAddressUtils.startRangeByNetmask(InetAddress.getByName("127.0.1.92")`InetAddress.getByName("255.255.255.192")).getHostAddress());" is 159.,53
+ipscan-3.7.3,net.azib.ipscan.util,InetAddressUtilsTest,testStartRangeByNetmask,Long Statement,The length of the statement "assertEquals("127.0.0.15"`InetAddressUtils.startRangeByNetmask(InetAddress.getByName("127.0.0.15")`InetAddress.getByName("255.255.255.255")).getHostAddress());" is 159.,53
+ipscan-3.7.3,net.azib.ipscan.util,InetAddressUtilsTest,testStartRangeByNetmask,Long Statement,The length of the statement "assertEquals("192.10.0.0"`InetAddressUtils.startRangeByNetmask(InetAddress.getByName("192.10.11.13")`InetAddress.getByName("255.255.0.0")).getHostAddress());" is 157.,53
+ipscan-3.7.3,net.azib.ipscan.util,InetAddressUtilsTest,testEndRangeByNetmask,Long Statement,The length of the statement "assertEquals("127.0.1.127"`InetAddressUtils.endRangeByNetmask(InetAddress.getByName("127.0.1.92")`InetAddress.getByName("255.255.255.192")).getHostAddress());" is 158.,66
+ipscan-3.7.3,net.azib.ipscan.util,InetAddressUtilsTest,testEndRangeByNetmask,Long Statement,The length of the statement "assertEquals("127.0.0.15"`InetAddressUtils.endRangeByNetmask(InetAddress.getByName("127.0.0.15")`InetAddress.getByName("255.255.255.255")).getHostAddress());" is 157.,66
+ipscan-3.7.3,net.azib.ipscan.util,InetAddressUtilsTest,testEndRangeByNetmask,Long Statement,The length of the statement "assertEquals("192.10.255.255"`InetAddressUtils.endRangeByNetmask(InetAddress.getByName("192.10.11.13")`InetAddress.getByName("255.255.0.0")).getHostAddress());" is 159.,66
+ipscan-3.7.3,net.azib.ipscan.util,InetAddressUtilsTest,testMaskPrototypeBytes,Long Statement,The length of the statement "InetAddressUtils.maskPrototypeAddressBytes(bytes`InetAddress.getByName("255.0.0.255").getAddress()`InetAddress.getByName("29.1.2.255").getAddress());" is 149.,117
+ipscan-3.7.3,net.azib.ipscan.util,InetAddressUtilsTest,testMaskPrototypeBytes,Long Statement,The length of the statement "InetAddressUtils.maskPrototypeAddressBytes(bytes`InetAddress.getByName("0.0.0.0").getAddress()`InetAddress.getByName("29.1.2.255").getAddress());" is 145.,117
+ipscan-3.7.3,net.azib.ipscan.util,InetAddressUtilsTest,testMaskPrototypeBytes,Long Statement,The length of the statement "InetAddressUtils.maskPrototypeAddressBytes(bytes`InetAddress.getByName("255.255.255.255").getAddress()`InetAddress.getByName("29.128.127.73").getAddress());" is 156.,117
+ipscan-3.7.3,net.azib.ipscan.util,GoogleAnalyticsTest,extractFirstStackFrame,Long Statement,The length of the statement "assertEquals("java.lang.RuntimeException: Kaboom\n" + "net.azib.ipscan.util.GoogleAnalyticsTest.extractFirstStackFrame:10"`GoogleAnalytics.extractFirstStackFrame(new RuntimeException("Kaboom")));" is 195.,8
+ipscan-3.7.3,net.azib.ipscan.util,MDNSResolverTest,setUp,Magic Number,The method contains a magic number: 3000,15
+ipscan-3.7.3,net.azib.ipscan.util,MDNSResolverTest,decodeNameFromDNS,Magic Number,The method contains a magic number: 2,28
+ipscan-3.7.3,net.azib.ipscan.util,MDNSResolverTest,decodeNameFromDNS,Magic Number,The method contains a magic number: 2,28
+ipscan-3.7.3,net.azib.ipscan.util,NetBIOSResolverTest,extractNamesNoUserNoGroup,Long Statement,The length of the statement "byte[] response=("01234567890123456789012345678901234567890123456789012345\u0001" + "ComputerName XYY" + "\u00DE\u00AD\u00BE\u00EF\u0000\u0000 XYY").getBytes("ISO-8859-1");" is 172.,14
+ipscan-3.7.3,net.azib.ipscan.util,NetBIOSResolverTest,extractNamesNoUserWithGroup,Long Statement,The length of the statement "byte[] response=("01234567890123456789012345678901234567890123456789012345\u0002" + "ComputerName XYY" + "GroupName \u0000\u0080\u0000"+ "\u0001\u0002\u0003\u0004\u0005\u0006 XYY").getBytes("ISO-8859-1");" is 204.,23
+ipscan-3.7.3,net.azib.ipscan.util,NetBIOSResolverTest,extractNamesNoUserWithGroup,Long Statement,The length of the statement "assertArrayEquals(new String[]{"ComputerName"`null`"GroupName"`"01-02-03-04-05-06"}`NetBIOSResolver.extractNames(response`2));" is 126.,23
+ipscan-3.7.3,net.azib.ipscan.util,NetBIOSResolverTest,extractNamesNoUserWithGroup,Magic Number,The method contains a magic number: 2,23
+ipscan-3.7.3,net.azib.ipscan.util,NetBIOSResolverTest,extractNamesWithUserAndGroup,Long Statement,The length of the statement "byte[] response=("01234567890123456789012345678901234567890123456789012345\u0007" + "ComputerName XYY" + "SomeName X\u007F\u0000"+ "SomeName X\u0085\u0000"+ "GroupName \u0000\u0085\u0000"+ "WrongUserName \u0003YY"+ "UserName \u0003YY"+ "SomeName XYY"+ "\u00DE\u00AD\u00BE\u00EF\u0000\u0000 XYY").getBytes("ISO-8859-1");" is 319.,33
+ipscan-3.7.3,net.azib.ipscan.util,NetBIOSResolverTest,extractNamesWithUserAndGroup,Long Statement,The length of the statement "assertArrayEquals(new String[]{"ComputerName"`"UserName"`"GroupName"`"DE-AD-BE-EF-00-00"}`NetBIOSResolver.extractNames(response`7));" is 132.,33
+ipscan-3.7.3,net.azib.ipscan.util,NetBIOSResolverTest,extractNamesWithUserAndGroup,Magic Number,The method contains a magic number: 7,33
+ipscan-3.7.3,net.azib.ipscan.util,IOUtils,closeQuietly,Empty catch clause,The method has an empty catch block.,11
+ipscan-3.7.3,net.azib.ipscan.util,IOUtils,closeQuietly,Empty catch clause,The method has an empty catch block.,23
+ipscan-3.7.3,net.azib.ipscan.util,IOUtils,closeQuietly,Empty catch clause,The method has an empty catch block.,31
+ipscan-3.7.3,net.azib.ipscan.util,GoogleAnalytics,report,Long Statement,The length of the statement "String payload="v=1&t=" + type + "&tid="+ Version.GA_ID+ "&cid="+ config.getUUID()+ "&an=ipscan&av="+ Version.getVersion()+ "&"+ contentParam+ "="+ URLEncoder.encode(content`"UTF-8")+ "&ul="+ config.getLocale()+ "&vp="+ config.forGUI().mainWindowSize[0]+ "x"+ config.forGUI().mainWindowSize[1]+ "&cd1="+ URLEncoder.encode(System.getProperty("os.name") + " " + System.getProperty("os.version")+ " "+ System.getProperty("os.arch")`"UTF-8")+ "&cd2="+ URLEncoder.encode("Java " + System.getProperty("java.version")`"UTF-8");" is 520.,24
+ipscan-3.7.3,net.azib.ipscan.util,GoogleAnalytics,extractFirstStackFrame,Long Statement,The length of the statement "return e.toString() + (element == null ? "" : "\n" + element.getClassName() + "."+ element.getMethodName()+ ":"+ element.getLineNumber());" is 138.,59
+ipscan-3.7.3,net.azib.ipscan.util,MDNSResolver,reverseName,Magic Number,The method contains a magic number: 3,57
+ipscan-3.7.3,net.azib.ipscan.util,MDNSResolver,reverseName,Magic Number,The method contains a magic number: 0xFF,57
+ipscan-3.7.3,net.azib.ipscan.util,MDNSResolver,reverseName,Magic Number,The method contains a magic number: 2,57
+ipscan-3.7.3,net.azib.ipscan.util,MDNSResolver,reverseName,Magic Number,The method contains a magic number: 0xFF,57
+ipscan-3.7.3,net.azib.ipscan.util,MDNSResolver,reverseName,Magic Number,The method contains a magic number: 0xFF,57
+ipscan-3.7.3,net.azib.ipscan.util,MDNSResolver,reverseName,Magic Number,The method contains a magic number: 0xFF,57
+ipscan-3.7.3,net.azib.ipscan.util,MDNSResolver,resolve,Magic Number,The method contains a magic number: 2,62
+ipscan-3.7.3,net.azib.ipscan.util,MDNSResolver,resolve,Magic Number,The method contains a magic number: 0xFF,62
+ipscan-3.7.3,net.azib.ipscan.util,MDNSResolver,resolve,Magic Number,The method contains a magic number: 3,62
+ipscan-3.7.3,net.azib.ipscan.util,MDNSResolver,resolve,Magic Number,The method contains a magic number: 512,62
+ipscan-3.7.3,net.azib.ipscan.util,MDNSResolver,resolve,Magic Number,The method contains a magic number: 512,62
+ipscan-3.7.3,net.azib.ipscan.util,MDNSResolver,resolve,Magic Number,The method contains a magic number: 5,62
+ipscan-3.7.3,net.azib.ipscan.util,MDNSResolver,resolve,Magic Number,The method contains a magic number: 12,62
+ipscan-3.7.3,net.azib.ipscan.util,MDNSResolver,resolve,Magic Number,The method contains a magic number: 2,62
+ipscan-3.7.3,net.azib.ipscan.util,MDNSResolver,resolve,Magic Number,The method contains a magic number: 2,62
+ipscan-3.7.3,net.azib.ipscan.util,MDNSResolver,resolve,Magic Number,The method contains a magic number: 2,62
+ipscan-3.7.3,net.azib.ipscan.util,MDNSResolver,resolve,Magic Number,The method contains a magic number: 4,62
+ipscan-3.7.3,net.azib.ipscan.util,MDNSResolver,resolve,Magic Number,The method contains a magic number: 2,62
+ipscan-3.7.3,net.azib.ipscan.util,MDNSResolver,main,Magic Number,The method contains a magic number: 2000,81
+ipscan-3.7.3,net.azib.ipscan.util,NetBIOSResolver,resolve,Magic Number,The method contains a magic number: 1024,28
+ipscan-3.7.3,net.azib.ipscan.util,NetBIOSResolver,resolve,Magic Number,The method contains a magic number: 0xFF,28
+ipscan-3.7.3,net.azib.ipscan.util,NetBIOSResolver,extractNames,Long Statement,The length of the statement "String macAddress=String.format("%02X-%02X-%02X-%02X-%02X-%02X"`nameByte(response`nameCount`0)`nameByte(response`nameCount`1)`nameByte(response`nameCount`2)`nameByte(response`nameCount`3)`nameByte(response`nameCount`4)`nameByte(response`nameCount`5));" is 251.,47
+ipscan-3.7.3,net.azib.ipscan.util,NetBIOSResolver,extractNames,Magic Number,The method contains a magic number: 2,47
+ipscan-3.7.3,net.azib.ipscan.util,NetBIOSResolver,extractNames,Magic Number,The method contains a magic number: 3,47
+ipscan-3.7.3,net.azib.ipscan.util,NetBIOSResolver,extractNames,Magic Number,The method contains a magic number: 4,47
+ipscan-3.7.3,net.azib.ipscan.util,NetBIOSResolver,extractNames,Magic Number,The method contains a magic number: 5,47
+ipscan-3.7.3,net.azib.ipscan.util,NetBIOSResolver,nameByte,Magic Number,The method contains a magic number: 0xFF,80
+ipscan-3.7.3,net.azib.ipscan.util,NetBIOSResolver,nameFlag,Long Statement,The length of the statement "return response[RESPONSE_BASE_LEN + RESPONSE_NAME_BLOCK_LEN * i + RESPONSE_NAME_LEN + 1] & 0xFF + (response[RESPONSE_BASE_LEN + RESPONSE_NAME_BLOCK_LEN * i + RESPONSE_NAME_LEN + 2] & 0xFF) * 0xFF;" is 196.,84
+ipscan-3.7.3,net.azib.ipscan.util,NetBIOSResolver,nameFlag,Magic Number,The method contains a magic number: 0xFF,84
+ipscan-3.7.3,net.azib.ipscan.util,NetBIOSResolver,nameFlag,Magic Number,The method contains a magic number: 2,84
+ipscan-3.7.3,net.azib.ipscan.util,NetBIOSResolver,nameFlag,Magic Number,The method contains a magic number: 0xFF,84
+ipscan-3.7.3,net.azib.ipscan.util,NetBIOSResolver,nameFlag,Magic Number,The method contains a magic number: 0xFF,84
+ipscan-3.7.3,net.azib.ipscan.util,NetBIOSResolver,nameType,Magic Number,The method contains a magic number: 0xFF,89
+ipscan-3.7.3,net.azib.ipscan.util,InetAddressUtils,greaterThan,Magic Number,The method contains a magic number: 0xFF,63
+ipscan-3.7.3,net.azib.ipscan.util,InetAddressUtils,greaterThan,Magic Number,The method contains a magic number: 0xFF,63
+ipscan-3.7.3,net.azib.ipscan.util,InetAddressUtils,greaterThan,Magic Number,The method contains a magic number: 0xFF,63
+ipscan-3.7.3,net.azib.ipscan.util,InetAddressUtils,greaterThan,Magic Number,The method contains a magic number: 0xFF,63
+ipscan-3.7.3,net.azib.ipscan.util,InetAddressUtils,parseNetmask,Magic Number,The method contains a magic number: 32,116
+ipscan-3.7.3,net.azib.ipscan.util,InetAddressUtils,parseNetmask,Magic Number,The method contains a magic number: 16,116
+ipscan-3.7.3,net.azib.ipscan.util,InetAddressUtils,parseNetmask,Magic Number,The method contains a magic number: 4,116
+ipscan-3.7.3,net.azib.ipscan.util,InetAddressUtils,parseNetmask,Magic Number,The method contains a magic number: 8,116
+ipscan-3.7.3,net.azib.ipscan.util,InetAddressUtils,parseNetmask,Magic Number,The method contains a magic number: 8,116
+ipscan-3.7.3,net.azib.ipscan.util,InetAddressUtils,parseNetmask,Magic Number,The method contains a magic number: 8,116
+ipscan-3.7.3,net.azib.ipscan.util,InetAddressUtils,parseNetmask,Magic Number,The method contains a magic number: 0xFF,116
+ipscan-3.7.3,net.azib.ipscan.util,InetAddressUtils,isLikelyBroadcast,Magic Number,The method contains a magic number: 0xFF,154
+ipscan-3.7.3,net.azib.ipscan.util,InetAddressUtils,getLocalInterface,Long Statement,The length of the statement "List<NetworkInterface> interfaces=getNetworkInterfaces().stream().filter(i -> i.getParent() == null && !i.isVirtual()).collect(toList());" is 137.,162
+ipscan-3.7.3,net.azib.ipscan.config,NamedListConfigTest,testLoad,Magic Number,The method contains a magic number: 3,54
+ipscan-3.7.3,net.azib.ipscan.config,NamedListConfigTest,testStore,Long Statement,The length of the statement "assertEquals("x###y###Buga muga x`1`2`3`4`5###opopo op : ` . l ; - # | @@###127.0.0.1###192.168.2.25"`preferences.get(PREFERENCE_NAME`""));" is 139.,77
+ipscan-3.7.3,net.azib.ipscan.config,GUIConfigTest,setMainWindowDimensions,Magic Number,The method contains a magic number: 2,37
+ipscan-3.7.3,net.azib.ipscan.config,GUIConfigTest,setMainWindowDimensions,Magic Number,The method contains a magic number: 3,37
+ipscan-3.7.3,net.azib.ipscan.config,GUIConfigTest,setMainWindowDimensions,Magic Number,The method contains a magic number: 4,37
+ipscan-3.7.3,net.azib.ipscan.config,GUIConfigTest,store,Magic Number,The method contains a magic number: 33,50
+ipscan-3.7.3,net.azib.ipscan.config,GUIConfigTest,store,Magic Number,The method contains a magic number: 44,50
+ipscan-3.7.3,net.azib.ipscan.config,GUIConfigTest,store,Magic Number,The method contains a magic number: 33,50
+ipscan-3.7.3,net.azib.ipscan.config,GUIConfigTest,store,Magic Number,The method contains a magic number: 55,50
+ipscan-3.7.3,net.azib.ipscan.config,GUIConfigTest,store,Magic Number,The method contains a magic number: 66,50
+ipscan-3.7.3,net.azib.ipscan.config,GUIConfigTest,store,Magic Number,The method contains a magic number: 33,50
+ipscan-3.7.3,net.azib.ipscan.config,GUIConfigTest,columnWidths,Magic Number,The method contains a magic number: 35,61
+ipscan-3.7.3,net.azib.ipscan.config,GUIConfigTest,columnWidths,Magic Number,The method contains a magic number: 35,61
+ipscan-3.7.3,net.azib.ipscan.config,GUIConfigTest,columnWidths,Magic Number,The method contains a magic number: 35,61
+ipscan-3.7.3,net.azib.ipscan.config,LabelsTest,testInexistentLabel,Empty catch clause,The method has an empty catch block.,47
+ipscan-3.7.3,net.azib.ipscan.config,LabelsTest,findAndTestLabels,Magic Number,The method contains a magic number: 2,90
+ipscan-3.7.3,net.azib.ipscan.config,OpenersConfigTest,testAddNoStrings,Empty catch clause,The method has an empty catch block.,41
+ipscan-3.7.3,net.azib.ipscan.config,OpenersConfigTest,testLoad,Magic Number,The method contains a magic number: 2,75
+ipscan-3.7.3,net.azib.ipscan.config,NamedListConfig,load,Magic Number,The method contains a magic number: 2,33
+ipscan-3.7.3,net.azib.ipscan.config,NamedListConfig,store,Magic Number,The method contains a magic number: 32,53
+ipscan-3.7.3,net.azib.ipscan.config,NamedListConfig,store,Magic Number,The method contains a magic number: 3,53
+ipscan-3.7.3,net.azib.ipscan.config,NamedListConfig,store,Magic Number,The method contains a magic number: 3,53
+ipscan-3.7.3,net.azib.ipscan.config,CommandLineProcessor,parse,Complex Method,Cyclomatic complexity of the method is 15,63
+ipscan-3.7.3,net.azib.ipscan.config,CommandLineProcessor,parse,Magic Number,The method contains a magic number: 3,63
+ipscan-3.7.3,net.azib.ipscan.config,CommandLineProcessor,parse,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@1fc69913,63
+ipscan-3.7.3,net.azib.ipscan.config,CommandLineProcessor,toString,Long Statement,The length of the statement "usage.append("-o filename.").append(shortId(exporter.getFilenameExtension())).append("\t\t").append(Labels.getLabel(exporter.getId())).append('\n');" is 148.,109
+ipscan-3.7.3,net.azib.ipscan.config,CommandLineProcessor,transitionTo,Complex Conditional,The conditional expression transition == Transition.COMPLETE && state == ScanningState.IDLE && exporter != null is complex.,151
+ipscan-3.7.3,net.azib.ipscan.config,ScannerConfig,ScannerConfig,Magic Number,The method contains a magic number: 10,33
+ipscan-3.7.3,net.azib.ipscan.config,ScannerConfig,ScannerConfig,Magic Number,The method contains a magic number: 100,33
+ipscan-3.7.3,net.azib.ipscan.config,ScannerConfig,ScannerConfig,Magic Number,The method contains a magic number: 20,33
+ipscan-3.7.3,net.azib.ipscan.config,ScannerConfig,ScannerConfig,Magic Number,The method contains a magic number: 2000,33
+ipscan-3.7.3,net.azib.ipscan.config,ScannerConfig,ScannerConfig,Magic Number,The method contains a magic number: 3,33
+ipscan-3.7.3,net.azib.ipscan.config,ScannerConfig,ScannerConfig,Magic Number,The method contains a magic number: 2000,33
+ipscan-3.7.3,net.azib.ipscan.config,ScannerConfig,ScannerConfig,Magic Number,The method contains a magic number: 100,33
+ipscan-3.7.3,net.azib.ipscan.config,ComponentRegistry,register,Long Statement,The length of the statement "i.register(IPFetcher.class`PingFetcher.class`PingTTLFetcher.class`HostnameFetcher.class`PortsFetcher.class`FilteredPortsFetcher.class`WebDetectFetcher.class`HTTPSenderFetcher.class`CommentFetcher.class`NetBIOSInfoFetcher.class`PacketLossFetcher.class`HTTPProxyFetcher.class);" is 275.,31
+ipscan-3.7.3,net.azib.ipscan.config,OpenersConfig,OpenersConfig,Long Statement,The length of the statement "add(labels.get("opener.traceroute")`new Opener((Platform.WINDOWS ? "tracert" : Platform.LINUX ? "tracepath" : "traceroute") + " ${fetcher.ip}"`true`null));" is 155.,21
+ipscan-3.7.3,net.azib.ipscan.config,OpenersConfig,OpenersConfig,Long Statement,The length of the statement "add(labels.get("opener.email")`new Opener("mailto:somebody@example.com?subject=${fetcher.ip} (${fetcher.hostname})"`true`null));" is 128.,21
+ipscan-3.7.3,net.azib.ipscan.config,GUIConfig,load,Magic Number,The method contains a magic number: 800,44
+ipscan-3.7.3,net.azib.ipscan.config,GUIConfig,load,Magic Number,The method contains a magic number: 450,44
+ipscan-3.7.3,net.azib.ipscan.config,GUIConfig,load,Magic Number,The method contains a magic number: 400,44
+ipscan-3.7.3,net.azib.ipscan.config,GUIConfig,load,Magic Number,The method contains a magic number: 300,44
+ipscan-3.7.3,net.azib.ipscan.config,GUIConfig,getColumnWidth,Magic Number,The method contains a magic number: 140,96
+ipscan-3.7.3,net.azib.ipscan.config,GUIConfig,getColumnWidth,Magic Number,The method contains a magic number: 60,96
+ipscan-3.7.3,net.azib.ipscan.config,GUIConfig,getColumnWidth,Magic Number,The method contains a magic number: 90,96
+ipscan-3.7.3,net.azib.ipscan.config,Labels,initialize,Long Statement,The length of the statement "try (InputStream labelsStream=Labels.class.getClassLoader().getResourceAsStream("messages_" + locale.toString() + ".properties")){" is 130.,48
+ipscan-3.7.3,net.azib.ipscan.config,Labels,initialize,Long Statement,The length of the statement "try (InputStream labelsStream=Labels.class.getClassLoader().getResourceAsStream("messages_" + locale.getLanguage() + ".properties")){" is 133.,48
+ipscan-3.7.3,net.azib.ipscan.feeders,RangeFeederTest,getPercentageComplete,Magic Number,The method contains a magic number: 33,64
+ipscan-3.7.3,net.azib.ipscan.feeders,RangeFeederTest,getPercentageComplete,Magic Number,The method contains a magic number: 67,64
+ipscan-3.7.3,net.azib.ipscan.feeders,RangeFeederTest,getPercentageComplete,Magic Number,The method contains a magic number: 100,64
+ipscan-3.7.3,net.azib.ipscan.feeders,RangeFeederTest,getPercentageComplete,Magic Number,The method contains a magic number: 100,64
+ipscan-3.7.3,net.azib.ipscan.feeders,RandomFeederTest,testHappyPath,Magic Number,The method contains a magic number: 2,15
+ipscan-3.7.3,net.azib.ipscan.feeders,RandomFeederTest,testDifferent,Magic Number,The method contains a magic number: 2,87
+ipscan-3.7.3,net.azib.ipscan.feeders,RandomFeederTest,testGetPercentageComplete,Magic Number,The method contains a magic number: 3,106
+ipscan-3.7.3,net.azib.ipscan.feeders,RandomFeederTest,testGetPercentageComplete,Magic Number,The method contains a magic number: 33,106
+ipscan-3.7.3,net.azib.ipscan.feeders,RandomFeederTest,testGetPercentageComplete,Magic Number,The method contains a magic number: 67,106
+ipscan-3.7.3,net.azib.ipscan.feeders,RandomFeederTest,testGetPercentageComplete,Magic Number,The method contains a magic number: 100,106
+ipscan-3.7.3,net.azib.ipscan.feeders,RandomFeederTest,testGetPercentageComplete,Magic Number,The method contains a magic number: 100,106
+ipscan-3.7.3,net.azib.ipscan.feeders,RandomFeederTest,testGetInfo,Magic Number,The method contains a magic number: 3,123
+ipscan-3.7.3,net.azib.ipscan.feeders,RandomFeederTest,testGetInfo,Magic Number,The method contains a magic number: 129876,123
+ipscan-3.7.3,net.azib.ipscan.feeders,RescanFeederTest,testFunctionality,Magic Number,The method contains a magic number: 33,38
+ipscan-3.7.3,net.azib.ipscan.feeders,RescanFeederTest,testFunctionality,Magic Number,The method contains a magic number: 66,38
+ipscan-3.7.3,net.azib.ipscan.feeders,RescanFeederTest,testFunctionality,Magic Number,The method contains a magic number: 100,38
+ipscan-3.7.3,net.azib.ipscan.feeders,FileFeederTest,extractFromDifferentFormats,Magic Number,The method contains a magic number: 2,79
+ipscan-3.7.3,net.azib.ipscan.feeders,FileFeederTest,extractFromDifferentFormats,Magic Number,The method contains a magic number: 2,79
+ipscan-3.7.3,net.azib.ipscan.feeders,FileFeederTest,extractFromDifferentFormats,Magic Number,The method contains a magic number: 2,79
+ipscan-3.7.3,net.azib.ipscan.feeders,FileFeederTest,extractFromDifferentFormats,Magic Number,The method contains a magic number: 2,79
+ipscan-3.7.3,net.azib.ipscan.feeders,FileFeederTest,extractFromDifferentFormats,Magic Number,The method contains a magic number: 3,79
+ipscan-3.7.3,net.azib.ipscan.feeders,FileFeederTest,testGetPercentageComplete,Magic Number,The method contains a magic number: 33,98
+ipscan-3.7.3,net.azib.ipscan.feeders,FileFeederTest,testGetPercentageComplete,Magic Number,The method contains a magic number: 67,98
+ipscan-3.7.3,net.azib.ipscan.feeders,FileFeederTest,testGetPercentageComplete,Magic Number,The method contains a magic number: 100,98
+ipscan-3.7.3,net.azib.ipscan.feeders,FileFeederTest,testGetPercentageComplete,Magic Number,The method contains a magic number: 100,98
+ipscan-3.7.3,net.azib.ipscan.feeders,FileFeederTest,requestedPortsAreDetected,Magic Number,The method contains a magic number: 1234,124
+ipscan-3.7.3,net.azib.ipscan.feeders,FileFeederTest,requestedPortsAreDetected,Magic Number,The method contains a magic number: 80,124
+ipscan-3.7.3,net.azib.ipscan.feeders,FileFeederTest,requestedPortsAreDetected,Magic Number,The method contains a magic number: 3128,124
+ipscan-3.7.3,net.azib.ipscan.feeders,RandomFeeder,percentageComplete,Magic Number,The method contains a magic number: 100,66
+ipscan-3.7.3,net.azib.ipscan.feeders,RandomFeeder,getInfo,Long Statement,The length of the statement "return addressCount + ": " + InetAddress.getByAddress(prototypeBytes).getHostAddress()+ " / "+ InetAddress.getByAddress(maskBytes).getHostAddress();" is 148.,87
+ipscan-3.7.3,net.azib.ipscan.feeders,RangeFeeder,initPercentageIncrement,Magic Number,The method contains a magic number: 100.0,61
+ipscan-3.7.3,net.azib.ipscan.feeders,RescanFeeder,percentageComplete,Magic Number,The method contains a magic number: 100,77
+ipscan-3.7.3,net.azib.ipscan.feeders,FileFeeder,findHosts,Complex Method,Cyclomatic complexity of the method is 8,63
+ipscan-3.7.3,net.azib.ipscan.feeders,FileFeeder,percentageComplete,Magic Number,The method contains a magic number: 100,104
+ipscan-3.7.3,net.azib.ipscan.exporters,IPListExporterTest,testBasic,Long Statement,The length of the statement "exporter.setFetchers(new String[]{"fetcher1"`labels.get(IPFetcher.ID)`"mega long fetcher 2"`labels.get(PortsFetcher.ID)});" is 122.,36
+ipscan-3.7.3,net.azib.ipscan.exporters,IPListExporterTest,testBasic,Magic Number,The method contains a magic number: 23,36
+ipscan-3.7.3,net.azib.ipscan.exporters,IPListExporterTest,testBasic,Magic Number,The method contains a magic number: 4,36
+ipscan-3.7.3,net.azib.ipscan.exporters,IPListExporterTest,testBasic,Magic Number,The method contains a magic number: 5,36
+ipscan-3.7.3,net.azib.ipscan.exporters,IPListExporterTest,testBasic,Magic Number,The method contains a magic number: 6,36
+ipscan-3.7.3,net.azib.ipscan.exporters,IPListExporterTest,testBasic,Magic Number,The method contains a magic number: 78,36
+ipscan-3.7.3,net.azib.ipscan.exporters,IPListExporterTest,testFindFetcherById,Long Statement,The length of the statement "assertEquals(1`IPListExporter.findFetcherById(PortsFetcher.ID`new String[]{labels.get(PortsFetcher.ID) + "x"`labels.get(PortsFetcher.ID)`"mmmm"}));" is 147.,74
+ipscan-3.7.3,net.azib.ipscan.exporters,IPListExporterTest,testFindFetcherById,Magic Number,The method contains a magic number: 3,74
+ipscan-3.7.3,net.azib.ipscan.exporters,ExportProcessorTest,testProcessWithFilter,Magic Number,The method contains a magic number: 2,51
+ipscan-3.7.3,net.azib.ipscan.exporters,CSVExporterTest,testCSVSafeString,Magic Number,The method contains a magic number: 123,21
+ipscan-3.7.3,net.azib.ipscan.exporters,TXTExporterTest,testPad,Magic Number,The method contains a magic number: 20,27
+ipscan-3.7.3,net.azib.ipscan.exporters,TXTExporterTest,testPad,Magic Number,The method contains a magic number: 5,27
+ipscan-3.7.3,net.azib.ipscan.exporters,TXTExporterTest,testPad,Magic Number,The method contains a magic number: 5,27
+ipscan-3.7.3,net.azib.ipscan.exporters,TXTExporterTest,testPad,Magic Number,The method contains a magic number: 5,27
+ipscan-3.7.3,net.azib.ipscan.exporters,TXTExporterTest,importFromFile,Magic Number,The method contains a magic number: 7,72
+ipscan-3.7.3,net.azib.ipscan.exporters,TXTExporterTest,importFromBrokenFile,Magic Number,The method contains a magic number: 7,83
+ipscan-3.7.3,net.azib.ipscan.exporters,XMLExporterTest,testValidXML,Magic Number,The method contains a magic number: 53,81
+ipscan-3.7.3,net.azib.ipscan.exporters,AbstractExporterTestCase,testBasic,Magic Number,The method contains a magic number: 53,73
+ipscan-3.7.3,net.azib.ipscan.exporters,TXTExporter,setFetchers,Magic Number,The method contains a magic number: 3,63
+ipscan-3.7.3,net.azib.ipscan.exporters,TXTExporter,pad,Magic Number,The method contains a magic number: 16,85
+ipscan-3.7.3,net.azib.ipscan.exporters,TXTExporter,pad,Magic Number,The method contains a magic number: 16,85
+ipscan-3.7.3,net.azib.ipscan.exporters,TXTExporter,importResults,Complex Method,Cyclomatic complexity of the method is 10,106
+ipscan-3.7.3,net.azib.ipscan.exporters,TXTExporter,importResults,Magic Number,The method contains a magic number: 3,106
+ipscan-3.7.3,net.azib.ipscan.exporters,TXTExporter,importResults,Magic Number,The method contains a magic number: 3,106
+ipscan-3.7.3,net.azib.ipscan.exporters,ExportProcessor,process,Empty catch clause,The method has an empty catch block.,33
+ipscan-3.7.3,net.azib.ipscan.gui.fetchers,PortTextFetcherPrefs,populateShell,Long Statement,The length of the statement "textToSend.setLayoutData(LayoutHelper.formData(new FormAttachment(0)`new FormAttachment(100)`new FormAttachment(sendLabel)`null));" is 130.,46
+ipscan-3.7.3,net.azib.ipscan.gui.fetchers,PortTextFetcherPrefs,populateShell,Long Statement,The length of the statement "matchingRegexp.setLayoutData(LayoutHelper.formData(new FormAttachment(0)`new FormAttachment(textToSend`0`SWT.RIGHT)`new FormAttachment(matchLabel)`null));" is 154.,46
+ipscan-3.7.3,net.azib.ipscan.gui.fetchers,PortTextFetcherPrefs,populateShell,Long Statement,The length of the statement "extractGroup.setLayoutData(LayoutHelper.formData(new FormAttachment(0)`new FormAttachment(textToSend`0`SWT.RIGHT)`new FormAttachment(replaceLabel)`null));" is 154.,46
+ipscan-3.7.3,net.azib.ipscan.gui.fetchers,PortTextFetcherPrefs,populateShell,Magic Number,The method contains a magic number: 10,46
+ipscan-3.7.3,net.azib.ipscan.gui.fetchers,PortTextFetcherPrefs,populateShell,Magic Number,The method contains a magic number: 10,46
+ipscan-3.7.3,net.azib.ipscan.gui.fetchers,PortTextFetcherPrefs,populateShell,Magic Number,The method contains a magic number: 5,46
+ipscan-3.7.3,net.azib.ipscan.gui.fetchers,PortTextFetcherPrefs,populateShell,Magic Number,The method contains a magic number: 100,46
+ipscan-3.7.3,net.azib.ipscan.gui.fetchers,PortTextFetcherPrefs,toEditableText,Magic Number,The method contains a magic number: 10,117
+ipscan-3.7.3,net.azib.ipscan.gui.fetchers,PortTextFetcherPrefs,toRealText,Magic Number,The method contains a magic number: 16,130
+ipscan-3.7.3,net.azib.ipscan.gui,PreferencesDialogTest,portsTextInsertsNewLineOnCtrlEnter,Magic Number,The method contains a magic number: 2,62
+ipscan-3.7.3,net.azib.ipscan.gui,PreferencesDialogTest,testPortsTextValidationListenerLogic,Magic Number,The method contains a magic number: 3,84
+ipscan-3.7.3,net.azib.ipscan.gui,PreferencesDialogTest,testPortsTextValidationListenerLogic,Magic Number,The method contains a magic number: 2,84
+ipscan-3.7.3,net.azib.ipscan.gui,PreferencesDialogTest,testPortsTextValidationListenerLogic,Magic Number,The method contains a magic number: 2,84
+ipscan-3.7.3,net.azib.ipscan.gui,PreferencesDialogTest,testPortsTextValidationListenerLogic,Magic Number,The method contains a magic number: 4,84
+ipscan-3.7.3,net.azib.ipscan.gui,PreferencesDialogTest,testPortsTextValidationListenerLogic,Magic Number,The method contains a magic number: 4,84
+ipscan-3.7.3,net.azib.ipscan.gui,PreferencesDialogTest,testPortsTextValidationListenerLogic,Magic Number,The method contains a magic number: 10,84
+ipscan-3.7.3,net.azib.ipscan.gui,PreferencesDialogTest,testPortsTextValidationListenerLogic,Magic Number,The method contains a magic number: 4,84
+ipscan-3.7.3,net.azib.ipscan.gui,GUITest,getLocalizedMessage,Long Statement,The length of the statement "assertEquals(Labels.getLabel("exception.FeederException.malformedIP")`GUI.getLocalizedMessage(new FeederException("malformedIP")));" is 131.,14
+ipscan-3.7.3,net.azib.ipscan.gui,InputDialogTest,nullText,Magic Number,The method contains a magic number: 200,49
+ipscan-3.7.3,net.azib.ipscan.gui,StatisticsDialogTest,timeToText,Magic Number,The method contains a magic number: 10,27
+ipscan-3.7.3,net.azib.ipscan.gui,StatisticsDialogTest,timeToText,Magic Number,The method contains a magic number: 499,27
+ipscan-3.7.3,net.azib.ipscan.gui,StatisticsDialogTest,timeToText,Magic Number,The method contains a magic number: 265,27
+ipscan-3.7.3,net.azib.ipscan.gui,StatisticsDialogTest,timeToText,Magic Number,The method contains a magic number: 1001,27
+ipscan-3.7.3,net.azib.ipscan.gui,StatisticsDialogTest,timeToText,Magic Number,The method contains a magic number: 90025,27
+ipscan-3.7.3,net.azib.ipscan.gui,StatisticsDialogTest,timeToText,Magic Number,The method contains a magic number: 600000,27
+ipscan-3.7.3,net.azib.ipscan.gui,StatisticsDialogTest,timeToText,Magic Number,The method contains a magic number: 3600000,27
+ipscan-3.7.3,net.azib.ipscan.gui,StatisticsDialogTest,timeToText,Magic Number,The method contains a magic number: 9036000,27
+ipscan-3.7.3,net.azib.ipscan.gui,StatisticsDialogTest,dialogContent,Magic Number,The method contains a magic number: 10000,41
+ipscan-3.7.3,net.azib.ipscan.gui,StatisticsDialogTest,dialogContent,Magic Number,The method contains a magic number: 20,41
+ipscan-3.7.3,net.azib.ipscan.gui,StatisticsDialogTest,dialogContent,Magic Number,The method contains a magic number: 10,41
+ipscan-3.7.3,net.azib.ipscan.gui,StatisticsDialogTest,dialogContent,Magic Number,The method contains a magic number: 5,41
+ipscan-3.7.3,net.azib.ipscan.gui,SelectFetchersDialog,populateShell,Long Statement,The length of the statement "prefsButton.setLayoutData(formData(new FormAttachment(selectedFetchersList)`new FormAttachment(removeButton`0`SWT.RIGHT)`new FormAttachment(removeButton`16)`null));" is 164.,39
+ipscan-3.7.3,net.azib.ipscan.gui,SelectFetchersDialog,populateShell,Long Statement,The length of the statement "registeredFetchersList.setLayoutData(formData(160`250`new FormAttachment(upButton`10)`null`new FormAttachment(registeredLabel)`null));" is 134.,39
+ipscan-3.7.3,net.azib.ipscan.gui,SelectFetchersDialog,populateShell,Magic Number,The method contains a magic number: 10,39
+ipscan-3.7.3,net.azib.ipscan.gui,SelectFetchersDialog,populateShell,Magic Number,The method contains a magic number: 10,39
+ipscan-3.7.3,net.azib.ipscan.gui,SelectFetchersDialog,populateShell,Magic Number,The method contains a magic number: 4,39
+ipscan-3.7.3,net.azib.ipscan.gui,SelectFetchersDialog,populateShell,Magic Number,The method contains a magic number: 5,39
+ipscan-3.7.3,net.azib.ipscan.gui,SelectFetchersDialog,populateShell,Magic Number,The method contains a magic number: 160,39
+ipscan-3.7.3,net.azib.ipscan.gui,SelectFetchersDialog,populateShell,Magic Number,The method contains a magic number: 250,39
+ipscan-3.7.3,net.azib.ipscan.gui,SelectFetchersDialog,populateShell,Magic Number,The method contains a magic number: 16,39
+ipscan-3.7.3,net.azib.ipscan.gui,SelectFetchersDialog,populateShell,Magic Number,The method contains a magic number: 16,39
+ipscan-3.7.3,net.azib.ipscan.gui,SelectFetchersDialog,populateShell,Magic Number,The method contains a magic number: 10,39
+ipscan-3.7.3,net.azib.ipscan.gui,SelectFetchersDialog,populateShell,Magic Number,The method contains a magic number: 5,39
+ipscan-3.7.3,net.azib.ipscan.gui,SelectFetchersDialog,populateShell,Magic Number,The method contains a magic number: 160,39
+ipscan-3.7.3,net.azib.ipscan.gui,SelectFetchersDialog,populateShell,Magic Number,The method contains a magic number: 250,39
+ipscan-3.7.3,net.azib.ipscan.gui,SelectFetchersDialog,populateShell,Magic Number,The method contains a magic number: 10,39
+ipscan-3.7.3,net.azib.ipscan.gui,SelectFetchersDialog,populateShell,Magic Number,The method contains a magic number: 10,39
+ipscan-3.7.3,net.azib.ipscan.gui,MacApplicationMenu,MacApplicationMenu,Long Parameter List,The method has 5 parameters. ,22
+ipscan-3.7.3,net.azib.ipscan.gui,MainMenu,MainMenu,Long Parameter List,The method has 10 parameters. ,25
+ipscan-3.7.3,net.azib.ipscan.gui,ResultTable,ResultTable,Long Parameter List,The method has 7 parameters. ,47
+ipscan-3.7.3,net.azib.ipscan.gui,AboutDialog,populateShell,Long Statement,The length of the statement "String aboutText=Labels.getLabel("text.about").replace("%NAME"`NAME).replace("%VERSION"`getVersion()).replace("%DATE"`getBuildDate()).replace("%COPYLEFT"`COPYLEFT);" is 164.,17
+ipscan-3.7.3,net.azib.ipscan.gui,AboutDialog,populateShell,Long Statement,The length of the statement "String systemText=Labels.getLabel("text.about.system").replace("%JAVA"`System.getProperty("java.vm.vendor") + " " + System.getProperty("java.runtime.version")).replace("%OS"`System.getProperty("os.name") + " " + System.getProperty("os.version")+ " ("+ System.getProperty("os.arch")+ ")").replace("%SWT"`SWT.getPlatform() + " " + SWT.getVersion());" is 347.,17
+ipscan-3.7.3,net.azib.ipscan.gui,AboutDialog,populateShell,Long Statement,The length of the statement "licenseText.setBounds(leftBound`systemLabel.getBounds().y + systemLabel.getBounds().height + 10`shell.getClientArea().width - leftBound - 10`button.getLocation().y - systemLabel.getBounds().y - systemLabel.getBounds().height- 20);" is 230.,17
+ipscan-3.7.3,net.azib.ipscan.gui,AboutDialog,populateShell,Long Statement,The length of the statement "licenseText.setText("Licensed under the GNU General Public License Version 2\n\n" + NAME + " is free software; you can redistribute it and/or "+ "modify it under the terms of the GNU General Public License "+ "as published by the Free Software Foundation; either version 2 "+ "of the License` or (at your option) any later version.\n\n"+ NAME+ " is distributed in the hope that it will be useful` "+ "but WITHOUT ANY WARRANTY; without even the implied warranty of "+ "MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the "+ "GNU General Public License for more details.");" is 580.,17
+ipscan-3.7.3,net.azib.ipscan.gui,AboutDialog,populateShell,Magic Number,The method contains a magic number: 500,17
+ipscan-3.7.3,net.azib.ipscan.gui,AboutDialog,populateShell,Magic Number,The method contains a magic number: 393,17
+ipscan-3.7.3,net.azib.ipscan.gui,AboutDialog,populateShell,Magic Number,The method contains a magic number: 10,17
+ipscan-3.7.3,net.azib.ipscan.gui,AboutDialog,populateShell,Magic Number,The method contains a magic number: 10,17
+ipscan-3.7.3,net.azib.ipscan.gui,AboutDialog,populateShell,Magic Number,The method contains a magic number: 20,17
+ipscan-3.7.3,net.azib.ipscan.gui,AboutDialog,populateShell,Magic Number,The method contains a magic number: 10,17
+ipscan-3.7.3,net.azib.ipscan.gui,AboutDialog,populateShell,Magic Number,The method contains a magic number: 10,17
+ipscan-3.7.3,net.azib.ipscan.gui,AboutDialog,populateShell,Magic Number,The method contains a magic number: 20,17
+ipscan-3.7.3,net.azib.ipscan.gui,AboutDialog,populateShell,Magic Number,The method contains a magic number: 10,17
+ipscan-3.7.3,net.azib.ipscan.gui,AboutDialog,populateShell,Magic Number,The method contains a magic number: 10,17
+ipscan-3.7.3,net.azib.ipscan.gui,AboutDialog,populateShell,Magic Number,The method contains a magic number: 20,17
+ipscan-3.7.3,net.azib.ipscan.gui,AboutDialog,populateShell,Magic Number,The method contains a magic number: 10,17
+ipscan-3.7.3,net.azib.ipscan.gui,AboutDialog,populateShell,Magic Number,The method contains a magic number: 40,17
+ipscan-3.7.3,net.azib.ipscan.gui,EditFavoritesDialog,populateShell,Long Statement,The length of the statement "upButton.setLayoutData(formData(new FormAttachment(favoritesList)`new FormAttachment(renameButton`0`SWT.RIGHT)`new FormAttachment(messageLabel)`null));" is 151.,22
+ipscan-3.7.3,net.azib.ipscan.gui,EditFavoritesDialog,populateShell,Long Statement,The length of the statement "downButton.setLayoutData(formData(new FormAttachment(favoritesList)`new FormAttachment(renameButton`0`SWT.RIGHT)`new FormAttachment(upButton)`null));" is 149.,22
+ipscan-3.7.3,net.azib.ipscan.gui,EditFavoritesDialog,populateShell,Long Statement,The length of the statement "deleteButton.setLayoutData(formData(new FormAttachment(favoritesList)`new FormAttachment(renameButton`0`SWT.RIGHT)`new FormAttachment(renameButton)`null));" is 155.,22
+ipscan-3.7.3,net.azib.ipscan.gui,EditFavoritesDialog,populateShell,Magic Number,The method contains a magic number: 10,22
+ipscan-3.7.3,net.azib.ipscan.gui,EditFavoritesDialog,populateShell,Magic Number,The method contains a magic number: 10,22
+ipscan-3.7.3,net.azib.ipscan.gui,EditFavoritesDialog,populateShell,Magic Number,The method contains a magic number: 4,22
+ipscan-3.7.3,net.azib.ipscan.gui,EditFavoritesDialog,populateShell,Magic Number,The method contains a magic number: 330,22
+ipscan-3.7.3,net.azib.ipscan.gui,EditFavoritesDialog,populateShell,Magic Number,The method contains a magic number: 200,22
+ipscan-3.7.3,net.azib.ipscan.gui,EditFavoritesDialog,populateShell,Magic Number,The method contains a magic number: 10,22
+ipscan-3.7.3,net.azib.ipscan.gui,InputDialog,populateShell,Magic Number,The method contains a magic number: 10,35
+ipscan-3.7.3,net.azib.ipscan.gui,InputDialog,populateShell,Magic Number,The method contains a magic number: 10,35
+ipscan-3.7.3,net.azib.ipscan.gui,InputDialog,populateShell,Magic Number,The method contains a magic number: 4,35
+ipscan-3.7.3,net.azib.ipscan.gui,InputDialog,setText,Long Statement,The length of the statement "this.text.setLayoutData(LayoutHelper.formData(Math.max(this.text.getSize().x`310)`SWT.DEFAULT`new FormAttachment(0)`null`new FormAttachment(messageLabel)`null));" is 161.,73
+ipscan-3.7.3,net.azib.ipscan.gui,InputDialog,setText,Magic Number,The method contains a magic number: 310,73
+ipscan-3.7.3,net.azib.ipscan.gui,StatusBar,StatusBar,Long Parameter List,The method has 5 parameters. ,44
+ipscan-3.7.3,net.azib.ipscan.gui,StatusBar,StatusBar,Long Statement,The length of the statement "statusText.setLayoutData(formData(new FormAttachment(0)`new FormAttachment(35)`new FormAttachment(0)`new FormAttachment(100)));" is 127.,44
+ipscan-3.7.3,net.azib.ipscan.gui,StatusBar,StatusBar,Long Statement,The length of the statement "displayMethodText.setLayoutData(formData(displayMethodText.getSize().x`SWT.DEFAULT`new FormAttachment(statusText)`null`new FormAttachment(0)`new FormAttachment(100)));" is 167.,44
+ipscan-3.7.3,net.azib.ipscan.gui,StatusBar,StatusBar,Long Statement,The length of the statement "threadsText.setLayoutData(formData(threadsText.getSize().x`SWT.DEFAULT`new FormAttachment(displayMethodText)`null`new FormAttachment(0)`new FormAttachment(100)));" is 162.,44
+ipscan-3.7.3,net.azib.ipscan.gui,StatusBar,StatusBar,Long Statement,The length of the statement "progressBar.setLayoutData(formData(new FormAttachment(threadsText)`new FormAttachment(100`0)`new FormAttachment(0)`new FormAttachment(100)));" is 141.,44
+ipscan-3.7.3,net.azib.ipscan.gui,StatusBar,StatusBar,Magic Number,The method contains a magic number: 100,44
+ipscan-3.7.3,net.azib.ipscan.gui,StatusBar,StatusBar,Magic Number,The method contains a magic number: 100,44
+ipscan-3.7.3,net.azib.ipscan.gui,StatusBar,StatusBar,Magic Number,The method contains a magic number: 2,44
+ipscan-3.7.3,net.azib.ipscan.gui,StatusBar,StatusBar,Magic Number,The method contains a magic number: 35,44
+ipscan-3.7.3,net.azib.ipscan.gui,StatusBar,StatusBar,Magic Number,The method contains a magic number: 100,44
+ipscan-3.7.3,net.azib.ipscan.gui,StatusBar,StatusBar,Magic Number,The method contains a magic number: 100,44
+ipscan-3.7.3,net.azib.ipscan.gui,StatusBar,StatusBar,Magic Number,The method contains a magic number: 200,44
+ipscan-3.7.3,net.azib.ipscan.gui,StatusBar,StatusBar,Magic Number,The method contains a magic number: 100,44
+ipscan-3.7.3,net.azib.ipscan.gui,StatusBar,StatusBar,Magic Number,The method contains a magic number: 100,44
+ipscan-3.7.3,net.azib.ipscan.gui,StatusBar,StatusBar,Magic Number,The method contains a magic number: 100,44
+ipscan-3.7.3,net.azib.ipscan.gui,StatusBar,setRunningThreads,Long Statement,The length of the statement "threadsText.setText(Labels.getLabel("text.threads") + runningThreads + (maxThreadsReached ? Labels.getLabel("text.threads.max") : ""));" is 135.,111
+ipscan-3.7.3,net.azib.ipscan.gui,GettingStartedDialog,GettingStartedDialog,Empty catch clause,The method has an empty catch block.,22
+ipscan-3.7.3,net.azib.ipscan.gui,GettingStartedDialog,populateShell,Long Statement,The length of the statement "gettingStartedText.setBounds(leftBound`10`shell.getClientArea().width - leftBound - 10`closeButton.getLocation().y - 20);" is 121.,37
+ipscan-3.7.3,net.azib.ipscan.gui,GettingStartedDialog,populateShell,Magic Number,The method contains a magic number: 600,37
+ipscan-3.7.3,net.azib.ipscan.gui,GettingStartedDialog,populateShell,Magic Number,The method contains a magic number: 300,37
+ipscan-3.7.3,net.azib.ipscan.gui,GettingStartedDialog,populateShell,Magic Number,The method contains a magic number: 10,37
+ipscan-3.7.3,net.azib.ipscan.gui,GettingStartedDialog,populateShell,Magic Number,The method contains a magic number: 10,37
+ipscan-3.7.3,net.azib.ipscan.gui,GettingStartedDialog,populateShell,Magic Number,The method contains a magic number: 20,37
+ipscan-3.7.3,net.azib.ipscan.gui,GettingStartedDialog,populateShell,Magic Number,The method contains a magic number: 10,37
+ipscan-3.7.3,net.azib.ipscan.gui,GettingStartedDialog,populateShell,Magic Number,The method contains a magic number: 10,37
+ipscan-3.7.3,net.azib.ipscan.gui,GettingStartedDialog,populateShell,Magic Number,The method contains a magic number: 20,37
+ipscan-3.7.3,net.azib.ipscan.gui,EditOpenersDialog,populateShell,Long Method,The method has 101 lines of code.,38
+ipscan-3.7.3,net.azib.ipscan.gui,EditOpenersDialog,populateShell,Long Statement,The length of the statement "openersList.setLayoutData(formData(140`200`null`null`new FormAttachment(messageLabel`10)`new FormAttachment(editFieldsGroup`0`SWT.BOTTOM)));" is 140.,38
+ipscan-3.7.3,net.azib.ipscan.gui,EditOpenersDialog,populateShell,Long Statement,The length of the statement "addButton.setLayoutData(formData(new FormAttachment(openersList)`new FormAttachment(deleteButton`0`SWT.RIGHT)`new FormAttachment(downButton`16)`null));" is 151.,38
+ipscan-3.7.3,net.azib.ipscan.gui,EditOpenersDialog,populateShell,Long Statement,The length of the statement "editFieldsGroup.setLayoutData(formData(new FormAttachment(deleteButton`10)`null`new FormAttachment(messageLabel`10)`null));" is 123.,38
+ipscan-3.7.3,net.azib.ipscan.gui,EditOpenersDialog,populateShell,Magic Number,The method contains a magic number: 10,38
+ipscan-3.7.3,net.azib.ipscan.gui,EditOpenersDialog,populateShell,Magic Number,The method contains a magic number: 10,38
+ipscan-3.7.3,net.azib.ipscan.gui,EditOpenersDialog,populateShell,Magic Number,The method contains a magic number: 4,38
+ipscan-3.7.3,net.azib.ipscan.gui,EditOpenersDialog,populateShell,Magic Number,The method contains a magic number: 140,38
+ipscan-3.7.3,net.azib.ipscan.gui,EditOpenersDialog,populateShell,Magic Number,The method contains a magic number: 200,38
+ipscan-3.7.3,net.azib.ipscan.gui,EditOpenersDialog,populateShell,Magic Number,The method contains a magic number: 10,38
+ipscan-3.7.3,net.azib.ipscan.gui,EditOpenersDialog,populateShell,Magic Number,The method contains a magic number: 10,38
+ipscan-3.7.3,net.azib.ipscan.gui,EditOpenersDialog,populateShell,Magic Number,The method contains a magic number: 16,38
+ipscan-3.7.3,net.azib.ipscan.gui,EditOpenersDialog,populateShell,Magic Number,The method contains a magic number: 10,38
+ipscan-3.7.3,net.azib.ipscan.gui,EditOpenersDialog,populateShell,Magic Number,The method contains a magic number: 10,38
+ipscan-3.7.3,net.azib.ipscan.gui,EditOpenersDialog,populateShell,Magic Number,The method contains a magic number: 5,38
+ipscan-3.7.3,net.azib.ipscan.gui,EditOpenersDialog,populateShell,Magic Number,The method contains a magic number: 20,38
+ipscan-3.7.3,net.azib.ipscan.gui,EditOpenersDialog,populateShell,Magic Number,The method contains a magic number: 5,38
+ipscan-3.7.3,net.azib.ipscan.gui,EditOpenersDialog,populateShell,Magic Number,The method contains a magic number: 18,38
+ipscan-3.7.3,net.azib.ipscan.gui,EditOpenersDialog,populateShell,Magic Number,The method contains a magic number: 22,38
+ipscan-3.7.3,net.azib.ipscan.gui,EditOpenersDialog,populateShell,Magic Number,The method contains a magic number: 18,38
+ipscan-3.7.3,net.azib.ipscan.gui,EditOpenersDialog,populateShell,Magic Number,The method contains a magic number: 18,38
+ipscan-3.7.3,net.azib.ipscan.gui,EditOpenersDialog,populateShell,Magic Number,The method contains a magic number: 22,38
+ipscan-3.7.3,net.azib.ipscan.gui,EditOpenersDialog,populateShell,Magic Number,The method contains a magic number: 18,38
+ipscan-3.7.3,net.azib.ipscan.gui,EditOpenersDialog,populateShell,Magic Number,The method contains a magic number: 22,38
+ipscan-3.7.3,net.azib.ipscan.gui,EditOpenersDialog,saveCurrentFields,Long Statement,The length of the statement "openersConfig.add(openerName`new OpenersConfig.Opener(openerStringText.getText()`isInTerminalCheckbox.getSelection()`workingDir));" is 130.,169
+ipscan-3.7.3,net.azib.ipscan.gui,AbstractModalDialog,open,Magic Number,The method contains a magic number: 2,27
+ipscan-3.7.3,net.azib.ipscan.gui,AbstractModalDialog,open,Magic Number,The method contains a magic number: 2,27
+ipscan-3.7.3,net.azib.ipscan.gui,AbstractModalDialog,createShell,Empty catch clause,The method has an empty catch block.,59
+ipscan-3.7.3,net.azib.ipscan.gui,AbstractModalDialog,positionButtons,Magic Number,The method contains a magic number: 85,88
+ipscan-3.7.3,net.azib.ipscan.gui,AbstractModalDialog,positionButtons,Magic Number,The method contains a magic number: 3,88
+ipscan-3.7.3,net.azib.ipscan.gui,AbstractModalDialog,positionButtons,Magic Number,The method contains a magic number: 10,88
+ipscan-3.7.3,net.azib.ipscan.gui,AbstractModalDialog,positionButtons,Magic Number,The method contains a magic number: 10,88
+ipscan-3.7.3,net.azib.ipscan.gui,AbstractModalDialog,positionButtons,Magic Number,The method contains a magic number: 2,88
+ipscan-3.7.3,net.azib.ipscan.gui,AbstractModalDialog,positionButtons,Magic Number,The method contains a magic number: 10,88
+ipscan-3.7.3,net.azib.ipscan.gui,AbstractModalDialog,positionButtons,Magic Number,The method contains a magic number: 10,88
+ipscan-3.7.3,net.azib.ipscan.gui,AbstractModalDialog,positionButtons,Magic Number,The method contains a magic number: 10,88
+ipscan-3.7.3,net.azib.ipscan.gui,AbstractModalDialog,positionButtons,Magic Number,The method contains a magic number: 10,88
+ipscan-3.7.3,net.azib.ipscan.gui,AbstractModalDialog,positionButtonsInFormLayout,Long Statement,The length of the statement "cancelButton.setLayoutData(LayoutHelper.formData(Math.max(85`cancelButton.getSize().x)`SWT.DEFAULT`null`new FormAttachment(control`0`SWT.RIGHT)`new FormAttachment(control`8)`null));" is 181.,121
+ipscan-3.7.3,net.azib.ipscan.gui,AbstractModalDialog,positionButtonsInFormLayout,Long Statement,The length of the statement "okButton.setLayoutData(LayoutHelper.formData(Math.max(85`okSize.x)`SWT.DEFAULT`null`new FormAttachment(cancelButton`-okSize.y / 3)`new FormAttachment(control`8)`null));" is 168.,121
+ipscan-3.7.3,net.azib.ipscan.gui,AbstractModalDialog,positionButtonsInFormLayout,Magic Number,The method contains a magic number: 85,121
+ipscan-3.7.3,net.azib.ipscan.gui,AbstractModalDialog,positionButtonsInFormLayout,Magic Number,The method contains a magic number: 8,121
+ipscan-3.7.3,net.azib.ipscan.gui,AbstractModalDialog,positionButtonsInFormLayout,Magic Number,The method contains a magic number: 85,121
+ipscan-3.7.3,net.azib.ipscan.gui,AbstractModalDialog,positionButtonsInFormLayout,Magic Number,The method contains a magic number: 3,121
+ipscan-3.7.3,net.azib.ipscan.gui,AbstractModalDialog,positionButtonsInFormLayout,Magic Number,The method contains a magic number: 8,121
+ipscan-3.7.3,net.azib.ipscan.gui,DetailsWindow,populateShell,Long Statement,The length of the statement "commentsText.setLayoutData(LayoutHelper.formData(new FormAttachment(0)`new FormAttachment(100)`null`new FormAttachment(100)));" is 126.,46
+ipscan-3.7.3,net.azib.ipscan.gui,DetailsWindow,populateShell,Long Statement,The length of the statement "detailsText.setLayoutData(LayoutHelper.formData(new FormAttachment(0)`new FormAttachment(100)`new FormAttachment(0)`new FormAttachment(commentsText)));" is 151.,46
+ipscan-3.7.3,net.azib.ipscan.gui,DetailsWindow,populateShell,Magic Number,The method contains a magic number: 3,46
+ipscan-3.7.3,net.azib.ipscan.gui,DetailsWindow,populateShell,Magic Number,The method contains a magic number: 3,46
+ipscan-3.7.3,net.azib.ipscan.gui,DetailsWindow,populateShell,Magic Number,The method contains a magic number: 3,46
+ipscan-3.7.3,net.azib.ipscan.gui,DetailsWindow,populateShell,Magic Number,The method contains a magic number: 100,46
+ipscan-3.7.3,net.azib.ipscan.gui,DetailsWindow,populateShell,Magic Number,The method contains a magic number: 100,46
+ipscan-3.7.3,net.azib.ipscan.gui,DetailsWindow,populateShell,Magic Number,The method contains a magic number: 32,46
+ipscan-3.7.3,net.azib.ipscan.gui,DetailsWindow,populateShell,Magic Number,The method contains a magic number: 100,46
+ipscan-3.7.3,net.azib.ipscan.gui,MainWindow,MainWindow,Long Parameter List,The method has 15 parameters. ,57
+ipscan-3.7.3,net.azib.ipscan.gui,MainWindow,MainWindow,Long Statement,The length of the statement "initControlsArea(controlsArea`feederSelectionCombo`startStopButton`startStopScanningAction`preferencesListener`chooseFetchersListener);" is 135.,57
+ipscan-3.7.3,net.azib.ipscan.gui,MainWindow,initTableAndStatusBar,Long Statement,The length of the statement "resultTable.setLayoutData(formData(new FormAttachment(0)`new FormAttachment(100)`new FormAttachment(feederArea)`new FormAttachment(statusBar.getComposite())));" is 159.,121
+ipscan-3.7.3,net.azib.ipscan.gui,MainWindow,initTableAndStatusBar,Magic Number,The method contains a magic number: 100,121
+ipscan-3.7.3,net.azib.ipscan.gui,MainWindow,initControlsArea,Long Parameter List,The method has 6 parameters. ,136
+ipscan-3.7.3,net.azib.ipscan.gui,MainWindow,initControlsArea,Long Statement,The length of the statement "controlsArea.setLayoutData(formData(new FormAttachment(feederArea)`null`new FormAttachment(0)`new FormAttachment(feederArea`0`SWT.BOTTOM)));" is 140.,136
+ipscan-3.7.3,net.azib.ipscan.gui,MainWindow,relayoutControls,Magic Number,The method contains a magic number: 2,183
+ipscan-3.7.3,net.azib.ipscan.gui,MainWindow,relayoutControls,Magic Number,The method contains a magic number: 11,183
+ipscan-3.7.3,net.azib.ipscan.gui,MainWindow,relayoutControls,Magic Number,The method contains a magic number: 3,183
+ipscan-3.7.3,net.azib.ipscan.gui,MainWindow,relayoutControls,Magic Number,The method contains a magic number: 4,183
+ipscan-3.7.3,net.azib.ipscan.gui,Startup,onStart,Magic Number,The method contains a magic number: 30L,23
+ipscan-3.7.3,net.azib.ipscan.gui,Startup,onStart,Magic Number,The method contains a magic number: 24,23
+ipscan-3.7.3,net.azib.ipscan.gui,Startup,onStart,Magic Number,The method contains a magic number: 3600,23
+ipscan-3.7.3,net.azib.ipscan.gui,Startup,onStart,Magic Number,The method contains a magic number: 1000,23
+ipscan-3.7.3,net.azib.ipscan.gui,GUI,GUI,Long Statement,The length of the statement "System.err.println(e.toString() + " - probably you are running as `root` and/or don't have access to the X Server. Please run as normal user or with sudo.");" is 157.,26
+ipscan-3.7.3,net.azib.ipscan.gui,GUI,showMainWindow,Long Statement,The length of the statement "showMessage(e instanceof UserErrorException ? SWT.ICON_WARNING : SWT.ICON_ERROR`getLabel(e instanceof UserErrorException ? "text.userError" : "text.error")`localizedMessage);" is 174.,42
+ipscan-3.7.3,net.azib.ipscan.gui,StatisticsDialog,prepareText,Long Statement,The length of the statement "text.append(Labels.getLabel("text.scan.time.average")).append(timeToText((double)scanInfo.getScanTime() / scanInfo.getHostCount())).append(ln);" is 143.,49
+ipscan-3.7.3,net.azib.ipscan.gui,StatisticsDialog,prepareText,Long Statement,The length of the statement "text.append(ln).append(scanningResults.getFeederName()).append(ln).append(scanningResults.getFeederInfo()).append(ln).append(ln);" is 129.,49
+ipscan-3.7.3,net.azib.ipscan.gui,StatisticsDialog,prepareText,Long Statement,The length of the statement "if (scanInfo.getWithPortsCount() > 0) text.append(Labels.getLabel("text.scan.hosts.ports")).append(scanInfo.getWithPortsCount()).append(ln);" is 140.,49
+ipscan-3.7.3,net.azib.ipscan.gui,StatisticsDialog,timeToText,Magic Number,The method contains a magic number: 1000,71
+ipscan-3.7.3,net.azib.ipscan.gui,StatisticsDialog,timeToText,Magic Number,The method contains a magic number: 60,71
+ipscan-3.7.3,net.azib.ipscan.gui,StatisticsDialog,timeToText,Magic Number,The method contains a magic number: 60,71
+ipscan-3.7.3,net.azib.ipscan.gui,PreferencesDialog,populateShell,Magic Number,The method contains a magic number: 10,97
+ipscan-3.7.3,net.azib.ipscan.gui,PreferencesDialog,populateShell,Magic Number,The method contains a magic number: 10,97
+ipscan-3.7.3,net.azib.ipscan.gui,PreferencesDialog,populateShell,Magic Number,The method contains a magic number: 4,97
+ipscan-3.7.3,net.azib.ipscan.gui,PreferencesDialog,createScanningTab,Magic Number,The method contains a magic number: 2,154
+ipscan-3.7.3,net.azib.ipscan.gui,PreferencesDialog,createScanningTab,Magic Number,The method contains a magic number: 80,154
+ipscan-3.7.3,net.azib.ipscan.gui,PreferencesDialog,createScanningTab,Magic Number,The method contains a magic number: 2,154
+ipscan-3.7.3,net.azib.ipscan.gui,PreferencesDialog,createScanningTab,Magic Number,The method contains a magic number: 2,154
+ipscan-3.7.3,net.azib.ipscan.gui,PreferencesDialog,createDisplayTab,Magic Number,The method contains a magic number: 260,225
+ipscan-3.7.3,net.azib.ipscan.gui,PreferencesDialog,createDisplayTab,Magic Number,The method contains a magic number: 2,225
+ipscan-3.7.3,net.azib.ipscan.gui,PreferencesDialog,createDisplayTab,Magic Number,The method contains a magic number: 50,225
+ipscan-3.7.3,net.azib.ipscan.gui,PreferencesDialog,createDisplayTab,Magic Number,The method contains a magic number: 2,225
+ipscan-3.7.3,net.azib.ipscan.gui,PreferencesDialog,createPortsTab,Long Statement,The length of the statement "adaptTimeoutCheckbox.addListener(SWT.Selection`event -> minPortTimeoutText.setEnabled(adaptTimeoutCheckbox.getSelection()));" is 124.,297
+ipscan-3.7.3,net.azib.ipscan.gui,PreferencesDialog,createPortsTab,Magic Number,The method contains a magic number: 2,297
+ipscan-3.7.3,net.azib.ipscan.gui,PreferencesDialog,createPortsTab,Magic Number,The method contains a magic number: 50,297
+ipscan-3.7.3,net.azib.ipscan.gui,PreferencesDialog,createPortsTab,Magic Number,The method contains a magic number: 2,297
+ipscan-3.7.3,net.azib.ipscan.gui,PreferencesDialog,createPortsTab,Magic Number,The method contains a magic number: 2,297
+ipscan-3.7.3,net.azib.ipscan.gui,PreferencesDialog,createPortsTab,Magic Number,The method contains a magic number: 2,297
+ipscan-3.7.3,net.azib.ipscan.gui,PreferencesDialog,createPortsTab,Magic Number,The method contains a magic number: 60,297
+ipscan-3.7.3,net.azib.ipscan.gui,PreferencesDialog,createRowLayout,Magic Number,The method contains a magic number: 9,351
+ipscan-3.7.3,net.azib.ipscan.gui,PreferencesDialog,createRowLayout,Magic Number,The method contains a magic number: 9,351
+ipscan-3.7.3,net.azib.ipscan.gui,PreferencesDialog,createRowLayout,Magic Number,The method contains a magic number: 11,351
+ipscan-3.7.3,net.azib.ipscan.gui,InfoDialog,populateShell,Long Statement,The length of the statement "statsText.setLayoutData(formData(new FormAttachment(iconLabel)`new FormAttachment(100`-20)`new FormAttachment(titleLabel)`null));" is 129.,31
+ipscan-3.7.3,net.azib.ipscan.gui,InfoDialog,populateShell,Long Statement,The length of the statement "button.setLayoutData(formData(buttonSize.x`buttonSize.y`null`new FormAttachment(100)`new FormAttachment(statsText`0`SWT.BOTTOM)`null));" is 135.,31
+ipscan-3.7.3,net.azib.ipscan.gui,InfoDialog,populateShell,Magic Number,The method contains a magic number: 10,31
+ipscan-3.7.3,net.azib.ipscan.gui,InfoDialog,populateShell,Magic Number,The method contains a magic number: 10,31
+ipscan-3.7.3,net.azib.ipscan.gui,InfoDialog,populateShell,Magic Number,The method contains a magic number: 15,31
+ipscan-3.7.3,net.azib.ipscan.gui,InfoDialog,populateShell,Magic Number,The method contains a magic number: 3,31
+ipscan-3.7.3,net.azib.ipscan.gui,InfoDialog,populateShell,Magic Number,The method contains a magic number: 100,31
+ipscan-3.7.3,net.azib.ipscan.gui,InfoDialog,populateShell,Magic Number,The method contains a magic number: 20,31
+ipscan-3.7.3,net.azib.ipscan.gui,InfoDialog,populateShell,Magic Number,The method contains a magic number: 100,31
+ipscan-3.7.3,net.azib.ipscan.gui.feeders,FileFeederGUI,initialize,Magic Number,The method contains a magic number: 3,35
+ipscan-3.7.3,net.azib.ipscan.gui.feeders,FileFeederGUI,initialize,Magic Number,The method contains a magic number: 160,35
+ipscan-3.7.3,net.azib.ipscan.gui.feeders,RangeFeederGUI,initialize,Magic Number,The method contains a magic number: 5,45
+ipscan-3.7.3,net.azib.ipscan.gui.feeders,RangeFeederGUI,initialize,Magic Number,The method contains a magic number: 2,45
+ipscan-3.7.3,net.azib.ipscan.gui.feeders,RangeFeederGUI,initialize,Magic Number,The method contains a magic number: 2,45
+ipscan-3.7.3,net.azib.ipscan.gui.feeders,RangeFeederGUI,initialize,Magic Number,The method contains a magic number: 10,45
+ipscan-3.7.3,net.azib.ipscan.gui.feeders,AbstractFeederGUI,AbstractFeederGUI,Abstract Function Call From Constructor,The constructor AbstractFeederGUI calls a virtual method initialize.,32
+ipscan-3.7.3,net.azib.ipscan.gui.feeders,RandomFeederGUI,initialize,Long Statement,The length of the statement "FeederActions.HostnameButton hostnameSelectionListener=new FeederActions.HostnameButton(hostnameText`ipPrototypeText`ipMaskCombo);" is 130.,33
+ipscan-3.7.3,net.azib.ipscan.gui.feeders,RandomFeederGUI,initialize,Magic Number,The method contains a magic number: 5,33
+ipscan-3.7.3,net.azib.ipscan.gui.feeders,RandomFeederGUI,initialize,Magic Number,The method contains a magic number: 10,33
+ipscan-3.7.3,net.azib.ipscan.gui.feeders,RandomFeederGUI,initialize,Magic Number,The method contains a magic number: 3,33
+ipscan-3.7.3,net.azib.ipscan.gui.feeders,RandomFeederGUI,initialize,Magic Number,The method contains a magic number: 2,33
+ipscan-3.7.3,net.azib.ipscan.gui.feeders,RandomFeederGUI,initialize,Magic Number,The method contains a magic number: 100,33
+ipscan-3.7.3,net.azib.ipscan.gui.feeders,RandomFeederGUI,initialize,Magic Number,The method contains a magic number: 100000000,33
+ipscan-3.7.3,net.azib.ipscan.gui.feeders,RandomFeederGUI,unserialize,Magic Number,The method contains a magic number: 2,108
+ipscan-3.7.3,net.azib.ipscan.gui.actions,OpenerLauncherTest,testReplaceValues,Long Statement,The length of the statement "assertEquals(Labels.getLabel("exception.UserErrorException.opener.nullFetcherValue") + "fetcher.comment"`e.getMessage());" is 121.,29
+ipscan-3.7.3,net.azib.ipscan.gui.actions,OpenerLauncherTest,testReplaceValues,Long Statement,The length of the statement "assertEquals(Labels.getLabel("exception.UserErrorException.opener.nullFetcherValue") + "fetcher.comment"`e.getMessage());" is 121.,29
+ipscan-3.7.3,net.azib.ipscan.gui.actions,OpenerLauncherTest,testReplaceValues,Long Statement,The length of the statement "assertEquals("Hostname opening should fall back to the IP"`"127.0.0.1"`ol.prepareOpenerStringForItem("${" + HostnameFetcher.ID + "}"`0));" is 137.,29
+ipscan-3.7.3,net.azib.ipscan.gui.actions,OpenerLauncherTest,testReplaceValues,Long Statement,The length of the statement "assertEquals("Hostname opening should fall back to the IP"`"127.0.0.1"`ol.prepareOpenerStringForItem("${" + HostnameFetcher.ID + "}"`0));" is 137.,29
+ipscan-3.7.3,net.azib.ipscan.gui.actions,OpenerLauncherTest,testReplaceValues,Magic Number,The method contains a magic number: 5,29
+ipscan-3.7.3,net.azib.ipscan.gui.actions,OpenerLauncherTest,testReplaceValues,Magic Number,The method contains a magic number: 2,29
+ipscan-3.7.3,net.azib.ipscan.gui.actions,OpenerLauncherTest,testReplaceValues,Magic Number,The method contains a magic number: 3,29
+ipscan-3.7.3,net.azib.ipscan.gui.actions,OpenerLauncherTest,testReplaceValues,Magic Number,The method contains a magic number: 2,29
+ipscan-3.7.3,net.azib.ipscan.gui.actions,OpenerLauncherTest,testReplaceValues,Magic Number,The method contains a magic number: 10,29
+ipscan-3.7.3,net.azib.ipscan.gui.actions,OpenerLauncherTest,testReplaceValues,Magic Number,The method contains a magic number: 2,29
+ipscan-3.7.3,net.azib.ipscan.gui.actions,OpenerLauncherTest,testReplaceValues,Magic Number,The method contains a magic number: 3,29
+ipscan-3.7.3,net.azib.ipscan.gui.actions,OpenerLauncherTest,testCommandSplitting,Long Statement,The length of the statement "assertArrayEquals(new String[]{"echo"`"hello world"`"muha-ha"}`OpenerLauncher.splitCommand("echo 'hello world' muha-ha"));" is 122.,85
+ipscan-3.7.3,net.azib.ipscan.gui.actions,OpenerLauncherTest,testCommandSplitting,Long Statement,The length of the statement "assertArrayEquals(new String[]{"echo"`"hello world"`"muha-ha"}`OpenerLauncher.splitCommand("echo \"hello world\" muha-ha"));" is 124.,85
+ipscan-3.7.3,net.azib.ipscan.gui.actions,GotoActionsTest,nextHostFindsFirstHost,Magic Number,The method contains a magic number: 2,26
+ipscan-3.7.3,net.azib.ipscan.gui.actions,GotoActionsTest,nextHostStartsFromMiddleRewindsAndFindsFirstOne,Magic Number,The method contains a magic number: 2,36
+ipscan-3.7.3,net.azib.ipscan.gui.actions,GotoActionsTest,nextHostFindsSecondItem,Magic Number,The method contains a magic number: 2,48
+ipscan-3.7.3,net.azib.ipscan.gui.actions,GotoActionsTest,prevHostFindsLastHost,Magic Number,The method contains a magic number: 10,59
+ipscan-3.7.3,net.azib.ipscan.gui.actions,GotoActionsTest,prevHostFindsLastHost,Magic Number,The method contains a magic number: 9,59
+ipscan-3.7.3,net.azib.ipscan.gui.actions,GotoActionsTest,prevHostFindsLastHost,Magic Number,The method contains a magic number: 9,59
+ipscan-3.7.3,net.azib.ipscan.gui.actions,GotoActionsTest,prevHostRewindsAndFindsLastItem,Magic Number,The method contains a magic number: 25,70
+ipscan-3.7.3,net.azib.ipscan.gui.actions,GotoActionsTest,prevHostRewindsAndFindsLastItem,Magic Number,The method contains a magic number: 24,70
+ipscan-3.7.3,net.azib.ipscan.gui.actions,GotoActionsTest,prevHostRewindsAndFindsLastItem,Magic Number,The method contains a magic number: 23,70
+ipscan-3.7.3,net.azib.ipscan.gui.actions,GotoActionsTest,prevHostRewindsAndFindsLastItem,Magic Number,The method contains a magic number: 23,70
+ipscan-3.7.3,net.azib.ipscan.gui.actions,TerminalLauncher,launchInTerminal,Long Statement,The length of the statement "Runtime.getRuntime().exec(new String[]{"osascript"`"-e"`"tell application \"Terminal\" to do script \"" + execString + "\""}`null`workingDir);" is 142.,31
+ipscan-3.7.3,net.azib.ipscan.gui.actions,CommandsMenuActions,CommandsMenuActions,Long Parameter List,The method has 8 parameters. ,44
+ipscan-3.7.3,net.azib.ipscan.gui.actions,OpenerLauncher,launch,Complex Conditional,The conditional expression openerString.startsWith("http:") || openerString.startsWith("https:") || openerString.startsWith("ftp:")|| openerString.startsWith("mailto:")|| openerString.startsWith("\\\\") is complex.,38
+ipscan-3.7.3,net.azib.ipscan.gui.actions,OpenerLauncher,launch,Long Statement,The length of the statement "if (openerString.startsWith("http:") || openerString.startsWith("https:") || openerString.startsWith("ftp:")|| openerString.startsWith("mailto:")|| openerString.startsWith("\\\\")) {" is 182.,38
+ipscan-3.7.3,net.azib.ipscan.gui.actions,OpenerLauncher,splitCommand,Empty catch clause,The method has an empty catch block.,70
+ipscan-3.7.3,net.azib.ipscan.gui.actions,OpenerLauncher,prepareOpenerStringForItem,Magic Number,The method contains a magic number: 64,101
+ipscan-3.7.3,net.azib.ipscan.gui.actions,OpenerLauncher,getScannedValue,Complex Conditional,The conditional expression (value == null || value instanceof Empty) && fetcherId.equals(HostnameFetcher.ID) is complex.,127
+ipscan-3.7.3,net.azib.ipscan.gui.actions,StartStopScanningAction,StartStopScanningAction,Long Parameter List,The method has 8 parameters. ,81
+ipscan-3.7.3,net.azib.ipscan.gui.actions,StartStopScanningAction,transitionTo,Complex Method,Cyclomatic complexity of the method is 9,151
+ipscan-3.7.3,net.azib.ipscan.gui.actions,StartStopScanningAction,transitionTo,Long Statement,The length of the statement "scannerThread=scannerThreadFactory.createScannerThread(feederRegistry.createFeeder()`StartStopScanningAction.this`createResultsCallback(state));" is 144.,151
+ipscan-3.7.3,net.azib.ipscan.gui.actions,StartStopScanningAction,transitionTo,Long Statement,The length of the statement "scannerThread=scannerThreadFactory.createScannerThread(feederRegistry.createRescanFeeder(resultTable.getSelection())`StartStopScanningAction.this`createResultsCallback(state));" is 176.,151
+ipscan-3.7.3,org.savarese.vserv.tcpip,ICMPPacket,setType,Magic Number,The method contains a magic number: 0xff,157
+ipscan-3.7.3,org.savarese.vserv.tcpip,ICMPPacket,getType,Magic Number,The method contains a magic number: 0xff,167
+ipscan-3.7.3,org.savarese.vserv.tcpip,ICMPPacket,setCode,Magic Number,The method contains a magic number: 0xff,175
+ipscan-3.7.3,org.savarese.vserv.tcpip,ICMPPacket,getCode,Magic Number,The method contains a magic number: 0xff,185
+ipscan-3.7.3,org.savarese.vserv.tcpip,ICMPPacket,getICMPChecksum,Magic Number,The method contains a magic number: 0xff,193
+ipscan-3.7.3,org.savarese.vserv.tcpip,ICMPPacket,getICMPChecksum,Magic Number,The method contains a magic number: 8,193
+ipscan-3.7.3,org.savarese.vserv.tcpip,ICMPPacket,getICMPChecksum,Magic Number,The method contains a magic number: 0xff,193
+ipscan-3.7.3,org.savarese.vserv.tcpip,UDPPacket,setSourcePort,Magic Number,The method contains a magic number: 8,99
+ipscan-3.7.3,org.savarese.vserv.tcpip,UDPPacket,setSourcePort,Magic Number,The method contains a magic number: 0xff,99
+ipscan-3.7.3,org.savarese.vserv.tcpip,UDPPacket,setSourcePort,Magic Number,The method contains a magic number: 0xff,99
+ipscan-3.7.3,org.savarese.vserv.tcpip,UDPPacket,setDestinationPort,Magic Number,The method contains a magic number: 8,110
+ipscan-3.7.3,org.savarese.vserv.tcpip,UDPPacket,setDestinationPort,Magic Number,The method contains a magic number: 0xff,110
+ipscan-3.7.3,org.savarese.vserv.tcpip,UDPPacket,setDestinationPort,Magic Number,The method contains a magic number: 0xff,110
+ipscan-3.7.3,org.savarese.vserv.tcpip,UDPPacket,getSourcePort,Magic Number,The method contains a magic number: 0xff,121
+ipscan-3.7.3,org.savarese.vserv.tcpip,UDPPacket,getSourcePort,Magic Number,The method contains a magic number: 8,121
+ipscan-3.7.3,org.savarese.vserv.tcpip,UDPPacket,getSourcePort,Magic Number,The method contains a magic number: 0xff,121
+ipscan-3.7.3,org.savarese.vserv.tcpip,UDPPacket,getDestinationPort,Long Statement,The length of the statement "return (((_data_[__offset + OFFSET_DESTINATION_PORT] & 0xff) << 8) | (_data_[__offset + OFFSET_DESTINATION_PORT + 1] & 0xff));" is 126.,130
+ipscan-3.7.3,org.savarese.vserv.tcpip,UDPPacket,getDestinationPort,Magic Number,The method contains a magic number: 0xff,130
+ipscan-3.7.3,org.savarese.vserv.tcpip,UDPPacket,getDestinationPort,Magic Number,The method contains a magic number: 8,130
+ipscan-3.7.3,org.savarese.vserv.tcpip,UDPPacket,getDestinationPort,Magic Number,The method contains a magic number: 0xff,130
+ipscan-3.7.3,org.savarese.vserv.tcpip,UDPPacket,setUDPPacketLength,Magic Number,The method contains a magic number: 8,145
+ipscan-3.7.3,org.savarese.vserv.tcpip,UDPPacket,setUDPPacketLength,Magic Number,The method contains a magic number: 0xff,145
+ipscan-3.7.3,org.savarese.vserv.tcpip,UDPPacket,setUDPPacketLength,Magic Number,The method contains a magic number: 0xff,145
+ipscan-3.7.3,org.savarese.vserv.tcpip,UDPPacket,getUDPPacketLength,Long Statement,The length of the statement "return (((_data_[__offset + OFFSET_UDP_TOTAL_LENGTH] & 0xff) << 8) | (_data_[__offset + OFFSET_UDP_TOTAL_LENGTH + 1] & 0xff));" is 126.,156
+ipscan-3.7.3,org.savarese.vserv.tcpip,UDPPacket,getUDPPacketLength,Magic Number,The method contains a magic number: 0xff,156
+ipscan-3.7.3,org.savarese.vserv.tcpip,UDPPacket,getUDPPacketLength,Magic Number,The method contains a magic number: 8,156
+ipscan-3.7.3,org.savarese.vserv.tcpip,UDPPacket,getUDPPacketLength,Magic Number,The method contains a magic number: 0xff,156
+ipscan-3.7.3,org.savarese.vserv.tcpip,UDPPacket,getUDPChecksum,Magic Number,The method contains a magic number: 0xff,165
+ipscan-3.7.3,org.savarese.vserv.tcpip,UDPPacket,getUDPChecksum,Magic Number,The method contains a magic number: 8,165
+ipscan-3.7.3,org.savarese.vserv.tcpip,UDPPacket,getUDPChecksum,Magic Number,The method contains a magic number: 0xff,165
+ipscan-3.7.3,org.savarese.vserv.tcpip,UDPPacket,__getVirtualHeaderTotal,Magic Number,The method contains a magic number: 0xff,211
+ipscan-3.7.3,org.savarese.vserv.tcpip,UDPPacket,__getVirtualHeaderTotal,Magic Number,The method contains a magic number: 8,211
+ipscan-3.7.3,org.savarese.vserv.tcpip,UDPPacket,__getVirtualHeaderTotal,Magic Number,The method contains a magic number: 0xff,211
+ipscan-3.7.3,org.savarese.vserv.tcpip,UDPPacket,__getVirtualHeaderTotal,Magic Number,The method contains a magic number: 2,211
+ipscan-3.7.3,org.savarese.vserv.tcpip,UDPPacket,__getVirtualHeaderTotal,Magic Number,The method contains a magic number: 0xff,211
+ipscan-3.7.3,org.savarese.vserv.tcpip,UDPPacket,__getVirtualHeaderTotal,Magic Number,The method contains a magic number: 8,211
+ipscan-3.7.3,org.savarese.vserv.tcpip,UDPPacket,__getVirtualHeaderTotal,Magic Number,The method contains a magic number: 3,211
+ipscan-3.7.3,org.savarese.vserv.tcpip,UDPPacket,__getVirtualHeaderTotal,Magic Number,The method contains a magic number: 0xff,211
+ipscan-3.7.3,org.savarese.vserv.tcpip,UDPPacket,__getVirtualHeaderTotal,Magic Number,The method contains a magic number: 0xff,211
+ipscan-3.7.3,org.savarese.vserv.tcpip,UDPPacket,__getVirtualHeaderTotal,Magic Number,The method contains a magic number: 8,211
+ipscan-3.7.3,org.savarese.vserv.tcpip,UDPPacket,__getVirtualHeaderTotal,Magic Number,The method contains a magic number: 0xff,211
+ipscan-3.7.3,org.savarese.vserv.tcpip,UDPPacket,__getVirtualHeaderTotal,Magic Number,The method contains a magic number: 2,211
+ipscan-3.7.3,org.savarese.vserv.tcpip,UDPPacket,__getVirtualHeaderTotal,Magic Number,The method contains a magic number: 0xff,211
+ipscan-3.7.3,org.savarese.vserv.tcpip,UDPPacket,__getVirtualHeaderTotal,Magic Number,The method contains a magic number: 8,211
+ipscan-3.7.3,org.savarese.vserv.tcpip,UDPPacket,__getVirtualHeaderTotal,Magic Number,The method contains a magic number: 3,211
+ipscan-3.7.3,org.savarese.vserv.tcpip,UDPPacket,__getVirtualHeaderTotal,Magic Number,The method contains a magic number: 0xff,211
+ipscan-3.7.3,org.savarese.vserv.tcpip,ICMPEchoPacket,getICMPHeaderByteLength,Magic Number,The method contains a magic number: 8,58
+ipscan-3.7.3,org.savarese.vserv.tcpip,ICMPEchoPacket,setIdentifier,Magic Number,The method contains a magic number: 8,63
+ipscan-3.7.3,org.savarese.vserv.tcpip,ICMPEchoPacket,setIdentifier,Magic Number,The method contains a magic number: 0xff,63
+ipscan-3.7.3,org.savarese.vserv.tcpip,ICMPEchoPacket,setIdentifier,Magic Number,The method contains a magic number: 0xff,63
+ipscan-3.7.3,org.savarese.vserv.tcpip,ICMPEchoPacket,getIdentifier,Magic Number,The method contains a magic number: 0xff,74
+ipscan-3.7.3,org.savarese.vserv.tcpip,ICMPEchoPacket,getIdentifier,Magic Number,The method contains a magic number: 8,74
+ipscan-3.7.3,org.savarese.vserv.tcpip,ICMPEchoPacket,getIdentifier,Magic Number,The method contains a magic number: 0xff,74
+ipscan-3.7.3,org.savarese.vserv.tcpip,ICMPEchoPacket,setSequenceNumber,Magic Number,The method contains a magic number: 8,83
+ipscan-3.7.3,org.savarese.vserv.tcpip,ICMPEchoPacket,setSequenceNumber,Magic Number,The method contains a magic number: 0xff,83
+ipscan-3.7.3,org.savarese.vserv.tcpip,ICMPEchoPacket,setSequenceNumber,Magic Number,The method contains a magic number: 0xff,83
+ipscan-3.7.3,org.savarese.vserv.tcpip,ICMPEchoPacket,getSequenceNumber,Magic Number,The method contains a magic number: 0xff,94
+ipscan-3.7.3,org.savarese.vserv.tcpip,ICMPEchoPacket,getSequenceNumber,Magic Number,The method contains a magic number: 8,94
+ipscan-3.7.3,org.savarese.vserv.tcpip,ICMPEchoPacket,getSequenceNumber,Magic Number,The method contains a magic number: 0xff,94
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,setIPVersion,Magic Number,The method contains a magic number: 0x0f,144
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,setIPVersion,Magic Number,The method contains a magic number: 4,144
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,setIPVersion,Magic Number,The method contains a magic number: 0xf0,144
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,getIPVersion,Magic Number,The method contains a magic number: 0xf0,155
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,getIPVersion,Magic Number,The method contains a magic number: 4,155
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,setIPHeaderLength,Magic Number,The method contains a magic number: 0xf0,165
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,setIPHeaderLength,Magic Number,The method contains a magic number: 0x0f,165
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,getIPHeaderLength,Magic Number,The method contains a magic number: 0x0f,179
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,getIPHeaderByteLength,Magic Number,The method contains a magic number: 2,187
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,setTypeOfService,Magic Number,The method contains a magic number: 0xff,195
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,getTypeOfService,Magic Number,The method contains a magic number: 0xff,207
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,setIPPacketLength,Magic Number,The method contains a magic number: 8,217
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,setIPPacketLength,Magic Number,The method contains a magic number: 0xff,217
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,setIPPacketLength,Magic Number,The method contains a magic number: 0xff,217
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,getIPPacketLength,Magic Number,The method contains a magic number: 0xff,228
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,getIPPacketLength,Magic Number,The method contains a magic number: 8,228
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,getIPPacketLength,Magic Number,The method contains a magic number: 0xff,228
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,setIdentification,Magic Number,The method contains a magic number: 8,237
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,setIdentification,Magic Number,The method contains a magic number: 0xff,237
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,setIdentification,Magic Number,The method contains a magic number: 0xff,237
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,getIdentification,Magic Number,The method contains a magic number: 0xff,248
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,getIdentification,Magic Number,The method contains a magic number: 8,248
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,getIdentification,Magic Number,The method contains a magic number: 0xff,248
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,setIPFlags,Magic Number,The method contains a magic number: 0x1f,259
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,setIPFlags,Magic Number,The method contains a magic number: 5,259
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,setIPFlags,Magic Number,The method contains a magic number: 0xe0,259
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,getIPFlags,Magic Number,The method contains a magic number: 0xe0,272
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,getIPFlags,Magic Number,The method contains a magic number: 5,272
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,setFragmentOffset,Magic Number,The method contains a magic number: 0xe0,282
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,setFragmentOffset,Magic Number,The method contains a magic number: 8,282
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,setFragmentOffset,Magic Number,The method contains a magic number: 0x1f,282
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,setFragmentOffset,Magic Number,The method contains a magic number: 0xff,282
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,getFragmentOffset,Magic Number,The method contains a magic number: 0x1f,295
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,getFragmentOffset,Magic Number,The method contains a magic number: 8,295
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,getFragmentOffset,Magic Number,The method contains a magic number: 0xff,295
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,_computeChecksum_,Long Parameter List,The method has 5 parameters. ,342
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,_computeChecksum_,Magic Number,The method contains a magic number: 0xff,342
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,_computeChecksum_,Magic Number,The method contains a magic number: 8,342
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,_computeChecksum_,Magic Number,The method contains a magic number: 0xff,342
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,_computeChecksum_,Magic Number,The method contains a magic number: 2,342
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,_computeChecksum_,Magic Number,The method contains a magic number: 2,342
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,_computeChecksum_,Magic Number,The method contains a magic number: 0xff,342
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,_computeChecksum_,Magic Number,The method contains a magic number: 8,342
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,_computeChecksum_,Magic Number,The method contains a magic number: 0xff,342
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,_computeChecksum_,Magic Number,The method contains a magic number: 0xff,342
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,_computeChecksum_,Magic Number,The method contains a magic number: 8,342
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,_computeChecksum_,Magic Number,The method contains a magic number: 0xffff0000,342
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,_computeChecksum_,Magic Number,The method contains a magic number: 0xffff,342
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,_computeChecksum_,Magic Number,The method contains a magic number: 16,342
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,_computeChecksum_,Magic Number,The method contains a magic number: 0xffff,342
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,_computeChecksum_,Magic Number,The method contains a magic number: 8,342
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,_computeChecksum_,Magic Number,The method contains a magic number: 0xff,342
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,getIPChecksum,Magic Number,The method contains a magic number: 0xff,413
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,getIPChecksum,Magic Number,The method contains a magic number: 8,413
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,getIPChecksum,Magic Number,The method contains a magic number: 0xff,413
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,getSource,Long Statement,The length of the statement "System.arraycopy(_data_`OFFSET_SOURCE_ADDRESS`address`0`(address.length < LENGTH_SOURCE_ADDRESS ? address.length : LENGTH_SOURCE_ADDRESS));" is 139.,422
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,getDestination,Long Statement,The length of the statement "System.arraycopy(_data_`OFFSET_DESTINATION_ADDRESS`address`0`(address.length < LENGTH_DESTINATION_ADDRESS ? address.length : LENGTH_DESTINATION_ADDRESS));" is 154.,435
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,getSourceAsInetAddress,Magic Number,The method contains a magic number: 4,504
+ipscan-3.7.3,org.savarese.vserv.tcpip,IPPacket,getDestinationAsInetAddress,Magic Number,The method contains a magic number: 4,517
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,clearSACK,Magic Number,The method contains a magic number: 2,115
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,clearSACK,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@340b99ee,115
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,isSetOnly,Magic Number,The method contains a magic number: 0xff,197
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,addControlFlags,Magic Number,The method contains a magic number: 0xff,208
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,addControlFlags,Magic Number,The method contains a magic number: 0xff,208
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,removeControlFlags,Magic Number,The method contains a magic number: 0xff,221
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,removeControlFlags,Magic Number,The method contains a magic number: 0xff,221
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,setControlFlags,Magic Number,The method contains a magic number: 0xff,234
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,setSourcePort,Magic Number,The method contains a magic number: 8,250
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,setSourcePort,Magic Number,The method contains a magic number: 0xff,250
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,setSourcePort,Magic Number,The method contains a magic number: 0xff,250
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,setDestinationPort,Magic Number,The method contains a magic number: 8,261
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,setDestinationPort,Magic Number,The method contains a magic number: 0xff,261
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,setDestinationPort,Magic Number,The method contains a magic number: 0xff,261
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,getSourcePort,Magic Number,The method contains a magic number: 0xff,272
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,getSourcePort,Magic Number,The method contains a magic number: 8,272
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,getSourcePort,Magic Number,The method contains a magic number: 0xff,272
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,getDestinationPort,Long Statement,The length of the statement "return (((_data_[__offset + OFFSET_DESTINATION_PORT] & 0xff) << 8) | (_data_[__offset + OFFSET_DESTINATION_PORT + 1] & 0xff));" is 126.,281
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,getDestinationPort,Magic Number,The method contains a magic number: 0xff,281
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,getDestinationPort,Magic Number,The method contains a magic number: 8,281
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,getDestinationPort,Magic Number,The method contains a magic number: 0xff,281
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,setSequenceNumber,Magic Number,The method contains a magic number: 0xffffffff,290
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,getSequenceNumber,Long Statement,The length of the statement "return (((_data_[__offset + OFFSET_SEQUENCE] & 0xffL) << 24) | ((_data_[__offset + OFFSET_SEQUENCE + 1] & 0xffL) << 16) | ((_data_[__offset + OFFSET_SEQUENCE + 2] & 0xffL) << 8)| (_data_[__offset + OFFSET_SEQUENCE + 3] & 0xffL));" is 229.,301
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,getSequenceNumber,Magic Number,The method contains a magic number: 0xffL,301
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,getSequenceNumber,Magic Number,The method contains a magic number: 24,301
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,getSequenceNumber,Magic Number,The method contains a magic number: 0xffL,301
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,getSequenceNumber,Magic Number,The method contains a magic number: 16,301
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,getSequenceNumber,Magic Number,The method contains a magic number: 2,301
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,getSequenceNumber,Magic Number,The method contains a magic number: 0xffL,301
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,getSequenceNumber,Magic Number,The method contains a magic number: 8,301
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,getSequenceNumber,Magic Number,The method contains a magic number: 3,301
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,getSequenceNumber,Magic Number,The method contains a magic number: 0xffL,301
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,setAckNumber,Magic Number,The method contains a magic number: 0xffffffff,312
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,getAckNumber,Long Statement,The length of the statement "return (((_data_[__offset + OFFSET_ACK] & 0xffL) << 24) | ((_data_[__offset + OFFSET_ACK + 1] & 0xffL) << 16) | ((_data_[__offset + OFFSET_ACK + 2] & 0xffL) << 8)| (_data_[__offset + OFFSET_ACK + 3] & 0xffL));" is 209.,323
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,getAckNumber,Magic Number,The method contains a magic number: 0xffL,323
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,getAckNumber,Magic Number,The method contains a magic number: 24,323
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,getAckNumber,Magic Number,The method contains a magic number: 0xffL,323
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,getAckNumber,Magic Number,The method contains a magic number: 16,323
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,getAckNumber,Magic Number,The method contains a magic number: 2,323
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,getAckNumber,Magic Number,The method contains a magic number: 0xffL,323
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,getAckNumber,Magic Number,The method contains a magic number: 8,323
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,getAckNumber,Magic Number,The method contains a magic number: 3,323
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,getAckNumber,Magic Number,The method contains a magic number: 0xffL,323
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,setTCPHeaderLength,Magic Number,The method contains a magic number: 0x0f,340
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,setTCPHeaderLength,Magic Number,The method contains a magic number: 4,340
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,setTCPHeaderLength,Magic Number,The method contains a magic number: 0xf0,340
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,getTCPHeaderLength,Magic Number,The method contains a magic number: 0xf0,351
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,getTCPHeaderLength,Magic Number,The method contains a magic number: 4,351
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,getTCPHeaderByteLength,Magic Number,The method contains a magic number: 2,359
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,setWindowSize,Magic Number,The method contains a magic number: 8,367
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,setWindowSize,Magic Number,The method contains a magic number: 0xff,367
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,setWindowSize,Magic Number,The method contains a magic number: 0xff,367
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,getWindowSize,Magic Number,The method contains a magic number: 0xff,378
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,getWindowSize,Magic Number,The method contains a magic number: 8,378
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,getWindowSize,Magic Number,The method contains a magic number: 0xff,378
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,setUrgentPointer,Magic Number,The method contains a magic number: 8,387
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,setUrgentPointer,Magic Number,The method contains a magic number: 0xff,387
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,setUrgentPointer,Magic Number,The method contains a magic number: 0xff,387
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,getUrgentPointer,Magic Number,The method contains a magic number: 0xff,398
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,getUrgentPointer,Magic Number,The method contains a magic number: 8,398
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,getUrgentPointer,Magic Number,The method contains a magic number: 0xff,398
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,getTCPChecksum,Magic Number,The method contains a magic number: 0xff,407
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,getTCPChecksum,Magic Number,The method contains a magic number: 8,407
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,getTCPChecksum,Magic Number,The method contains a magic number: 0xff,407
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,__getVirtualHeaderTotal,Magic Number,The method contains a magic number: 0xff,451
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,__getVirtualHeaderTotal,Magic Number,The method contains a magic number: 8,451
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,__getVirtualHeaderTotal,Magic Number,The method contains a magic number: 0xff,451
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,__getVirtualHeaderTotal,Magic Number,The method contains a magic number: 2,451
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,__getVirtualHeaderTotal,Magic Number,The method contains a magic number: 0xff,451
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,__getVirtualHeaderTotal,Magic Number,The method contains a magic number: 8,451
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,__getVirtualHeaderTotal,Magic Number,The method contains a magic number: 3,451
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,__getVirtualHeaderTotal,Magic Number,The method contains a magic number: 0xff,451
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,__getVirtualHeaderTotal,Magic Number,The method contains a magic number: 0xff,451
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,__getVirtualHeaderTotal,Magic Number,The method contains a magic number: 8,451
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,__getVirtualHeaderTotal,Magic Number,The method contains a magic number: 0xff,451
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,__getVirtualHeaderTotal,Magic Number,The method contains a magic number: 2,451
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,__getVirtualHeaderTotal,Magic Number,The method contains a magic number: 0xff,451
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,__getVirtualHeaderTotal,Magic Number,The method contains a magic number: 8,451
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,__getVirtualHeaderTotal,Magic Number,The method contains a magic number: 3,451
+ipscan-3.7.3,org.savarese.vserv.tcpip,TCPPacket,__getVirtualHeaderTotal,Magic Number,The method contains a magic number: 0xff,451
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,octetsToInt,Long Statement,The length of the statement "return (((octets[offset] & 0xff) << 24) | ((octets[offset + 1] & 0xff) << 16) | ((octets[offset + 2] & 0xff) << 8)| (octets[offset + 3] & 0xff));" is 145.,33
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,octetsToInt,Magic Number,The method contains a magic number: 0xff,33
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,octetsToInt,Magic Number,The method contains a magic number: 24,33
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,octetsToInt,Magic Number,The method contains a magic number: 0xff,33
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,octetsToInt,Magic Number,The method contains a magic number: 16,33
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,octetsToInt,Magic Number,The method contains a magic number: 2,33
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,octetsToInt,Magic Number,The method contains a magic number: 0xff,33
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,octetsToInt,Magic Number,The method contains a magic number: 8,33
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,octetsToInt,Magic Number,The method contains a magic number: 3,33
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,octetsToInt,Magic Number,The method contains a magic number: 0xff,33
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,octetsToLong,Long Statement,The length of the statement "return (((octets[offset] & 0xffffL) << 56) | ((octets[offset + 1] & 0xffL) << 48) | ((octets[offset + 2] & 0xffL) << 40)| ((octets[offset + 3] & 0xffL) << 32)| ((octets[offset + 4] & 0xffL) << 24)| ((octets[offset + 5] & 0xffL) << 16)| ((octets[offset + 6] & 0xffL) << 8)| (octets[offset + 7] & 0xffL));" is 303.,56
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,octetsToLong,Magic Number,The method contains a magic number: 0xffffL,56
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,octetsToLong,Magic Number,The method contains a magic number: 56,56
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,octetsToLong,Magic Number,The method contains a magic number: 0xffL,56
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,octetsToLong,Magic Number,The method contains a magic number: 48,56
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,octetsToLong,Magic Number,The method contains a magic number: 2,56
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,octetsToLong,Magic Number,The method contains a magic number: 0xffL,56
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,octetsToLong,Magic Number,The method contains a magic number: 40,56
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,octetsToLong,Magic Number,The method contains a magic number: 3,56
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,octetsToLong,Magic Number,The method contains a magic number: 0xffL,56
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,octetsToLong,Magic Number,The method contains a magic number: 32,56
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,octetsToLong,Magic Number,The method contains a magic number: 4,56
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,octetsToLong,Magic Number,The method contains a magic number: 0xffL,56
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,octetsToLong,Magic Number,The method contains a magic number: 24,56
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,octetsToLong,Magic Number,The method contains a magic number: 5,56
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,octetsToLong,Magic Number,The method contains a magic number: 0xffL,56
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,octetsToLong,Magic Number,The method contains a magic number: 16,56
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,octetsToLong,Magic Number,The method contains a magic number: 6,56
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,octetsToLong,Magic Number,The method contains a magic number: 0xffL,56
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,octetsToLong,Magic Number,The method contains a magic number: 8,56
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,octetsToLong,Magic Number,The method contains a magic number: 7,56
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,octetsToLong,Magic Number,The method contains a magic number: 0xffL,56
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,octetsToString,Magic Number,The method contains a magic number: 0xff,83
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,octetsToString,Magic Number,The method contains a magic number: 0xff,83
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,octetsToString,Magic Number,The method contains a magic number: 0xff,83
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,octetsToString,Magic Number,The method contains a magic number: 0xff,83
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,intToString,Magic Number,The method contains a magic number: 0xff,111
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,intToString,Magic Number,The method contains a magic number: 24,111
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,intToString,Magic Number,The method contains a magic number: 0xff,111
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,intToString,Magic Number,The method contains a magic number: 16,111
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,intToString,Magic Number,The method contains a magic number: 0xff,111
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,intToString,Magic Number,The method contains a magic number: 8,111
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,intToString,Magic Number,The method contains a magic number: 0xff,111
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,intToOctets,Magic Number,The method contains a magic number: 0xff,129
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,intToOctets,Magic Number,The method contains a magic number: 24,129
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,intToOctets,Magic Number,The method contains a magic number: 0xff,129
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,intToOctets,Magic Number,The method contains a magic number: 16,129
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,intToOctets,Magic Number,The method contains a magic number: 2,129
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,intToOctets,Magic Number,The method contains a magic number: 0xff,129
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,intToOctets,Magic Number,The method contains a magic number: 8,129
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,intToOctets,Magic Number,The method contains a magic number: 3,129
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,intToOctets,Magic Number,The method contains a magic number: 0xff,129
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,longToOctets,Magic Number,The method contains a magic number: 0xffL,155
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,longToOctets,Magic Number,The method contains a magic number: 56,155
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,longToOctets,Magic Number,The method contains a magic number: 0xffL,155
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,longToOctets,Magic Number,The method contains a magic number: 48,155
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,longToOctets,Magic Number,The method contains a magic number: 2,155
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,longToOctets,Magic Number,The method contains a magic number: 0xffL,155
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,longToOctets,Magic Number,The method contains a magic number: 40,155
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,longToOctets,Magic Number,The method contains a magic number: 3,155
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,longToOctets,Magic Number,The method contains a magic number: 0xffL,155
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,longToOctets,Magic Number,The method contains a magic number: 32,155
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,longToOctets,Magic Number,The method contains a magic number: 4,155
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,longToOctets,Magic Number,The method contains a magic number: 0xffL,155
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,longToOctets,Magic Number,The method contains a magic number: 24,155
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,longToOctets,Magic Number,The method contains a magic number: 5,155
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,longToOctets,Magic Number,The method contains a magic number: 0xffL,155
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,longToOctets,Magic Number,The method contains a magic number: 16,155
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,longToOctets,Magic Number,The method contains a magic number: 6,155
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,longToOctets,Magic Number,The method contains a magic number: 0xffL,155
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,longToOctets,Magic Number,The method contains a magic number: 8,155
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,longToOctets,Magic Number,The method contains a magic number: 7,155
+ipscan-3.7.3,org.savarese.vserv.tcpip,OctetConverter,longToOctets,Magic Number,The method contains a magic number: 0xffL,155
+ipscan-3.7.3,org.savarese.rocksaw.net,RawSocket,__recvfrom,Long Parameter List,The method has 6 parameters. ,499
+ipscan-3.7.3,org.savarese.rocksaw.net,RawSocket,read,Complex Conditional,The conditional expression offset < 0 || length < 0 || length > data.length - offset is complex.,502
+ipscan-3.7.3,org.savarese.rocksaw.net,RawSocket,read,Long Statement,The length of the statement "if (offset < 0 || length < 0 || length > data.length - offset) throw new IllegalArgumentException("Invalid offset or length.");" is 127.,502
+ipscan-3.7.3,org.savarese.rocksaw.net,RawSocket,read,Long Statement,The length of the statement "if (getUseSelectTimeout() && !__rtimeout.isZero()) result=__select(__socket`true`__rtimeout.seconds`__rtimeout.microseconds);" is 125.,502
+ipscan-3.7.3,org.savarese.rocksaw.net,RawSocket,__sendto,Long Parameter List,The method has 6 parameters. ,559
+ipscan-3.7.3,org.savarese.rocksaw.net,RawSocket,write,Complex Conditional,The conditional expression offset < 0 || length < 0 || length > data.length - offset is complex.,564
+ipscan-3.7.3,org.savarese.rocksaw.net,RawSocket,write,Long Statement,The length of the statement "if (offset < 0 || length < 0 || length > data.length - offset) throw new IllegalArgumentException("Invalid offset or length.");" is 127.,564
+ipscan-3.7.3,org.savarese.rocksaw.net,RawSocket,write,Long Statement,The length of the statement "if (getUseSelectTimeout() && !__stimeout.isZero()) result=__select(__socket`false`__stimeout.seconds`__stimeout.microseconds);" is 126.,564
+ipscan-3.7.3,net.azib.ipscan,Main,main,Long Statement,The length of the statement "swingErrorDialog("Failed to load native code: " + e.getMessage() + "\n\nProbably you are using a binary built for wrong OS or CPU. If 64-bit binary doesn't work for you` try 32-bit version` or vice versa.");" is 207.,34
+ipscan-3.7.3,net.azib.ipscan,Main,main,Long Statement,The length of the statement "swingErrorDialog("SWT GUI toolkit not available: " + e.toString() + "\n\nIf you are using platform-neutral build` make sure you provide SWT built for your platform manually (e.g. install libswt packages)` or please use a platform specific binary.");" is 249.,34
+ipscan-3.7.3,net.azib.ipscan,Main,handleFatalError,Long Statement,The length of the statement "if (gui != null) gui.showMessage(0`"Fatal Error"`e + "\nPlease submit a bug report mentioning your OS and what exactly were you doing.");" is 137.,80
+ipscan-3.7.3,net.azib.ipscan,Main,swingErrorDialog,Long Statement,The length of the statement "Class.forName("javax.swing.JOptionPane").getMethod("showMessageDialog"`Class.forName("java.awt.Component")`Object.class).invoke(null`null`message);" is 147.,89
+ipscan-3.7.3,net.azib.ipscan.gui.util,LayoutHelper,formData,Long Parameter List,The method has 6 parameters. ,33
+ipscan-3.7.3,net.azib.ipscan.gui.util,LayoutHelper,iconFont,Magic Number,The method contains a magic number: 4,46
+ipscan-3.7.3,net.azib.ipscan.gui.util,LayoutHelper,iconFont,Magic Number,The method contains a magic number: 3,46
+ipscan-3.7.3,net.azib.ipscan.gui.util,LayoutHelper,icon,Magic Number,The method contains a magic number: 200,52
+ipscan-3.7.3,net.azib.ipscan.gui.util,LayoutHelper,icon,Magic Number,The method contains a magic number: 100,52
+ipscan-3.7.3,net.azib.ipscan.gui.util,LayoutHelper,icon,Magic Number,The method contains a magic number: 200,52
+ipscan-3.7.3,net.azib.ipscan.gui.util,LayoutHelper,getImageData,Magic Number,The method contains a magic number: 200,55
+ipscan-3.7.3,net.azib.ipscan.gui.util,LayoutHelper,getImageData,Magic Number,The method contains a magic number: 100,55
+ipscan-3.7.3,net.azib.ipscan.gui.util,LayoutHelper,getImageData,Magic Number,The method contains a magic number: 200,55
+ipscan-3.7.3,net.azib.ipscan.gui.menu,ColumnsMenu,ColumnsMenu,Long Parameter List,The method has 5 parameters. ,13
+ipscan-3.7.3,net.azib.ipscan.gui.menu,ExtendableMenu,initMenuItem,Long Parameter List,The method has 5 parameters. ,16
+ipscan-3.7.3,net.azib.ipscan.gui.menu,ExtendableMenu,initMenuItem,Long Parameter List,The method has 6 parameters. ,20
+ipscan-3.7.3,net.azib.ipscan.gui.menu,ScanMenu,ScanMenu,Long Parameter List,The method has 5 parameters. ,10
+ipscan-3.7.3,net.azib.ipscan.gui.menu,GotoMenu,GotoMenu,Long Parameter List,The method has 8 parameters. ,8
+ipscan-3.7.3,net.azib.ipscan.gui.menu,HelpMenu,HelpMenu,Long Parameter List,The method has 9 parameters. ,9
+ipscan-3.7.3,net.azib.ipscan.gui.menu,HelpMenu,HelpMenu,Long Statement,The length of the statement "initMenuItem(this`"menu.help.gettingStarted"`!Platform.MAC_OS ? "F1" : null`Platform.MAC_OS ? SWT.HELP : SWT.F1`gettingStarted);" is 128.,9
+ipscan-3.7.3,net.azib.ipscan.gui.menu,ToolsMenu,ToolsMenu,Long Parameter List,The method has 9 parameters. ,12
+ipscan-3.7.3,net.azib.ipscan.gui.menu,ToolsMenu,ToolsMenu,Long Statement,The length of the statement "initMenuItem(this`"menu.tools.preferences"`"Ctrl+Shift+P"`SWT.MOD1 | (Platform.MAC_OS ? '`' : SWT.MOD2 | 'P')`preferences`true);" is 128.,12
+ipscan-3.7.3,net.azib.ipscan.gui.menu,ToolsMenu,ToolsMenu,Long Statement,The length of the statement "initMenuItem(this`"menu.tools.fetchers"`"Ctrl+Shift+O"`SWT.MOD1 | SWT.MOD2 | (Platform.MAC_OS ? '`' : 'O')`chooseFetchers`true);" is 128.,12

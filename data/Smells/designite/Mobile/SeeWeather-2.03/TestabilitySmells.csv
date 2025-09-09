@@ -1,0 +1,28 @@
+Project Name,Package Name,Type Name,Testability Smell,Cause of the Smell
+SeeWeather-2.03,com.xiecc.seeWeather.component,RetrofitSingleton,Global State,The tool detected the smell in this class because the class declares global variables. The detected global variables are: context (30)
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui,MainActivity,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 8
+SeeWeather-2.03,com.xiecc.seeWeather.modules.domain,Weather.AqiEntity,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+SeeWeather-2.03,com.xiecc.seeWeather.modules.domain,Weather.CityEntity,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+SeeWeather-2.03,com.xiecc.seeWeather.modules.domain,Weather.BasicEntity,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+SeeWeather-2.03,com.xiecc.seeWeather.modules.domain,Weather.UpdateEntity,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+SeeWeather-2.03,com.xiecc.seeWeather.modules.domain,Weather.NowEntity,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+SeeWeather-2.03,com.xiecc.seeWeather.modules.domain,Weather.CondEntity,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+SeeWeather-2.03,com.xiecc.seeWeather.modules.domain,Weather.WindEntity,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+SeeWeather-2.03,com.xiecc.seeWeather.modules.domain,Weather.SuggestionEntity,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+SeeWeather-2.03,com.xiecc.seeWeather.modules.domain,Weather.ComfEntity,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+SeeWeather-2.03,com.xiecc.seeWeather.modules.domain,Weather.CwEntity,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+SeeWeather-2.03,com.xiecc.seeWeather.modules.domain,Weather.DrsgEntity,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+SeeWeather-2.03,com.xiecc.seeWeather.modules.domain,Weather.FluEntity,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+SeeWeather-2.03,com.xiecc.seeWeather.modules.domain,Weather.SportEntity,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+SeeWeather-2.03,com.xiecc.seeWeather.modules.domain,Weather.TravEntity,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+SeeWeather-2.03,com.xiecc.seeWeather.modules.domain,Weather.UvEntity,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+SeeWeather-2.03,com.xiecc.seeWeather.modules.domain,Weather.DailyForecastEntity,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+SeeWeather-2.03,com.xiecc.seeWeather.modules.domain,Weather.AstroEntity,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+SeeWeather-2.03,com.xiecc.seeWeather.modules.domain,Weather.CondEntity,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+SeeWeather-2.03,com.xiecc.seeWeather.modules.domain,Weather.TmpEntity,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+SeeWeather-2.03,com.xiecc.seeWeather.modules.domain,Weather.WindEntity,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+SeeWeather-2.03,com.xiecc.seeWeather.modules.domain,Weather.HourlyForecastEntity,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+SeeWeather-2.03,com.xiecc.seeWeather.modules.domain,Weather.WindEntity,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+SeeWeather-2.03,com.xiecc.seeWeather.modules.domain,Setting,Global State,The tool detected the smell in this class because the class declares global variables. The detected global variables are: ONE_HOUR (23)
+SeeWeather-2.03,com.xiecc.seeWeather.modules.domain,VersionAPI.BinaryEntity,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+SeeWeather-2.03,com.xiecc.seeWeather.base,BaseApplication,Global State,The tool detected the smell in this class because the class declares global variables. The detected global variables are: cacheDir (15); mAppContext (16)

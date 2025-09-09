@@ -1,0 +1,8 @@
+Project Name,Package Name,Type Name,Method Name,Test Smell,Cause of the Smell
+argouml-0.35.1,org.argouml.i18n,CheckKey,CheckKey,Constructor initialization,The tool detected the smell in this class because the class uses its constructor to initialize fields rather than test setup method.
+argouml-0.35.1,org.argouml.i18n,CheckKey,localizedKeyIsInOrigin,Assertion roulette,The tool detected the smell in this test method because the test uses multiple assertion in the test. Total number of assertions in the test are: 2
+argouml-0.35.1,org.argouml.i18n,CheckKey,localizedKeyIsInOrigin,Exceptional handling,The tool detected the smell in this test method because the test uses try-catch block to assert/fail a check.
+argouml-0.35.1,org.argouml.i18n,CheckKey,checkMessageFormatValues,Assertion roulette,The tool detected the smell in this test method because the test uses multiple assertion in the test. Total number of assertions in the test are: 2
+argouml-0.35.1,org.argouml.i18n,CheckKey,checkMessageFormatValues,Conditional test logic,The tool detected the smell in this test method because the test wraps the assert statements within control flow statements.
+argouml-0.35.1,org.argouml.i18n,CheckKey,checkMessageFormatting,Assertion roulette,The tool detected the smell in this test method because the test uses multiple assertion in the test. Total number of assertions in the test are: 2
+argouml-0.35.1,org.argouml.i18n,CheckKey,checkMessageFormatting,Conditional test logic,The tool detected the smell in this test method because the test wraps the assert statements within control flow statements.

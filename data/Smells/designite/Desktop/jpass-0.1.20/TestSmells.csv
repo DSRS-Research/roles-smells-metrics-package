@@ -1,0 +1,6 @@
+Project Name,Package Name,Type Name,Method Name,Test Smell,Cause of the Smell
+jpass-0.1.20,jpass.crypt.io,StreamTest,shouldDecryptAnEncryptedRandomMessage,Assertion roulette,The tool detected the smell in this test method because the test uses multiple assertion in the test. Total number of assertions in the test are: 2
+jpass-0.1.20,jpass.crypt,Aes256Test,shouldEntryptAndDecryptATestMessage,Assertion roulette,The tool detected the smell in this test method because the test uses multiple assertion in the test. Total number of assertions in the test are: 2
+jpass-0.1.20,jpass.crypt,CbcTest,shouldEncryptAndDecryptABigMessage,Assertion roulette,The tool detected the smell in this test method because the test uses multiple assertion in the test. Total number of assertions in the test are: 2
+jpass-0.1.20,jpass.crypt,CbcTest,shouldEncryptAndDecryptRandomData,Missing assertion,The tool detected the smell in this test method because the test doesn't have any assertion.
+jpass-0.1.20,jpass.crypt,CbcTest,shouldWorkWithReferenceData,Assertion roulette,The tool detected the smell in this test method because the test uses multiple assertion in the test. Total number of assertions in the test are: 3

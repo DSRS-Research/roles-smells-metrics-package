@@ -1,0 +1,69 @@
+Project Name,Package Name,Type Name,Testability Smell,Cause of the Smell
+ipscan-3.7.3,net.azib.ipscan.core,PluginLoaderTest.DummyFetcher,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultListTest,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 8
+ipscan-3.7.3,net.azib.ipscan.core,ScannerDispatcherThread,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 11
+ipscan-3.7.3,net.azib.ipscan.core,ScannerDispatcherThreadFactory,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 8
+ipscan-3.7.3,net.azib.ipscan.core,ScanningResultList.ScanInfo,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.core.net,PingerRegistryTest.PingerWithIncorrectConstructor,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.core.net,PingerRegistry,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 9
+ipscan-3.7.3,net.azib.ipscan.fetchers,FetcherRegistryTest.EditableFetcherPrefs,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.fetchers,FetcherRegistry,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 9
+ipscan-3.7.3,net.azib.ipscan.config,CommandLineProcessorTest.MockFeederRegistry,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.config,CommandLineProcessor,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 9
+ipscan-3.7.3,net.azib.ipscan.config,ComponentRegistry,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 9
+ipscan-3.7.3,net.azib.ipscan.config,OpenersConfig.Opener,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.config,Labels,Law of Demeter violation,The tool detected the smell in this method (getLabel) because the method voilates the law of Demeter. The long chain of method invocations is : net.azib.ipscan.config.Labels.get; net.azib.ipscan.config.Labels.getInstance
+ipscan-3.7.3,net.azib.ipscan.gui,MainMenu.MenuEnablerDisabler,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui,DetailsWindow,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 8
+ipscan-3.7.3,net.azib.ipscan.gui,MainWindow,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 16
+ipscan-3.7.3,net.azib.ipscan.gui.actions,CommandsMenuActions,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 8
+ipscan-3.7.3,net.azib.ipscan.gui.actions,CommandsMenuActions.Details,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,CommandsMenuActions.Delete,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,CommandsMenuActions.Rescan,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,CommandsMenuActions.CopyIP,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,CommandsMenuActions.CopyIPDetails,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,CommandsMenuActions.ShowOpenersMenu,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,CommandsMenuActions.EditOpeners,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,CommandsMenuActions.SelectOpener,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,ToolsActions.Preferences,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,ToolsActions.ChooseFetchers,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,ToolsActions.ScanStatistics,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,ToolsActions.TableSelection,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,ToolsActions.SelectAlive,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,ToolsActions.SelectDead,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,ToolsActions.SelectWithPorts,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,ToolsActions.SelectWithoutPorts,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,ToolsActions.SelectAll,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,ToolsActions.SelectInvert,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,FeederActions.HostnameButton,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,HelpMenuActions.GettingStarted,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,HelpMenuActions.CommandLineUsage,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,HelpMenuActions.About,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,HelpMenuActions.Website,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,HelpMenuActions.FAQ,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,HelpMenuActions.Issues,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,HelpMenuActions.Plugins,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,HelpMenuActions.CheckVersion,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,ColumnsActions.ColumnResize,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,ColumnsActions.ColumnClick,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,ColumnsActions.SortBy,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,ColumnsActions.FetcherPreferences,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,ColumnsActions.AboutFetcher,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,GotoMenuActions.NextAliveHost,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,GotoMenuActions.NextDeadHost,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,GotoMenuActions.NextHostWithInfo,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,GotoMenuActions.PrevAliveHost,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,GotoMenuActions.PrevDeadHost,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,GotoMenuActions.PrevHostWithInfo,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,GotoMenuActions.Find,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,ScanMenuActions,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 9
+ipscan-3.7.3,net.azib.ipscan.gui.actions,ScanMenuActions.LoadFromFile,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,ScanMenuActions.SaveAll,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,ScanMenuActions.SaveSelection,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,ScanMenuActions.Quit,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,ScanMenuActions.NewWindow,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,StartStopScanningAction,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 9
+ipscan-3.7.3,net.azib.ipscan.gui.actions,FavoritesMenuActions.Add,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,FavoritesMenuActions.Select,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,FavoritesMenuActions.Edit,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+ipscan-3.7.3,net.azib.ipscan.gui.actions,FavoritesMenuActions.ShowMenu,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.

@@ -1,0 +1,157 @@
+Project Name,Package Name,Type Name,Testability Smell,Cause of the Smell
+k-9-5.600,com.fsck.k9.mail,K9MailLib,Global State,The tool detected the smell in this class because the class declares global variables. The detected global variables are: DEBUG_PROTOCOL_SMTP (13); DEBUG_PROTOCOL_IMAP (19); DEBUG_PROTOCOL_POP3 (25); DEBUG_PROTOCOL_WEBDAV (31)
+k-9-5.600,com.fsck.k9.mail.transport.smtp,SmtpTransportTest,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 15
+k-9-5.600,com.fsck.k9.mail.transport.smtp,SmtpTransport,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 21
+k-9-5.600,com.fsck.k9.mail.internet,MessageExtractor,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 9
+k-9-5.600,com.fsck.k9.mail.store.imap,ImapConnectionTest,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 11
+k-9-5.600,com.fsck.k9.mail.store.imap,ImapFolderTest,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 21
+k-9-5.600,com.fsck.k9.mail.store.imap,ImapStoreTest,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 8
+k-9-5.600,com.fsck.k9.mail.store.imap,ImapConnection,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 24
+k-9-5.600,com.fsck.k9.mail.store.imap,ImapFolderPusher,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 9
+k-9-5.600,com.fsck.k9.mail.store.imap,ImapFolder,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 33
+k-9-5.600,com.fsck.k9.mail.store.imap,ImapResponseParser,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 9
+k-9-5.600,com.fsck.k9.mail.store.imap,ImapStore,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 18
+k-9-5.600,com.fsck.k9.mail.store.webdav,WebDavFolderTest,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 11
+k-9-5.600,com.fsck.k9.mail.store.webdav,WebDavStoreTest,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 11
+k-9-5.600,com.fsck.k9.mail.store.webdav,WebDavStore,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 16
+k-9-5.600,com.fsck.k9.mail.store.webdav,WebDavHttpClient.WebDavHttpClientFactory,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.mail.store.webdav,WebDavFolder,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 14
+k-9-5.600,com.fsck.k9.mail.power,TracingPowerManager,Global State,The tool detected the smell in this class because the class declares global variables. The detected global variables are: wakeLockId (19)
+k-9-5.600,com.fsck.k9.mail.store,RemoteStore,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 8
+k-9-5.600,com.fsck.k9.mailstore,ReconstructMessageFromDatabaseTest,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 10
+k-9-5.600,com.fsck.k9.mailstore,MessageViewInfoExtractorTest,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 19
+k-9-5.600,com.fsck.k9.mailstore,MigrationTest,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 15
+k-9-5.600,com.fsck.k9.mailstore,AttachmentResolverTest,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 8
+k-9-5.600,com.fsck.k9.mailstore,LocalMessage,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 9
+k-9-5.600,com.fsck.k9.mailstore,StorageManager.StorageProvider,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.mailstore,StorageManager.StorageListener,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.mailstore,StorageManager.FixedStorageProviderBase,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.mailstore,StorageManager.InternalStorageProvider,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.mailstore,StorageManager.ExternalStorageProvider,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.mailstore,StorageManager.HtcIncredibleStorageProvider,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.mailstore,StorageManager.SamsungGalaxySStorageProvider,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.mailstore,StorageManager.SynchronizationAid,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.mailstore,LocalStore,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 24
+k-9-5.600,com.fsck.k9.mailstore,LocalStore.AttachmentInfo,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.mailstore,MessageViewInfoExtractor,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 18
+k-9-5.600,com.fsck.k9.mailstore,LocalFolder,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 40
+k-9-5.600,com.fsck.k9.mailstore,LockableDatabase.WrappedException,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,org.openintents.openpgp.util,OpenPgpUtils.UserId,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,org.openintents.openpgp.util,OpenPgpApi.OpenPgpDataResult,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,org.openintents.openpgp.util,OpenPgpApi.OpenPgpDataSource,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.provider,AttachmentProvider.AttachmentProviderColumns,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.provider,RawMessageProvider,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 9
+k-9-5.600,com.fsck.k9.provider,MessageProvider.ReverseDateComparator,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.provider,MessageProvider.IdExtractor,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.provider,MessageProvider.CountExtractor,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.provider,MessageProvider.SubjectExtractor,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.provider,MessageProvider.SendDateExtractor,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.provider,MessageProvider.PreviewExtractor,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.provider,MessageProvider.UriExtractor,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.provider,MessageProvider.DeleteUriExtractor,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.provider,MessageProvider.SenderExtractor,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.provider,MessageProvider.SenderAddressExtractor,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.provider,MessageProvider.AccountExtractor,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.provider,MessageProvider.AccountColorExtractor,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.provider,MessageProvider.AccountNumberExtractor,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.provider,MessageProvider.HasAttachmentsExtractor,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.provider,MessageProvider.HasStarExtractor,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.provider,MessageProvider.UnreadExtractor,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.provider,MessageProvider.IncrementExtractor,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.helper,MessageHelper,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 8
+k-9-5.600,com.fsck.k9.helper,UnreadWidgetProperties,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 10
+k-9-5.600,com.fsck.k9.helper,ReplyToParser.ReplyToAddresses,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9,K9,Global State,The tool detected the smell in this class because the class declares global variables. The detected global variables are: app (70); tempDirectory (71); DEVELOPER_MODE (129); DEBUG_SENSITIVE (144)
+k-9-5.600,com.fsck.k9,K9,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 21
+k-9-5.600,com.fsck.k9,K9.ApplicationAware,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9,K9.Intents,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9,K9.EmailReceived,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9,K9.Share,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9,Account,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 21
+k-9-5.600,com.fsck.k9,PRNGFixes.LinuxPRNGSecureRandom,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.ui.crypto,MessageCryptoHelperTest,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 16
+k-9-5.600,com.fsck.k9.ui.crypto,MessageCryptoHelper,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 27
+k-9-5.600,com.fsck.k9.crypto,MessageCryptoStructureDetector,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 10
+k-9-5.600,com.fsck.k9.preferences,SettingsExporter,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 13
+k-9-5.600,com.fsck.k9.preferences,Settings.V,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.preferences,GlobalSettings.SettingsUpgraderV31,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.preferences,SettingsImporter,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 19
+k-9-5.600,com.fsck.k9.preferences,SettingsImporter.ImportContents,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.preferences,SettingsImporter.AccountDescription,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.preferences,SettingsImporter.AccountDescriptionPair,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.preferences,SettingsImporter.ImportResults,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.autocrypt,AutocryptOperations,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 8
+k-9-5.600,com.fsck.k9.notification,DeviceNotificationsTest,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 10
+k-9-5.600,com.fsck.k9.notification,LockScreenNotificationTest,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 8
+k-9-5.600,com.fsck.k9.notification,NewMailNotificationsTest,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 14
+k-9-5.600,com.fsck.k9.notification,NotificationDataTest,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 8
+k-9-5.600,com.fsck.k9.notification,WearNotificationsTest,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 11
+k-9-5.600,com.fsck.k9.notification,NotificationController,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 11
+k-9-5.600,com.fsck.k9.notification,NotificationActionCreator,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 11
+k-9-5.600,com.fsck.k9.notification,DeviceNotifications,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 13
+k-9-5.600,com.fsck.k9.notification,WearNotifications,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 10
+k-9-5.600,com.fsck.k9.notification,NotificationContentCreator,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 10
+k-9-5.600,com.fsck.k9.notification,NewMailNotifications,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 15
+k-9-5.600,com.fsck.k9.activity,MessageCompose,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 44
+k-9-5.600,com.fsck.k9.activity,MessageLoaderHelper,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 17
+k-9-5.600,com.fsck.k9.activity,ChooseFolder,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 8
+k-9-5.600,com.fsck.k9.activity,Accounts,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 25
+k-9-5.600,com.fsck.k9.activity,FolderList,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 19
+k-9-5.600,com.fsck.k9.activity,MessageList,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 23
+k-9-5.600,com.fsck.k9.activity.compose,RecipientPresenterTest,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 12
+k-9-5.600,com.fsck.k9.activity.compose,RecipientMvpView,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 9
+k-9-5.600,com.fsck.k9.activity.compose,ComposeCryptoStatus.ComposeCryptoStatusBuilder,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.activity.compose,AttachmentPresenter,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 8
+k-9-5.600,com.fsck.k9.activity.compose,IdentityAdapter.IdentityContainer,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.activity.compose,RecipientPresenter,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 19
+k-9-5.600,com.fsck.k9.message,MessageBuilderTest,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 13
+k-9-5.600,com.fsck.k9.message,PgpMessageBuilderTest,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 17
+k-9-5.600,com.fsck.k9.message,TextBodyBuilderTest,Global State,The tool detected the smell in this class because the class declares global variables. The detected global variables are: BOOLEANS (22); QUOTESTYLES (25)
+k-9-5.600,com.fsck.k9.message,TestMessageConstructionUtils,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 8
+k-9-5.600,com.fsck.k9.message,AutocryptStatusInteractor.RecipientAutocryptStatus,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.message,MessageBuilder,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 22
+k-9-5.600,com.fsck.k9.message,PgpMessageBuilder,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 18
+k-9-5.600,com.fsck.k9.message.html,HtmlConverter.ListTagHandler,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.message.extractors,AttachmentInfoExtractorTest,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 8
+k-9-5.600,com.fsck.k9.message.extractors,AttachmentInfoExtractor,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 11
+k-9-5.600,com.fsck.k9.controller,MessagingControllerTest,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 20
+k-9-5.600,com.fsck.k9.controller,MessagingController,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 41
+k-9-5.600,com.fsck.k9.controller,MessagingControllerCommands.PendingCommand,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.controller,MessagingControllerCommands.PendingMoveOrCopy,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.controller,MessagingControllerCommands.PendingEmptyTrash,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.controller,MessagingControllerCommands.PendingSetFlag,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.controller,MessagingControllerCommands.PendingAppend,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.controller,MessagingControllerCommands.PendingMarkAllAsRead,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.controller,MessagingControllerCommands.PendingExpunge,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.controller.imap,ImapSyncTest,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 15
+k-9-5.600,com.fsck.k9.controller.imap,ImapSync,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 17
+k-9-5.600,com.fsck.k9.mailstore.migrations,Migrations,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 32
+k-9-5.600,com.fsck.k9.ui.messageview,MessageContainerView,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 11
+k-9-5.600,com.fsck.k9.ui.messageview,MessageTopView,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 13
+k-9-5.600,com.fsck.k9.ui.messageview,MessageViewFragment,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 19
+k-9-5.600,com.fsck.k9.ui.messageview,AttachmentController,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 14
+k-9-5.600,com.fsck.k9.ui.compose,QuotedMessagePresenter,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 19
+k-9-5.600,com.fsck.k9.ui.compose,QuotedMessageMvpView,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 9
+k-9-5.600,com.fsck.k9.activity.setup,AccountSetupOutgoing,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 15
+k-9-5.600,com.fsck.k9.activity.setup,AccountSetupIncoming,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 21
+k-9-5.600,com.fsck.k9.activity.setup,AccountSetupBasics,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 16
+k-9-5.600,com.fsck.k9.activity.setup,AccountSettings,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 15
+k-9-5.600,com.fsck.k9.activity.setup,OpenPgpAppSelectDialog.OpenPgpAppSelectFragment,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.activity.setup,OpenPgpAppSelectDialog.ApgDeprecationDialogFragment,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.activity.setup,Prefs,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 11
+k-9-5.600,com.fsck.k9.fragment,MessageListFragmentComparators.ReverseComparator,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.fragment,MessageListFragmentComparators.ComparatorChain,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.fragment,MessageListFragmentComparators.ReverseIdComparator,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.fragment,MessageListFragmentComparators.AttachmentComparator,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.fragment,MessageListFragmentComparators.FlaggedComparator,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.fragment,MessageListFragmentComparators.UnreadComparator,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.fragment,MessageListFragmentComparators.DateComparator,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.fragment,MessageListFragmentComparators.ArrivalComparator,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.fragment,MessageListFragmentComparators.SubjectComparator,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.fragment,MessageListFragmentComparators.SenderComparator,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.fragment,MessageListAdapter,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 10
+k-9-5.600,com.fsck.k9.fragment,MessageListFragment,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 25
+k-9-5.600,com.fsck.k9.fragment,MlfUtils,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 8
+k-9-5.600,com.fsck.k9.view,RecipientSelectView.Recipient,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+k-9-5.600,com.fsck.k9.view,MessageHeader,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 17
+k-9-5.600,com.fsck.k9.service,MailService,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 9

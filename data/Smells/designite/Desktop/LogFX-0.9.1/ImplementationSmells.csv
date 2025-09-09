@@ -1,0 +1,139 @@
+Project Name,Package Name,Type Name,Method Name,Implementation Smell,Cause of the Smell,Method start line no
+LogFX-0.9.1,com.athaydes.logfx,LogFX,LogFX,Long Statement,The length of the statement "this.highlightOptions=new HighlightOptions(config.standardLogColorsProperty()`config.getObservableExpressions()`config.filtersEnabledProperty());" is 145.,73
+LogFX-0.9.1,com.athaydes.logfx,LogFX,LogFX,Long Statement,The length of the statement "this.logsPane=new LogViewPane(taskRunner`() -> new StartUpView(getHostServices()`stage`this::open)`config.getObservableFiles().isEmpty());" is 138.,73
+LogFX-0.9.1,com.athaydes.logfx,LogFX,start,Long Statement,The length of the statement "logsPane.panesDividersProperty().addListener(observable -> config.getPaneDividerPositions().setAll(logsPane.getSeparatorsPositions()));" is 135.,91
+LogFX-0.9.1,com.athaydes.logfx,LogFX,start,Magic Number,The method contains a magic number: 800,91
+LogFX-0.9.1,com.athaydes.logfx,LogFX,start,Magic Number,The method contains a magic number: 600,91
+LogFX-0.9.1,com.athaydes.logfx,LogFX,setIconsOn,Long Statement,The length of the statement "final List<InputStream> imageStreams=Arrays.asList(LogFX.class.getResourceAsStream("/images/favicon-large.png")`LogFX.class.getResourceAsStream("/images/favicon-small.png")`LogFX.class.getResourceAsStream("/images/favicon-tiny.png"));" is 234.,152
+LogFX-0.9.1,com.athaydes.logfx,LogFX,openViewFor,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@105637ea,234
+LogFX-0.9.1,com.athaydes.logfx,LogFX,main,Magic Number,The method contains a magic number: 12,331
+LogFX-0.9.1,com.athaydes.logfx.ui,LogView,LogView,Long Parameter List,The method has 5 parameters. ,76
+LogFX-0.9.1,com.athaydes.logfx.ui,LogView,goTo,Long Statement,The length of the statement "log.warn("Failed to open date-time in log` could not recognize dates in the log (took {} ms)"`System.currentTimeMillis() - startTime);" is 134.,170
+LogFX-0.9.1,com.athaydes.logfx.ui,LogView,goTo,Long Statement,The length of the statement "Dialog.showMessage("Unable to open date-time.\n" + "The date-times in the file could not be recognized."`Dialog.MessageLevel.WARNING);" is 134.,170
+LogFX-0.9.1,com.athaydes.logfx.ui,LogView,onFileChange,Magic Number,The method contains a magic number: 2_000,269
+LogFX-0.9.1,com.athaydes.logfx.ui,LogView,onFileChange,Magic Number,The method contains a magic number: 2_000,276
+LogFX-0.9.1,com.athaydes.logfx.ui,GoToDateView,GoToDateView,Long Statement,The length of the statement "viewWrappers.addAll(logViewsGetter.get().stream().filter(wrapper -> wrapper.getLogView() == selectedLogView).collect(toList()));" is 128.,37
+LogFX-0.9.1,com.athaydes.logfx.ui,GoToDateView,GoToDateView,Magic Number,The method contains a magic number: 20,37
+LogFX-0.9.1,com.athaydes.logfx.ui,GoToDateView,GoToDateView,Magic Number,The method contains a magic number: 240.0,37
+LogFX-0.9.1,com.athaydes.logfx.ui,GoToDateView,GoToDateView,Magic Number,The method contains a magic number: 3,37
+LogFX-0.9.1,com.athaydes.logfx.ui,GoToDateView,GoToDateView,Magic Number,The method contains a magic number: 10,37
+LogFX-0.9.1,com.athaydes.logfx.ui,FileDragAndDrop,install,Magic Number,The method contains a magic number: 2.0,28
+LogFX-0.9.1,com.athaydes.logfx.ui,FileDragAndDrop,install,Magic Number,The method contains a magic number: 4,28
+LogFX-0.9.1,com.athaydes.logfx.ui,FileDragAndDrop,install,Magic Number,The method contains a magic number: 4,28
+LogFX-0.9.1,com.athaydes.logfx.ui,FileDragAndDrop,install,Magic Number,The method contains a magic number: 4,28
+LogFX-0.9.1,com.athaydes.logfx.ui,FileDragAndDrop,install,Magic Number,The method contains a magic number: 8,28
+LogFX-0.9.1,com.athaydes.logfx.ui,FileDragAndDrop,install,Magic Number,The method contains a magic number: 8,28
+LogFX-0.9.1,com.athaydes.logfx.ui,FileDragAndDrop,install,Magic Number,The method contains a magic number: 2.0,28
+LogFX-0.9.1,com.athaydes.logfx.ui,FileDragAndDrop,install,Magic Number,The method contains a magic number: 4,28
+LogFX-0.9.1,com.athaydes.logfx.ui,FileDragAndDrop,install,Magic Number,The method contains a magic number: 4,28
+LogFX-0.9.1,com.athaydes.logfx.ui,FileDragAndDrop,install,Magic Number,The method contains a magic number: 2.0,28
+LogFX-0.9.1,com.athaydes.logfx.ui,AboutLogFXView,createNode,Magic Number,The method contains a magic number: 25,23
+LogFX-0.9.1,com.athaydes.logfx.ui,AboutLogFXView,createNode,Magic Number,The method contains a magic number: 500,23
+LogFX-0.9.1,com.athaydes.logfx.ui,AboutLogFXView,createNode,Magic Number,The method contains a magic number: 300,23
+LogFX-0.9.1,com.athaydes.logfx.ui,AboutLogFXView,createNode,Magic Number,The method contains a magic number: 500,23
+LogFX-0.9.1,com.athaydes.logfx.ui,AboutLogFXView,createNode,Magic Number,The method contains a magic number: 10,23
+LogFX-0.9.1,com.athaydes.logfx.ui,AboutLogFXView,createNode,Magic Number,The method contains a magic number: 500,23
+LogFX-0.9.1,com.athaydes.logfx.ui,ColorChooser,ColorChooser,Magic Number,The method contains a magic number: 2,29
+LogFX-0.9.1,com.athaydes.logfx.ui,ColorChooser,ColorChooser,Magic Number,The method contains a magic number: 10,29
+LogFX-0.9.1,com.athaydes.logfx.ui,Dialog,getDelay,Magic Number,The method contains a magic number: 3,46
+LogFX-0.9.1,com.athaydes.logfx.ui,Dialog,getDelay,Magic Number,The method contains a magic number: 5,46
+LogFX-0.9.1,com.athaydes.logfx.ui,Dialog,getDelay,Magic Number,The method contains a magic number: 15,46
+LogFX-0.9.1,com.athaydes.logfx.ui,Dialog,getDelay,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@2e3459bd,46
+LogFX-0.9.1,com.athaydes.logfx.ui,Dialog,Dialog,Magic Number,The method contains a magic number: 20,80
+LogFX-0.9.1,com.athaydes.logfx.ui,Dialog,makeTransparentWhenLoseFocus,Magic Number,The method contains a magic number: 0.5,133
+LogFX-0.9.1,com.athaydes.logfx.ui,Dialog,show,Magic Number,The method contains a magic number: 0.25,150
+LogFX-0.9.1,com.athaydes.logfx.ui,Dialog,show,Magic Number,The method contains a magic number: 30,150
+LogFX-0.9.1,com.athaydes.logfx.ui,Dialog,showMessage,Long Statement,The length of the statement "Animation blurAnimation=new Timeline(new KeyFrame(Duration.millis(450)`new KeyValue(blurText.angleProperty()`45.0)`new KeyValue(blurText.radiusProperty()`20.0)));" is 162.,206
+LogFX-0.9.1,com.athaydes.logfx.ui,Dialog,showMessage,Magic Number,The method contains a magic number: 100,206
+LogFX-0.9.1,com.athaydes.logfx.ui,Dialog,showMessage,Magic Number,The method contains a magic number: 20,206
+LogFX-0.9.1,com.athaydes.logfx.ui,Dialog,showMessage,Magic Number,The method contains a magic number: 450,206
+LogFX-0.9.1,com.athaydes.logfx.ui,Dialog,showMessage,Magic Number,The method contains a magic number: 45.0,206
+LogFX-0.9.1,com.athaydes.logfx.ui,Dialog,showMessage,Magic Number,The method contains a magic number: 20.0,206
+LogFX-0.9.1,com.athaydes.logfx.ui,Dialog,showMessage,Magic Number,The method contains a magic number: 500,206
+LogFX-0.9.1,com.athaydes.logfx.ui,Dialog,showMessage,Magic Number,The method contains a magic number: 0.1,206
+LogFX-0.9.1,com.athaydes.logfx.ui,Dialog,showMessage,Magic Number,The method contains a magic number: 20,206
+LogFX-0.9.1,com.athaydes.logfx.ui,Dialog,showMessage,Magic Number,The method contains a magic number: 5.0,206
+LogFX-0.9.1,com.athaydes.logfx.ui,Dialog,showMessage,Magic Number,The method contains a magic number: 250.0,206
+LogFX-0.9.1,com.athaydes.logfx.ui,HighlightOptions,HighlightOptions,Long Statement,The length of the statement "expressionsBox.getChildren().addAll(observableExpressions.stream().map(ex -> new HighlightExpressionRow(ex`observableExpressions`expressionsBox)).toArray(HighlightExpressionRow[]::new));" is 186.,61
+LogFX-0.9.1,com.athaydes.logfx.ui,HighlightOptions,HighlightOptions,Magic Number,The method contains a magic number: 2,61
+LogFX-0.9.1,com.athaydes.logfx.ui,HighlightOptions,HighlightOptions,Magic Number,The method contains a magic number: 5,61
+LogFX-0.9.1,com.athaydes.logfx.ui,HighlightOptions,HighlightOptions,Magic Number,The method contains a magic number: 5,61
+LogFX-0.9.1,com.athaydes.logfx.ui,HighlightOptions,HighlightOptions,Magic Number,The method contains a magic number: 14,61
+LogFX-0.9.1,com.athaydes.logfx.ui,HighlightOptions,HighlightOptions,Magic Number,The method contains a magic number: 10,61
+LogFX-0.9.1,com.athaydes.logfx.ui,HighlightOptions,HighlightOptions,Magic Number,The method contains a magic number: 5,61
+LogFX-0.9.1,com.athaydes.logfx.ui,HighlightOptions,enableFilters,Long Statement,The length of the statement "List<HighlightExpression> newExpressions=observableExpressions.stream().map((e) -> e.withFilter(enable)).collect(Collectors.toList());" is 134.,114
+LogFX-0.9.1,com.athaydes.logfx.ui,HighlightOptions,enableFilters,Long Statement,The length of the statement "expressionsBox.getChildren().setAll(observableExpressions.stream().map(ex -> new HighlightExpressionRow(ex`observableExpressions`expressionsBox)).toArray(HighlightExpressionRow[]::new));" is 186.,114
+LogFX-0.9.1,com.athaydes.logfx.ui,HighlightOptions,createHelpIcon,Long Statement,The length of the statement "htmlText=new BufferedReader(new InputStreamReader(getClass().getResourceAsStream("/html/highlight-options-help.html")`StandardCharsets.UTF_8)).lines().collect(joining("\n"));" is 174.,135
+LogFX-0.9.1,com.athaydes.logfx.ui,HighlightOptions,getLineFilter,Long Statement,The length of the statement "List<HighlightExpression> filteredExpressions=observableExpressions.stream().filter(HighlightExpression::isFiltered).collect(Collectors.toList());" is 146.,205
+LogFX-0.9.1,com.athaydes.logfx.ui,HighlightOptions,showHighlightOptionsDialog,Magic Number,The method contains a magic number: 850.0,354
+LogFX-0.9.1,com.athaydes.logfx.ui,HighlightOptions,showHighlightOptionsDialog,Magic Number,The method contains a magic number: 260.0,354
+LogFX-0.9.1,com.athaydes.logfx.ui,Arrow,Arrow,Magic Number,The method contains a magic number: 10,22
+LogFX-0.9.1,com.athaydes.logfx.ui,Arrow,Arrow,Magic Number,The method contains a magic number: 6,22
+LogFX-0.9.1,com.athaydes.logfx.ui,Arrow,fillPolygon,Magic Number,The method contains a magic number: 3,29
+LogFX-0.9.1,com.athaydes.logfx.ui,Arrow,fillPolygon,Magic Number,The method contains a magic number: 3,29
+LogFX-0.9.1,com.athaydes.logfx.ui,Arrow,arrowButton,Magic Number,The method contains a magic number: 4.0,40
+LogFX-0.9.1,com.athaydes.logfx.ui,Arrow,arrowButton,Magic Number,The method contains a magic number: 16,40
+LogFX-0.9.1,com.athaydes.logfx.ui,Arrow,arrowButton,Magic Number,The method contains a magic number: 8,40
+LogFX-0.9.1,com.athaydes.logfx.ui,Arrow,arrowButton,Magic Number,The method contains a magic number: 12.0,40
+LogFX-0.9.1,com.athaydes.logfx.ui,LogViewPane,LogViewPane,Complex Method,Cyclomatic complexity of the method is 13,60
+LogFX-0.9.1,com.athaydes.logfx.ui,LogViewPane,LogViewPane,Long Statement,The length of the statement "copyMenuItem.setOnAction(event -> getFocusedView().ifPresent(wrapper -> wrapper.logView.getSelection().ifPresent(content -> {" is 125.,60
+LogFX-0.9.1,com.athaydes.logfx.ui,LogViewPane,LogViewPane,Long Statement,The length of the statement "minimizeMenuItem.setAccelerator(new KeyCodeCombination(KeyCode.M`KeyCombination.SHORTCUT_DOWN`KeyCombination.SHIFT_DOWN));" is 122.,60
+LogFX-0.9.1,com.athaydes.logfx.ui,LogViewPane,LogViewPane,Long Statement,The length of the statement "getFocusedView().ifPresent(wrapper -> taskRunner.repeat(pane.getItems().size() - 1`Duration.ofMillis(150)`() -> Platform.runLater(() -> {" is 137.,60
+LogFX-0.9.1,com.athaydes.logfx.ui,LogViewPane,LogViewPane,Long Statement,The length of the statement "pane.setContextMenu(new ContextMenu(copyMenuItem`new SeparatorMenuItem()`toTopMenuItem`tailMenuItem`pageUpMenuItem`pageDownMenuItem`goToDateMenuItem`new SeparatorMenuItem()`pauseMenuItem`new SeparatorMenuItem()`minimizeMenuItem`maximizeMenuItem`closeMenuItem));" is 261.,60
+LogFX-0.9.1,com.athaydes.logfx.ui,LogViewPane,LogViewPane,Magic Number,The method contains a magic number: 2,60
+LogFX-0.9.1,com.athaydes.logfx.ui,LogViewPane,LogViewPane,Magic Number,The method contains a magic number: 2,60
+LogFX-0.9.1,com.athaydes.logfx.ui,LogViewPane,LogViewPane,Magic Number,The method contains a magic number: 150,60
+LogFX-0.9.1,com.athaydes.logfx.ui,LogViewPane,LogViewPane,Magic Number,The method contains a magic number: 2,60
+LogFX-0.9.1,com.athaydes.logfx.ui,LogViewPane,LogViewPane,Magic Number,The method contains a magic number: 150,60
+LogFX-0.9.1,com.athaydes.logfx.ui,LogViewPane,LogViewPane,Magic Number,The method contains a magic number: 2,60
+LogFX-0.9.1,com.athaydes.logfx.ui,LogViewPane,getAllLogViews,Long Statement,The length of the statement "return pane.getItems().stream().filter(it -> it instanceof LogViewWrapper).map(LogViewWrapper.class::cast).collect(toList());" is 125.,259
+LogFX-0.9.1,com.athaydes.logfx.ui,LogViewPane,lineNumberToScrollVvalue,Magic Number,The method contains a magic number: 0.5,522
+LogFX-0.9.1,com.athaydes.logfx.ui,FxUtils,simpleBackground,Long Statement,The length of the statement "return bkgByPaint.computeIfAbsent(paint`ignored -> new Background(new BackgroundFill(paint`CornerRadii.EMPTY`Insets.EMPTY)));" is 125.,30
+LogFX-0.9.1,com.athaydes.logfx.ui,FxUtils,setupStylesheet,Long Statement,The length of the statement "FileChangeWatcher stylesheetWatcher=new FileChangeWatcher(Properties.getCustomStylesheet().get()`TaskRunner.getGlobalInstance()`resetStylesheet);" is 145.,42
+LogFX-0.9.1,com.athaydes.logfx.ui,FontPicker,showFontPicker,Long Statement,The length of the statement "EventHandler<ActionEvent> eventHandler=(event) -> fontProperty.setValue(new Font(fontNames.getValue()`fontSizes.getValue()));" is 125.,17
+LogFX-0.9.1,com.athaydes.logfx.ui,FontPicker,showFontPicker,Magic Number,The method contains a magic number: 6,17
+LogFX-0.9.1,com.athaydes.logfx.ui,FontPicker,showFontPicker,Magic Number,The method contains a magic number: 42,17
+LogFX-0.9.1,com.athaydes.logfx.ui,FontPicker,showFontPicker,Magic Number,The method contains a magic number: 5,17
+LogFX-0.9.1,com.athaydes.logfx.ui,AwesomeIcons,createToggleButton,Magic Number,The method contains a magic number: 16,19
+LogFX-0.9.1,com.athaydes.logfx.ui,AwesomeIcons,createIconButton,Magic Number,The method contains a magic number: 16,29
+LogFX-0.9.1,com.athaydes.logfx.ui,AwesomeIcons,createIconButton,Magic Number,The method contains a magic number: 16,33
+LogFX-0.9.1,com.athaydes.logfx.ui,AwesomeIcons,createIconLabel,Magic Number,The method contains a magic number: 16,53
+LogFX-0.9.1,com.athaydes.logfx.file,FileReader,FileReader,Magic Number,The method contains a magic number: 4096,88
+LogFX-0.9.1,com.athaydes.logfx.file,FileReader,FileReader,Long Statement,The length of the statement "throw new IllegalStateException("Cannot open LogFX's own log when log level is set to DEBUG or finer.\n" + "That would case an infinite loop when LogFX refreshes the view with the file contents` " + "which causes the file contents to change with new log messages` which causes the view "+ "to be refreshed` and so on.");" is 320.,92
+LogFX-0.9.1,com.athaydes.logfx.file,FileReader,FileReader,Magic Number,The method contains a magic number: 50,92
+LogFX-0.9.1,com.athaydes.logfx.file,FileReader,moveTo,Complex Conditional,The conditional expression isFirstLine && direction == SearchDirection.UP && lineComparison == Comparison.AFTER is complex.,166
+LogFX-0.9.1,com.athaydes.logfx.file,FileReader,moveTo,Complex Method,Cyclomatic complexity of the method is 23,166
+LogFX-0.9.1,com.athaydes.logfx.file,FileReader,refresh,Long Statement,The length of the statement "loadFromBottom(initialLine - 1L`fileWindowSize - topList.size()`MOVE).ifPresent(extraLines -> topList.addAll(0`extraLines));" is 124.,378
+LogFX-0.9.1,com.athaydes.logfx.file,FileReader,loadFromTop,Complex Conditional,The conditional expression log.isTraceEnabled() && bytesRead > 0 && bytesRead < bufferSize is complex.,403
+LogFX-0.9.1,com.athaydes.logfx.file,FileReader,loadFromTop,Complex Conditional,The conditional expression isNewLine && i > 0 && buffer[i - 1] == '\r' is complex.,403
+LogFX-0.9.1,com.athaydes.logfx.file,FileReader,loadFromTop,Complex Method,Cyclomatic complexity of the method is 12,403
+LogFX-0.9.1,com.athaydes.logfx.file,FileReader,loadFromBottom,Complex Method,Cyclomatic complexity of the method is 15,512
+LogFX-0.9.1,com.athaydes.logfx.file,FileReader,loadFromBottom,Long Statement,The length of the statement "final int bytesRead=bufferStartIndex == 0L && previousStartIndex > 0 ? reader.read(buffer`0`(int)previousStartIndex) : reader.read(buffer);" is 139.,512
+LogFX-0.9.1,com.athaydes.logfx.file,FileChangeWatcher,FileChangeWatcher,Magic Number,The method contains a magic number: 2,37
+LogFX-0.9.1,com.athaydes.logfx.file,FileChangeWatcher,watchFile,Long Statement,The length of the statement "watchKey=path.getParent().register(watchService`new WatchEvent.Kind[]{StandardWatchEventKinds.ENTRY_MODIFY`StandardWatchEventKinds.ENTRY_CREATE`StandardWatchEventKinds.OVERFLOW`StandardWatchEventKinds.ENTRY_DELETE}`SensitivityWatchEventModifier.HIGH);" is 251.,78
+LogFX-0.9.1,com.athaydes.logfx.config,ConfigProperties,ConfigProperties,Magic Number,The method contains a magic number: 4,29
+LogFX-0.9.1,com.athaydes.logfx.config,Config,Config,Magic Number,The method contains a magic number: 2000L,41
+LogFX-0.9.1,com.athaydes.logfx.config,Config,dumpConfigToFile,Long Statement,The length of the statement "standardLogColorsFuture.thenAccept(logLineColors -> expressionsFuture.thenAccept(expressions -> enableFiltersFuture.thenAccept(enableFilters -> filesFuture.thenAccept(files -> panesOrientationFuture.thenAccept(orientation -> paneDividersFuture.thenAccept(dividers -> fontFuture.thenAccept(font -> dumpConfigToFile(logLineColors`expressions`enableFilters`files`orientation`dividers`font`path.toFile()))))))));" is 408.,107
+LogFX-0.9.1,com.athaydes.logfx.config,Config,dumpConfigToFile,Long Parameter List,The method has 8 parameters. ,148
+LogFX-0.9.1,com.athaydes.logfx.config,ConfigParser,parseConfigFile,Complex Method,Cyclomatic complexity of the method is 9,39
+LogFX-0.9.1,com.athaydes.logfx.config,ConfigParser,parseStandardLogColors,Magic Number,The method contains a magic number: 2,80
+LogFX-0.9.1,com.athaydes.logfx.config,ConfigParser,parseFilters,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@d431f83,119
+LogFX-0.9.1,com.athaydes.logfx.config,ConfigParser,parseGuiSection,Complex Method,Cyclomatic complexity of the method is 11,151
+LogFX-0.9.1,com.athaydes.logfx.config,ConfigParser,parseGuiSection,Magic Number,The method contains a magic number: 2,151
+LogFX-0.9.1,com.athaydes.logfx.config,ConfigParser,parseGuiSection,Magic Number,The method contains a magic number: 2,151
+LogFX-0.9.1,com.athaydes.logfx.config,ConfigParser,parseGuiSection,Magic Number,The method contains a magic number: 3,151
+LogFX-0.9.1,com.athaydes.logfx.config,ConfigParser,parseGuiSection,Magic Number,The method contains a magic number: 12.0,151
+LogFX-0.9.1,com.athaydes.logfx.config,ConfigParser,parseGuiSection,Magic Number,The method contains a magic number: 2,151
+LogFX-0.9.1,com.athaydes.logfx.config,ConfigParser,parseHighlightExpression,Complex Method,Cyclomatic complexity of the method is 14,213
+LogFX-0.9.1,com.athaydes.logfx.config,ConfigParser,parseHighlightExpression,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@251dd78f,213
+LogFX-0.9.1,com.athaydes.logfx.concurrency,TaskRunner,TaskRunner,Magic Number,The method contains a magic number: 2,44
+LogFX-0.9.1,com.athaydes.logfx.concurrency,TaskRunner,runWithMaxFrequency,Complex Method,Cyclomatic complexity of the method is 8,70
+LogFX-0.9.1,com.athaydes.logfx.log,LogFXLogger,log,Long Statement,The length of the statement "builder.append(formatter.format(Instant.now().atZone(ZoneId.systemDefault()))).append(" [").append(Thread.currentThread().getName()).append(']').append(' ').append(logLevel.name()).append(' ').append(name).append(" - ").append(message);" is 236.,204
+LogFX-0.9.1,com.athaydes.logfx.log,LogFXLogger,log,Magic Number,The method contains a magic number: 128,204
+LogFX-0.9.1,com.athaydes.logfx.log,LogFXLogger,log,Magic Number,The method contains a magic number: 2,204
+LogFX-0.9.1,com.athaydes.logfx.text,HighlightExpression,toString,Long Statement,The length of the statement "return "{" + "expression=" + expression + "` bkgColor="+ bkgColor+ "` fillColor="+ fillColor+ "` isFiltered="+ isFiltered+ '}';" is 127.,65
+LogFX-0.9.1,com.athaydes.logfx.text,DateTimeFormatGuesser,standard,Long Statement,The length of the statement "formatters.addAll(Arrays.asList(DateTimeFormatter.ISO_DATE_TIME`DateTimeFormatter.RFC_1123_DATE_TIME`DateTimeFormatter.ofPattern("yyyy-M-d'T'H:m:s[.SSS][z]")`DateTimeFormatter.ofPattern("yyyy-M-d'T'H:m:s[:SSS][Z]")`DateTimeFormatter.ofPattern("yyyy-M-d H:m:s[.SSS][Z]")`DateTimeFormatter.ofPattern("MMM dd H:m:s[.SSS][ z][ yyyy]")`DateTimeFormatter.ofPattern("MMM dd[ yyyy] H:m:s[.SSS][ z]")`DateTimeFormatter.ofPattern("d/MMM/yyyy:H:m:s[:SSS][ Z]")));" is 452.,36
+LogFX-0.9.1,com.athaydes.logfx.text,DateTimeFormatGuesser,guessDateTimeFormats,Complex Method,Cyclomatic complexity of the method is 9,81
+LogFX-0.9.1,com.athaydes.logfx.text,DateTimeFormatGuesser,guessDateTimeFormats,Long Statement,The length of the statement "log.trace("Trying to guess date-time formats in log using {} patterns and {} date-time formatters"`logLinePatterns.size()`logLineDateFormatters.size());" is 152.,81
+LogFX-0.9.1,com.athaydes.logfx.text,DateTimeFormatGuesser,guessDateTimeFormats,Long Statement,The length of the statement "log.info("Found {} date-time-formatter guesses in provided file sample (search took {} ms)"`result.size()`System.currentTimeMillis() - start);" is 142.,81
+LogFX-0.9.1,com.athaydes.logfx.text,DateTimeFormatGuesser,guessDateTimeFormats,Magic Number,The method contains a magic number: 3,81

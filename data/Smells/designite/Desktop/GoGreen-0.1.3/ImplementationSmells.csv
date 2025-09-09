@@ -1,0 +1,179 @@
+Project Name,Package Name,Type Name,Method Name,Implementation Smell,Cause of the Smell,Method start line no
+GoGreen-0.1.3,(default package),MavenWrapperDownloader,main,Empty catch clause,The method has an empty catch block.,55
+GoGreen-0.1.3,(default package),MavenWrapperDownloader,main,Long Identifier,The length of the identifier mavenWrapperPropertyFileInputStream is 35.,55
+GoGreen-0.1.3,groupxii.solarpanels,PanelCalculationsTest,testCalculate,Magic Number,The method contains a magic number: 1571,23
+GoGreen-0.1.3,groupxii.solarpanels,PanelCalculationsTest,testCalculate,Magic Number,The method contains a magic number: 45,23
+GoGreen-0.1.3,groupxii.solarpanels,PanelCalculationsTest,testInstantiateId,Magic Number,The method contains a magic number: 1571,28
+GoGreen-0.1.3,groupxii.solarpanels,PanelCalculationsTest,testInstantiateId,Magic Number,The method contains a magic number: 45,28
+GoGreen-0.1.3,groupxii.solarpanels,CalculatedPanelTest,testCalculatePanel,Magic Number,The method contains a magic number: 34,23
+GoGreen-0.1.3,groupxii.solarpanels,CalculatedPanelTest,testCalculatePanel,Magic Number,The method contains a magic number: 955,23
+GoGreen-0.1.3,groupxii.database,DatabaseTest,testNoEnvPort,Magic Number,The method contains a magic number: 27017,65
+GoGreen-0.1.3,groupxii.database,DatabaseTest,testNPEPort,Magic Number,The method contains a magic number: 27017,77
+GoGreen-0.1.3,groupxii.database,DatabaseTest,testBadEnvPort,Magic Number,The method contains a magic number: 27017,107
+GoGreen-0.1.3,groupxii.database,DatabaseTest,testSortUsersByPoints,Magic Number,The method contains a magic number: 2,165
+GoGreen-0.1.3,groupxii.database,DatabaseTest,testSortUsersByPoints,Magic Number,The method contains a magic number: 2,165
+GoGreen-0.1.3,groupxii.database,DatabaseTest,testAddFriend,Magic Number,The method contains a magic number: 2,175
+GoGreen-0.1.3,groupxii.database,DatabaseTest,testAddFriend,Magic Number,The method contains a magic number: 2,175
+GoGreen-0.1.3,groupxii.database,DatabaseTest,testIncrementReducedCO2,Magic Number,The method contains a magic number: 2,183
+GoGreen-0.1.3,groupxii.database,DatabaseTest,testIncrementReducedCO2,Magic Number,The method contains a magic number: 2,183
+GoGreen-0.1.3,groupxii.database,DatabaseTest,testGetUserCount,Magic Number,The method contains a magic number: 2,190
+GoGreen-0.1.3,groupxii.database,DatabaseTest,testAddMealEntry,Magic Number,The method contains a magic number: 100,196
+GoGreen-0.1.3,groupxii.database,DatabaseTest,testAddMealEntry,Magic Number,The method contains a magic number: 100,196
+GoGreen-0.1.3,groupxii.database,VehicleListEntryTest,createEntry,Magic Number,The method contains a magic number: 82.332,13
+GoGreen-0.1.3,groupxii.database,VehicleListEntryTest,createEntry,Magic Number,The method contains a magic number: 6,13
+GoGreen-0.1.3,groupxii.database,VehicleListEntryTest,getCo2PerVehicle,Magic Number,The method contains a magic number: 82.332,23
+GoGreen-0.1.3,groupxii.database,VehicleListEntryTest,getAvgConsumption,Magic Number,The method contains a magic number: 6,28
+GoGreen-0.1.3,groupxii.database,VehicleListEntryTest,testFromDBObj,Long Statement,The length of the statement "DBObject obj=new BasicDBObject().append("vehicletype"`"car").append("co2PerVehicle"`84.3).append("fuel"`"Diesel").append("AvgConsumption"`5);" is 141.,48
+GoGreen-0.1.3,groupxii.database,VehicleListEntryTest,testFromDBObj,Magic Number,The method contains a magic number: 84.3,48
+GoGreen-0.1.3,groupxii.database,VehicleListEntryTest,testFromDBObj,Magic Number,The method contains a magic number: 5,48
+GoGreen-0.1.3,groupxii.database,VehicleListEntryTest,testFromDBObj,Magic Number,The method contains a magic number: 84.3,48
+GoGreen-0.1.3,groupxii.database,VehicleListEntryTest,testFromDBObj,Magic Number,The method contains a magic number: 5,48
+GoGreen-0.1.3,groupxii.database,VehicleListEntryTest,testFromBadObj,Long Statement,The length of the statement "DBObject obj=new BasicDBObject().append("vhcltype"`"car").append("co2"`84.3).append("gorivo"`"Diesel").append("Consum"`5);" is 122.,62
+GoGreen-0.1.3,groupxii.database,VehicleListEntryTest,testFromBadObj,Magic Number,The method contains a magic number: 84.3,62
+GoGreen-0.1.3,groupxii.database,VehicleListEntryTest,testFromBadObj,Magic Number,The method contains a magic number: 5,62
+GoGreen-0.1.3,groupxii.database,PanelListEntryTest,createEntry,Magic Number,The method contains a magic number: 45.0,13
+GoGreen-0.1.3,groupxii.database,PanelListEntryTest,createEntry,Magic Number,The method contains a magic number: 32,13
+GoGreen-0.1.3,groupxii.database,PanelListEntryTest,createEntry,Magic Number,The method contains a magic number: 44,13
+GoGreen-0.1.3,groupxii.database,PanelListEntryTest,testCo2PerPanel,Magic Number,The method contains a magic number: 45.0,23
+GoGreen-0.1.3,groupxii.database,PanelListEntryTest,testEfficiencyrate,Magic Number,The method contains a magic number: 32,28
+GoGreen-0.1.3,groupxii.database,PanelListEntryTest,testAmount,Magic Number,The method contains a magic number: 44,33
+GoGreen-0.1.3,groupxii.database,PanelListEntryTest,testFromDBObject,Long Statement,The length of the statement "DBObject dbObject=new BasicDBObject().append("paneltype"`"Monocrystalline").append("co2PerPanel"`45.0).append("efficiencyrate"`32).append("amount"`44);" is 151.,47
+GoGreen-0.1.3,groupxii.database,PanelListEntryTest,testFromDBObject,Magic Number,The method contains a magic number: 45.0,47
+GoGreen-0.1.3,groupxii.database,PanelListEntryTest,testFromDBObject,Magic Number,The method contains a magic number: 32,47
+GoGreen-0.1.3,groupxii.database,PanelListEntryTest,testFromDBObject,Magic Number,The method contains a magic number: 44,47
+GoGreen-0.1.3,groupxii.database,PanelListEntryTest,testFromBadDBObject,Long Statement,The length of the statement "DBObject obj=new BasicDBObject().append("type"`"Monocrystalline").append("co2"`45.0).append("eff"`32).append("howMuch"`44);" is 123.,68
+GoGreen-0.1.3,groupxii.database,PanelListEntryTest,testFromBadDBObject,Magic Number,The method contains a magic number: 45.0,68
+GoGreen-0.1.3,groupxii.database,PanelListEntryTest,testFromBadDBObject,Magic Number,The method contains a magic number: 32,68
+GoGreen-0.1.3,groupxii.database,PanelListEntryTest,testFromBadDBObject,Magic Number,The method contains a magic number: 44,68
+GoGreen-0.1.3,groupxii.database,MealEntryTest,createEntry,Magic Number,The method contains a magic number: 100,15
+GoGreen-0.1.3,groupxii.database,MealEntryTest,createEntry,Magic Number,The method contains a magic number: 120,15
+GoGreen-0.1.3,groupxii.database,MealEntryTest,testGoodServingSize,Magic Number,The method contains a magic number: 100,36
+GoGreen-0.1.3,groupxii.database,MealEntryTest,testBadServingSize,Magic Number,The method contains a magic number: 120,41
+GoGreen-0.1.3,groupxii.database,MealEntryTest,testReaducedCO2,Magic Number,The method contains a magic number: 100,46
+GoGreen-0.1.3,groupxii.database,MealEntryTest,testReaducedCO2,Magic Number,The method contains a magic number: 120,46
+GoGreen-0.1.3,groupxii.database,MealListEntryTest,createEntry,Magic Number,The method contains a magic number: 23.0,15
+GoGreen-0.1.3,groupxii.database,MealListEntryTest,createEntry,Magic Number,The method contains a magic number: 30.0,15
+GoGreen-0.1.3,groupxii.database,MealListEntryTest,createEntry,Magic Number,The method contains a magic number: 60.0,15
+GoGreen-0.1.3,groupxii.database,MealListEntryTest,testGetCO2PerServ,Magic Number,The method contains a magic number: 23.0,24
+GoGreen-0.1.3,groupxii.database,MealListEntryTest,testGetCalPerServ,Magic Number,The method contains a magic number: 30.0,29
+GoGreen-0.1.3,groupxii.database,MealListEntryTest,testGetServingSize,Magic Number,The method contains a magic number: 60.0,34
+GoGreen-0.1.3,groupxii.database,MealListEntryTest,testFromDBObject,Long Statement,The length of the statement "DBObject obj=new BasicDBObject().append("foodName"`"GRAPEFRUIT").append("co2PerServing"`23.0).append("calPerServing"`30.0).append("servingSize"`60.0);" is 150.,48
+GoGreen-0.1.3,groupxii.database,MealListEntryTest,testFromDBObject,Magic Number,The method contains a magic number: 23.0,48
+GoGreen-0.1.3,groupxii.database,MealListEntryTest,testFromDBObject,Magic Number,The method contains a magic number: 30.0,48
+GoGreen-0.1.3,groupxii.database,MealListEntryTest,testFromDBObject,Magic Number,The method contains a magic number: 60.0,48
+GoGreen-0.1.3,groupxii.database,MealListEntryTest,testFromBadDBObject,Long Statement,The length of the statement "DBObject obj=new BasicDBObject().append("fodName"`"CAT").append("co2PerServng"`23).append("calerServing"`"boat").append("servingMass"`60.0);" is 140.,69
+GoGreen-0.1.3,groupxii.database,MealListEntryTest,testFromBadDBObject,Magic Number,The method contains a magic number: 23,69
+GoGreen-0.1.3,groupxii.database,MealListEntryTest,testFromBadDBObject,Magic Number,The method contains a magic number: 60.0,69
+GoGreen-0.1.3,groupxii.database,VehicleEntryTest,createEntry,Magic Number,The method contains a magic number: 4,18
+GoGreen-0.1.3,groupxii.database,VehicleEntryTest,createEntry,Magic Number,The method contains a magic number: 8,18
+GoGreen-0.1.3,groupxii.database,VehicleEntryTest,getco2,Magic Number,The method contains a magic number: 4,41
+GoGreen-0.1.3,groupxii.database,VehicleEntryTest,getco2,Magic Number,The method contains a magic number: 8,41
+GoGreen-0.1.3,groupxii.database,VehicleEntryTest,getGoodAvgConsumption,Magic Number,The method contains a magic number: 4,47
+GoGreen-0.1.3,groupxii.database,VehicleEntryTest,getBadAvgConsumption,Magic Number,The method contains a magic number: 8,52
+GoGreen-0.1.3,groupxii.database,PanelEntryTest,createEntry,Magic Number,The method contains a magic number: 45,18
+GoGreen-0.1.3,groupxii.database,PanelEntryTest,createEntry,Magic Number,The method contains a magic number: 23,18
+GoGreen-0.1.3,groupxii.database,PanelEntryTest,testEfficiencyrate,Magic Number,The method contains a magic number: 45,35
+GoGreen-0.1.3,groupxii.database,PanelEntryTest,testAmount,Magic Number,The method contains a magic number: 23,40
+GoGreen-0.1.3,groupxii.database,PanelEntryTest,testReducedCO2,Magic Number,The method contains a magic number: 23,45
+GoGreen-0.1.3,groupxii.database,MealEntry,toDbObject,Long Statement,The length of the statement "return super.toBasicDbObject().append("goodFoodName"`this.goodFoodName).append("goodServingSize"`this.goodServingSize).append("badFoodName"`this.badFoodName).append("badServingSize"`this.badServingSize).append("reducedCo2"`this.reducedCo2);" is 240.,51
+GoGreen-0.1.3,groupxii.database,MealListEntry,toDbObject,Long Statement,The length of the statement "return super.toBasicDbObject().append("foodName"`this.foodName).append("co2PerServing"`this.co2PerServing).append("calPerServing"`this.calPerServing).append("servingSize"`this.servingSize);" is 189.,64
+GoGreen-0.1.3,groupxii.database,Database,Database,Magic Number,The method contains a magic number: 27017,44
+GoGreen-0.1.3,groupxii.database,Database,Database,Magic Number,The method contains a magic number: 27017,44
+GoGreen-0.1.3,groupxii.database,VehicleListEntry,toDbObject,Long Statement,The length of the statement "return super.toBasicDbObject().append("vehicletype"`this.vehicletype).append("co2PerVehicle"`this.co2PerVehicle).append("fuel"`this.fuel).append("AvgConsumption"`this.avgConsumption);" is 183.,63
+GoGreen-0.1.3,groupxii.database,PanelEntry,toDbObject,Long Statement,The length of the statement "return super.toBasicDbObject().append("paneltype"`this.paneltype).append("reducedco2"`this.reducedco2).append("efficiencyrate"`this.efficiencyrate).append("amount"`this.amount);" is 177.,48
+GoGreen-0.1.3,groupxii.database,PanelListEntry,toDbObject,Long Statement,The length of the statement "return super.toBasicDbObject().append("paneltype"`this.paneltype).append("co2PerPanel"`this.co2PerPanel).append("efficiencyrate"`this.efficiencyrate).append("amount"`this.amount);" is 179.,62
+GoGreen-0.1.3,groupxii.database,UserEntry,toDbObject,Long Statement,The length of the statement "return super.toBasicDbObject().append("userId"`this.userId).append("username"`this.username).append("password"`this.password).append("points"`this.points).append("badge"`this.badge).append("reducedCo2"`this.reducedCo2).append("friendsId"`this.friendsId).append("eatenMeals"`this.eatenMeals).append("usedVehicles"`this.usedVehicles).append("usedPanels"`this.usedPanels);" is 369.,100
+GoGreen-0.1.3,groupxii.database,VehicleEntry,VehicleEntry,Long Statement,The length of the statement "this.reducedco2=new CalculatedVehicle(goodvehicleType`badvehicletype`goodavgconsumption`badavgconsumption).getReducedCO2();" is 123.,17
+GoGreen-0.1.3,groupxii.database,VehicleEntry,toDbObject,Long Statement,The length of the statement "return super.toBasicDbObject().append("goodvehicleType"`this.goodvehicleType).append("badvehicleType"`this.badvehicleType).append("reducedco2"`this.reducedco2).append("goodavgconsumption"`this.goodavgconsumption).append("badavgconsumption"`this.badavgconsumption);" is 264.,52
+GoGreen-0.1.3,groupxii.transportation,VehicleCalculationsTest,testCalculate,Magic Number,The method contains a magic number: 5,21
+GoGreen-0.1.3,groupxii.transportation,VehicleCalculationsTest,testInstantiated,Magic Number,The method contains a magic number: 5,27
+GoGreen-0.1.3,groupxii.transportation,CalculatedVehicleTest,testCalculatedMeal,Magic Number,The method contains a magic number: 4,22
+GoGreen-0.1.3,groupxii.transportation,CalculatedVehicleTest,testCalculatedMeal,Magic Number,The method contains a magic number: 9,22
+GoGreen-0.1.3,groupxii.vegetarianmeal,CalculationsTest,testCalculate,Magic Number,The method contains a magic number: 19,20
+GoGreen-0.1.3,groupxii.vegetarianmeal,CalculationsTest,testCalculate,Magic Number,The method contains a magic number: 100,20
+GoGreen-0.1.3,groupxii.vegetarianmeal,CalculationsTest,testInstantiated,Magic Number,The method contains a magic number: 19,26
+GoGreen-0.1.3,groupxii.vegetarianmeal,CalculationsTest,testInstantiated,Magic Number,The method contains a magic number: 100,26
+GoGreen-0.1.3,groupxii.vegetarianmeal,CalculatedMealTest,testCalculatedMeal,Magic Number,The method contains a magic number: 100,21
+GoGreen-0.1.3,groupxii.vegetarianmeal,CalculatedMealTest,testCalculatedMeal,Magic Number,The method contains a magic number: 100,21
+GoGreen-0.1.3,groupxii.server.security,JwtGeneratingFilterTest,createReader,Empty catch clause,The method has an empty catch block.,61
+GoGreen-0.1.3,groupxii.server.security,JwtGeneratingFilterTest,testBodyIOException,Empty catch clause,The method has an empty catch block.,102
+GoGreen-0.1.3,groupxii.server.security,JsonErrorResponseGeneratorTest,testCreateMessage,Magic Number,The method contains a magic number: 200,7
+GoGreen-0.1.3,groupxii.server.security,JwtVerificationFilterTest,createjwtver,Long Statement,The length of the statement "String validJWS=Jwts.builder().setSubject("0day").signWith(Keys.hmacShaKeyFor(SecurityKey.instance.getKey())).setHeaderParam("typ"`"JWT").setIssuedAt(new Date(System.currentTimeMillis())).setExpiration(new Date(System.currentTimeMillis() + 86400000)).setIssuer("goGreen-server").compact();" is 289.,53
+GoGreen-0.1.3,groupxii.server.security,JwtVerificationFilterTest,createjwtver,Magic Number,The method contains a magic number: 86400000,53
+GoGreen-0.1.3,groupxii.server.security,JwtGeneratingFilter,successfulAuthentication,Long Statement,The length of the statement "String jws=Jwts.builder().setSubject(username).signWith(Keys.hmacShaKeyFor(SecurityKey.instance.getKey())).setHeaderParam("typ"`"JWT").setIssuer("goGreen-server").setIssuedAt(new Date(System.currentTimeMillis())).setExpiration(new Date(System.currentTimeMillis() + expirationTime)).compact();" is 292.,81
+GoGreen-0.1.3,groupxii.server.security,JwtGeneratingFilter,successfulAuthentication,Magic Number,The method contains a magic number: 86400000,81
+GoGreen-0.1.3,groupxii.server.security,JsonErrorResponseGenerator,createMessage,Long Statement,The length of the statement "return "{\"timestamp\": " + date + "` "+ "\"status\": "+ statusCode+ "` "+ "\"error\": \""+ errType+ "\"` "+ "\"message\": \""+ message+ "\"` "+ "\"path\": \""+ path+ "\"}";" is 173.,9
+GoGreen-0.1.3,groupxii.server.security,JsonErrorResponseGenerator,createMessage,Magic Number,The method contains a magic number: 400,9
+GoGreen-0.1.3,groupxii.server.security,JsonErrorResponseGenerator,createMessage,Magic Number,The method contains a magic number: 401,9
+GoGreen-0.1.3,groupxii.server.security,WebSecurityConfiguration,configure,Long Statement,The length of the statement "http.addFilterBefore(new JwtVerificationFilter(usernameAuthentiactionManager())`AnonymousAuthenticationFilter.class).csrf().disable().sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS).and().httpBasic().disable().addFilter(new JwtGeneratingFilter(credentialsAuthentiactionManager())).authorizeRequests().antMatchers("/login").permitAll().and().authorizeRequests().antMatchers("/register").permitAll().and().authorizeRequests().anyRequest().authenticated();" is 480.,48
+GoGreen-0.1.3,groupxii.server.controllers,SolarPanelControllerTest,calculatePanelTest,Magic Number,The method contains a magic number: 44,32
+GoGreen-0.1.3,groupxii.server.controllers,SolarPanelControllerTest,calculatePanelTest,Magic Number,The method contains a magic number: 44,32
+GoGreen-0.1.3,groupxii.server.controllers,SolarPanelControllerTest,savePanelData,Magic Number,The method contains a magic number: 34,45
+GoGreen-0.1.3,groupxii.server.controllers,SolarPanelControllerTest,savePanelData,Magic Number,The method contains a magic number: 45,45
+GoGreen-0.1.3,groupxii.server.controllers,SolarPanelControllerTest,savePanelData,Magic Number,The method contains a magic number: 34,45
+GoGreen-0.1.3,groupxii.server.controllers,SolarPanelControllerTest,savePanelData,Magic Number,The method contains a magic number: 45,45
+GoGreen-0.1.3,groupxii.server.controllers,VegetarianMealControllerTest,calculateMealTest,Magic Number,The method contains a magic number: 100,33
+GoGreen-0.1.3,groupxii.server.controllers,VegetarianMealControllerTest,calculateMealTest,Magic Number,The method contains a magic number: 120,33
+GoGreen-0.1.3,groupxii.server.controllers,VegetarianMealControllerTest,calculateMealTest,Magic Number,The method contains a magic number: 100,33
+GoGreen-0.1.3,groupxii.server.controllers,VegetarianMealControllerTest,calculateMealTest,Magic Number,The method contains a magic number: 120,33
+GoGreen-0.1.3,groupxii.server.controllers,VegetarianMealControllerTest,testSaveMealData,Magic Number,The method contains a magic number: 100,46
+GoGreen-0.1.3,groupxii.server.controllers,VegetarianMealControllerTest,testSaveMealData,Magic Number,The method contains a magic number: 120,46
+GoGreen-0.1.3,groupxii.server.controllers,VegetarianMealControllerTest,testSaveMealData,Magic Number,The method contains a magic number: 100,46
+GoGreen-0.1.3,groupxii.server.controllers,VegetarianMealControllerTest,testSaveMealData,Magic Number,The method contains a magic number: 120,46
+GoGreen-0.1.3,groupxii.server.controllers,TransportationControllerTest,calculatevehicleTest,Magic Number,The method contains a magic number: 4,32
+GoGreen-0.1.3,groupxii.server.controllers,TransportationControllerTest,calculatevehicleTest,Magic Number,The method contains a magic number: 8,32
+GoGreen-0.1.3,groupxii.server.controllers,TransportationControllerTest,calculatevehicleTest,Magic Number,The method contains a magic number: 4,32
+GoGreen-0.1.3,groupxii.server.controllers,TransportationControllerTest,calculatevehicleTest,Magic Number,The method contains a magic number: 8,32
+GoGreen-0.1.3,groupxii.server.controllers,TransportationControllerTest,testSaveVehicleData,Magic Number,The method contains a magic number: 4,47
+GoGreen-0.1.3,groupxii.server.controllers,TransportationControllerTest,testSaveVehicleData,Magic Number,The method contains a magic number: 8,47
+GoGreen-0.1.3,groupxii.server.controllers,TransportationControllerTest,testSaveVehicleData,Magic Number,The method contains a magic number: 4,47
+GoGreen-0.1.3,groupxii.server.controllers,TransportationControllerTest,testSaveVehicleData,Magic Number,The method contains a magic number: 8,47
+GoGreen-0.1.3,groupxii.server.controllers,VegetarianMealController,saveMealData,Long Parameter List,The method has 5 parameters. ,49
+GoGreen-0.1.3,groupxii.server.controllers,TransportationController,saveVehicleData,Long Parameter List,The method has 5 parameters. ,49
+GoGreen-0.1.3,groupxii.localproducts,ReadLocalProductJsonTest,setLocalShopList,Magic Number,The method contains a magic number: 3.7,20
+GoGreen-0.1.3,groupxii.localproducts,ReadLocalProductJsonTest,setLocalShopList,Magic Number,The method contains a magic number: 4.9,20
+GoGreen-0.1.3,groupxii.localproducts,ReadLocalProductJsonTest,setLocalShopList,Magic Number,The method contains a magic number: 4.0,20
+GoGreen-0.1.3,groupxii.localproducts,ReadLocalProductJsonTest,localShopToString,Long Statement,The length of the statement "assertEquals(json.localShopToString()`" SHOP: " + shop.getName() + " - LOCATED AT: "+ shop.getLocation()+ " - RATING: "+ shop.getRating()+ "` ");" is 145.,40
+GoGreen-0.1.3,groupxii.localproducts,ReadLocalProductJsonTest,localShopToString,Magic Number,The method contains a magic number: 4.9,40
+GoGreen-0.1.3,groupxii.localproducts,ReadLocalProductJsonTest,clearList,Magic Number,The method contains a magic number: 3.7,50
+GoGreen-0.1.3,groupxii.localproducts,ReadLocalProductJsonTest,clearList,Magic Number,The method contains a magic number: 4.9,50
+GoGreen-0.1.3,groupxii.localproducts,ReadLocalProductJsonTest,clearList,Magic Number,The method contains a magic number: 4.0,50
+GoGreen-0.1.3,groupxii.localproducts,LocalShopTest,setName,Magic Number,The method contains a magic number: 3.7,9
+GoGreen-0.1.3,groupxii.localproducts,LocalShopTest,setLocation,Magic Number,The method contains a magic number: 3.7,16
+GoGreen-0.1.3,groupxii.localproducts,LocalShopTest,setRating,Magic Number,The method contains a magic number: 3.7,23
+GoGreen-0.1.3,groupxii.localproducts,LocalShopTest,setRating,Magic Number,The method contains a magic number: 5,23
+GoGreen-0.1.3,groupxii.localproducts,LocalShopTest,setRating,Magic Number,The method contains a magic number: 5,23
+GoGreen-0.1.3,groupxii.localproducts,LocalShopTest,getLocation,Magic Number,The method contains a magic number: 3.7,30
+GoGreen-0.1.3,groupxii.localproducts,LocalShopTest,getRating,Magic Number,The method contains a magic number: 3.7,36
+GoGreen-0.1.3,groupxii.localproducts,LocalShopTest,getRating,Magic Number,The method contains a magic number: 3.7,36
+GoGreen-0.1.3,groupxii.localproducts,LocalShopTest,getName,Magic Number,The method contains a magic number: 3.7,42
+GoGreen-0.1.3,groupxii.localproducts,GetLocalProductsJson,getLocalShopJson,Long Statement,The length of the statement "url=new URL("https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=" + location + "&radius=49000&rankby=prominence&keyword=local+produce&key=AIzaSyAx468de0kVfaSUaksLjRhjPyXdTjnuYZQ");" is 199.,14
+GoGreen-0.1.3,groupxii.localproducts,ReadLocalProductJson,localShopToString,Long Statement,The length of the statement "result=result + " SHOP: " + localShopList.get(i).getName()+ " - LOCATED AT: "+ localShopList.get(i).getLocation()+ " - RATING: "+ localShopList.get(i).getRating()+ "` ";" is 169.,55
+GoGreen-0.1.3,groupxii.client.vegetarianmeal,EatenMealListTest,getReducedCo2Test,Long Statement,The length of the statement "PowerMockito.when(VegetarianMealConnector.retrieveEatenMealList()).thenReturn("[{\"goodFoodName\":\"APPLE\"` \"reducedCo2\":\"120\"}` {\"goodFoodName\":\"GRAPEFRUIT\"` \"reducedCo2\":\"120\"}]");" is 195.,24
+GoGreen-0.1.3,groupxii.client.vegetarianmeal,ReducedCo2Test,getReducedCo2Test,Long Statement,The length of the statement "PowerMockito.when(VegetarianMealConnector.calculateCO2Reduction(anyString()`anyInt()`anyString()`anyInt())).thenReturn("{\"reducedCO2\":\"120\"}");" is 147.,21
+GoGreen-0.1.3,groupxii.client.vegetarianmeal,ReducedCo2Test,getReducedCo2Test,Magic Number,The method contains a magic number: 3,21
+GoGreen-0.1.3,groupxii.client.vegetarianmeal,ReducedCo2Test,getReducedCo2Test,Magic Number,The method contains a magic number: 2,21
+GoGreen-0.1.3,groupxii.client.leaderboard,JsonConverterTest,leaderboardToStringTest,Long Statement,The length of the statement "assertEquals(leaderboardToString("[{\"userId\":1`\"username\":\"test\"`\"points\":2649`\"badge\":3`\"reducedCo2\":7151`\"friendsId\":[2`4`1`3]}]")`"test - 7151 CO2 Reduction `1`");" is 180.,10
+GoGreen-0.1.3,groupxii.client.leaderboard,JsonConverter,leaderboardToString,Long Statement,The length of the statement "result=result + jsonObject.get("username").toString() + " - "+ jsonObject.get("reducedCo2")+ " CO2 Reduction `"+ jsonObject.get("userId")+ "`";" is 143.,8
+GoGreen-0.1.3,groupxii.client.localproducts,GetUserLocation,getUserLocation,Long Statement,The length of the statement "rootNode=objectMapper.readTree(new URL("http://api.ipstack.com/" + ipAddress + "?access_key=f8449c29422a48b1dd367afadaa10714"));" is 128.,14
+GoGreen-0.1.3,groupxii.client,Main,start,Magic Number,The method contains a magic number: 900,22
+GoGreen-0.1.3,groupxii.client,Main,start,Magic Number,The method contains a magic number: 650,22
+GoGreen-0.1.3,groupxii.client.connector,TrivialConnectorTest,LeaderboardConnectorTest,Magic Number,The method contains a magic number: 2,39
+GoGreen-0.1.3,groupxii.client.connector,TrivialConnectorTest,transportConnectorTest,Magic Number,The method contains a magic number: 2,64
+GoGreen-0.1.3,groupxii.client.connector,TrivialConnectorTest,vegetarianMealConnectorTest,Magic Number,The method contains a magic number: 2,78
+GoGreen-0.1.3,groupxii.client.connector,TransportConnector,calculateCO2Reduction,Long Statement,The length of the statement "String resource="/calculateTransport" + "?goodVehicleType=" + goodTransportName + "&badVehicleType"+ badTransportName+ "&goodAvgConsumption"+ goodConsumption+ "&badAvgConsumption"+ badConsumption;" is 196.,12
+GoGreen-0.1.3,groupxii.client.connector,VegetarianMealConnector,calculateCO2Reduction,Long Statement,The length of the statement "String resource="/calculateMeal" + "?goodFoodName=" + goodFoodName + ""+ "&goodServingSize="+ goodServingSize+ "&badFoodName="+ badFoodName+ ""+ "&badServingSize="+ badServingSize;" is 180.,12
+GoGreen-0.1.3,groupxii.client.connector,VegetarianMealConnector,commitMeal,Long Statement,The length of the statement "String resource="/saveMealData" + "?goodFoodName=" + goodFoodName + ""+ "&goodServingSize="+ goodServingSize+ "&badFoodName="+ badFoodName+ ""+ "&badServingSize="+ badServingSize;" is 179.,31
+GoGreen-0.1.3,groupxii.client.controllers,TransportationController,updateListView,Long Statement,The length of the statement "ObservableList<String> usedTransportObservableList=FXCollections.observableArrayList(usedTransportList.getEatenMealList());" is 123.,66
+GoGreen-0.1.3,groupxii.client.controllers,TransportationController,safeTransport,Long Statement,The length of the statement "String result=TransportConnector.calculateCO2Reduction(goodTransportName`badTransportName`goodConsumption`badConsumption);" is 122.,94
+GoGreen-0.1.3,groupxii.client.controllers,LocalProductsController,getLocation,Long Statement,The length of the statement "mapsImage.setImage(new Image("https://maps.googleapis.com/maps/api/staticmap?center=" + url + "&zoom=12&size=900x150&maptype=roadmap&markers=color:red%7Clabel:Shop%7C"+ url+ "&key=AIzaSyBvn_zZpLGUjLJBxIUoGHgJjzo2VlZm3jg"));" is 223.,44
+GoGreen-0.1.3,groupxii.client.controllers,LocalProductsController,safeLocalProduct,Magic Number,The method contains a magic number: 300,92
+GoGreen-0.1.3,groupxii.client.controllers,MenuController,initialize,Magic Number,The method contains a magic number: 24500,71
+GoGreen-0.1.3,groupxii.client.controllers,MenuController,initialize,Magic Number,The method contains a magic number: 3,71
+GoGreen-0.1.3,groupxii.client.controllers,MenuController,initialize,Magic Number,The method contains a magic number: 10000,71
+GoGreen-0.1.3,groupxii.client.controllers,MenuController,initialize,Magic Number,The method contains a magic number: 10000,71
+GoGreen-0.1.3,groupxii.client.controllers,MenuController,initialize,Magic Number,The method contains a magic number: 10000,71
+GoGreen-0.1.3,groupxii.client.controllers,LeaderboardController,initialize,Long Identifier,The length of the identifier overallLeaderboardObservableList is 32.,63
+GoGreen-0.1.3,groupxii.client.controllers,LeaderboardController,initialize,Long Identifier,The length of the identifier friendsLeaderboardObservableList is 32.,63
+GoGreen-0.1.3,groupxii.client.controllers,LeaderboardController,initialize,Long Statement,The length of the statement "overallList.add(new HBoxCell(overallLeaderboardList.get(i)`"ADD FRIEND"`Integer.parseInt(overallLeaderboardList.get(i + 1))));" is 126.,63
+GoGreen-0.1.3,groupxii.client.controllers,LeaderboardController,initialize,Long Statement,The length of the statement "friendList.add(new HBoxCell(friendsLeaderboardList.get(i)`"UNFOLLOW"`Integer.parseInt(overallLeaderboardList.get(i + 1))));" is 123.,63

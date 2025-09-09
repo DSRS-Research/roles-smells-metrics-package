@@ -1,0 +1,265 @@
+Project Name,Package Name,Type Name,Method Name,Implementation Smell,Cause of the Smell,Method start line no
+LiveChatServer-4.1,com.chatroom.ui,MainMenuOptions,ListeningEvents,Magic Number,The method contains a magic number: 2,90
+LiveChatServer-4.1,com.chatroom.ui,MainMenuOptions,actionPerformed,Magic Number,The method contains a magic number: 2,99
+LiveChatServer-4.1,com.chatroom.ui,MainMenuOptions,initializeAllWithProperties,Magic Number,The method contains a magic number: 150,133
+LiveChatServer-4.1,com.chatroom.ui,MainMenuOptions,initializeAllWithProperties,Magic Number,The method contains a magic number: 35,133
+LiveChatServer-4.1,com.chatroom.ui,MainMenuOptions,initializeAllWithProperties,Magic Number,The method contains a magic number: 3,133
+LiveChatServer-4.1,com.chatroom.ui,MainMenuOptions,initializeAllWithProperties,Magic Number,The method contains a magic number: 150,133
+LiveChatServer-4.1,com.chatroom.ui,MainMenuOptions,initializeAllWithProperties,Magic Number,The method contains a magic number: 35,133
+LiveChatServer-4.1,com.chatroom.ui,MainMenuOptions,initializeAllWithProperties,Magic Number,The method contains a magic number: 3,133
+LiveChatServer-4.1,com.chatroom.ui,MainMenuOptions,initializeAllWithProperties,Magic Number,The method contains a magic number: 150,133
+LiveChatServer-4.1,com.chatroom.ui,MainMenuOptions,initializeAllWithProperties,Magic Number,The method contains a magic number: 35,133
+LiveChatServer-4.1,com.chatroom.ui,MainMenuOptions,initializeAllWithProperties,Magic Number,The method contains a magic number: 3,133
+LiveChatServer-4.1,com.chatroom.ui,MainMenuOptions,initializeAllWithProperties,Magic Number,The method contains a magic number: 150,133
+LiveChatServer-4.1,com.chatroom.ui,MainMenuOptions,initializeAllWithProperties,Magic Number,The method contains a magic number: 35,133
+LiveChatServer-4.1,com.chatroom.ui,MainMenuOptions,initializeAllWithProperties,Magic Number,The method contains a magic number: 3,133
+LiveChatServer-4.1,com.chatroom.ui,MainMenuOptions,initializeAllWithProperties,Magic Number,The method contains a magic number: 4,133
+LiveChatServer-4.1,com.chatroom.ui,MainMenuOptions,initializeAllWithProperties,Magic Number,The method contains a magic number: 100,133
+LiveChatServer-4.1,com.chatroom.ui,MainMenuOptions,initializeAllWithProperties,Magic Number,The method contains a magic number: 20,133
+LiveChatServer-4.1,com.chatroom.ui,MainMenuOptions,initializeAllWithProperties,Magic Number,The method contains a magic number: 4,133
+LiveChatServer-4.1,com.chatroom.ui,MainMenuOptions,initializeAllWithProperties,Magic Number,The method contains a magic number: 200,133
+LiveChatServer-4.1,com.chatroom.ui,MainMenuOptions,initializeAllWithProperties,Magic Number,The method contains a magic number: 50,133
+LiveChatServer-4.1,com.chatroom.ui,MainMenuOptions,initializeAllWithProperties,Magic Number,The method contains a magic number: 4,133
+LiveChatServer-4.1,com.chatroom.ui,MainMenuOptions,initializeAllWithProperties,Magic Number,The method contains a magic number: 200,133
+LiveChatServer-4.1,com.chatroom.ui,MainMenuOptions,initializeAllWithProperties,Magic Number,The method contains a magic number: 20,133
+LiveChatServer-4.1,com.chatroom.ui,MainMenuOptions,initializeAllWithProperties,Magic Number,The method contains a magic number: 4,133
+LiveChatServer-4.1,com.chatroom.ui,MainMenuOptions,initializeAllWithProperties,Magic Number,The method contains a magic number: 100,133
+LiveChatServer-4.1,com.chatroom.ui,MainMenuOptions,initializeAllWithProperties,Magic Number,The method contains a magic number: 100,133
+LiveChatServer-4.1,com.chatroom.ui,MainMenuOptions,initializeAllWithProperties,Magic Number,The method contains a magic number: 150,133
+LiveChatServer-4.1,com.chatroom.ui,MainMenuOptions,initializeAllWithProperties,Magic Number,The method contains a magic number: 150,133
+LiveChatServer-4.1,com.chatroom.ui,MainMenuOptions,initializeAllWithProperties,Magic Number,The method contains a magic number: 2,133
+LiveChatServer-4.1,com.chatroom.ui,MainMenuOptions,initializeAllWithProperties,Magic Number,The method contains a magic number: 3,133
+LiveChatServer-4.1,com.chatroom.ui,MainMenuOptions,initializeAllWithProperties,Magic Number,The method contains a magic number: 4,133
+LiveChatServer-4.1,com.chatroom.ui,MainMenuOptions,initializeAllWithProperties,Magic Number,The method contains a magic number: 5,133
+LiveChatServer-4.1,com.chatroom.ui,MainMenuOptions,initializeAllWithProperties,Magic Number,The method contains a magic number: 6,133
+LiveChatServer-4.1,com.chatroom.ui,MainMenuOptions,initializeAllWithProperties,Magic Number,The method contains a magic number: 864,133
+LiveChatServer-4.1,com.chatroom.ui,MainMenuOptions,initializeAllWithProperties,Magic Number,The method contains a magic number: 614,133
+LiveChatServer-4.1,com.chatroom.ui,MainMenuOptions,createAndJoinRoom,Long Statement,The length of the statement "if (create) request=new Request(Request.Type.CREATE_ROOM.ordinal()`clientModel.getClientID()`clientModel.getRoomId()`rName);" is 124.,213
+LiveChatServer-4.1,com.chatroom.ui,MainMenuOptions,createAndJoinRoom,Long Statement,The length of the statement "clientModel.setRoomId(Integer.parseInt(response.getContents().substring(hashIndex + 1`response.getContents().indexOf(" "`hashIndex))));" is 135.,213
+LiveChatServer-4.1,com.chatroom.ui,MainMenuOptions,displayAlertDialog,Long Statement,The length of the statement "int choice=JOptionPane.showOptionDialog(null`jPanel`"Enter Room Name"`JOptionPane.OK_CANCEL_OPTION`JOptionPane.PLAIN_MESSAGE`null`null`null);" is 141.,249
+LiveChatServer-4.1,com.chatroom.ui,MainMenuOptions,displayAlertDialog,Magic Number,The method contains a magic number: 200,249
+LiveChatServer-4.1,com.chatroom.ui,MainMenuOptions,displayAlertDialog,Magic Number,The method contains a magic number: 64,249
+LiveChatServer-4.1,com.chatroom.ui,MainMenuOptions,displayAlertDialog,Magic Number,The method contains a magic number: 250,249
+LiveChatServer-4.1,com.chatroom.ui,MainMenuOptions,displayAlertDialog,Magic Number,The method contains a magic number: 35,249
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,ChatActivity,Long Statement,The length of the statement "rightBubbleConstraints=new GridBagConstraints(0`i`1`1`1.0`0`GridBagConstraints.NORTHEAST`GridBagConstraints.NONE`new Insets(0`0`5`0)`0`0);" is 138.,68
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,ChatActivity,Long Statement,The length of the statement "leftBubbleConstraints=new GridBagConstraints(0`i`1`1`1.0`0`GridBagConstraints.NORTHWEST`GridBagConstraints.NONE`new Insets(0`0`5`0)`0`0);" is 137.,68
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,ChatActivity,Long Statement,The length of the statement "centerConstraints=new GridBagConstraints(0`i`1`1`1.0`0`GridBagConstraints.CENTER`GridBagConstraints.NONE`new Insets(0`0`5`0)`0`0);" is 130.,68
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,ChatActivity,Long Statement,The length of the statement "displayStatusMessages("NOTE: You've entered the server. <br/>" + "For personal message type '@user_name your_message' without quotes");" is 135.,68
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,ChatActivity,Long Statement,The length of the statement "request=new Request(Request.Type.STATUS_MSG.ordinal()`clientModel.getClientID()`clientModel.getRoomId()`"joined the chat");" is 123.,68
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,ChatActivity,Magic Number,The method contains a magic number: 10,68
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,ChatActivity,Magic Number,The method contains a magic number: 2,68
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,ChatActivity,Magic Number,The method contains a magic number: 10,68
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,ChatActivity,Magic Number,The method contains a magic number: 16,68
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,ChatActivity,Magic Number,The method contains a magic number: 2,68
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,ChatActivity,Magic Number,The method contains a magic number: 10,68
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,ChatActivity,Magic Number,The method contains a magic number: 16,68
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,ChatActivity,Magic Number,The method contains a magic number: 50,68
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,ChatActivity,Magic Number,The method contains a magic number: 50,68
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,ChatActivity,Magic Number,The method contains a magic number: 50,68
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,ChatActivity,Magic Number,The method contains a magic number: 50,68
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,ChatActivity,Magic Number,The method contains a magic number: 50,68
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,ChatActivity,Magic Number,The method contains a magic number: 50,68
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,ChatActivity,Magic Number,The method contains a magic number: 5,68
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,ChatActivity,Magic Number,The method contains a magic number: 5,68
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,ChatActivity,Magic Number,The method contains a magic number: 5,68
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,ListeningEvents,Complex Conditional,The conditional expression isSenderMsg || (!isReadMode && tracker != jsb.getMaximum()) is complex.,135
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,ListeningEvents,Long Method,The method has 104 lines of code.,135
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,ListeningEvents,Magic Number,The method contains a magic number: 10,135
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,ListeningEvents,Magic Number,The method contains a magic number: 300,135
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,adjustmentValueChanged,Complex Conditional,The conditional expression isSenderMsg || (!isReadMode && tracker != jsb.getMaximum()) is complex.,213
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,adjustmentValueChanged,Magic Number,The method contains a magic number: 10,213
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,adjustmentValueChanged,Magic Number,The method contains a magic number: 300,213
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,setSenderMessage,Complex Conditional,The conditional expression !jTfMessageHere.getText().equals("Type your message here") && jTfMessageHere.getText().trim().length() > 0 && jTfMessageHere.getText().trim().length() <= 300 is complex.,255
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,setSenderMessage,Long Statement,The length of the statement "if (!jTfMessageHere.getText().equals("Type your message here") && jTfMessageHere.getText().trim().length() > 0 && jTfMessageHere.getText().trim().length() <= 300) {" is 164.,255
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,setSenderMessage,Long Statement,The length of the statement "request=new Request(Request.Type.MSG.ordinal()`clientModel.getClientID()`clientModel.getRoomId()`jTfMessageHere.getText());" is 123.,255
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,setSenderMessage,Long Statement,The length of the statement "String text=String.format("<html><div><p style=\"width:%s;word-break: break-all;\">%s</p></div></html>"`temp`jTfMessageHere.getText());" is 135.,255
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,setSenderMessage,Magic Number,The method contains a magic number: 300,255
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,setSenderMessage,Magic Number,The method contains a magic number: 3,255
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,setSenderMessage,Magic Number,The method contains a magic number: 51,255
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,displayStatusMessages,Magic Number,The method contains a magic number: 400,299
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,setReceiverMessage,Long Statement,The length of the statement "String text=String.format("<html><div style=\"font-size:8px;text-align:right;\">%3$s</div><div style=\"width:%1$spx;\"><p style=\"width:%s;word-break: break-all;\">%2$s</p></div></html>"`temp`message`senderName + "<br>");" is 221.,310
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,setReceiverMessage,Magic Number,The method contains a magic number: 3,310
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,setReceiverMessage,Magic Number,The method contains a magic number: 51,310
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 550,330
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 35,330
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 50,330
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 35,330
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 3,330
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 2,330
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 864,330
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 490,330
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 864,330
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 530,330
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 864,330
+LiveChatServer-4.1,com.chatroom.ui,ChatActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 614,330
+LiveChatServer-4.1,com.chatroom.ui,ViewRoomsActivity,createAndJoinRoom,Long Statement,The length of the statement "if (create) request=new Request(Request.Type.CREATE_ROOM.ordinal()`clientModel.getClientID()`clientModel.getRoomId()`rName);" is 124.,104
+LiveChatServer-4.1,com.chatroom.ui,ViewRoomsActivity,createAndJoinRoom,Long Statement,The length of the statement "clientModel.setRoomId(Integer.parseInt(response.getContents().substring(hashIndex + 1`response.getContents().indexOf(" "`hashIndex))));" is 135.,104
+LiveChatServer-4.1,com.chatroom.ui,ViewRoomsActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 150,166
+LiveChatServer-4.1,com.chatroom.ui,ViewRoomsActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 35,166
+LiveChatServer-4.1,com.chatroom.ui,ViewRoomsActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 3,166
+LiveChatServer-4.1,com.chatroom.ui,ViewRoomsActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 200,166
+LiveChatServer-4.1,com.chatroom.ui,ViewRoomsActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 35,166
+LiveChatServer-4.1,com.chatroom.ui,ViewRoomsActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 4,166
+LiveChatServer-4.1,com.chatroom.ui,ViewRoomsActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 175,166
+LiveChatServer-4.1,com.chatroom.ui,ViewRoomsActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 20,166
+LiveChatServer-4.1,com.chatroom.ui,ViewRoomsActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 4,166
+LiveChatServer-4.1,com.chatroom.ui,ViewRoomsActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 4,166
+LiveChatServer-4.1,com.chatroom.ui,ViewRoomsActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 160,166
+LiveChatServer-4.1,com.chatroom.ui,ViewRoomsActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 20,166
+LiveChatServer-4.1,com.chatroom.ui,ViewRoomsActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 4,166
+LiveChatServer-4.1,com.chatroom.ui,ViewRoomsActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 200,166
+LiveChatServer-4.1,com.chatroom.ui,ViewRoomsActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 50,166
+LiveChatServer-4.1,com.chatroom.ui,ViewRoomsActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 4,166
+LiveChatServer-4.1,com.chatroom.ui,ViewRoomsActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 200,166
+LiveChatServer-4.1,com.chatroom.ui,ViewRoomsActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 20,166
+LiveChatServer-4.1,com.chatroom.ui,ViewRoomsActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 4,166
+LiveChatServer-4.1,com.chatroom.ui,ViewRoomsActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 10,166
+LiveChatServer-4.1,com.chatroom.ui,ViewRoomsActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 100,166
+LiveChatServer-4.1,com.chatroom.ui,ViewRoomsActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 50,166
+LiveChatServer-4.1,com.chatroom.ui,ViewRoomsActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 50,166
+LiveChatServer-4.1,com.chatroom.ui,ViewRoomsActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 150,166
+LiveChatServer-4.1,com.chatroom.ui,ViewRoomsActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 150,166
+LiveChatServer-4.1,com.chatroom.ui,ViewRoomsActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 2,166
+LiveChatServer-4.1,com.chatroom.ui,ViewRoomsActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 3,166
+LiveChatServer-4.1,com.chatroom.ui,ViewRoomsActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 4,166
+LiveChatServer-4.1,com.chatroom.ui,ViewRoomsActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 864,166
+LiveChatServer-4.1,com.chatroom.ui,ViewRoomsActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 614,166
+LiveChatServer-4.1,com.chatroom.ui,MainSplash,initializeAllWithProperties,Magic Number,The method contains a magic number: 150,85
+LiveChatServer-4.1,com.chatroom.ui,MainSplash,initializeAllWithProperties,Magic Number,The method contains a magic number: 35,85
+LiveChatServer-4.1,com.chatroom.ui,MainSplash,initializeAllWithProperties,Magic Number,The method contains a magic number: 150,85
+LiveChatServer-4.1,com.chatroom.ui,MainSplash,initializeAllWithProperties,Magic Number,The method contains a magic number: 35,85
+LiveChatServer-4.1,com.chatroom.ui,MainSplash,initializeAllWithProperties,Magic Number,The method contains a magic number: 3,85
+LiveChatServer-4.1,com.chatroom.ui,MainSplash,initializeAllWithProperties,Magic Number,The method contains a magic number: 4,85
+LiveChatServer-4.1,com.chatroom.ui,MainSplash,initializeAllWithProperties,Magic Number,The method contains a magic number: 200,85
+LiveChatServer-4.1,com.chatroom.ui,MainSplash,initializeAllWithProperties,Magic Number,The method contains a magic number: 20,85
+LiveChatServer-4.1,com.chatroom.ui,MainSplash,initializeAllWithProperties,Magic Number,The method contains a magic number: 4,85
+LiveChatServer-4.1,com.chatroom.ui,MainSplash,initializeAllWithProperties,Magic Number,The method contains a magic number: 200,85
+LiveChatServer-4.1,com.chatroom.ui,MainSplash,initializeAllWithProperties,Magic Number,The method contains a magic number: 50,85
+LiveChatServer-4.1,com.chatroom.ui,MainSplash,initializeAllWithProperties,Magic Number,The method contains a magic number: 150,85
+LiveChatServer-4.1,com.chatroom.ui,MainSplash,initializeAllWithProperties,Magic Number,The method contains a magic number: 150,85
+LiveChatServer-4.1,com.chatroom.ui,MainSplash,initializeAllWithProperties,Magic Number,The method contains a magic number: 2,85
+LiveChatServer-4.1,com.chatroom.ui,MainSplash,initializeAllWithProperties,Magic Number,The method contains a magic number: 3,85
+LiveChatServer-4.1,com.chatroom.ui,MainSplash,initializeAllWithProperties,Magic Number,The method contains a magic number: 864,85
+LiveChatServer-4.1,com.chatroom.ui,MainSplash,initializeAllWithProperties,Magic Number,The method contains a magic number: 614,85
+LiveChatServer-4.1,com.chatroom.ui,SignUpActivity,SignUpActivity,Magic Number,The method contains a magic number: 10,50
+LiveChatServer-4.1,com.chatroom.ui,SignUpActivity,SignUpActivity,Magic Number,The method contains a magic number: 3,50
+LiveChatServer-4.1,com.chatroom.ui,SignUpActivity,SignUpActivity,Magic Number,The method contains a magic number: 10,50
+LiveChatServer-4.1,com.chatroom.ui,SignUpActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 250,197
+LiveChatServer-4.1,com.chatroom.ui,SignUpActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 35,197
+LiveChatServer-4.1,com.chatroom.ui,SignUpActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 250,197
+LiveChatServer-4.1,com.chatroom.ui,SignUpActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 35,197
+LiveChatServer-4.1,com.chatroom.ui,SignUpActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 150,197
+LiveChatServer-4.1,com.chatroom.ui,SignUpActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 35,197
+LiveChatServer-4.1,com.chatroom.ui,SignUpActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 3,197
+LiveChatServer-4.1,com.chatroom.ui,SignUpActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 4,197
+LiveChatServer-4.1,com.chatroom.ui,SignUpActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 200,197
+LiveChatServer-4.1,com.chatroom.ui,SignUpActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 20,197
+LiveChatServer-4.1,com.chatroom.ui,SignUpActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 4,197
+LiveChatServer-4.1,com.chatroom.ui,SignUpActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 4,197
+LiveChatServer-4.1,com.chatroom.ui,SignUpActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 150,197
+LiveChatServer-4.1,com.chatroom.ui,SignUpActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 10,197
+LiveChatServer-4.1,com.chatroom.ui,SignUpActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 4,197
+LiveChatServer-4.1,com.chatroom.ui,SignUpActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 4,197
+LiveChatServer-4.1,com.chatroom.ui,SignUpActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 185,197
+LiveChatServer-4.1,com.chatroom.ui,SignUpActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 4,197
+LiveChatServer-4.1,com.chatroom.ui,SignUpActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 4,197
+LiveChatServer-4.1,com.chatroom.ui,SignUpActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 4,197
+LiveChatServer-4.1,com.chatroom.ui,SignUpActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 250,197
+LiveChatServer-4.1,com.chatroom.ui,SignUpActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 20,197
+LiveChatServer-4.1,com.chatroom.ui,SignUpActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 4,197
+LiveChatServer-4.1,com.chatroom.ui,SignUpActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 200,197
+LiveChatServer-4.1,com.chatroom.ui,SignUpActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 50,197
+LiveChatServer-4.1,com.chatroom.ui,SignUpActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 100,197
+LiveChatServer-4.1,com.chatroom.ui,SignUpActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 100,197
+LiveChatServer-4.1,com.chatroom.ui,SignUpActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 150,197
+LiveChatServer-4.1,com.chatroom.ui,SignUpActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 150,197
+LiveChatServer-4.1,com.chatroom.ui,SignUpActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 2,197
+LiveChatServer-4.1,com.chatroom.ui,SignUpActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 3,197
+LiveChatServer-4.1,com.chatroom.ui,SignUpActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 4,197
+LiveChatServer-4.1,com.chatroom.ui,SignUpActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 5,197
+LiveChatServer-4.1,com.chatroom.ui,SignUpActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 6,197
+LiveChatServer-4.1,com.chatroom.ui,SignUpActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 864,197
+LiveChatServer-4.1,com.chatroom.ui,SignUpActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 614,197
+LiveChatServer-4.1,com.chatroom.ui,SignInActivity,SignInActivity,Magic Number,The method contains a magic number: 10,51
+LiveChatServer-4.1,com.chatroom.ui,SignInActivity,SignInActivity,Magic Number,The method contains a magic number: 3,51
+LiveChatServer-4.1,com.chatroom.ui,SignInActivity,SignInActivity,Magic Number,The method contains a magic number: 10,51
+LiveChatServer-4.1,com.chatroom.ui,SignInActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 250,189
+LiveChatServer-4.1,com.chatroom.ui,SignInActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 35,189
+LiveChatServer-4.1,com.chatroom.ui,SignInActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 250,189
+LiveChatServer-4.1,com.chatroom.ui,SignInActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 35,189
+LiveChatServer-4.1,com.chatroom.ui,SignInActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 150,189
+LiveChatServer-4.1,com.chatroom.ui,SignInActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 35,189
+LiveChatServer-4.1,com.chatroom.ui,SignInActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 3,189
+LiveChatServer-4.1,com.chatroom.ui,SignInActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 4,189
+LiveChatServer-4.1,com.chatroom.ui,SignInActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 200,189
+LiveChatServer-4.1,com.chatroom.ui,SignInActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 20,189
+LiveChatServer-4.1,com.chatroom.ui,SignInActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 4,189
+LiveChatServer-4.1,com.chatroom.ui,SignInActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 4,189
+LiveChatServer-4.1,com.chatroom.ui,SignInActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 150,189
+LiveChatServer-4.1,com.chatroom.ui,SignInActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 10,189
+LiveChatServer-4.1,com.chatroom.ui,SignInActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 4,189
+LiveChatServer-4.1,com.chatroom.ui,SignInActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 4,189
+LiveChatServer-4.1,com.chatroom.ui,SignInActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 185,189
+LiveChatServer-4.1,com.chatroom.ui,SignInActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 4,189
+LiveChatServer-4.1,com.chatroom.ui,SignInActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 4,189
+LiveChatServer-4.1,com.chatroom.ui,SignInActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 4,189
+LiveChatServer-4.1,com.chatroom.ui,SignInActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 250,189
+LiveChatServer-4.1,com.chatroom.ui,SignInActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 20,189
+LiveChatServer-4.1,com.chatroom.ui,SignInActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 4,189
+LiveChatServer-4.1,com.chatroom.ui,SignInActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 200,189
+LiveChatServer-4.1,com.chatroom.ui,SignInActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 50,189
+LiveChatServer-4.1,com.chatroom.ui,SignInActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 150,189
+LiveChatServer-4.1,com.chatroom.ui,SignInActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 150,189
+LiveChatServer-4.1,com.chatroom.ui,SignInActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 2,189
+LiveChatServer-4.1,com.chatroom.ui,SignInActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 3,189
+LiveChatServer-4.1,com.chatroom.ui,SignInActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 4,189
+LiveChatServer-4.1,com.chatroom.ui,SignInActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 5,189
+LiveChatServer-4.1,com.chatroom.ui,SignInActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 6,189
+LiveChatServer-4.1,com.chatroom.ui,SignInActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 864,189
+LiveChatServer-4.1,com.chatroom.ui,SignInActivity,initializeAllWithProperties,Magic Number,The method contains a magic number: 614,189
+LiveChatServer-4.1,com.chatroom.Database,createdb,main,Long Statement,The length of the statement "connection=DriverManager.getConnection(Config.DATABASE_URL + '/' + Config.DATABASE_NAME+ "?allowMultiQueries=true"`Config.USER_NAME`Config.USER_PWD);" is 149.,12
+LiveChatServer-4.1,com.chatroom.Database,createdb,main,Long Statement,The length of the statement "String Queries="CREATE TABLE IF NOT EXISTS " + Config.TABLE_NAME + "("+ Config.CLIENT_ID+ " int auto_increment`"+ Config.CLIENT_NAME+ " VARCHAR(50) not null` "+ Config.CLIENT_PWD+ " VARCHAR(150)` "+ "primary key("+ Config.CLIENT_ID+ "))";" is 238.,12
+LiveChatServer-4.1,com.chatroom.others,TextBubbleBorder,TextBubbleBorder,Magic Number,The method contains a magic number: 4,31
+LiveChatServer-4.1,com.chatroom.others,TextBubbleBorder,TextBubbleBorder,Magic Number,The method contains a magic number: 8,31
+LiveChatServer-4.1,com.chatroom.others,TextBubbleBorder,TextBubbleBorder,Magic Number,The method contains a magic number: 7,31
+LiveChatServer-4.1,com.chatroom.others,TextBubbleBorder,TextBubbleBorder,Magic Number,The method contains a magic number: 2,36
+LiveChatServer-4.1,com.chatroom.others,TextBubbleBorder,TextBubbleBorder,Long Parameter List,The method has 5 parameters. ,55
+LiveChatServer-4.1,com.chatroom.others,TextBubbleBorder,paintBorder,Long Parameter List,The method has 6 parameters. ,71
+LiveChatServer-4.1,com.chatroom.others,TextBubbleBorder,paintBorder,Long Statement,The length of the statement "RoundRectangle2D.Double bubble=new RoundRectangle2D.Double(0 + strokePad`0 + strokePad`width - thickness`bottomLineY`radii`radii);" is 130.,71
+LiveChatServer-4.1,com.chatroom.others,TextBubbleBorder,paintBorder,Magic Number,The method contains a magic number: 2,71
+LiveChatServer-4.1,com.chatroom.others,TextBubbleBorder,paintBorder,Magic Number,The method contains a magic number: 2,71
+LiveChatServer-4.1,com.chatroom.others,Hash,getHash,Magic Number,The method contains a magic number: 16,13
+LiveChatServer-4.1,com.chatroom.others,Hash,getHash,Magic Number,The method contains a magic number: 32,13
+LiveChatServer-4.1,com.chatroom.others,LogFileWriter,Log,Long Statement,The length of the statement "printWriter=new PrintWriter(new FileOutputStream(new File(System.getProperty("user.home") + "/CHATROOM/LOGS.txt")`true));" is 121.,15
+LiveChatServer-4.1,com.chatroom.server,ServerOperations,run,Magic Number,The method contains a magic number: 2,12
+LiveChatServer-4.1,com.chatroom.server,ServerOperations,run,Magic Number,The method contains a magic number: 3,12
+LiveChatServer-4.1,com.chatroom.server,ServerExec,main,Magic Number,The method contains a magic number: 2,12
+LiveChatServer-4.1,com.chatroom.server,ServerExec,main,Magic Number,The method contains a magic number: 3,12
+LiveChatServer-4.1,com.chatroom.server,RequestAnalyser,run,Complex Method,Cyclomatic complexity of the method is 29,46
+LiveChatServer-4.1,com.chatroom.server,RequestAnalyser,run,Magic Number,The method contains a magic number: 2,46
+LiveChatServer-4.1,com.chatroom.server,RequestAnalyser,run,Magic Number,The method contains a magic number: 2,46
+LiveChatServer-4.1,com.chatroom.server,RequestAnalyser,run,Magic Number,The method contains a magic number: 2,46
+LiveChatServer-4.1,com.chatroom.server,RequestAnalyser,run,Magic Number,The method contains a magic number: 2,46
+LiveChatServer-4.1,com.chatroom.server,RequestAnalyser,run,Magic Number,The method contains a magic number: 2,46
+LiveChatServer-4.1,com.chatroom.server,RequestAnalyser,run,Magic Number,The method contains a magic number: 3,46
+LiveChatServer-4.1,com.chatroom.server,RequestAnalyser,run,Magic Number,The method contains a magic number: 4,46
+LiveChatServer-4.1,com.chatroom.server,RequestAnalyser,run,Magic Number,The method contains a magic number: 4,46
+LiveChatServer-4.1,com.chatroom.server,RequestAnalyser,run,Magic Number,The method contains a magic number: 4,46
+LiveChatServer-4.1,com.chatroom.server,RequestAnalyser,run,Magic Number,The method contains a magic number: 5,46
+LiveChatServer-4.1,com.chatroom.server,RequestAnalyser,run,Magic Number,The method contains a magic number: 5,46
+LiveChatServer-4.1,com.chatroom.server,RequestAnalyser,run,Magic Number,The method contains a magic number: 6,46
+LiveChatServer-4.1,com.chatroom.server,RequestAnalyser,run,Magic Number,The method contains a magic number: 6,46
+LiveChatServer-4.1,com.chatroom.server,RequestAnalyser,run,Magic Number,The method contains a magic number: 6,46
+LiveChatServer-4.1,com.chatroom.server,RequestAnalyser,run,Magic Number,The method contains a magic number: 7,46
+LiveChatServer-4.1,com.chatroom.server,RequestAnalyser,run,Magic Number,The method contains a magic number: 8,46
+LiveChatServer-4.1,com.chatroom.server,RequestAnalyser,run,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@6e3f38c1,46
+LiveChatServer-4.1,com.chatroom.server,RequestAnalyser,logout,Long Statement,The length of the statement "if (request.getClientId() != -1) Message.println(Server.getClientNameFromId(request.getClientId()) + " logged out sucessfully");" is 128.,262
+LiveChatServer-4.1,com.chatroom.client,Client,mainOptions,Magic Number,The method contains a magic number: 2,53
+LiveChatServer-4.1,com.chatroom.client,Client,mainOptions,Magic Number,The method contains a magic number: 3,53
+LiveChatServer-4.1,com.chatroom.client,Client,mainOptions,Magic Number,The method contains a magic number: 4,53
+LiveChatServer-4.1,com.chatroom.client,Client,mainOptions,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@7d9f0cf4,53
+LiveChatServer-4.1,com.chatroom.client,Client,conversation,Long Statement,The length of the statement "Message.println("NOTE: You've entered the server. \n" + "Type your message and press enter to send.\n" + "To send message to a particular user use: '@user_name your_message' without quotes\n"+ "For exiting the room type 'sv_exit' without quotes\n"+ "For logging out type 'sv_logout' without quotes");" is 300.,168
+LiveChatServer-4.1,com.chatroom.client,Client,mainFunc,Magic Number,The method contains a magic number: 2,277
+LiveChatServer-4.1,com.chatroom.client,ClientExec,main,Magic Number,The method contains a magic number: 3,11
+LiveChatServer-4.1,com.chatroom.client,ClientExec,main,Magic Number,The method contains a magic number: 2,11
+LiveChatServer-4.1,com.chatroom.client,ClientExec,main,Magic Number,The method contains a magic number: 2,11

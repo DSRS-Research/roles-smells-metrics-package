@@ -1,0 +1,85 @@
+Project Name,Package Name,Type Name,Method Name,Implementation Smell,Cause of the Smell,Method start line no
+SeeWeather-2.03,com.xiecc.seeWeather,ExampleUnitTest,addition_isCorrect,Magic Number,The method contains a magic number: 4,11
+SeeWeather-2.03,com.xiecc.seeWeather,ExampleUnitTest,addition_isCorrect,Magic Number,The method contains a magic number: 2,11
+SeeWeather-2.03,com.xiecc.seeWeather,ExampleUnitTest,addition_isCorrect,Magic Number,The method contains a magic number: 2,11
+SeeWeather-2.03,com.xiecc.seeWeather.component,RetrofitSingleton,init,Long Statement,The length of the statement "retrofit=new Retrofit.Builder().addConverterFactory(GsonConverterFactory.create(gson)).baseUrl(ApiInterface.HOST).callbackExecutor(executor).addCallAdapterFactory(RxJavaCallAdapterFactory.create()).build();" is 206.,33
+SeeWeather-2.03,com.xiecc.seeWeather.component,RetrofitSingleton,disposeFailureInfo,Complex Conditional,The conditional expression t.toString().contains("GaiException") || t.toString().contains("SocketTimeoutException") || t.toString().contains("UnknownHostException") is complex.,75
+SeeWeather-2.03,com.xiecc.seeWeather.component,RetrofitSingleton,disposeFailureInfo,Long Statement,The length of the statement "if (t.toString().contains("GaiException") || t.toString().contains("SocketTimeoutException") || t.toString().contains("UnknownHostException")) {" is 144.,75
+SeeWeather-2.03,com.xiecc.seeWeather.common,CheckVersion,checkVersion,Long Statement,The length of the statement "RetrofitSingleton.getApiService(context).mVersionAPI(Setting.API_TOKEN).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).subscribe(new Observer<VersionAPI>(){" is 180.,26
+SeeWeather-2.03,com.xiecc.seeWeather.common,CheckVersion,showUpdateDialog,Long Statement,The length of the statement "new AlertDialog.Builder(context).setTitle(title).setMessage(versionAPI.changelog).setPositiveButton("下载"`new DialogInterface.OnClickListener(){" is 143.,74
+SeeWeather-2.03,com.xiecc.seeWeather.common,FileSizeUtil,FormetFileSize,Magic Number,The method contains a magic number: 1024,107
+SeeWeather-2.03,com.xiecc.seeWeather.common,FileSizeUtil,FormetFileSize,Magic Number,The method contains a magic number: 1048576,107
+SeeWeather-2.03,com.xiecc.seeWeather.common,FileSizeUtil,FormetFileSize,Magic Number,The method contains a magic number: 1024,107
+SeeWeather-2.03,com.xiecc.seeWeather.common,FileSizeUtil,FormetFileSize,Magic Number,The method contains a magic number: 1073741824,107
+SeeWeather-2.03,com.xiecc.seeWeather.common,FileSizeUtil,FormetFileSize,Magic Number,The method contains a magic number: 1048576,107
+SeeWeather-2.03,com.xiecc.seeWeather.common,FileSizeUtil,FormetFileSize,Magic Number,The method contains a magic number: 1073741824,107
+SeeWeather-2.03,com.xiecc.seeWeather.common,FileSizeUtil,FormetFileSize,Magic Number,The method contains a magic number: 1024,133
+SeeWeather-2.03,com.xiecc.seeWeather.common,FileSizeUtil,FormetFileSize,Magic Number,The method contains a magic number: 1048576,133
+SeeWeather-2.03,com.xiecc.seeWeather.common,FileSizeUtil,FormetFileSize,Magic Number,The method contains a magic number: 1073741824,133
+SeeWeather-2.03,com.xiecc.seeWeather.common,FileSizeUtil,FormetFileSize,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@4e24db00,133
+SeeWeather-2.03,com.xiecc.seeWeather.common,ACache,put,Magic Number,The method contains a magic number: 1024,110
+SeeWeather-2.03,com.xiecc.seeWeather.common,ACache,put,Empty catch clause,The method has an empty catch block.,373
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui,FirstActivity,onCreate,Magic Number,The method contains a magic number: 1000,19
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui,MainActivity,initView,Magic Number,The method contains a magic number: 6,108
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui,MainActivity,initView,Magic Number,The method contains a magic number: 18,108
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui,MainActivity,initView,Magic Number,The method contains a magic number: 2,108
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui,MainActivity,initView,Magic Number,The method contains a magic number: 2,108
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui,MainActivity,onHide,Magic Number,The method contains a magic number: 2,150
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui,MainActivity,onShow,Magic Number,The method contains a magic number: 2,158
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui,MainActivity,initDrawer,Long Statement,The length of the statement "ActionBarDrawerToggle toggle=new ActionBarDrawerToggle(this`drawer`toolbar`R.string.navigation_drawer_open`R.string.navigation_drawer_close);" is 141.,165
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui,MainActivity,initDrawer,Magic Number,The method contains a magic number: 6,165
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui,MainActivity,initDrawer,Magic Number,The method contains a magic number: 18,165
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui,MainActivity,fetchData,Magic Number,The method contains a magic number: 2,225
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui,MainActivity,fetchData,Magic Number,The method contains a magic number: 2,225
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui,MainActivity,fetchData,Magic Number,The method contains a magic number: 2,225
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui,MainActivity,onCompleted,Magic Number,The method contains a magic number: 2,235
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui,MainActivity,onError,Magic Number,The method contains a magic number: 2,240
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui,MainActivity,onNext,Magic Number,The method contains a magic number: 2,245
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui,MainActivity,fetchDataByNetWork,Long Statement,The length of the statement "cityName=cityName.replace("市"`"").replace("省"`"").replace("自治区"`"").replace("特别行政区"`"").replace("地区"`"").replace("盟"`"");" is 121.,279
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui,MainActivity,fetchDataByNetWork,Long Statement,The length of the statement "RetrofitSingleton.getApiService(this).mWeatherAPI(cityName`Setting.KEY).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).filter(new Func1<WeatherAPI`Boolean>(){" is 182.,279
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui,MainActivity,showFabDialog,Long Statement,The length of the statement "new AlertDialog.Builder(MainActivity.this).setTitle("点赞").setMessage("去项目地址给作者个Star，鼓励下作者୧(๑•̀⌄•́๑)૭✧").setPositiveButton("好叻"`new DialogInterface.OnClickListener(){" is 165.,316
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui,MainActivity,onBackPressed,Magic Number,The method contains a magic number: 2000,360
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui,MainActivity,location,Magic Number,The method contains a magic number: 3,382
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui,MainActivity,location,Magic Number,The method contains a magic number: 1000,382
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui,MainActivity,onLocationChanged,Long Statement,The length of the statement "PLog.i(TAG`aMapLocation.getProvince() + aMapLocation.getCity() + aMapLocation.getDistrict()+ aMapLocation.getAdCode()+ aMapLocation.getCityCode());" is 147.,410
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui,MainActivity,onLocationChanged,Long Statement,The length of the statement "PLog.e("AmapError"`"location Error` ErrCode:" + aMapLocation.getErrorCode() + "` errInfo:"+ aMapLocation.getErrorInfo());" is 121.,410
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui,MainActivity,onActivityResult,Magic Number,The method contains a magic number: 2,466
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui,ChoiceCityActivity,initView,Magic Number,The method contains a magic number: 6,74
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui,ChoiceCityActivity,initView,Magic Number,The method contains a magic number: 18,74
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui,ChoiceCityActivity,initRecyclerView,Magic Number,The method contains a magic number: 2,91
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui,ChoiceCityActivity,onItemClick,Magic Number,The method contains a magic number: 2,99
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui,ChoiceCityActivity,queryProvinces,Long Statement,The length of the statement "Observable.just(1).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).flatMap(new Func1<Integer`Observable<Province>>(){" is 140.,118
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui,ChoiceCityActivity,queryCities,Long Statement,The length of the statement "Observable.just(1).subscribeOn(Schedulers.io()).observeOn(AndroidSchedulers.mainThread()).flatMap(new Func1<Integer`Observable<City>>(){" is 136.,153
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui.about,AboutActivity,onCreate,Magic Number,The method contains a magic number: 6,18
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui.about,AboutActivity,onCreate,Magic Number,The method contains a magic number: 18,18
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui.about,AboutFragment,onPreferenceClick,Complex Method,Cyclomatic complexity of the method is 10,81
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui.about,AboutFragment,onPreferenceClick,Long Statement,The length of the statement "new AlertDialog.Builder(getActivity()).setTitle("就看天气的完成离不开开源项目的支持，向以下致谢：").setMessage("Google Support Design`Gson`Rxjava`RxAndroid`Retrofit`" + "Glide`systembartint").setPositiveButton("关闭"`null).show();" is 204.,81
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui.about,AboutFragment,onPreferenceClick,Long Statement,The length of the statement "new AlertDialog.Builder(getActivity()).setTitle("点赞").setMessage("去项目地址给作者个Star，鼓励下作者୧(๑•̀⌄•́๑)૭✧").setNegativeButton("复制"`new DialogInterface.OnClickListener(){" is 161.,81
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui.about,AboutFragment,onPreferenceClick,Long Statement,The length of the statement "new AlertDialog.Builder(getActivity()).setTitle("请作者喝杯咖啡？(〃ω〃)").setMessage("点击按钮后，作者支付宝账号将会复制到剪切板，" + "你就可以使用支付宝转账给作者啦( •̀ .̫ •́ )✧").setPositiveButton("好叻"`new DialogInterface.OnClickListener(){" is 196.,81
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui.setting,SettingActivity,onCreate,Magic Number,The method contains a magic number: 6,16
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui.setting,SettingActivity,onCreate,Magic Number,The method contains a magic number: 18,16
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui.setting,SettingFragment,showIconDialog,Long Statement,The length of the statement "new AlertDialog.Builder(getActivity()).setTitle("更换图标").setSingleChoiceItems(getResources().getStringArray(R.array.icons)`mSetting.getInt(Setting.CHANGE_ICONS`0)`new DialogInterface.OnClickListener(){" is 200.,73
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui.setting,SettingFragment,showUpdateDialog,Long Statement,The length of the statement "new AlertDialog.Builder(getActivity()).setTitle("更换频率").setSingleChoiceItems(getResources().getStringArray(R.array.cache_time)`mSetting.getInt(Setting.HOUR_SELECT`0)`new DialogInterface.OnClickListener(){" is 204.,95
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui.setting,SettingFragment,showUpdateDialog,Magic Number,The method contains a magic number: 2,95
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui.setting,SettingFragment,showUpdateDialog,Magic Number,The method contains a magic number: 3,95
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui.setting,SettingFragment,showUpdateDialog,Magic Number,The method contains a magic number: 3,95
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui.setting,SettingFragment,showUpdateDialog,Magic Number,The method contains a magic number: 6,95
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui.setting,SettingFragment,onClick,Magic Number,The method contains a magic number: 2,100
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui.setting,SettingFragment,onClick,Magic Number,The method contains a magic number: 3,100
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui.setting,SettingFragment,onClick,Magic Number,The method contains a magic number: 3,100
+SeeWeather-2.03,com.xiecc.seeWeather.modules.ui.setting,SettingFragment,onClick,Magic Number,The method contains a magic number: 6,100
+SeeWeather-2.03,com.xiecc.seeWeather.modules.listener,HidingScrollListener,onScrolled,Complex Conditional,The conditional expression (controlsVisible && dy > 0) || (!controlsVisible && dy < 0) is complex.,14
+SeeWeather-2.03,com.xiecc.seeWeather.modules.adatper,WeatherAdapter,onBindViewHolder,Complex Method,Cyclomatic complexity of the method is 8,85
+SeeWeather-2.03,com.xiecc.seeWeather.modules.adatper,WeatherAdapter,onBindViewHolder,Long Statement,The length of the statement "Glide.with(mContext).load(mSetting.getInt(mWeatherData.now.cond.txt`R.mipmap.none)).diskCacheStrategy(DiskCacheStrategy.ALL).into(((NowWeatherViewHolder)holder).weatherIcon);" is 174.,85
+SeeWeather-2.03,com.xiecc.seeWeather.modules.adatper,WeatherAdapter,onBindViewHolder,Long Statement,The length of the statement "Glide.with(mContext).load(mSetting.getInt(mWeatherData.dailyForecast.get(i).cond.txtD`R.mipmap.none)).crossFade().diskCacheStrategy(DiskCacheStrategy.ALL).into(((ForecastViewHolder)holder).forecastIcon[i]);" is 206.,85
+SeeWeather-2.03,com.xiecc.seeWeather.modules.adatper,WeatherAdapter,onBindViewHolder,Long Statement,The length of the statement "((ForecastViewHolder)holder).forecastTemp[i].setText(mWeatherData.dailyForecast.get(i).tmp.min + "° " + mWeatherData.dailyForecast.get(i).tmp.max+ "°");" is 152.,85
+SeeWeather-2.03,com.xiecc.seeWeather.modules.adatper,WeatherAdapter,onBindViewHolder,Long Statement,The length of the statement "((ForecastViewHolder)holder).forecastTxt[i].setText(mWeatherData.dailyForecast.get(i).cond.txtD + "。 最高" + mWeatherData.dailyForecast.get(i).tmp.max+ "℃。 "+ mWeatherData.dailyForecast.get(i).wind.sc+ " "+ mWeatherData.dailyForecast.get(i).wind.dir+ " "+ mWeatherData.dailyForecast.get(i).wind.spd+ " km/h。 "+ "降水几率 "+ ""+ mWeatherData.dailyForecast.get(i).pop+ "%。");" is 367.,85
+SeeWeather-2.03,com.xiecc.seeWeather.modules.adatper,WeatherAdapter,onBindViewHolder,Magic Number,The method contains a magic number: 5,85
+SeeWeather-2.03,com.xiecc.seeWeather.modules.adatper,WeatherAdapter,getItemCount,Magic Number,The method contains a magic number: 4,182
+SeeWeather-2.03,com.xiecc.seeWeather.modules.adatper,WeatherAdapter,dayForWeek,Complex Method,Cyclomatic complexity of the method is 8,187
+SeeWeather-2.03,com.xiecc.seeWeather.modules.adatper,WeatherAdapter,dayForWeek,Magic Number,The method contains a magic number: 2,187
+SeeWeather-2.03,com.xiecc.seeWeather.modules.adatper,WeatherAdapter,dayForWeek,Magic Number,The method contains a magic number: 3,187
+SeeWeather-2.03,com.xiecc.seeWeather.modules.adatper,WeatherAdapter,dayForWeek,Magic Number,The method contains a magic number: 4,187
+SeeWeather-2.03,com.xiecc.seeWeather.modules.adatper,WeatherAdapter,dayForWeek,Magic Number,The method contains a magic number: 5,187
+SeeWeather-2.03,com.xiecc.seeWeather.modules.adatper,WeatherAdapter,dayForWeek,Magic Number,The method contains a magic number: 6,187
+SeeWeather-2.03,com.xiecc.seeWeather.modules.adatper,WeatherAdapter,dayForWeek,Magic Number,The method contains a magic number: 7,187

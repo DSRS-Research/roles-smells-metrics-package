@@ -1,0 +1,11 @@
+FullClassPath,AntiPattern
+nl.tudelft.jpacman.ui.ButtonPanel,Blob
+nl.tudelft.jpacman.level.Player,Blob
+nl.tudelft.jpacman.level.Pellet,Blob
+nl.tudelft.jpacman.level.Level,Blob
+nl.tudelft.jpacman.ui.PacManUI,Blob
+nl.tudelft.jpacman.ui.ButtonPanel,Blob
+nl.tudelft.jpacman.game.SinglePlayerGame,Blob
+nl.tudelft.jpacman.level.Player,Blob
+nl.tudelft.jpacman.level.Player,Blob
+nl.tudelft.jpacman.Launcher,Blob

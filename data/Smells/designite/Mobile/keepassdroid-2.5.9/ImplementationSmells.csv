@@ -1,0 +1,536 @@
+Project Name,Package Name,Type Name,Method Name,Implementation Smell,Cause of the Smell,Method start line no
+keepassdroid-2.5.9,com.keepassdroid.tests,PwEntryTestV4,testAssign,Magic Number,The method contains a magic number: 123412432109L,34
+keepassdroid-2.5.9,com.keepassdroid.tests,PwEntryTestV4,testAssign,Magic Number,The method contains a magic number: 5,34
+keepassdroid-2.5.9,com.keepassdroid.tests,TypesTest,testReadWriteLong,Magic Number,The method contains a magic number: 8,63
+keepassdroid-2.5.9,com.keepassdroid.tests,TypesTest,testReadWriteLong,Magic Number,The method contains a magic number: 8,63
+keepassdroid-2.5.9,com.keepassdroid.tests,TypesTest,testReadWriteLong,Magic Number,The method contains a magic number: 8,63
+keepassdroid-2.5.9,com.keepassdroid.tests,TypesTest,testReadWriteInt,Magic Number,The method contains a magic number: 4,91
+keepassdroid-2.5.9,com.keepassdroid.tests,TypesTest,testReadWriteInt,Magic Number,The method contains a magic number: 4,91
+keepassdroid-2.5.9,com.keepassdroid.tests,TypesTest,testReadWriteInt,Magic Number,The method contains a magic number: 4,91
+keepassdroid-2.5.9,com.keepassdroid.tests,TypesTest,testReadWriteInt,Magic Number,The method contains a magic number: 4,91
+keepassdroid-2.5.9,com.keepassdroid.tests,TypesTest,testReadWriteShortOne,Magic Number,The method contains a magic number: 2,115
+keepassdroid-2.5.9,com.keepassdroid.tests,TypesTest,testReadWriteShortOne,Magic Number,The method contains a magic number: 2,115
+keepassdroid-2.5.9,com.keepassdroid.tests,TypesTest,testReadWriteShort,Magic Number,The method contains a magic number: 2,140
+keepassdroid-2.5.9,com.keepassdroid.tests,TypesTest,testReadWriteShort,Magic Number,The method contains a magic number: 2,140
+keepassdroid-2.5.9,com.keepassdroid.tests,TypesTest,testReadWriteShort,Magic Number,The method contains a magic number: 2,140
+keepassdroid-2.5.9,com.keepassdroid.tests,TypesTest,testDate,Magic Number,The method contains a magic number: 2008,181
+keepassdroid-2.5.9,com.keepassdroid.tests,TypesTest,testDate,Magic Number,The method contains a magic number: 2,181
+keepassdroid-2.5.9,com.keepassdroid.tests,TypesTest,testDate,Magic Number,The method contains a magic number: 3,181
+keepassdroid-2.5.9,com.keepassdroid.tests,TypesTest,testDate,Magic Number,The method contains a magic number: 4,181
+keepassdroid-2.5.9,com.keepassdroid.tests,TypesTest,testDate,Magic Number,The method contains a magic number: 5,181
+keepassdroid-2.5.9,com.keepassdroid.tests,TypesTest,testDate,Magic Number,The method contains a magic number: 2008,181
+keepassdroid-2.5.9,com.keepassdroid.tests,TypesTest,testDate,Magic Number,The method contains a magic number: 3,181
+keepassdroid-2.5.9,com.keepassdroid.tests,TypesTest,testDate,Magic Number,The method contains a magic number: 4,181
+keepassdroid-2.5.9,com.keepassdroid.tests,TypesTest,testDate,Magic Number,The method contains a magic number: 5,181
+keepassdroid-2.5.9,com.keepassdroid.tests,TypesTest,testUUID,Magic Number,The method contains a magic number: 16,200
+keepassdroid-2.5.9,com.keepassdroid.tests,TypesTest,testULongMax,Magic Number,The method contains a magic number: 8,212
+keepassdroid-2.5.9,com.keepassdroid.tests,PwEntryTestV3,testCreation,Magic Number,The method contains a magic number: 2009,63
+keepassdroid-2.5.9,com.keepassdroid.tests,PwEntryTestV3,testCreation,Magic Number,The method contains a magic number: 3,63
+keepassdroid-2.5.9,com.keepassdroid.tests,PwEntryTestV3,testCreation,Magic Number,The method contains a magic number: 23,63
+keepassdroid-2.5.9,com.keepassdroid.tests,TestUtil,extractKey,Magic Number,The method contains a magic number: 1024,36
+keepassdroid-2.5.9,com.keepassdroid.tests.database,Kdb4Header,testReadHeader,Magic Number,The method contains a magic number: 6000,39
+keepassdroid-2.5.9,com.keepassdroid.tests.database,ProtectedBinaryTest,testEncryption,Magic Number,The method contains a magic number: 4096,41
+keepassdroid-2.5.9,com.keepassdroid.tests.database,TestData,GetDb,Long Parameter List,The method has 5 parameters. ,55
+keepassdroid-2.5.9,com.keepassdroid.tests.database,EntryV4,testBackup,Magic Number,The method contains a magic number: 2,31
+keepassdroid-2.5.9,com.keepassdroid.tests.crypto,AESTest,testEncrypt,Magic Number,The method contains a magic number: 15,44
+keepassdroid-2.5.9,com.keepassdroid.tests.crypto,AESTest,testEncrypt,Magic Number,The method contains a magic number: 16,44
+keepassdroid-2.5.9,com.keepassdroid.tests.crypto,AESTest,testEncrypt,Magic Number,The method contains a magic number: 17,44
+keepassdroid-2.5.9,com.keepassdroid.tests.crypto,AESTest,testEncrypt,Magic Number,The method contains a magic number: 494,44
+keepassdroid-2.5.9,com.keepassdroid.tests.crypto,AESTest,testEncrypt,Magic Number,The method contains a magic number: 18,44
+keepassdroid-2.5.9,com.keepassdroid.tests.crypto,AESTest,testFinal,Magic Number,The method contains a magic number: 32,56
+keepassdroid-2.5.9,com.keepassdroid.tests.crypto,AESTest,testFinal,Magic Number,The method contains a magic number: 16,56
+keepassdroid-2.5.9,com.keepassdroid.tests.crypto,FinalKeyTest,testNativeAndroid,Magic Number,The method contains a magic number: 5,41
+keepassdroid-2.5.9,com.keepassdroid.tests.crypto,FinalKeyTest,testNativeAndroid,Magic Number,The method contains a magic number: 6,41
+keepassdroid-2.5.9,com.keepassdroid.tests.crypto,FinalKeyTest,testNativeFinalKey,Magic Number,The method contains a magic number: 32,48
+keepassdroid-2.5.9,com.keepassdroid.tests.crypto,FinalKeyTest,testNativeFinalKey,Magic Number,The method contains a magic number: 32,48
+keepassdroid-2.5.9,com.keepassdroid.tests.crypto,CipherTest,testCipherFactory,Magic Number,The method contains a magic number: 32,49
+keepassdroid-2.5.9,com.keepassdroid.tests.crypto,CipherTest,testCipherFactory,Magic Number,The method contains a magic number: 16,49
+keepassdroid-2.5.9,com.keepassdroid.tests.crypto,CipherTest,testCipherFactory,Magic Number,The method contains a magic number: 1024,49
+keepassdroid-2.5.9,com.keepassdroid.tests.crypto,CipherTest,testCipherStreams,Magic Number,The method contains a magic number: 1024,70
+keepassdroid-2.5.9,com.keepassdroid.tests.crypto,CipherTest,testCipherStreams,Magic Number,The method contains a magic number: 32,70
+keepassdroid-2.5.9,com.keepassdroid.tests.crypto,CipherTest,testCipherStreams,Magic Number,The method contains a magic number: 16,70
+keepassdroid-2.5.9,com.keepassdroid.tests.stream,HashedBlock,testBlockAligned,Magic Number,The method contains a magic number: 1024,42
+keepassdroid-2.5.9,com.keepassdroid.tests.stream,HashedBlock,testBlockAligned,Magic Number,The method contains a magic number: 1024,42
+keepassdroid-2.5.9,com.keepassdroid.tests.stream,HashedBlock,testOffset,Magic Number,The method contains a magic number: 1500,47
+keepassdroid-2.5.9,com.keepassdroid.tests.stream,HashedBlock,testOffset,Magic Number,The method contains a magic number: 1024,47
+keepassdroid-2.5.9,com.keepassdroid.tests.stream,HashedBlock,testSize,Magic Number,The method contains a magic number: 1024,52
+keepassdroid-2.5.9,com.keepassdroid.tests.stream,HashedBlock,testGZIPStream,Magic Number,The method contains a magic number: 32000,84
+keepassdroid-2.5.9,com.keepassdroid.tests.utils,StrUtilTest,testIndexOfIgnoreCase2,Magic Number,The method contains a magic number: 2,40
+keepassdroid-2.5.9,org.apache.commons.collections.map,AbstractHashedMap,AbstractHashedMap,Magic Number,The method contains a magic number: 2,156
+keepassdroid-2.5.9,org.apache.commons.collections.map,AbstractHashedMap,containsValue,Complex Method,Cyclomatic complexity of the method is 8,231
+keepassdroid-2.5.9,org.apache.commons.collections.map,AbstractHashedMap,hash,Magic Number,The method contains a magic number: 9,363
+keepassdroid-2.5.9,org.apache.commons.collections.map,AbstractHashedMap,hash,Magic Number,The method contains a magic number: 14,363
+keepassdroid-2.5.9,org.apache.commons.collections.map,AbstractHashedMap,hash,Magic Number,The method contains a magic number: 4,363
+keepassdroid-2.5.9,org.apache.commons.collections.map,AbstractHashedMap,hash,Magic Number,The method contains a magic number: 10,363
+keepassdroid-2.5.9,org.apache.commons.collections.map,AbstractHashedMap,reuseEntry,Long Parameter List,The method has 5 parameters. ,458
+keepassdroid-2.5.9,org.apache.commons.collections.map,AbstractHashedMap,checkCapacity,Magic Number,The method contains a magic number: 2,582
+keepassdroid-2.5.9,org.apache.commons.collections.map,AbstractHashedMap,equals,Complex Method,Cyclomatic complexity of the method is 8,1245
+keepassdroid-2.5.9,org.apache.commons.collections.map,AbstractHashedMap,toString,Magic Number,The method contains a magic number: 32,1299
+keepassdroid-2.5.9,org.apache.commons.collections.map,AbstractReferenceMap,AbstractReferenceMap,Long Parameter List,The method has 5 parameters. ,127
+keepassdroid-2.5.9,org.apache.commons.collections.map,ReferenceMap,ReferenceMap,Long Parameter List,The method has 5 parameters. ,133
+keepassdroid-2.5.9,org.apache.commons.collections.keyvalue,AbstractMapEntry,equals,Long Statement,The length of the statement "return (getKey() == null ? other.getKey() == null : getKey().equals(other.getKey())) && (getValue() == null ? other.getValue() == null : getValue().equals(other.getValue()));" is 174.,62
+keepassdroid-2.5.9,com.keepassdroid,GroupEditActivity,onActivityResult,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@af92f3d,101
+keepassdroid-2.5.9,com.keepassdroid,LockCloseActivity,startActivity,Long Statement,The length of the statement "if (intent.getComponent() != null && intent.getComponent().getShortClassName().equals(".HtcLinkifyDispatcherActivity")) {" is 121.,48
+keepassdroid-2.5.9,com.keepassdroid,UpdateStatus,updateMessage,Complex Conditional,The conditional expression mCtx != null && mPD != null && mHandler != null is complex.,41
+keepassdroid-2.5.9,com.keepassdroid,Database,LoadData,Long Parameter List,The method has 5 parameters. ,90
+keepassdroid-2.5.9,com.keepassdroid,Database,LoadData,Long Parameter List,The method has 6 parameters. ,94
+keepassdroid-2.5.9,com.keepassdroid,Database,passUrisAsInputStreams,Long Parameter List,The method has 7 parameters. ,121
+keepassdroid-2.5.9,com.keepassdroid,Database,LoadData,Long Parameter List,The method has 5 parameters. ,139
+keepassdroid-2.5.9,com.keepassdroid,Database,LoadData,Long Parameter List,The method has 6 parameters. ,143
+keepassdroid-2.5.9,com.keepassdroid,Database,LoadData,Long Parameter List,The method has 7 parameters. ,147
+keepassdroid-2.5.9,com.keepassdroid,Database,LoadData,Magic Number,The method contains a magic number: 10,147
+keepassdroid-2.5.9,com.keepassdroid,Database,LoadData,Long Parameter List,The method has 5 parameters. ,170
+keepassdroid-2.5.9,com.keepassdroid,Database,SaveData,Empty catch clause,The method has an empty catch block.,187
+keepassdroid-2.5.9,com.keepassdroid,EntryActivity,onCreate,Complex Method,Cyclomatic complexity of the method is 9,128
+keepassdroid-2.5.9,com.keepassdroid,EntryActivity,onDestroy,Empty catch clause,The method has an empty catch block.,216
+keepassdroid-2.5.9,com.keepassdroid,EntryActivity,getNotification,Long Statement,The length of the statement "Notification notify=builder.setContentIntent(pending).setContentText(desc).setContentTitle(getString(R.string.app_name)).setSmallIcon(R.drawable.notify).setTicker(desc).setWhen(System.currentTimeMillis()).build();" is 213.,235
+keepassdroid-2.5.9,com.keepassdroid,EntryActivity,onOptionsItemSelected,Complex Method,Cyclomatic complexity of the method is 9,359
+keepassdroid-2.5.9,com.keepassdroid,EntryActivity,timeoutCopyToClipboard,Long Statement,The length of the statement "String sClipClear=prefs.getString(getString(R.string.clipboard_timeout_key)`getString(R.string.clipboard_timeout_default));" is 123.,417
+keepassdroid-2.5.9,com.keepassdroid,EntryActivity,showSamsungDialog,Long Statement,The length of the statement "String text=getString(R.string.clipboard_error).concat(System.getProperty("line.separator")).concat(getString(R.string.clipboard_error_url));" is 141.,465
+keepassdroid-2.5.9,com.keepassdroid,EntryActivity,showSamsungDialog,Long Statement,The length of the statement "builder.setTitle(R.string.clipboard_error_title).setPositiveButton(android.R.string.ok`new DialogInterface.OnClickListener(){" is 125.,465
+keepassdroid-2.5.9,com.keepassdroid,GroupActivity,onCreate,Complex Method,Cyclomatic complexity of the method is 10,105
+keepassdroid-2.5.9,com.keepassdroid,GroupActivity,onActivityResult,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@1127ccf8,206
+keepassdroid-2.5.9,com.keepassdroid,PwGroupListAdapter,filterAndSort,Long Statement,The length of the statement "boolean sortLists=prefs.getBoolean(mAct.getString(R.string.sort_key)`mAct.getResources().getBoolean(R.bool.sort_default));" is 122.,72
+keepassdroid-2.5.9,com.keepassdroid,EntryEditActivity,onActivityResult,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@f6eca07,275
+keepassdroid-2.5.9,com.keepassdroid,GeneratePasswordActivity,generatePassword,Long Statement,The length of the statement "password=generator.generatePassword(length`((CheckBox)findViewById(R.id.cb_uppercase)).isChecked()`((CheckBox)findViewById(R.id.cb_lowercase)).isChecked()`((CheckBox)findViewById(R.id.cb_digits)).isChecked()`((CheckBox)findViewById(R.id.cb_minus)).isChecked()`((CheckBox)findViewById(R.id.cb_underline)).isChecked()`((CheckBox)findViewById(R.id.cb_space)).isChecked()`((CheckBox)findViewById(R.id.cb_specials)).isChecked()`((CheckBox)findViewById(R.id.cb_brackets)).isChecked());" is 479.,106
+keepassdroid-2.5.9,com.keepassdroid.settings,PrefsUtil,getListTextSize,Long Statement,The length of the statement "return Float.parseFloat(prefs.getString(ctx.getString(R.string.list_size_key)`ctx.getString(R.string.list_size_default)));" is 122.,29
+keepassdroid-2.5.9,com.keepassdroid.database,EntrySearchHandler,operate,Complex Conditional,The conditional expression sp.excludeExpired && entry.expires() && now.after(entry.getExpiryTime()) is complex.,49
+keepassdroid-2.5.9,com.keepassdroid.database,EntrySearchHandler,operate,Complex Method,Cyclomatic complexity of the method is 11,49
+keepassdroid-2.5.9,com.keepassdroid.database,PwIconStandard,hashCode,Magic Number,The method contains a magic number: 31,39
+keepassdroid-2.5.9,com.keepassdroid.database,PwDatabaseV3,initNew,Magic Number,The method contains a magic number: 19,347
+keepassdroid-2.5.9,com.keepassdroid.database,PwGroup,searchEntries,Complex Method,Cyclomatic complexity of the method is 11,104
+keepassdroid-2.5.9,com.keepassdroid.database,PwDatabaseV4,makeFinalKey,Magic Number,The method contains a magic number: 65,153
+keepassdroid-2.5.9,com.keepassdroid.database,PwDatabaseV4,makeFinalKey,Magic Number,The method contains a magic number: 32,153
+keepassdroid-2.5.9,com.keepassdroid.database,PwDatabaseV4,makeFinalKey,Magic Number,The method contains a magic number: 32,153
+keepassdroid-2.5.9,com.keepassdroid.database,PwDatabaseV4,makeFinalKey,Magic Number,The method contains a magic number: 32,153
+keepassdroid-2.5.9,com.keepassdroid.database,PwDatabaseV4,makeFinalKey,Magic Number,The method contains a magic number: 64,153
+keepassdroid-2.5.9,com.keepassdroid.database,PwDatabaseV4,makeFinalKey,Magic Number,The method contains a magic number: 64,153
+keepassdroid-2.5.9,com.keepassdroid.database,PwDatabaseV4,makeFinalKey,Magic Number,The method contains a magic number: 32,179
+keepassdroid-2.5.9,com.keepassdroid.database,PwDatabaseV4,makeFinalKey,Magic Number,The method contains a magic number: 65,179
+keepassdroid-2.5.9,com.keepassdroid.database,PwDatabaseV4,makeFinalKey,Magic Number,The method contains a magic number: 32,179
+keepassdroid-2.5.9,com.keepassdroid.database,PwDatabaseV4,makeFinalKey,Magic Number,The method contains a magic number: 32,179
+keepassdroid-2.5.9,com.keepassdroid.database,PwDatabaseV4,makeFinalKey,Magic Number,The method contains a magic number: 32,179
+keepassdroid-2.5.9,com.keepassdroid.database,PwDatabaseV4,makeFinalKey,Magic Number,The method contains a magic number: 64,179
+keepassdroid-2.5.9,com.keepassdroid.database,PwDatabaseV4,makeFinalKey,Magic Number,The method contains a magic number: 64,179
+keepassdroid-2.5.9,com.keepassdroid.database,PwDatabaseV4,loadXmlKeyFile,Complex Method,Cyclomatic complexity of the method is 9,226
+keepassdroid-2.5.9,com.keepassdroid.database,PwDatabaseV4,loadXmlKeyFile,Magic Number,The method contains a magic number: 2,226
+keepassdroid-2.5.9,com.keepassdroid.database,PwDatabase,getFileKey,Empty catch clause,The method has an empty catch block.,131
+keepassdroid-2.5.9,com.keepassdroid.database,PwDatabase,getFileKey,Magic Number,The method contains a magic number: 32,131
+keepassdroid-2.5.9,com.keepassdroid.database,PwDatabase,getFileKey,Magic Number,The method contains a magic number: 64,131
+keepassdroid-2.5.9,com.keepassdroid.database,PwDatabase,getFileKey,Magic Number,The method contains a magic number: 64,131
+keepassdroid-2.5.9,com.keepassdroid.database,PwDatabase,getFileKey,Magic Number,The method contains a magic number: 2048,131
+keepassdroid-2.5.9,com.keepassdroid.database,PwDatabase,hexStringToByteArray,Magic Number,The method contains a magic number: 2,181
+keepassdroid-2.5.9,com.keepassdroid.database,PwDatabase,hexStringToByteArray,Magic Number,The method contains a magic number: 2,181
+keepassdroid-2.5.9,com.keepassdroid.database,PwDatabase,hexStringToByteArray,Magic Number,The method contains a magic number: 2,181
+keepassdroid-2.5.9,com.keepassdroid.database,PwDatabase,hexStringToByteArray,Magic Number,The method contains a magic number: 16,181
+keepassdroid-2.5.9,com.keepassdroid.database,PwDatabase,hexStringToByteArray,Magic Number,The method contains a magic number: 4,181
+keepassdroid-2.5.9,com.keepassdroid.database,PwDatabase,hexStringToByteArray,Magic Number,The method contains a magic number: 16,181
+keepassdroid-2.5.9,com.keepassdroid.database,PwIconCustom,hashCode,Magic Number,The method contains a magic number: 31,35
+keepassdroid-2.5.9,com.keepassdroid.database,PwDbHeaderV4,PwDbHeaderV4,Magic Number,The method contains a magic number: 32,99
+keepassdroid-2.5.9,com.keepassdroid.database,PwDbHeaderV4,readHeaderField,Complex Method,Cyclomatic complexity of the method is 18,144
+keepassdroid-2.5.9,com.keepassdroid.database,PwDbHeaderV4,readHeaderField,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@3bf65875,144
+keepassdroid-2.5.9,com.keepassdroid.database,PwDbHeaderV4,setCipher,Magic Number,The method contains a magic number: 16,235
+keepassdroid-2.5.9,com.keepassdroid.database,PwDbHeaderV4,setCompressionFlags,Magic Number,The method contains a magic number: 4,243
+keepassdroid-2.5.9,com.keepassdroid.database,PwDbHeaderV4,setTransformRounds,Magic Number,The method contains a magic number: 8,257
+keepassdroid-2.5.9,com.keepassdroid.database,PwDbHeaderV4,setRandomStreamID,Magic Number,The method contains a magic number: 4,273
+keepassdroid-2.5.9,com.keepassdroid.database,PwDate,readTime,Magic Number,The method contains a magic number: 2,105
+keepassdroid-2.5.9,com.keepassdroid.database,PwDate,readTime,Magic Number,The method contains a magic number: 3,105
+keepassdroid-2.5.9,com.keepassdroid.database,PwDate,readTime,Magic Number,The method contains a magic number: 4,105
+keepassdroid-2.5.9,com.keepassdroid.database,PwDate,readTime,Magic Number,The method contains a magic number: 6,105
+keepassdroid-2.5.9,com.keepassdroid.database,PwDate,readTime,Magic Number,The method contains a magic number: 2,105
+keepassdroid-2.5.9,com.keepassdroid.database,PwDate,readTime,Magic Number,The method contains a magic number: 0x00000003,105
+keepassdroid-2.5.9,com.keepassdroid.database,PwDate,readTime,Magic Number,The method contains a magic number: 2,105
+keepassdroid-2.5.9,com.keepassdroid.database,PwDate,readTime,Magic Number,The method contains a magic number: 6,105
+keepassdroid-2.5.9,com.keepassdroid.database,PwDate,readTime,Magic Number,The method contains a magic number: 0x0000001F,105
+keepassdroid-2.5.9,com.keepassdroid.database,PwDate,readTime,Magic Number,The method contains a magic number: 4,105
+keepassdroid-2.5.9,com.keepassdroid.database,PwDate,readTime,Magic Number,The method contains a magic number: 4,105
+keepassdroid-2.5.9,com.keepassdroid.database,PwDate,readTime,Magic Number,The method contains a magic number: 0x0000000F,105
+keepassdroid-2.5.9,com.keepassdroid.database,PwDate,readTime,Magic Number,The method contains a magic number: 2,105
+keepassdroid-2.5.9,com.keepassdroid.database,PwDate,readTime,Magic Number,The method contains a magic number: 6,105
+keepassdroid-2.5.9,com.keepassdroid.database,PwDate,readTime,Magic Number,The method contains a magic number: 0x0000003F,105
+keepassdroid-2.5.9,com.keepassdroid.database,PwDate,writeTime,Magic Number,The method contains a magic number: 5,140
+keepassdroid-2.5.9,com.keepassdroid.database,PwDate,writeTime,Magic Number,The method contains a magic number: 6,140
+keepassdroid-2.5.9,com.keepassdroid.database,PwDate,writeTime,Magic Number,The method contains a magic number: 0x0000003F,140
+keepassdroid-2.5.9,com.keepassdroid.database,PwDate,writeTime,Magic Number,The method contains a magic number: 0x0000003F,140
+keepassdroid-2.5.9,com.keepassdroid.database,PwDate,writeTime,Magic Number,The method contains a magic number: 2,140
+keepassdroid-2.5.9,com.keepassdroid.database,PwDate,writeTime,Magic Number,The method contains a magic number: 2,140
+keepassdroid-2.5.9,com.keepassdroid.database,PwDate,writeTime,Magic Number,The method contains a magic number: 0x00000003,140
+keepassdroid-2.5.9,com.keepassdroid.database,PwDate,writeTime,Magic Number,The method contains a magic number: 2,140
+keepassdroid-2.5.9,com.keepassdroid.database,PwDate,writeTime,Magic Number,The method contains a magic number: 0x00000003,140
+keepassdroid-2.5.9,com.keepassdroid.database,PwDate,writeTime,Magic Number,The method contains a magic number: 6,140
+keepassdroid-2.5.9,com.keepassdroid.database,PwDate,writeTime,Magic Number,The method contains a magic number: 0x0000001F,140
+keepassdroid-2.5.9,com.keepassdroid.database,PwDate,writeTime,Magic Number,The method contains a magic number: 4,140
+keepassdroid-2.5.9,com.keepassdroid.database,PwDate,writeTime,Magic Number,The method contains a magic number: 3,140
+keepassdroid-2.5.9,com.keepassdroid.database,PwDate,writeTime,Magic Number,The method contains a magic number: 0x0000000F,140
+keepassdroid-2.5.9,com.keepassdroid.database,PwDate,writeTime,Magic Number,The method contains a magic number: 4,140
+keepassdroid-2.5.9,com.keepassdroid.database,PwDate,writeTime,Magic Number,The method contains a magic number: 2,140
+keepassdroid-2.5.9,com.keepassdroid.database,PwDate,writeTime,Magic Number,The method contains a magic number: 0x0000000F,140
+keepassdroid-2.5.9,com.keepassdroid.database,PwDate,writeTime,Magic Number,The method contains a magic number: 4,140
+keepassdroid-2.5.9,com.keepassdroid.database,PwDate,writeTime,Magic Number,The method contains a magic number: 0x00000003,140
+keepassdroid-2.5.9,com.keepassdroid.database,PwDate,writeTime,Magic Number,The method contains a magic number: 6,140
+keepassdroid-2.5.9,com.keepassdroid.database,PwDate,writeTime,Magic Number,The method contains a magic number: 0x0000003F,140
+keepassdroid-2.5.9,com.keepassdroid.database,PwDate,IsSameDate,Long Statement,The length of the statement "return (cal1.get(Calendar.YEAR) == cal2.get(Calendar.YEAR)) && (cal1.get(Calendar.MONTH) == cal2.get(Calendar.MONTH)) && (cal1.get(Calendar.DAY_OF_MONTH) == cal2.get(Calendar.DAY_OF_MONTH))&& (cal1.get(Calendar.HOUR) == cal2.get(Calendar.HOUR))&& (cal1.get(Calendar.MINUTE) == cal2.get(Calendar.MINUTE))&& (cal1.get(Calendar.SECOND) == cal2.get(Calendar.SECOND));" is 363.,195
+keepassdroid-2.5.9,com.keepassdroid.database,PwEntryV3,getDefaultDate,Magic Number,The method contains a magic number: 2004,111
+keepassdroid-2.5.9,com.keepassdroid.database,PwEntryV3,getNeverExpire,Magic Number,The method contains a magic number: 2999,123
+keepassdroid-2.5.9,com.keepassdroid.database,PwEntryV3,getNeverExpire,Magic Number,The method contains a magic number: 11,123
+keepassdroid-2.5.9,com.keepassdroid.database,PwEntryV3,getNeverExpire,Magic Number,The method contains a magic number: 28,123
+keepassdroid-2.5.9,com.keepassdroid.database,PwEntryV3,getNeverExpire,Magic Number,The method contains a magic number: 23,123
+keepassdroid-2.5.9,com.keepassdroid.database,PwEntryV3,getNeverExpire,Magic Number,The method contains a magic number: 59,123
+keepassdroid-2.5.9,com.keepassdroid.database,PwEntryV3,getNeverExpire,Magic Number,The method contains a magic number: 59,123
+keepassdroid-2.5.9,com.keepassdroid.database,PwEntryV3,getNeverExpireBug,Magic Number,The method contains a magic number: 2999,135
+keepassdroid-2.5.9,com.keepassdroid.database,PwEntryV3,getNeverExpireBug,Magic Number,The method contains a magic number: 11,135
+keepassdroid-2.5.9,com.keepassdroid.database,PwEntryV3,getNeverExpireBug,Magic Number,The method contains a magic number: 30,135
+keepassdroid-2.5.9,com.keepassdroid.database,PwEntryV3,getNeverExpireBug,Magic Number,The method contains a magic number: 23,135
+keepassdroid-2.5.9,com.keepassdroid.database,PwEntryV3,getNeverExpireBug,Magic Number,The method contains a magic number: 59,135
+keepassdroid-2.5.9,com.keepassdroid.database,PwEntryV3,getNeverExpireBug,Magic Number,The method contains a magic number: 59,135
+keepassdroid-2.5.9,com.keepassdroid.database,PwEntryV3,PwEntryV3,Magic Number,The method contains a magic number: 16,175
+keepassdroid-2.5.9,com.keepassdroid.database,PwEntryV3,isMetaStream,Complex Method,Cyclomatic complexity of the method is 11,269
+keepassdroid-2.5.9,com.keepassdroid.database,PwEntryV3,populateBlankFields,Complex Method,Cyclomatic complexity of the method is 14,472
+keepassdroid-2.5.9,com.keepassdroid.database,EntrySearchHandlerAll,operate,Complex Conditional,The conditional expression sp.excludeExpired && entry.expires() && now.after(entry.getExpiryTime()) is complex.,36
+keepassdroid-2.5.9,com.keepassdroid.database,PwEntryV4,IsStandardString,Long Statement,The length of the statement "return key.equals(STR_TITLE) || key.equals(STR_USERNAME) || key.equals(STR_PASSWORD)|| key.equals(STR_URL)|| key.equals(STR_NOTES);" is 131.,373
+keepassdroid-2.5.9,com.keepassdroid.database,PwDbHeaderV3,loadFromFile,Magic Number,The method contains a magic number: 4,86
+keepassdroid-2.5.9,com.keepassdroid.database,PwDbHeaderV3,loadFromFile,Magic Number,The method contains a magic number: 8,86
+keepassdroid-2.5.9,com.keepassdroid.database,PwDbHeaderV3,loadFromFile,Magic Number,The method contains a magic number: 12,86
+keepassdroid-2.5.9,com.keepassdroid.database,PwDbHeaderV3,loadFromFile,Magic Number,The method contains a magic number: 16,86
+keepassdroid-2.5.9,com.keepassdroid.database,PwDbHeaderV3,loadFromFile,Magic Number,The method contains a magic number: 16,86
+keepassdroid-2.5.9,com.keepassdroid.database,PwDbHeaderV3,loadFromFile,Magic Number,The method contains a magic number: 32,86
+keepassdroid-2.5.9,com.keepassdroid.database,PwDbHeaderV3,loadFromFile,Magic Number,The method contains a magic number: 16,86
+keepassdroid-2.5.9,com.keepassdroid.database,PwDbHeaderV3,loadFromFile,Magic Number,The method contains a magic number: 48,86
+keepassdroid-2.5.9,com.keepassdroid.database,PwDbHeaderV3,loadFromFile,Magic Number,The method contains a magic number: 52,86
+keepassdroid-2.5.9,com.keepassdroid.database,PwDbHeaderV3,loadFromFile,Magic Number,The method contains a magic number: 56,86
+keepassdroid-2.5.9,com.keepassdroid.database,PwDbHeaderV3,loadFromFile,Magic Number,The method contains a magic number: 32,86
+keepassdroid-2.5.9,com.keepassdroid.database,PwDbHeaderV3,loadFromFile,Magic Number,The method contains a magic number: 88,86
+keepassdroid-2.5.9,com.keepassdroid.database,PwDbHeaderV3,loadFromFile,Magic Number,The method contains a magic number: 32,86
+keepassdroid-2.5.9,com.keepassdroid.database,PwDbHeaderV3,loadFromFile,Magic Number,The method contains a magic number: 120,86
+keepassdroid-2.5.9,com.keepassdroid.database,PwDbHeaderV3,PwDbHeaderV3,Magic Number,The method contains a magic number: 16,113
+keepassdroid-2.5.9,com.keepassdroid.database,PwDbHeaderV3,compatibleHeaders,Magic Number,The method contains a magic number: 0xFFFFFF00,129
+keepassdroid-2.5.9,com.keepassdroid.database,PwDbHeaderV3,compatibleHeaders,Magic Number,The method contains a magic number: 0xFFFFFF00,129
+keepassdroid-2.5.9,com.keepassdroid.database.security,ProtectedBinary,getData,Long Statement,The length of the statement "else if (dataFile != null) return new CipherInputStream(new FileInputStream(dataFile)`fileParams.initCipher(Cipher.DECRYPT_MODE));" is 130.,155
+keepassdroid-2.5.9,com.keepassdroid.database.security,ProtectedBinary,equals,Long Statement,The length of the statement "return (this == o) || ((o != null) && (getClass() == o.getClass()) && (protect == o.protect)&& (size == o.size)&& (Arrays.equals(data`o.data))&& (dataFile != null)&& (dataFile.equals(o.dataFile)));" is 197.,170
+keepassdroid-2.5.9,com.keepassdroid.database.edit,DeleteEntry,DeleteEntry,Long Parameter List,The method has 5 parameters. ,44
+keepassdroid-2.5.9,com.keepassdroid.database.edit,AddGroup,getInstance,Long Parameter List,The method has 7 parameters. ,38
+keepassdroid-2.5.9,com.keepassdroid.database.edit,AddGroup,AddGroup,Long Parameter List,The method has 7 parameters. ,43
+keepassdroid-2.5.9,com.keepassdroid.database.edit,LoadDB,LoadDB,Long Parameter List,The method has 6 parameters. ,51
+keepassdroid-2.5.9,com.keepassdroid.database.edit,LoadDB,LoadDB,Long Statement,The length of the statement "mRememberKeyfile=prefs.getBoolean(ctx.getString(R.string.keyfile_key)`ctx.getResources().getBoolean(R.bool.keyfile_default));" is 125.,51
+keepassdroid-2.5.9,com.keepassdroid.database.edit,UpdateEntry,UpdateEntry,Long Parameter List,The method has 5 parameters. ,34
+keepassdroid-2.5.9,com.keepassdroid.database.edit,SetPassword,SetPassword,Long Parameter List,The method has 5 parameters. ,43
+keepassdroid-2.5.9,com.keepassdroid.database.edit,SetPassword,SetPassword,Long Parameter List,The method has 6 parameters. ,48
+keepassdroid-2.5.9,com.keepassdroid.database.edit,OnFinish,displayMessage,Complex Conditional,The conditional expression ctx != null && mMessage != null && mMessage.length() > 0 is complex.,79
+keepassdroid-2.5.9,com.keepassdroid.database.edit,DeleteGroup,DeleteGroup,Long Parameter List,The method has 5 parameters. ,43
+keepassdroid-2.5.9,com.keepassdroid.database.iterator,EntrySearchStringIteratorV3,useSearchParameters,Complex Method,Cyclomatic complexity of the method is 8,69
+keepassdroid-2.5.9,com.keepassdroid.database.iterator,EntrySearchStringIteratorV3,useSearchParameters,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@57da5b03,69
+keepassdroid-2.5.9,com.keepassdroid.database.iterator,EntrySearchStringIteratorV3,getCurrentString,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@2e1d9d0d,101
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,openDatabase,Complex Method,Cyclomatic complexity of the method is 13,131
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,openDatabase,Long Method,The method has 125 lines of code.,131
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,openDatabase,Long Parameter List,The method has 5 parameters. ,131
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,openDatabase,Long Statement,The length of the statement "encryptedPartSize=cipher.doFinal(filebuf`PwDbHeaderV3.BUF_SIZE`fileSize - PwDbHeaderV3.BUF_SIZE`filebuf`PwDbHeaderV3.BUF_SIZE);" is 127.,131
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,openDatabase,Magic Number,The method contains a magic number: 16,131
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,openDatabase,Magic Number,The method contains a magic number: 2,131
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,openDatabase,Magic Number,The method contains a magic number: 4,131
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,openDatabase,Magic Number,The method contains a magic number: 0xFFFF,131
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,openDatabase,Magic Number,The method contains a magic number: 2,131
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,openDatabase,Magic Number,The method contains a magic number: 0xFFFF,131
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,openDatabase,Magic Number,The method contains a magic number: 2,131
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,openDatabase,Magic Number,The method contains a magic number: 4,131
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,makePad,Magic Number,The method contains a magic number: 32,287
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,makePad,Magic Number,The method contains a magic number: 32,287
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,makePad,Magic Number,The method contains a magic number: 9,287
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,makePad,Magic Number,The method contains a magic number: 32,287
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,makePad,Magic Number,The method contains a magic number: 0x80,287
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,makePad,Magic Number,The method contains a magic number: 8,287
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,makePad,Magic Number,The method contains a magic number: 29,287
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,makePad,Magic Number,The method contains a magic number: 4,287
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,makePad,Magic Number,The method contains a magic number: 3,287
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,bsw32,Magic Number,The method contains a magic number: 3,320
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,bsw32,Magic Number,The method contains a magic number: 3,320
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,bsw32,Magic Number,The method contains a magic number: 2,320
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,bsw32,Magic Number,The method contains a magic number: 2,320
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,readGroupField,Complex Method,Cyclomatic complexity of the method is 11,330
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,readGroupField,Long Parameter List,The method has 5 parameters. ,330
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,readGroupField,Magic Number,The method contains a magic number: 0x0002,330
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,readGroupField,Magic Number,The method contains a magic number: 0x0003,330
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,readGroupField,Magic Number,The method contains a magic number: 0x0004,330
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,readGroupField,Magic Number,The method contains a magic number: 0x0005,330
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,readGroupField,Magic Number,The method contains a magic number: 0x0006,330
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,readGroupField,Magic Number,The method contains a magic number: 0x0007,330
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,readGroupField,Magic Number,The method contains a magic number: 0x0008,330
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,readGroupField,Magic Number,The method contains a magic number: 0x0009,330
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,readEntryField,Complex Method,Cyclomatic complexity of the method is 17,374
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,readEntryField,Magic Number,The method contains a magic number: 2,374
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,readEntryField,Magic Number,The method contains a magic number: 4,374
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,readEntryField,Magic Number,The method contains a magic number: 0x0002,374
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,readEntryField,Magic Number,The method contains a magic number: 0x0003,374
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,readEntryField,Magic Number,The method contains a magic number: 0x0004,374
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,readEntryField,Magic Number,The method contains a magic number: 0x0005,374
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,readEntryField,Magic Number,The method contains a magic number: 0x0006,374
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,readEntryField,Magic Number,The method contains a magic number: 0x0007,374
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,readEntryField,Magic Number,The method contains a magic number: 0x0008,374
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,readEntryField,Magic Number,The method contains a magic number: 0x0009,374
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,readEntryField,Magic Number,The method contains a magic number: 0x000A,374
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,readEntryField,Magic Number,The method contains a magic number: 0x000B,374
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,readEntryField,Magic Number,The method contains a magic number: 0x000C,374
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,readEntryField,Magic Number,The method contains a magic number: 0x000D,374
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3,readEntryField,Magic Number,The method contains a magic number: 0x000E,374
+keepassdroid-2.5.9,com.keepassdroid.database.load,Importer,openDatabase,Long Parameter List,The method has 5 parameters. ,36
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV4Debug,openDatabase,Long Parameter List,The method has 5 parameters. ,41
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV3Debug,openDatabase,Long Parameter List,The method has 5 parameters. ,36
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV4,openDatabase,Complex Method,Cyclomatic complexity of the method is 11,109
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV4,openDatabase,Long Parameter List,The method has 5 parameters. ,109
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV4,openDatabase,Magic Number,The method contains a magic number: 32,109
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV4,openDatabase,Magic Number,The method contains a magic number: 32,109
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV4,openDatabase,Magic Number,The method contains a magic number: 32,109
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV4,openDatabase,Magic Number,The method contains a magic number: 32,109
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV4,openDatabase,Magic Number,The method contains a magic number: 32,109
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV4,AttachCipherStream,Magic Number,The method contains a magic number: 50,216
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV4,AttachCipherStream,Magic Number,The method contains a magic number: 1024,216
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV4,ReadInnerHeader,Complex Method,Cyclomatic complexity of the method is 8,229
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV4,ReadInnerHeader,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@27214d4b,229
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV4,ReadDocumentStreamed,Complex Method,Cyclomatic complexity of the method is 8,346
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV4,ReadDocumentStreamed,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@7703abde,346
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV4,ReadXmlElement,Complex Method,Cyclomatic complexity of the method is 134,384
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV4,ReadXmlElement,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@7284f47e,384
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV4,EndXmlElement,Complex Method,Cyclomatic complexity of the method is 34,789
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV4,EndXmlElement,Long Method,The method has 143 lines of code.,789
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV4,ReadTime,Empty catch clause,The method has an empty catch block.,922
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV4,ReadTime,Magic Number,The method contains a magic number: 8,922
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV4,ReadTime,Magic Number,The method contains a magic number: 8,922
+keepassdroid-2.5.9,com.keepassdroid.database.load,ImporterV4,ReadTime,Magic Number,The method contains a magic number: 8,922
+keepassdroid-2.5.9,com.keepassdroid.database.save,PwDbV4Output,outputDatabase,Long Statement,The length of the statement "if (!root.preOrderTraverseTree(new GroupWriter(groupStack)`new EntryWriter())) throw new RuntimeException("Writing groups failed");" is 131.,283
+keepassdroid-2.5.9,com.keepassdroid.database.save,PwDbV4Output,setIVs,Magic Number,The method contains a magic number: 32,378
+keepassdroid-2.5.9,com.keepassdroid.database.save,PwDbV4Output,setIVs,Magic Number,The method contains a magic number: 64,378
+keepassdroid-2.5.9,com.keepassdroid.database.save,PwDbV4Output,writeObject,Long Parameter List,The method has 5 parameters. ,598
+keepassdroid-2.5.9,com.keepassdroid.database.save,PwDbV4Output,writeObject,Complex Method,Cyclomatic complexity of the method is 9,642
+keepassdroid-2.5.9,com.keepassdroid.database.save,PwDbV4Output,safeXmlString,Complex Conditional,The conditional expression ((ch >= 0x20) && (ch <= 0xD7FF)) || (ch == 0x9) || (ch == 0xA)|| (ch == 0xD)|| ((ch >= 0xE000) && (ch <= 0xFFFD)) is complex.,817
+keepassdroid-2.5.9,com.keepassdroid.database.save,PwDbV4Output,safeXmlString,Magic Number,The method contains a magic number: 0x20,817
+keepassdroid-2.5.9,com.keepassdroid.database.save,PwDbV4Output,safeXmlString,Magic Number,The method contains a magic number: 0xD7FF,817
+keepassdroid-2.5.9,com.keepassdroid.database.save,PwDbV4Output,safeXmlString,Magic Number,The method contains a magic number: 0x9,817
+keepassdroid-2.5.9,com.keepassdroid.database.save,PwDbV4Output,safeXmlString,Magic Number,The method contains a magic number: 0xA,817
+keepassdroid-2.5.9,com.keepassdroid.database.save,PwDbV4Output,safeXmlString,Magic Number,The method contains a magic number: 0xD,817
+keepassdroid-2.5.9,com.keepassdroid.database.save,PwDbV4Output,safeXmlString,Magic Number,The method contains a magic number: 0xE000,817
+keepassdroid-2.5.9,com.keepassdroid.database.save,PwDbV4Output,safeXmlString,Magic Number,The method contains a magic number: 0xFFFD,817
+keepassdroid-2.5.9,com.keepassdroid.database.save,PwDbInnerHeaderOutputV4,output,Magic Number,The method contains a magic number: 4,46
+keepassdroid-2.5.9,com.keepassdroid.database.save,PwDbV3Output,writeExtData,Magic Number,The method contains a magic number: 32,278
+keepassdroid-2.5.9,com.keepassdroid.database.save,PwDbV3Output,writeExtData,Magic Number,The method contains a magic number: 0x0002,278
+keepassdroid-2.5.9,com.keepassdroid.database.save,PwDbV3Output,writeExtData,Magic Number,The method contains a magic number: 0xFFFF,278
+keepassdroid-2.5.9,com.keepassdroid.database.save,PwEntryOutputV3,output,Magic Number,The method contains a magic number: 134,70
+keepassdroid-2.5.9,com.keepassdroid.crypto.finalkey,FinalKeyFactory,createFinalKey,Complex Conditional,The conditional expression !CipherFactory.deviceBlacklisted() && !androidOverride && NativeFinalKey.availble() is complex.,29
+keepassdroid-2.5.9,com.keepassdroid.crypto,CryptoUtil,resizeKey,Magic Number,The method contains a magic number: 32,34
+keepassdroid-2.5.9,com.keepassdroid.crypto,NativeAESCipherSpi,engineDoFinal,Long Parameter List,The method has 5 parameters. ,132
+keepassdroid-2.5.9,com.keepassdroid.crypto,NativeAESCipherSpi,doFinal,Long Parameter List,The method has 5 parameters. ,146
+keepassdroid-2.5.9,com.keepassdroid.crypto,NativeAESCipherSpi,nFinal,Long Parameter List,The method has 5 parameters. ,166
+keepassdroid-2.5.9,com.keepassdroid.crypto,NativeAESCipherSpi,engineInit,Magic Number,The method contains a magic number: 16,192
+keepassdroid-2.5.9,com.keepassdroid.crypto,NativeAESCipherSpi,engineUpdate,Long Parameter List,The method has 5 parameters. ,295
+keepassdroid-2.5.9,com.keepassdroid.crypto,NativeAESCipherSpi,update,Long Parameter List,The method has 5 parameters. ,309
+keepassdroid-2.5.9,com.keepassdroid.crypto,NativeAESCipherSpi,nUpdate,Long Parameter List,The method has 7 parameters. ,320
+keepassdroid-2.5.9,com.keepassdroid.crypto,PwStreamCipherFactory,getChaCha20,Magic Number,The method contains a magic number: 32,58
+keepassdroid-2.5.9,com.keepassdroid.crypto,PwStreamCipherFactory,getChaCha20,Magic Number,The method contains a magic number: 12,58
+keepassdroid-2.5.9,com.keepassdroid.crypto,PwStreamCipherFactory,getChaCha20,Magic Number,The method contains a magic number: 32,58
+keepassdroid-2.5.9,com.keepassdroid.crypto,PwStreamCipherFactory,getChaCha20,Magic Number,The method contains a magic number: 32,58
+keepassdroid-2.5.9,com.keepassdroid.crypto,PwStreamCipherFactory,getChaCha20,Magic Number,The method contains a magic number: 12,58
+keepassdroid-2.5.9,com.keepassdroid.crypto,CipherFactory,getInstance,Complex Conditional,The conditional expression (!deviceBlacklisted()) && (!androidOverride) && hasNativeImplementation(transformation)&& NativeLib.loaded() is complex.,55
+keepassdroid-2.5.9,com.keepassdroid.crypto.keyDerivation,AesKdf,transform,Magic Number,The method contains a magic number: 32,53
+keepassdroid-2.5.9,com.keepassdroid.crypto.keyDerivation,AesKdf,transform,Magic Number,The method contains a magic number: 32,53
+keepassdroid-2.5.9,com.keepassdroid.crypto.keyDerivation,AesKdf,randomize,Magic Number,The method contains a magic number: 32,70
+keepassdroid-2.5.9,com.keepassdroid.crypto.keyDerivation,Argon2Kdf,randomize,Magic Number,The method contains a magic number: 32,91
+keepassdroid-2.5.9,com.keepassdroid.crypto.keyDerivation,Argon2Native,transformKey,Long Parameter List,The method has 8 parameters. ,28
+keepassdroid-2.5.9,com.keepassdroid.crypto.keyDerivation,Argon2Native,nTransformMasterKey,Long Parameter List,The method has 8 parameters. ,36
+keepassdroid-2.5.9,com.keepassdroid.crypto.engine,ChaCha20Engine,ivLength,Magic Number,The method contains a magic number: 12,42
+keepassdroid-2.5.9,com.keepassdroid.crypto.engine,CipherEngine,keyLength,Magic Number,The method contains a magic number: 32,30
+keepassdroid-2.5.9,com.keepassdroid.crypto.engine,CipherEngine,ivLength,Magic Number,The method contains a magic number: 16,34
+keepassdroid-2.5.9,com.keepassdroid.password,PasswordGenerator,generatePassword,Complex Conditional,The conditional expression !upperCase && !lowerCase && !digits&& !minus&& !underline&& !space&& !specials&& !brackets is complex.,45
+keepassdroid-2.5.9,com.keepassdroid.password,PasswordGenerator,generatePassword,Long Parameter List,The method has 9 parameters. ,45
+keepassdroid-2.5.9,com.keepassdroid.password,PasswordGenerator,getCharacterSet,Complex Method,Cyclomatic complexity of the method is 9,72
+keepassdroid-2.5.9,com.keepassdroid.password,PasswordGenerator,getCharacterSet,Long Parameter List,The method has 8 parameters. ,72
+keepassdroid-2.5.9,com.keepassdroid.compat,ClipDataCompat,getUriFromIntent,Empty catch clause,The method has an empty catch block.,64
+keepassdroid-2.5.9,com.keepassdroid.compat,ContentResolverCompat,takePersistableUriPermission,Empty catch clause,The method has an empty catch block.,43
+keepassdroid-2.5.9,com.keepassdroid.compat,KeyGenParameterSpecCompat,build,Long Parameter List,The method has 5 parameters. ,53
+keepassdroid-2.5.9,com.keepassdroid.compat,PRNGFixes,apply,Empty catch clause,The method has an empty catch block.,52
+keepassdroid-2.5.9,com.keepassdroid.compat,PRNGFixes,applyOpenSSLFix,Long Statement,The length of the statement "Class.forName("org.apache.harmony.xnet.provider.jsse.NativeCrypto").getMethod("RAND_seed"`byte[].class).invoke(null`generateSeed());" is 132.,122
+keepassdroid-2.5.9,com.keepassdroid.compat,PRNGFixes,applyOpenSSLFix,Long Statement,The length of the statement "int bytesRead=(Integer)Class.forName("org.apache.harmony.xnet.provider.jsse.NativeCrypto").getMethod("RAND_load_file"`String.class`long.class).invoke(null`"/dev/urandom"`1024);" is 176.,122
+keepassdroid-2.5.9,com.keepassdroid.compat,PRNGFixes,applyOpenSSLFix,Magic Number,The method contains a magic number: 1024,122
+keepassdroid-2.5.9,com.keepassdroid.compat,PRNGFixes,applyOpenSSLFix,Magic Number,The method contains a magic number: 1024,122
+keepassdroid-2.5.9,com.keepassdroid.compat,PRNGFixes,installLinuxPRNGSecureRandom,Complex Conditional,The conditional expression (secureRandomProviders == null) || (secureRandomProviders.length < 1) || (!LinuxPRNGSecureRandomProvider.class.equals(secureRandomProviders[0].getClass())) is complex.,156
+keepassdroid-2.5.9,com.keepassdroid.compat,PRNGFixes,installLinuxPRNGSecureRandom,Long Statement,The length of the statement "if ((secureRandomProviders == null) || (secureRandomProviders.length < 1) || (!LinuxPRNGSecureRandomProvider.class.equals(secureRandomProviders[0].getClass()))) {" is 162.,156
+keepassdroid-2.5.9,com.keepassdroid.compat,PRNGFixes,installLinuxPRNGSecureRandom,Long Statement,The length of the statement "throw new SecurityException("SecureRandom.getInstance(\"SHA1PRNG\") backed by wrong" + " Provider: " + rng2.getProvider().getClass());" is 134.,156
+keepassdroid-2.5.9,com.keepassdroid.compat,PRNGFixes,generateSeed,Long Identifier,The length of the field BUILD_FINGERPRINT_AND_DEVICE_SERIAL is 35.,350
+keepassdroid-2.5.9,com.keepassdroid.fragments,PasswordFragment,onCreate,Long Identifier,The length of the field afterOnCreateBeforeEndOfOnResume is 32.,126
+keepassdroid-2.5.9,com.keepassdroid.fragments,PasswordFragment,biometricOpenUpdateVisibility,Long Identifier,The length of the field afterOnCreateBeforeEndOfOnResume is 32.,244
+keepassdroid-2.5.9,com.keepassdroid.fragments,PasswordFragment,biometricOpenUpdateVisibility,Long Statement,The length of the statement "autoOpen=prefs.getBoolean(getString(R.string.biometric_autoscan_key)`getResources().getBoolean(R.bool.biometric_autoscan)) && afterOnCreateBeforeEndOfOnResume;" is 159.,244
+keepassdroid-2.5.9,com.keepassdroid.fragments,PasswordFragment,initBiometrics,Long Statement,The length of the statement "savePrompt=saveBuilder.setDescription(getString(R.string.biometric_auth_to_store)).setConfirmationRequired(false).setTitle(getString(R.string.biometric_save_password)).setNegativeButtonText(getString(android.R.string.cancel)).build();" is 234.,277
+keepassdroid-2.5.9,com.keepassdroid.fragments,PasswordFragment,initBiometrics,Long Statement,The length of the statement "loadPrompt=openBuilder.setDescription(getString(R.string.biometric_auth_to_open)).setConfirmationRequired(false).setTitle(getString(R.string.biometric_open_db)).setNegativeButtonText(getString(android.R.string.cancel)).build();" is 227.,277
+keepassdroid-2.5.9,com.keepassdroid.fragments,PasswordFragment,canceledBiometricAuth,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@3033fad6,364
+keepassdroid-2.5.9,com.keepassdroid.fragments,PasswordFragment,onActivityResult,Complex Method,Cyclomatic complexity of the method is 13,392
+keepassdroid-2.5.9,com.keepassdroid.fragments,PasswordFragment,onResume,Long Identifier,The length of the field afterOnCreateBeforeEndOfOnResume is 32.,445
+keepassdroid-2.5.9,com.keepassdroid.fragments,PasswordFragment,onRequestPermissionsResult,Complex Conditional,The conditional expression requestCode == PERMISSION_REQUEST_ID && grantResults[0] == PackageManager.PERMISSION_GRANTED && grantResults[1] == PackageManager.PERMISSION_GRANTED is complex.,471
+keepassdroid-2.5.9,com.keepassdroid.fragments,PasswordFragment,onRequestPermissionsResult,Long Statement,The length of the statement "if (requestCode == PERMISSION_REQUEST_ID && grantResults[0] == PackageManager.PERMISSION_GRANTED && grantResults[1] == PackageManager.PERMISSION_GRANTED) {" is 155.,471
+keepassdroid-2.5.9,com.keepassdroid.fragments,PasswordFragment,loadDatabase,Complex Conditional,The conditional expression pass.length() == 0 && (keyfile == null || keyfile.toString().length() == 0) is complex.,723
+keepassdroid-2.5.9,com.keepassdroid.fileselect,FileDbHelper,createFile,Long Statement,The length of the statement "cursor=mDb.query(true`FILE_TABLE`new String[]{KEY_FILE_ID}`KEY_FILE_FILENAME + "=?"`new String[]{fileName}`null`null`null`null);" is 128.,128
+keepassdroid-2.5.9,com.keepassdroid.fileselect,FileDbHelper,fetchAllFiles,Long Statement,The length of the statement "ret=mDb.query(FILE_TABLE`new String[]{KEY_FILE_ID`KEY_FILE_FILENAME`KEY_FILE_KEYFILE}`null`null`null`null`KEY_FILE_UPDATED + " DESC"`Integer.toString(MAX_FILES));" is 162.,202
+keepassdroid-2.5.9,com.keepassdroid.fileselect,FileDbHelper,fetchFile,Long Statement,The length of the statement "Cursor cursor=mDb.query(true`FILE_TABLE`new String[]{KEY_FILE_FILENAME`KEY_FILE_KEYFILE}`KEY_FILE_ID + "=" + fileId`null`null`null`null`null);" is 142.,208
+keepassdroid-2.5.9,com.keepassdroid.fileselect,FileDbHelper,getFileByName,Long Statement,The length of the statement "Cursor cursor=mDb.query(true`FILE_TABLE`new String[]{KEY_FILE_KEYFILE}`KEY_FILE_FILENAME + "= ?"`new String[]{name}`null`null`null`null);" is 137.,220
+keepassdroid-2.5.9,com.keepassdroid.fileselect,FileSelectActivity,createFile,Complex Conditional,The conditional expression parent == null || (parent.exists() && !parent.isDirectory()) is complex.,96
+keepassdroid-2.5.9,com.keepassdroid.fileselect,FileSelectActivity,createFile,Long Statement,The length of the statement "Toast.makeText(FileSelectActivity.this`getText(R.string.error_file_not_create) + " " + e.getLocalizedMessage()`Toast.LENGTH_LONG).show();" is 137.,96
+keepassdroid-2.5.9,com.keepassdroid.fileselect,FileSelectActivity,onCreate,Complex Method,Cyclomatic complexity of the method is 9,151
+keepassdroid-2.5.9,com.keepassdroid.fileselect,FileSelectActivity,onCreate,Empty catch clause,The method has an empty catch block.,151
+keepassdroid-2.5.9,com.keepassdroid.fileselect,FileSelectActivity,onCreate,Empty catch clause,The method has an empty catch block.,151
+keepassdroid-2.5.9,com.keepassdroid.fileselect,FileSelectActivity,onCreate,Long Method,The method has 123 lines of code.,151
+keepassdroid-2.5.9,com.keepassdroid.fileselect,FileSelectActivity,onCreate,Long Statement,The length of the statement "i.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION | Intent.FLAG_GRANT_WRITE_URI_PERMISSION | Intent.FLAG_GRANT_PERSISTABLE_URI_PERMISSION);" is 138.,151
+keepassdroid-2.5.9,com.keepassdroid.fileselect,FileSelectActivity,onClick,Long Statement,The length of the statement "i.setFlags(Intent.FLAG_GRANT_READ_URI_PERMISSION | Intent.FLAG_GRANT_WRITE_URI_PERMISSION | Intent.FLAG_GRANT_PERSISTABLE_URI_PERMISSION);" is 138.,228
+keepassdroid-2.5.9,com.keepassdroid.fileselect,FileSelectActivity,onRequestPermissionsResult,Complex Conditional,The conditional expression requestCode == PERMISSION_REQUEST_ID && grantResults[0] == PackageManager.PERMISSION_GRANTED && grantResults[1] == PackageManager.PERMISSION_GRANTED is complex.,308
+keepassdroid-2.5.9,com.keepassdroid.fileselect,FileSelectActivity,onRequestPermissionsResult,Long Statement,The length of the statement "if (requestCode == PERMISSION_REQUEST_ID && grantResults[0] == PackageManager.PERMISSION_GRANTED && grantResults[1] == PackageManager.PERMISSION_GRANTED) {" is 155.,308
+keepassdroid-2.5.9,com.keepassdroid.fileselect,FileSelectActivity,onActivityResult,Complex Conditional,The conditional expression (requestCode == GET_CONTENT || requestCode == OPEN_DOC) && resultCode == RESULT_OK is complex.,395
+keepassdroid-2.5.9,com.keepassdroid.fileselect,FileSelectActivity,onActivityResult,Complex Method,Cyclomatic complexity of the method is 10,395
+keepassdroid-2.5.9,com.keepassdroid.fileselect,FileSelectActivity,onActivityResult,Empty catch clause,The method has an empty catch block.,395
+keepassdroid-2.5.9,com.keepassdroid.fileselect,FileSelectActivity,onActivityResult,Magic Number,The method contains a magic number: 7,395
+keepassdroid-2.5.9,com.keepassdroid.fileselect,RecentFileHistory,RecentFileHistory,Long Statement,The length of the statement "enabled=prefs.getBoolean(ctx.getString(R.string.recentfile_key)`ctx.getResources().getBoolean(R.bool.recentfile_default));" is 122.,49
+keepassdroid-2.5.9,com.keepassdroid.fileselect,RecentFileHistory,RecentFileHistory,Long Statement,The length of the statement "enabled=sharedPreferences.getBoolean(ctx.getString(R.string.recentfile_key)`ctx.getResources().getBoolean(R.bool.recentfile_default));" is 134.,49
+keepassdroid-2.5.9,com.keepassdroid.fileselect,RecentFileHistory,onSharedPreferenceChanged,Long Statement,The length of the statement "enabled=sharedPreferences.getBoolean(ctx.getString(R.string.recentfile_key)`ctx.getResources().getBoolean(R.bool.recentfile_default));" is 134.,56
+keepassdroid-2.5.9,com.keepassdroid.fileselect,RecentFileHistory,upgradeFromSQL,Empty catch clause,The method has an empty catch block.,77
+keepassdroid-2.5.9,com.keepassdroid.fileselect,RecentFileHistory,upgradeFromSQL,Empty catch clause,The method has an empty catch block.,77
+keepassdroid-2.5.9,com.keepassdroid.timers,Timeout,start,Long Statement,The length of the statement "String sTimeout=prefs.getString(ctx.getString(R.string.app_timeout_key)`ctx.getString(R.string.clipboard_timeout_default));" is 123.,45
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataInputStream,readLong,Magic Number,The method contains a magic number: 8,57
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataInputStream,readUShort,Magic Number,The method contains a magic number: 2,134
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataInputStream,readUShort,Magic Number,The method contains a magic number: 0xFF,144
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataInputStream,readUShort,Magic Number,The method contains a magic number: 0xFF,144
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataInputStream,readUShort,Magic Number,The method contains a magic number: 8,144
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataInputStream,readLong,Long Statement,The length of the statement "return ((long)buf[offset + 0] & 0xFF) + (((long)buf[offset + 1] & 0xFF) << 8) + (((long)buf[offset + 2] & 0xFF) << 16)+ (((long)buf[offset + 3] & 0xFF) << 24)+ (((long)buf[offset + 4] & 0xFF) << 32)+ (((long)buf[offset + 5] & 0xFF) << 40)+ (((long)buf[offset + 6] & 0xFF) << 48)+ (((long)buf[offset + 7] & 0xFF) << 56);" is 319.,155
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataInputStream,readLong,Magic Number,The method contains a magic number: 0xFF,155
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataInputStream,readLong,Magic Number,The method contains a magic number: 0xFF,155
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataInputStream,readLong,Magic Number,The method contains a magic number: 8,155
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataInputStream,readLong,Magic Number,The method contains a magic number: 2,155
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataInputStream,readLong,Magic Number,The method contains a magic number: 0xFF,155
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataInputStream,readLong,Magic Number,The method contains a magic number: 16,155
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataInputStream,readLong,Magic Number,The method contains a magic number: 3,155
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataInputStream,readLong,Magic Number,The method contains a magic number: 0xFF,155
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataInputStream,readLong,Magic Number,The method contains a magic number: 24,155
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataInputStream,readLong,Magic Number,The method contains a magic number: 4,155
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataInputStream,readLong,Magic Number,The method contains a magic number: 0xFF,155
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataInputStream,readLong,Magic Number,The method contains a magic number: 32,155
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataInputStream,readLong,Magic Number,The method contains a magic number: 5,155
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataInputStream,readLong,Magic Number,The method contains a magic number: 0xFF,155
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataInputStream,readLong,Magic Number,The method contains a magic number: 40,155
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataInputStream,readLong,Magic Number,The method contains a magic number: 6,155
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataInputStream,readLong,Magic Number,The method contains a magic number: 0xFF,155
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataInputStream,readLong,Magic Number,The method contains a magic number: 48,155
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataInputStream,readLong,Magic Number,The method contains a magic number: 7,155
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataInputStream,readLong,Magic Number,The method contains a magic number: 0xFF,155
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataInputStream,readLong,Magic Number,The method contains a magic number: 56,155
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataInputStream,readInt,Magic Number,The method contains a magic number: 4,166
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataInputStream,readInt,Long Statement,The length of the statement "return (buf[offset + 0] & 0xFF) + ((buf[offset + 1] & 0xFF) << 8) + ((buf[offset + 2] & 0xFF) << 16)+ ((buf[offset + 3] & 0xFF) << 24);" is 135.,176
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataInputStream,readInt,Magic Number,The method contains a magic number: 0xFF,176
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataInputStream,readInt,Magic Number,The method contains a magic number: 0xFF,176
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataInputStream,readInt,Magic Number,The method contains a magic number: 8,176
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataInputStream,readInt,Magic Number,The method contains a magic number: 2,176
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataInputStream,readInt,Magic Number,The method contains a magic number: 0xFF,176
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataInputStream,readInt,Magic Number,The method contains a magic number: 16,176
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataInputStream,readInt,Magic Number,The method contains a magic number: 3,176
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataInputStream,readInt,Magic Number,The method contains a magic number: 0xFF,176
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataInputStream,readInt,Magic Number,The method contains a magic number: 24,176
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataInputStream,readUUID,Magic Number,The method contains a magic number: 16,188
+keepassdroid-2.5.9,com.keepassdroid.stream,HmacBlockInputStream,readSafeBlock,Complex Method,Cyclomatic complexity of the method is 8,98
+keepassdroid-2.5.9,com.keepassdroid.stream,HmacBlockInputStream,readSafeBlock,Magic Number,The method contains a magic number: 32,98
+keepassdroid-2.5.9,com.keepassdroid.stream,HmacBlockInputStream,readSafeBlock,Magic Number,The method contains a magic number: 32,98
+keepassdroid-2.5.9,com.keepassdroid.stream,HmacBlockInputStream,readSafeBlock,Magic Number,The method contains a magic number: 4,98
+keepassdroid-2.5.9,com.keepassdroid.stream,HmacBlockInputStream,readSafeBlock,Magic Number,The method contains a magic number: 4,98
+keepassdroid-2.5.9,com.keepassdroid.stream,HashedBlockInputStream,ReadHashedBlock,Complex Method,Cyclomatic complexity of the method is 11,80
+keepassdroid-2.5.9,com.keepassdroid.stream,HashedBlockInputStream,ReadHashedBlock,Magic Number,The method contains a magic number: 32,80
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataOutputStream,writeLong,Magic Number,The method contains a magic number: 8,67
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataOutputStream,writeInt,Magic Number,The method contains a magic number: 4,74
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataOutputStream,writeUShort,Magic Number,The method contains a magic number: 2,81
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataOutputStream,writeIntBuf,Magic Number,The method contains a magic number: 4,87
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataOutputStream,writeUShortBuf,Magic Number,The method contains a magic number: 2,94
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataOutputStream,writeUShort,Magic Number,The method contains a magic number: 0x00FF,102
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataOutputStream,writeUShort,Magic Number,The method contains a magic number: 0xFF00,102
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataOutputStream,writeUShort,Magic Number,The method contains a magic number: 8,102
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataOutputStream,writeInt,Magic Number,The method contains a magic number: 0xFF,113
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataOutputStream,writeInt,Magic Number,The method contains a magic number: 8,113
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataOutputStream,writeInt,Magic Number,The method contains a magic number: 0xFF,113
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataOutputStream,writeInt,Magic Number,The method contains a magic number: 2,113
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataOutputStream,writeInt,Magic Number,The method contains a magic number: 16,113
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataOutputStream,writeInt,Magic Number,The method contains a magic number: 0xFF,113
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataOutputStream,writeInt,Magic Number,The method contains a magic number: 3,113
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataOutputStream,writeInt,Magic Number,The method contains a magic number: 24,113
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataOutputStream,writeInt,Magic Number,The method contains a magic number: 0xFF,113
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataOutputStream,writeLongBuf,Magic Number,The method contains a magic number: 8,127
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataOutputStream,writeLong,Magic Number,The method contains a magic number: 0xFF,133
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataOutputStream,writeLong,Magic Number,The method contains a magic number: 8,133
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataOutputStream,writeLong,Magic Number,The method contains a magic number: 0xFF,133
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataOutputStream,writeLong,Magic Number,The method contains a magic number: 2,133
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataOutputStream,writeLong,Magic Number,The method contains a magic number: 16,133
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataOutputStream,writeLong,Magic Number,The method contains a magic number: 0xFF,133
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataOutputStream,writeLong,Magic Number,The method contains a magic number: 3,133
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataOutputStream,writeLong,Magic Number,The method contains a magic number: 24,133
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataOutputStream,writeLong,Magic Number,The method contains a magic number: 0xFF,133
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataOutputStream,writeLong,Magic Number,The method contains a magic number: 4,133
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataOutputStream,writeLong,Magic Number,The method contains a magic number: 32,133
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataOutputStream,writeLong,Magic Number,The method contains a magic number: 0xFF,133
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataOutputStream,writeLong,Magic Number,The method contains a magic number: 5,133
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataOutputStream,writeLong,Magic Number,The method contains a magic number: 40,133
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataOutputStream,writeLong,Magic Number,The method contains a magic number: 0xFF,133
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataOutputStream,writeLong,Magic Number,The method contains a magic number: 6,133
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataOutputStream,writeLong,Magic Number,The method contains a magic number: 48,133
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataOutputStream,writeLong,Magic Number,The method contains a magic number: 0xFF,133
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataOutputStream,writeLong,Magic Number,The method contains a magic number: 7,133
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataOutputStream,writeLong,Magic Number,The method contains a magic number: 56,133
+keepassdroid-2.5.9,com.keepassdroid.stream,LEDataOutputStream,writeLong,Magic Number,The method contains a magic number: 0xFF,133
+keepassdroid-2.5.9,com.keepassdroid.stream,BetterCipherInputStream,read,Magic Number,The method contains a magic number: 0xFF,90
+keepassdroid-2.5.9,com.keepassdroid.stream,BetterCipherInputStream,read,Magic Number,The method contains a magic number: 0xFF,90
+keepassdroid-2.5.9,com.keepassdroid.stream,BetterCipherInputStream,close,Empty catch clause,The method has an empty catch block.,218
+keepassdroid-2.5.9,com.keepassdroid.stream,HmacBlockStream,GetHmacKey64,Magic Number,The method contains a magic number: 64,29
+keepassdroid-2.5.9,com.keepassdroid.timeout,TimeoutHelper,getTimeoutLength,Long Statement,The length of the statement "String sTimeout=prefs.getString(ctx.getString(R.string.app_timeout_key)`ctx.getString(R.string.clipboard_timeout_default));" is 123.,52
+keepassdroid-2.5.9,com.keepassdroid.utils,PermissionUtil,checkAndRequest,Long Statement,The length of the statement "boolean hasRead=ContextCompat.checkSelfPermission(act`Manifest.permission.READ_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED;" is 134.,33
+keepassdroid-2.5.9,com.keepassdroid.utils,PermissionUtil,checkAndRequest,Long Statement,The length of the statement "boolean hasWrite=ContextCompat.checkSelfPermission(act`Manifest.permission.WRITE_EXTERNAL_STORAGE) == PackageManager.PERMISSION_GRANTED;" is 136.,33
+keepassdroid-2.5.9,com.keepassdroid.utils,DateUtil,convertKDBX4Time,Magic Number,The method contains a magic number: 1000L,41
+keepassdroid-2.5.9,com.keepassdroid.utils,DateUtil,convertDateToKDBX4Time,Magic Number,The method contains a magic number: 1000L,53
+keepassdroid-2.5.9,com.keepassdroid.utils,Types,readUByte,Magic Number,The method contains a magic number: 0xFF,62
+keepassdroid-2.5.9,com.keepassdroid.utils,Types,writeUByte,Magic Number,The method contains a magic number: 0xFF,67
+keepassdroid-2.5.9,com.keepassdroid.utils,Types,bytestoUUID,Magic Number,The method contains a magic number: 15,158
+keepassdroid-2.5.9,com.keepassdroid.utils,Types,bytestoUUID,Magic Number,The method contains a magic number: 8,158
+keepassdroid-2.5.9,com.keepassdroid.utils,Types,bytestoUUID,Magic Number,The method contains a magic number: 8,158
+keepassdroid-2.5.9,com.keepassdroid.utils,Types,bytestoUUID,Magic Number,The method contains a magic number: 0xff,158
+keepassdroid-2.5.9,com.keepassdroid.utils,Types,bytestoUUID,Magic Number,The method contains a magic number: 7,158
+keepassdroid-2.5.9,com.keepassdroid.utils,Types,bytestoUUID,Magic Number,The method contains a magic number: 8,158
+keepassdroid-2.5.9,com.keepassdroid.utils,Types,bytestoUUID,Magic Number,The method contains a magic number: 0xff,158
+keepassdroid-2.5.9,com.keepassdroid.utils,Types,UUIDtoBytes,Magic Number,The method contains a magic number: 16,173
+keepassdroid-2.5.9,com.keepassdroid.utils,Types,UUIDtoBytes,Magic Number,The method contains a magic number: 8,173
+keepassdroid-2.5.9,com.keepassdroid.utils,NotificationUtil,createChannels,Long Statement,The length of the statement "NotificationChannel channel=new NotificationChannel(COPY_CHANNEL_ID`COPY_CHANNEL_NAME`NotificationManager.IMPORTANCE_LOW);" is 122.,32
+keepassdroid-2.5.9,com.keepassdroid.utils,StrUtil,splitSearchTerms,Complex Conditional,The conditional expression ((ch == ' ') || (ch == '\t') || (ch == '\r')|| (ch == '\n')) && !quoted is complex.,27
+keepassdroid-2.5.9,com.keepassdroid.utils,StrUtil,replaceAllIgnoresCase,Complex Conditional,The conditional expression text == null || find == null || newText == null is complex.,71
+keepassdroid-2.5.9,com.keepassdroid.utils,UriUtil,translate,Complex Method,Cyclomatic complexity of the method is 9,83
+keepassdroid-2.5.9,com.keepassdroid.utils,UriUtil,translate,Long Statement,The length of the statement "Cursor cursor=ctx.getContentResolver().query(uri`new String[]{android.provider.MediaStore.Images.ImageColumns.DATA}`null`null`null);" is 132.,83
+keepassdroid-2.5.9,com.keepassdroid.utils,SprEngineV4,fillRefPlaceholders,Complex Method,Cyclomatic complexity of the method is 13,63
+keepassdroid-2.5.9,com.keepassdroid.utils,SprEngineV4,fillRefPlaceholders,Magic Number,The method contains a magic number: 20,63
+keepassdroid-2.5.9,com.keepassdroid.utils,SprEngineV4,fillRefPlaceholders,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@1dd5a28e,63
+keepassdroid-2.5.9,com.keepassdroid.utils,SprEngineV4,findRefTarget,Complex Method,Cyclomatic complexity of the method is 14,126
+keepassdroid-2.5.9,com.keepassdroid.utils,SprEngineV4,findRefTarget,Magic Number,The method contains a magic number: 4,126
+keepassdroid-2.5.9,com.keepassdroid.utils,SprEngineV4,findRefTarget,Magic Number,The method contains a magic number: 3,126
+keepassdroid-2.5.9,com.keepassdroid.utils,SprEngineV4,findRefTarget,Magic Number,The method contains a magic number: 2,126
+keepassdroid-2.5.9,com.keepassdroid.utils,SprEngineV4,findRefTarget,Magic Number,The method contains a magic number: 4,126
+keepassdroid-2.5.9,com.keepassdroid.utils,UuidUtil,toHexString,Magic Number,The method contains a magic number: 0xFF,25
+keepassdroid-2.5.9,com.keepassdroid.utils,UuidUtil,toHexString,Magic Number,The method contains a magic number: 4,25
+keepassdroid-2.5.9,com.keepassdroid.utils,UuidUtil,toHexString,Magic Number,The method contains a magic number: 0x0F,25
+keepassdroid-2.5.9,com.keepassdroid.utils,UuidUtil,byteToChar,Magic Number,The method contains a magic number: 10,57
+keepassdroid-2.5.9,com.keepassdroid.utils,UuidUtil,byteToChar,Magic Number,The method contains a magic number: 10,57
+keepassdroid-2.5.9,com.keepassdroid.search,SearchDbHelper,omitBackup,Long Statement,The length of the statement "return prefs.getBoolean(mCtx.getString(R.string.omitbackup_key)`mCtx.getResources().getBoolean(R.bool.omitbackup_default));" is 123.,51
+keepassdroid-2.5.9,com.keepassdroid.search,SearchDbHelper,search,Complex Method,Cyclomatic complexity of the method is 9,57
+keepassdroid-2.5.9,com.keepassdroid.biometric,BiometricHelper,BiometricHelper,Long Statement,The length of the statement "this.cipher=Cipher.getInstance(KeyProperties.KEY_ALGORITHM_AES + "/" + KeyProperties.BLOCK_MODE_CBC+ "/"+ KeyProperties.ENCRYPTION_PADDING_PKCS7);" is 146.,80
+keepassdroid-2.5.9,com.keepassdroid.biometric,BiometricHelper,isBiometricSupported,Long Statement,The length of the statement "return (auth == BiometricManager.BIOMETRIC_SUCCESS || auth == BiometricManager.BIOMETRIC_ERROR_NONE_ENROLLED) && KeyguardManagerCompat.isKeyguardSecure(keyguardManager);" is 169.,111
+keepassdroid-2.5.9,com.keepassdroid.biometric,BiometricHelper,createNewKeyIfNeeded,Long Statement,The length of the statement "AlgorithmParameterSpec algSpec=KeyGenParameterSpecCompat.build(ALIAS_KEY`KeyProperties.PURPOSE_ENCRYPT | KeyProperties.PURPOSE_DECRYPT`KeyProperties.BLOCK_MODE_CBC`true`KeyProperties.ENCRYPTION_PADDING_PKCS7);" is 209.,253
+keepassdroid-2.5.9,com.keepassdroid.icons,Icons,buildList,Magic Number,The method contains a magic number: 2,32
+keepassdroid-2.5.9,com.keepassdroid.icons,Icons,buildList,Magic Number,The method contains a magic number: 4,32
+keepassdroid-2.5.9,com.keepassdroid.icons,Icons,buildList,Magic Number,The method contains a magic number: 69,32
+keepassdroid-2.5.9,com.keepassdroid.view,PwEntryView,onContextItemSelected,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@7762b7b1,114
+keepassdroid-2.5.9,com.keepassdroid.view,PwGroupView,PwGroupView,Magic Number,The method contains a magic number: 8,56
+keepassdroid-2.5.9,com.keepassdroid.view,PwGroupView,onContextItemSelected,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@22109a27,102
+keepassdroid-2.5.9,com.keepassdroid.collections,VariantDictionary,deserialize,Complex Method,Cyclomatic complexity of the method is 19,91
+keepassdroid-2.5.9,com.keepassdroid.collections,VariantDictionary,deserialize,Magic Number,The method contains a magic number: 4,91
+keepassdroid-2.5.9,com.keepassdroid.collections,VariantDictionary,deserialize,Magic Number,The method contains a magic number: 8,91
+keepassdroid-2.5.9,com.keepassdroid.collections,VariantDictionary,deserialize,Magic Number,The method contains a magic number: 4,91
+keepassdroid-2.5.9,com.keepassdroid.collections,VariantDictionary,deserialize,Magic Number,The method contains a magic number: 8,91
+keepassdroid-2.5.9,com.keepassdroid.collections,VariantDictionary,deserialize,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@d5a31f9,91
+keepassdroid-2.5.9,com.keepassdroid.collections,VariantDictionary,serialize,Complex Method,Cyclomatic complexity of the method is 10,164
+keepassdroid-2.5.9,com.keepassdroid.collections,VariantDictionary,serialize,Magic Number,The method contains a magic number: 4,164
+keepassdroid-2.5.9,com.keepassdroid.collections,VariantDictionary,serialize,Magic Number,The method contains a magic number: 8,164
+keepassdroid-2.5.9,com.keepassdroid.collections,VariantDictionary,serialize,Magic Number,The method contains a magic number: 4,164
+keepassdroid-2.5.9,com.keepassdroid.collections,VariantDictionary,serialize,Magic Number,The method contains a magic number: 8,164
+keepassdroid-2.5.9,com.keepassdroid.collections,VariantDictionary,serialize,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@3dab330e,164

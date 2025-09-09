@@ -1,0 +1,5 @@
+Project Name,Package Name,Type Name,Testability Smell,Cause of the Smell
+GoGreen-0.1.3,groupxii.database,Database,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 11
+GoGreen-0.1.3,groupxii.server.security,SecurityKey,Global State,The tool detected the smell in this class because the class declares global variables. The detected global variables are: instance (11)
+GoGreen-0.1.3,groupxii.client,TokenManager,Global State,The tool detected the smell in this class because the class declares global variables. The detected global variables are: instance (9)
+GoGreen-0.1.3,groupxii.client.connector,Connector,Global State,The tool detected the smell in this class because the class declares global variables. The detected global variables are: instance (19)

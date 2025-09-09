@@ -1,0 +1,988 @@
+Project Name,Package Name,Type Name,Method Name,Implementation Smell,Cause of the Smell,Method start line no
+Timber-1.8,com.naman14.timber,MusicService,setUpRemoteControlClient,Long Statement,The length of the statement "mRemoteControlClient.setTransportControlFlags(RemoteControlClient.FLAG_KEY_MEDIA_PLAY | RemoteControlClient.FLAG_KEY_MEDIA_PAUSE | RemoteControlClient.FLAG_KEY_MEDIA_PREVIOUS| RemoteControlClient.FLAG_KEY_MEDIA_NEXT| RemoteControlClient.FLAG_KEY_MEDIA_STOP);" is 258.,374
+Timber-1.8,com.naman14.timber,MusicService,scrobble,Long Statement,The length of the statement "if (trackname != null) LastFmClient.getInstance(this).Scrobble(new ScrobbleQuery(getArtistName()`trackname`System.currentTimeMillis() / 1000));" is 143.,507
+Timber-1.8,com.naman14.timber,MusicService,scrobble,Magic Number,The method contains a magic number: 1000,507
+Timber-1.8,com.naman14.timber,MusicService,releaseServiceUiAndStop,Complex Conditional,The conditional expression isPlaying() || mPausedByTransientLossOfFocus || mPlayerHandler.hasMessages(TRACK_ENDED) is complex.,516
+Timber-1.8,com.naman14.timber,MusicService,handleCommandIntent,Complex Conditional,The conditional expression CMDPREVIOUS.equals(command) || PREVIOUS_ACTION.equals(action) || PREVIOUS_FORCE_ACTION.equals(action) is complex.,535
+Timber-1.8,com.naman14.timber,MusicService,handleCommandIntent,Complex Method,Cyclomatic complexity of the method is 15,535
+Timber-1.8,com.naman14.timber,MusicService,updateNotification,Complex Method,Cyclomatic complexity of the method is 9,596
+Timber-1.8,com.naman14.timber,MusicService,stop,Complex Conditional,The conditional expression duration > 30000 && (position >= duration / 2) || position > 240000 is complex.,709
+Timber-1.8,com.naman14.timber,MusicService,stop,Magic Number,The method contains a magic number: 30000,709
+Timber-1.8,com.naman14.timber,MusicService,stop,Magic Number,The method contains a magic number: 2,709
+Timber-1.8,com.naman14.timber,MusicService,stop,Magic Number,The method contains a magic number: 240000,709
+Timber-1.8,com.naman14.timber,MusicService,removeTracksInternal,Complex Method,Cyclomatic complexity of the method is 16,731
+Timber-1.8,com.naman14.timber,MusicService,updateAlbumCursor,Long Statement,The length of the statement "mAlbumCursor=openCursorAndGoToFirst(MediaStore.Audio.Albums.EXTERNAL_CONTENT_URI`ALBUM_PROJECTION`"_id=" + albumId`null);" is 121.,840
+Timber-1.8,com.naman14.timber,MusicService,openCurrentAndMaybeNext,Complex Method,Cyclomatic complexity of the method is 9,879
+Timber-1.8,com.naman14.timber,MusicService,openCurrentAndMaybeNext,Magic Number,The method contains a magic number: 10,879
+Timber-1.8,com.naman14.timber,MusicService,getNextPosition,Complex Conditional,The conditional expression minNumPlays > 0 && numTracksWithMinNumPlays == numTracks && mRepeatMode != REPEAT_ALL && !force is complex.,935
+Timber-1.8,com.naman14.timber,MusicService,getNextPosition,Complex Method,Cyclomatic complexity of the method is 21,935
+Timber-1.8,com.naman14.timber,MusicService,setNextTrack,Complex Conditional,The conditional expression mNextPlayPos >= 0 && mPlaylist != null && mNextPlayPos < mPlaylist.size() is complex.,1019
+Timber-1.8,com.naman14.timber,MusicService,makeAutoShuffleList,Empty catch clause,The method has an empty catch block.,1030
+Timber-1.8,com.naman14.timber,MusicService,makeAutoShuffleList,Long Statement,The length of the statement "cursor=getContentResolver().query(MediaStore.Audio.Media.EXTERNAL_CONTENT_URI`new String[]{MediaStore.Audio.Media._ID}`MediaStore.Audio.Media.IS_MUSIC + "=1"`null`null);" is 169.,1030
+Timber-1.8,com.naman14.timber,MusicService,doAutoShuffleUpdate,Magic Number,The method contains a magic number: 10,1058
+Timber-1.8,com.naman14.timber,MusicService,doAutoShuffleUpdate,Magic Number,The method contains a magic number: 9,1058
+Timber-1.8,com.naman14.timber,MusicService,doAutoShuffleUpdate,Magic Number,The method contains a magic number: 7,1058
+Timber-1.8,com.naman14.timber,MusicService,doAutoShuffleUpdate,Magic Number,The method contains a magic number: 2,1058
+Timber-1.8,com.naman14.timber,MusicService,notifyChange,Complex Conditional,The conditional expression mNextPlayPos >= 0 && mNextPlayPos < mPlaylist.size() && getShuffleMode() != SHUFFLE_NONE is complex.,1105
+Timber-1.8,com.naman14.timber,MusicService,notifyChange,Complex Method,Cyclomatic complexity of the method is 10,1105
+Timber-1.8,com.naman14.timber,MusicService,updateMediaSession,Complex Method,Cyclomatic complexity of the method is 8,1194
+Timber-1.8,com.naman14.timber,MusicService,updateMediaSession,Long Statement,The length of the statement "mSession.setPlaybackState(new PlaybackStateCompat.Builder().setState(playState`position()`1.0f).setActions(PlaybackStateCompat.ACTION_PLAY | PlaybackStateCompat.ACTION_PAUSE | PlaybackStateCompat.ACTION_PLAY_PAUSE| PlaybackStateCompat.ACTION_SKIP_TO_NEXT| PlaybackStateCompat.ACTION_SKIP_TO_PREVIOUS).build());" is 310.,1194
+Timber-1.8,com.naman14.timber,MusicService,updateMediaSession,Long Statement,The length of the statement "mSession.setMetadata(new MediaMetadataCompat.Builder().putString(MediaMetadataCompat.METADATA_KEY_ARTIST`getArtistName()).putString(MediaMetadataCompat.METADATA_KEY_ALBUM_ARTIST`getAlbumArtistName()).putString(MediaMetadataCompat.METADATA_KEY_ALBUM`getAlbumName()).putString(MediaMetadataCompat.METADATA_KEY_TITLE`getTrackName()).putLong(MediaMetadataCompat.METADATA_KEY_DURATION`duration()).putLong(MediaMetadataCompat.METADATA_KEY_TRACK_NUMBER`getQueuePosition() + 1).putLong(MediaMetadataCompat.METADATA_KEY_NUM_TRACKS`getQueue().length).putString(MediaMetadataCompat.METADATA_KEY_GENRE`getGenreName()).putBitmap(MediaMetadataCompat.METADATA_KEY_ALBUM_ART`albumArt).build());" is 678.,1194
+Timber-1.8,com.naman14.timber,MusicService,updateMediaSession,Long Statement,The length of the statement "mSession.setPlaybackState(new PlaybackStateCompat.Builder().setState(playState`position()`1.0f).setActions(PlaybackStateCompat.ACTION_PLAY | PlaybackStateCompat.ACTION_PAUSE | PlaybackStateCompat.ACTION_PLAY_PAUSE| PlaybackStateCompat.ACTION_SKIP_TO_NEXT| PlaybackStateCompat.ACTION_SKIP_TO_PREVIOUS).build());" is 310.,1194
+Timber-1.8,com.naman14.timber,MusicService,buildNotification,Complex Method,Cyclomatic complexity of the method is 8,1252
+Timber-1.8,com.naman14.timber,MusicService,buildNotification,Long Statement,The length of the statement "androidx.core.app.NotificationCompat.Builder builder=new androidx.core.app.NotificationCompat.Builder(this`CHANNEL_ID).setSmallIcon(R.drawable.ic_notification).setLargeIcon(artwork).setContentIntent(clickIntent).setContentTitle(getTrackName()).setContentText(text).setWhen(mNotificationPostTime).addAction(R.drawable.ic_skip_previous_white_36dp`""`retrievePlaybackAction(PREVIOUS_ACTION)).addAction(playButtonResId`""`retrievePlaybackAction(TOGGLEPAUSE_ACTION)).addAction(R.drawable.ic_skip_next_white_36dp`""`retrievePlaybackAction(NEXT_ACTION));" is 547.,1252
+Timber-1.8,com.naman14.timber,MusicService,buildNotification,Long Statement,The length of the statement "NotificationCompat.MediaStyle style=new NotificationCompat.MediaStyle().setMediaSession(mSession.getSessionToken()).setShowActionsInCompactView(0`1`2`3);" is 153.,1252
+Timber-1.8,com.naman14.timber,MusicService,buildNotification,Magic Number,The method contains a magic number: 2,1252
+Timber-1.8,com.naman14.timber,MusicService,buildNotification,Magic Number,The method contains a magic number: 3,1252
+Timber-1.8,com.naman14.timber,MusicService,addXTrackSelector,Long Statement,The length of the statement "Cursor c=getContentResolver().query(MediaStore.Audio.Media.EXTERNAL_CONTENT_URI`NOTIFICATION_PROJECTION`selection.substring(0`selection.length() - 3)`null`order.toString());" is 173.,1319
+Timber-1.8,com.naman14.timber,MusicService,addXTrackSelector,Long Statement,The length of the statement "TrackItem t=new TrackItem().setArt(TimberUtils.getAlbumArtUri(c.getLong(c.getColumnIndexOrThrow(AudioColumns.ALBUM_ID)))).setTitle(c.getString(c.getColumnIndexOrThrow(AudioColumns.TITLE))).setArtist(c.getString(c.getColumnIndexOrThrow(AudioColumns.ARTIST))).setDuration(TimberUtils.makeShortTimeString(this`c.getInt(c.getColumnIndexOrThrow(AudioColumns.DURATION)) / 1000));" is 373.,1319
+Timber-1.8,com.naman14.timber,MusicService,addXTrackSelector,Magic Number,The method contains a magic number: 3,1319
+Timber-1.8,com.naman14.timber,MusicService,addXTrackSelector,Magic Number,The method contains a magic number: 1000,1319
+Timber-1.8,com.naman14.timber,MusicService,reloadQueue,Complex Method,Cyclomatic complexity of the method is 13,1388
+Timber-1.8,com.naman14.timber,MusicService,reloadQueue,Magic Number,The method contains a magic number: 3000,1388
+Timber-1.8,com.naman14.timber,MusicService,reloadQueue,Magic Number,The method contains a magic number: 20,1388
+Timber-1.8,com.naman14.timber,MusicService,openFile,Complex Method,Cyclomatic complexity of the method is 13,1449
+Timber-1.8,com.naman14.timber,MusicService,openFile,Empty catch clause,The method has an empty catch block.,1449
+Timber-1.8,com.naman14.timber,MusicService,openFile,Empty catch clause,The method has an empty catch block.,1449
+Timber-1.8,com.naman14.timber,MusicService,removeTrackAtPosition,Complex Conditional,The conditional expression position >= 0 && position < mPlaylist.size() && mPlaylist.get(position).mId == id is complex.,1637
+Timber-1.8,com.naman14.timber,MusicService,getGenreName,Complex Conditional,The conditional expression mCursor == null || mPlayPos < 0 || mPlayPos >= mPlaylist.size() is complex.,1730
+Timber-1.8,com.naman14.timber,MusicService,getTrack,Complex Conditional,The conditional expression index >= 0 && index < mPlaylist.size() && mPlayer.isInitialized() is complex.,1803
+Timber-1.8,com.naman14.timber,MusicService,getNextAudioId,Complex Conditional,The conditional expression mNextPlayPos >= 0 && mNextPlayPos < mPlaylist.size() && mPlayer.isInitialized() is complex.,1811
+Timber-1.8,com.naman14.timber,MusicService,open,Complex Method,Cyclomatic complexity of the method is 8,1931
+Timber-1.8,com.naman14.timber,MusicService,play,Complex Conditional,The conditional expression mRepeatMode != REPEAT_CURRENT && duration > 2000 && mPlayer.position() >= duration - 2000 is complex.,1973
+Timber-1.8,com.naman14.timber,MusicService,play,Complex Method,Cyclomatic complexity of the method is 8,1973
+Timber-1.8,com.naman14.timber,MusicService,play,Long Statement,The length of the statement "mAudioManager.registerMediaButtonEventReceiver(new ComponentName(getPackageName()`MediaButtonIntentReceiver.class.getName()));" is 126.,1973
+Timber-1.8,com.naman14.timber,MusicService,play,Magic Number,The method contains a magic number: 2000,1973
+Timber-1.8,com.naman14.timber,MusicService,play,Magic Number,The method contains a magic number: 2000,1973
+Timber-1.8,com.naman14.timber,MusicService,prev,Long Identifier,The length of the field REWIND_INSTEAD_PREVIOUS_THRESHOLD is 33.,2102
+Timber-1.8,com.naman14.timber,MusicService,prev,Long Statement,The length of the statement "boolean goPrevious=getRepeatMode() != REPEAT_CURRENT && (position() < REWIND_INSTEAD_PREVIOUS_THRESHOLD || forcePrevious);" is 122.,2102
+Timber-1.8,com.naman14.timber,MusicService,moveQueueItem,Complex Method,Cyclomatic complexity of the method is 10,2155
+Timber-1.8,com.naman14.timber,TimberApp,onCreate,Long Statement,The length of the statement "ImageLoaderConfiguration localImageLoaderConfiguration=new ImageLoaderConfiguration.Builder(this).imageDownloader(new BaseImageDownloader(this){" is 144.,38
+Timber-1.8,com.naman14.timber,TimberApp,onCreate,Long Statement,The length of the statement "ATE.config(this`"light_theme").activityTheme(R.style.AppThemeLight).primaryColorRes(R.color.colorPrimaryLightDefault).accentColorRes(R.color.colorAccentLightDefault).coloredNavigationBar(false).usingMaterialDialogs(true).commit();" is 230.,38
+Timber-1.8,com.naman14.timber,TimberApp,onCreate,Long Statement,The length of the statement "ATE.config(this`"dark_theme").activityTheme(R.style.AppThemeDark).primaryColorRes(R.color.colorPrimaryDarkDefault).accentColorRes(R.color.colorAccentDarkDefault).coloredNavigationBar(false).usingMaterialDialogs(true).commit();" is 226.,38
+Timber-1.8,com.naman14.timber,TimberApp,onCreate,Long Statement,The length of the statement "ATE.config(this`"light_theme_notoolbar").activityTheme(R.style.AppThemeLight).coloredActionBar(false).primaryColorRes(R.color.colorPrimaryLightDefault).accentColorRes(R.color.colorAccentLightDefault).coloredNavigationBar(false).usingMaterialDialogs(true).commit();" is 264.,38
+Timber-1.8,com.naman14.timber,TimberApp,onCreate,Long Statement,The length of the statement "ATE.config(this`"dark_theme_notoolbar").activityTheme(R.style.AppThemeDark).coloredActionBar(false).primaryColorRes(R.color.colorPrimaryDarkDefault).accentColorRes(R.color.colorAccentDarkDefault).coloredNavigationBar(true).usingMaterialDialogs(true).commit();" is 259.,38
+Timber-1.8,com.naman14.timber,MusicPlayer,next,Empty catch clause,The method has an empty catch block.,92
+Timber-1.8,com.naman14.timber,MusicPlayer,playOrPause,Empty catch clause,The method has an empty catch block.,121
+Timber-1.8,com.naman14.timber,MusicPlayer,cycleRepeat,Empty catch clause,The method has an empty catch block.,134
+Timber-1.8,com.naman14.timber,MusicPlayer,cycleRepeat,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@43dbf43,134
+Timber-1.8,com.naman14.timber,MusicPlayer,cycleShuffle,Empty catch clause,The method has an empty catch block.,156
+Timber-1.8,com.naman14.timber,MusicPlayer,cycleShuffle,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@47c6df9f,156
+Timber-1.8,com.naman14.timber,MusicPlayer,isPlaying,Empty catch clause,The method has an empty catch block.,180
+Timber-1.8,com.naman14.timber,MusicPlayer,getShuffleMode,Empty catch clause,The method has an empty catch block.,190
+Timber-1.8,com.naman14.timber,MusicPlayer,setShuffleMode,Empty catch clause,The method has an empty catch block.,200
+Timber-1.8,com.naman14.timber,MusicPlayer,getRepeatMode,Empty catch clause,The method has an empty catch block.,210
+Timber-1.8,com.naman14.timber,MusicPlayer,getTrackName,Empty catch clause,The method has an empty catch block.,220
+Timber-1.8,com.naman14.timber,MusicPlayer,getArtistName,Empty catch clause,The method has an empty catch block.,230
+Timber-1.8,com.naman14.timber,MusicPlayer,getAlbumName,Empty catch clause,The method has an empty catch block.,240
+Timber-1.8,com.naman14.timber,MusicPlayer,getCurrentAlbumId,Empty catch clause,The method has an empty catch block.,250
+Timber-1.8,com.naman14.timber,MusicPlayer,getCurrentAudioId,Empty catch clause,The method has an empty catch block.,260
+Timber-1.8,com.naman14.timber,MusicPlayer,getCurrentTrack,Empty catch clause,The method has an empty catch block.,270
+Timber-1.8,com.naman14.timber,MusicPlayer,getTrack,Empty catch clause,The method has an empty catch block.,280
+Timber-1.8,com.naman14.timber,MusicPlayer,getNextAudioId,Empty catch clause,The method has an empty catch block.,290
+Timber-1.8,com.naman14.timber,MusicPlayer,getPreviousAudioId,Empty catch clause,The method has an empty catch block.,300
+Timber-1.8,com.naman14.timber,MusicPlayer,getCurrentArtistId,Empty catch clause,The method has an empty catch block.,310
+Timber-1.8,com.naman14.timber,MusicPlayer,getAudioSessionId,Empty catch clause,The method has an empty catch block.,320
+Timber-1.8,com.naman14.timber,MusicPlayer,getQueue,Empty catch clause,The method has an empty catch block.,330
+Timber-1.8,com.naman14.timber,MusicPlayer,getQueueItemAtPosition,Empty catch clause,The method has an empty catch block.,341
+Timber-1.8,com.naman14.timber,MusicPlayer,getQueueSize,Empty catch clause,The method has an empty catch block.,352
+Timber-1.8,com.naman14.timber,MusicPlayer,getQueuePosition,Empty catch clause,The method has an empty catch block.,363
+Timber-1.8,com.naman14.timber,MusicPlayer,setQueuePosition,Empty catch clause,The method has an empty catch block.,373
+Timber-1.8,com.naman14.timber,MusicPlayer,refresh,Empty catch clause,The method has an empty catch block.,382
+Timber-1.8,com.naman14.timber,MusicPlayer,getQueueHistorySize,Empty catch clause,The method has an empty catch block.,391
+Timber-1.8,com.naman14.timber,MusicPlayer,getQueueHistoryPosition,Empty catch clause,The method has an empty catch block.,401
+Timber-1.8,com.naman14.timber,MusicPlayer,getQueueHistoryList,Empty catch clause,The method has an empty catch block.,411
+Timber-1.8,com.naman14.timber,MusicPlayer,removeTrack,Empty catch clause,The method has an empty catch block.,421
+Timber-1.8,com.naman14.timber,MusicPlayer,removeTrackAtPosition,Empty catch clause,The method has an empty catch block.,431
+Timber-1.8,com.naman14.timber,MusicPlayer,moveQueueItem,Empty catch clause,The method has an empty catch block.,441
+Timber-1.8,com.naman14.timber,MusicPlayer,playAll,Complex Conditional,The conditional expression list == null || list.length == 0 || mService == null is complex.,465
+Timber-1.8,com.naman14.timber,MusicPlayer,playAll,Complex Conditional,The conditional expression position != -1 && currentQueuePosition == position && currentId == list[position] is complex.,465
+Timber-1.8,com.naman14.timber,MusicPlayer,playAll,Empty catch clause,The method has an empty catch block.,465
+Timber-1.8,com.naman14.timber,MusicPlayer,playAll,Long Parameter List,The method has 6 parameters. ,465
+Timber-1.8,com.naman14.timber,MusicPlayer,playNext,Empty catch clause,The method has an empty catch block.,495
+Timber-1.8,com.naman14.timber,MusicPlayer,shuffleAll,Complex Conditional,The conditional expression getQueuePosition() == 0 && mService.getAudioId() == trackList[0] && Arrays.equals(trackList`getQueue()) is complex.,507
+Timber-1.8,com.naman14.timber,MusicPlayer,shuffleAll,Empty catch clause,The method has an empty catch block.,507
+Timber-1.8,com.naman14.timber,MusicPlayer,getSongListForArtist,Long Statement,The length of the statement "final String selection=MediaStore.Audio.AudioColumns.ARTIST_ID + "=" + id+ " AND "+ MediaStore.Audio.AudioColumns.IS_MUSIC+ "=1";" is 129.,526
+Timber-1.8,com.naman14.timber,MusicPlayer,getSongListForArtist,Long Statement,The length of the statement "Cursor cursor=context.getContentResolver().query(MediaStore.Audio.Media.EXTERNAL_CONTENT_URI`projection`selection`null`MediaStore.Audio.AudioColumns.ALBUM_KEY + "`" + MediaStore.Audio.AudioColumns.TRACK);" is 204.,526
+Timber-1.8,com.naman14.timber,MusicPlayer,getSongListForAlbum,Long Statement,The length of the statement "final String selection=MediaStore.Audio.AudioColumns.ALBUM_ID + "=" + id+ " AND "+ MediaStore.Audio.AudioColumns.IS_MUSIC+ "=1";" is 128.,544
+Timber-1.8,com.naman14.timber,MusicPlayer,getSongListForAlbum,Long Statement,The length of the statement "Cursor cursor=context.getContentResolver().query(MediaStore.Audio.Media.EXTERNAL_CONTENT_URI`projection`selection`null`MediaStore.Audio.AudioColumns.TRACK + "` " + MediaStore.Audio.Media.DEFAULT_SORT_ORDER);" is 207.,544
+Timber-1.8,com.naman14.timber,MusicPlayer,getSongCountForAlbumInt,Long Statement,The length of the statement "Cursor cursor=context.getContentResolver().query(uri`new String[]{MediaStore.Audio.AlbumColumns.NUMBER_OF_SONGS}`null`null`null);" is 129.,562
+Timber-1.8,com.naman14.timber,MusicPlayer,getReleaseDateForAlbum,Long Statement,The length of the statement "Cursor cursor=context.getContentResolver().query(uri`new String[]{MediaStore.Audio.AlbumColumns.FIRST_YEAR}`null`null`null);" is 124.,585
+Timber-1.8,com.naman14.timber,MusicPlayer,seek,Empty catch clause,The method has an empty catch block.,605
+Timber-1.8,com.naman14.timber,MusicPlayer,seek,Empty catch clause,The method has an empty catch block.,605
+Timber-1.8,com.naman14.timber,MusicPlayer,seekRelative,Empty catch clause,The method has an empty catch block.,616
+Timber-1.8,com.naman14.timber,MusicPlayer,seekRelative,Empty catch clause,The method has an empty catch block.,616
+Timber-1.8,com.naman14.timber,MusicPlayer,position,Empty catch clause,The method has an empty catch block.,627
+Timber-1.8,com.naman14.timber,MusicPlayer,position,Empty catch clause,The method has an empty catch block.,627
+Timber-1.8,com.naman14.timber,MusicPlayer,duration,Empty catch clause,The method has an empty catch block.,639
+Timber-1.8,com.naman14.timber,MusicPlayer,duration,Empty catch clause,The method has an empty catch block.,639
+Timber-1.8,com.naman14.timber,MusicPlayer,clearQueue,Empty catch clause,The method has an empty catch block.,651
+Timber-1.8,com.naman14.timber,MusicPlayer,addToQueue,Empty catch clause,The method has an empty catch block.,660
+Timber-1.8,com.naman14.timber,MusicPlayer,addToPlaylist,Magic Number,The method contains a magic number: 1000,678
+Timber-1.8,com.naman14.timber,MusicPlayer,addToPlaylist,Magic Number,The method contains a magic number: 1000,678
+Timber-1.8,com.naman14.timber,MusicPlayer,openFile,Empty catch clause,The method has an empty catch block.,753
+Timber-1.8,com.naman14.timber,WearBrowserService,addMediaRoots,Long Statement,The length of the statement "mMediaRoot.add(new MediaBrowser.MediaItem(new MediaDescription.Builder().setMediaId(Integer.toString(TYPE_ARTIST)).setTitle(getString(R.string.artists)).setIconUri(Uri.parse("android.resource://" + "naman14.timber/drawable/ic_empty_music2")).setSubtitle(getString(R.string.artists)).build()`MediaBrowser.MediaItem.FLAG_BROWSABLE));" is 331.,183
+Timber-1.8,com.naman14.timber,WearBrowserService,addMediaRoots,Long Statement,The length of the statement "mMediaRoot.add(new MediaBrowser.MediaItem(new MediaDescription.Builder().setMediaId(Integer.toString(TYPE_ALBUM)).setTitle(getString(R.string.albums)).setIconUri(Uri.parse("android.resource://" + "naman14.timber/drawable/ic_empty_music2")).setSubtitle(getString(R.string.albums)).build()`MediaBrowser.MediaItem.FLAG_BROWSABLE));" is 328.,183
+Timber-1.8,com.naman14.timber,WearBrowserService,addMediaRoots,Long Statement,The length of the statement "mMediaRoot.add(new MediaBrowser.MediaItem(new MediaDescription.Builder().setMediaId(Integer.toString(TYPE_SONG)).setTitle(getString(R.string.songs)).setIconUri(Uri.parse("android.resource://" + "naman14.timber/drawable/ic_empty_music2")).setSubtitle(getString(R.string.songs)).build()`MediaBrowser.MediaItem.FLAG_BROWSABLE));" is 325.,183
+Timber-1.8,com.naman14.timber,WearBrowserService,addMediaRoots,Long Statement,The length of the statement "mMediaRoot.add(new MediaBrowser.MediaItem(new MediaDescription.Builder().setMediaId(Integer.toString(TYPE_PLAYLIST)).setTitle(getString(R.string.playlists)).setIconUri(Uri.parse("android.resource://" + "naman14.timber/drawable/ic_empty_music2")).setSubtitle(getString(R.string.playlists)).build()`MediaBrowser.MediaItem.FLAG_BROWSABLE));" is 337.,183
+Timber-1.8,com.naman14.timber,WearBrowserService,loadChildren,Complex Method,Cyclomatic complexity of the method is 18,228
+Timber-1.8,com.naman14.timber,WearBrowserService,loadChildren,Long Statement,The length of the statement "fillMediaItems(mediaItems`Integer.toString(TYPE_ARTIST_SONG_ALBUMS) + Long.toString(artist.id)`artist.name`Uri.parse("android.resource://" + "naman14.timber/drawable/ic_empty_music2")`TimberUtils.makeCombinedString(mContext`albumNmber`songCount)`MediaBrowser.MediaItem.FLAG_BROWSABLE);" is 285.,228
+Timber-1.8,com.naman14.timber,WearBrowserService,loadChildren,Long Statement,The length of the statement "fillMediaItems(mediaItems`Integer.toString(TYPE_ALBUM_SONGS) + Long.toString(album.id)`album.title`TimberUtils.getAlbumArtUri(album.id)`album.artistName`MediaBrowser.MediaItem.FLAG_BROWSABLE);" is 192.,228
+Timber-1.8,com.naman14.timber,WearBrowserService,loadChildren,Long Statement,The length of the statement "fillMediaItems(mediaItems`String.valueOf(song.id)`song.title`TimberUtils.getAlbumArtUri(song.albumId)`song.artistName`MediaBrowser.MediaItem.FLAG_PLAYABLE);" is 156.,228
+Timber-1.8,com.naman14.timber,WearBrowserService,loadChildren,Long Statement,The length of the statement "fillMediaItems(mediaItems`String.valueOf(song.id)`song.title`TimberUtils.getAlbumArtUri(song.albumId)`song.artistName`MediaBrowser.MediaItem.FLAG_PLAYABLE);" is 156.,228
+Timber-1.8,com.naman14.timber,WearBrowserService,loadChildren,Long Statement,The length of the statement "fillMediaItems(mediaItems`Integer.toString(TYPE_ARTIST_ALL_SONGS) + Long.parseLong(parentId.substring(1))`"All songs"`Uri.parse("android.resource://" + "naman14.timber/drawable/ic_empty_music2")`"All songs by artist"`MediaBrowser.MediaItem.FLAG_BROWSABLE);" is 256.,228
+Timber-1.8,com.naman14.timber,WearBrowserService,loadChildren,Long Statement,The length of the statement "fillMediaItems(mediaItems`Integer.toString(TYPE_ALBUM_SONGS) + Long.toString(album.id)`album.title`TimberUtils.getAlbumArtUri(album.id)`songCount`MediaBrowser.MediaItem.FLAG_BROWSABLE);" is 185.,228
+Timber-1.8,com.naman14.timber,WearBrowserService,loadChildren,Long Statement,The length of the statement "fillMediaItems(mediaItems`String.valueOf(song.id)`song.title`TimberUtils.getAlbumArtUri(song.albumId)`song.albumName`MediaBrowser.MediaItem.FLAG_PLAYABLE);" is 155.,228
+Timber-1.8,com.naman14.timber,WearBrowserService,loadChildren,Long Statement,The length of the statement "fillMediaItems(mediaItems`Integer.toString(TYPE_PLAYLIST_ALL_SONGS) + Long.toString(playlist.id)`playlist.name`Uri.parse("android.resource://" + "naman14.timber/drawable/ic_empty_music2")`songCount`MediaBrowser.MediaItem.FLAG_BROWSABLE);" is 237.,228
+Timber-1.8,com.naman14.timber,WearBrowserService,loadChildren,Long Statement,The length of the statement "fillMediaItems(mediaItems`String.valueOf(song.id)`song.title`TimberUtils.getAlbumArtUri(song.albumId)`song.albumName`MediaBrowser.MediaItem.FLAG_PLAYABLE);" is 155.,228
+Timber-1.8,com.naman14.timber,WearBrowserService,doInBackground,Complex Method,Cyclomatic complexity of the method is 18,233
+Timber-1.8,com.naman14.timber,WearBrowserService,doInBackground,Long Statement,The length of the statement "fillMediaItems(mediaItems`Integer.toString(TYPE_ARTIST_SONG_ALBUMS) + Long.toString(artist.id)`artist.name`Uri.parse("android.resource://" + "naman14.timber/drawable/ic_empty_music2")`TimberUtils.makeCombinedString(mContext`albumNmber`songCount)`MediaBrowser.MediaItem.FLAG_BROWSABLE);" is 285.,233
+Timber-1.8,com.naman14.timber,WearBrowserService,doInBackground,Long Statement,The length of the statement "fillMediaItems(mediaItems`Integer.toString(TYPE_ALBUM_SONGS) + Long.toString(album.id)`album.title`TimberUtils.getAlbumArtUri(album.id)`album.artistName`MediaBrowser.MediaItem.FLAG_BROWSABLE);" is 192.,233
+Timber-1.8,com.naman14.timber,WearBrowserService,doInBackground,Long Statement,The length of the statement "fillMediaItems(mediaItems`String.valueOf(song.id)`song.title`TimberUtils.getAlbumArtUri(song.albumId)`song.artistName`MediaBrowser.MediaItem.FLAG_PLAYABLE);" is 156.,233
+Timber-1.8,com.naman14.timber,WearBrowserService,doInBackground,Long Statement,The length of the statement "fillMediaItems(mediaItems`String.valueOf(song.id)`song.title`TimberUtils.getAlbumArtUri(song.albumId)`song.artistName`MediaBrowser.MediaItem.FLAG_PLAYABLE);" is 156.,233
+Timber-1.8,com.naman14.timber,WearBrowserService,doInBackground,Long Statement,The length of the statement "fillMediaItems(mediaItems`Integer.toString(TYPE_ARTIST_ALL_SONGS) + Long.parseLong(parentId.substring(1))`"All songs"`Uri.parse("android.resource://" + "naman14.timber/drawable/ic_empty_music2")`"All songs by artist"`MediaBrowser.MediaItem.FLAG_BROWSABLE);" is 256.,233
+Timber-1.8,com.naman14.timber,WearBrowserService,doInBackground,Long Statement,The length of the statement "fillMediaItems(mediaItems`Integer.toString(TYPE_ALBUM_SONGS) + Long.toString(album.id)`album.title`TimberUtils.getAlbumArtUri(album.id)`songCount`MediaBrowser.MediaItem.FLAG_BROWSABLE);" is 185.,233
+Timber-1.8,com.naman14.timber,WearBrowserService,doInBackground,Long Statement,The length of the statement "fillMediaItems(mediaItems`String.valueOf(song.id)`song.title`TimberUtils.getAlbumArtUri(song.albumId)`song.albumName`MediaBrowser.MediaItem.FLAG_PLAYABLE);" is 155.,233
+Timber-1.8,com.naman14.timber,WearBrowserService,doInBackground,Long Statement,The length of the statement "fillMediaItems(mediaItems`Integer.toString(TYPE_PLAYLIST_ALL_SONGS) + Long.toString(playlist.id)`playlist.name`Uri.parse("android.resource://" + "naman14.timber/drawable/ic_empty_music2")`songCount`MediaBrowser.MediaItem.FLAG_BROWSABLE);" is 237.,233
+Timber-1.8,com.naman14.timber,WearBrowserService,doInBackground,Long Statement,The length of the statement "fillMediaItems(mediaItems`String.valueOf(song.id)`song.title`TimberUtils.getAlbumArtUri(song.albumId)`song.albumName`MediaBrowser.MediaItem.FLAG_PLAYABLE);" is 155.,233
+Timber-1.8,com.naman14.timber,WearBrowserService,fillMediaItems,Long Parameter List,The method has 6 parameters. ,312
+Timber-1.8,com.naman14.timber,WearBrowserService,fillMediaItems,Long Statement,The length of the statement "mediaItems.add(new MediaBrowser.MediaItem(new MediaDescription.Builder().setMediaId(mediaId).setTitle(title).setIconUri(icon).setSubtitle(subTitle).build()`playableOrBrowsable));" is 178.,312
+Timber-1.8,com.naman14.timber.transition,PlayTransition,captureValues,Magic Number,The method contains a magic number: 2,82
+Timber-1.8,com.naman14.timber.transition,PlayTransition,createAnimator,Complex Conditional,The conditional expression startBounds == null || endBounds == null || startBounds.equals(endBounds) is complex.,115
+Timber-1.8,com.naman14.timber.transition,PlayTransition,createAnimator,Magic Number,The method contains a magic number: 2,115
+Timber-1.8,com.naman14.timber.transition,PlayTransition,createAnimator,Magic Number,The method contains a magic number: 2,115
+Timber-1.8,com.naman14.timber.transition,PlayTransition,createAnimator,Magic Number,The method contains a magic number: 2,115
+Timber-1.8,com.naman14.timber.transition,PlayTransition,createAnimator,Magic Number,The method contains a magic number: 2,115
+Timber-1.8,com.naman14.timber.transition,PlayTransition,createAnimator,Magic Number,The method contains a magic number: 2,115
+Timber-1.8,com.naman14.timber.transition,PlayTransition,createAnimator,Magic Number,The method contains a magic number: 2,115
+Timber-1.8,com.naman14.timber.transition,PlayTransition,createAnimator,Magic Number,The method contains a magic number: 2,115
+Timber-1.8,com.naman14.timber.transition,PlayTransition,createCircularReveal,Magic Number,The method contains a magic number: 2,243
+Timber-1.8,com.naman14.timber.transition,PlayTransition,createCircularReveal,Magic Number,The method contains a magic number: 2,243
+Timber-1.8,com.naman14.timber.transition,PlayTransition,calculateMaxRadius,Magic Number,The method contains a magic number: 2,252
+Timber-1.8,com.naman14.timber.transition,PlayTransition,calculateMinRadius,Magic Number,The method contains a magic number: 2,259
+Timber-1.8,com.naman14.timber.transition,PlayTransition,calculateMinRadius,Magic Number,The method contains a magic number: 2,259
+Timber-1.8,com.naman14.timber.fragments,SettingsFragment,onCreate,Long Statement,The length of the statement "nowPlayingSelector.setIntent(NavigationUtils.getNavigateToStyleSelectorIntent(getActivity()`Constants.SETTINGS_STYLE_SELECTOR_NOWPLAYING));" is 139.,64
+Timber-1.8,com.naman14.timber.fragments,SettingsFragment,setPreferenceClickListeners,Magic Number,The method contains a magic number: 2,93
+Timber-1.8,com.naman14.timber.fragments,SettingsFragment,onPreferenceChange,Magic Number,The method contains a magic number: 2,106
+Timber-1.8,com.naman14.timber.fragments,SettingsFragment,invalidateSettings,Long Statement,The length of the statement "new ColorChooserDialog.Builder((SettingsActivity)getActivity()`R.string.primary_color).preselect(Config.primaryColor(getActivity()`mAteKey)).show();" is 148.,184
+Timber-1.8,com.naman14.timber.fragments,SettingsFragment,invalidateSettings,Long Statement,The length of the statement "new ColorChooserDialog.Builder((SettingsActivity)getActivity()`R.string.accent_color).preselect(Config.accentColor(getActivity()`mAteKey)).show();" is 146.,184
+Timber-1.8,com.naman14.timber.fragments,SettingsFragment,onPreferenceClick,Long Statement,The length of the statement "new ColorChooserDialog.Builder((SettingsActivity)getActivity()`R.string.primary_color).preselect(Config.primaryColor(getActivity()`mAteKey)).show();" is 148.,190
+Timber-1.8,com.naman14.timber.fragments,SettingsFragment,onPreferenceClick,Long Statement,The length of the statement "new ColorChooserDialog.Builder((SettingsActivity)getActivity()`R.string.accent_color).preselect(Config.accentColor(getActivity()`mAteKey)).show();" is 146.,202
+Timber-1.8,com.naman14.timber.fragments,ArtistBioFragment,onCreateView,Magic Number,The method contains a magic number: 20,55
+Timber-1.8,com.naman14.timber.fragments,ArtistBioFragment,getCount,Magic Number,The method contains a magic number: 20,77
+Timber-1.8,com.naman14.timber.fragments,ArtistFragment,setLayoutManager,Magic Number,The method contains a magic number: 2,75
+Timber-1.8,com.naman14.timber.fragments,ArtistFragment,onOptionsItemSelected,Magic Number,The method contains a magic number: 2,132
+Timber-1.8,com.naman14.timber.fragments,ArtistDetailFragment,setUpArtistDetails,Empty catch clause,The method has an empty catch block.,126
+Timber-1.8,com.naman14.timber.fragments,ArtistDetailFragment,setUpArtistDetails,Long Statement,The length of the statement "ImageLoader.getInstance().displayImage(artist.mArtwork.get(4).mUrl`artistArt`new DisplayImageOptions.Builder().cacheInMemory(true).cacheOnDisk(true).showImageOnFail(R.drawable.ic_empty_music2).build()`new SimpleImageLoadingListener(){" is 234.,126
+Timber-1.8,com.naman14.timber.fragments,ArtistDetailFragment,setUpArtistDetails,Magic Number,The method contains a magic number: 4,126
+Timber-1.8,com.naman14.timber.fragments,ArtistDetailFragment,setUpArtistDetails,Magic Number,The method contains a magic number: 100,126
+Timber-1.8,com.naman14.timber.fragments,ArtistDetailFragment,artistInfoSucess,Empty catch clause,The method has an empty catch block.,135
+Timber-1.8,com.naman14.timber.fragments,ArtistDetailFragment,artistInfoSucess,Long Statement,The length of the statement "ImageLoader.getInstance().displayImage(artist.mArtwork.get(4).mUrl`artistArt`new DisplayImageOptions.Builder().cacheInMemory(true).cacheOnDisk(true).showImageOnFail(R.drawable.ic_empty_music2).build()`new SimpleImageLoadingListener(){" is 234.,135
+Timber-1.8,com.naman14.timber.fragments,ArtistDetailFragment,artistInfoSucess,Magic Number,The method contains a magic number: 4,135
+Timber-1.8,com.naman14.timber.fragments,ArtistDetailFragment,artistInfoSucess,Magic Number,The method contains a magic number: 100,135
+Timber-1.8,com.naman14.timber.fragments,ArtistDetailFragment,onLoadingComplete,Empty catch clause,The method has an empty catch block.,144
+Timber-1.8,com.naman14.timber.fragments,AlbumDetailFragment,onCreateView,Magic Number,The method contains a magic number: 21,118
+Timber-1.8,com.naman14.timber.fragments,AlbumDetailFragment,onCreateView,Magic Number,The method contains a magic number: 150,118
+Timber-1.8,com.naman14.timber.fragments,AlbumDetailFragment,onClick,Magic Number,The method contains a magic number: 150,150
+Timber-1.8,com.naman14.timber.fragments,AlbumDetailFragment,setAlbumart,Complex Method,Cyclomatic complexity of the method is 8,176
+Timber-1.8,com.naman14.timber.fragments,AlbumDetailFragment,setAlbumart,Empty catch clause,The method has an empty catch block.,176
+Timber-1.8,com.naman14.timber.fragments,AlbumDetailFragment,setAlbumart,Long Statement,The length of the statement "MaterialDrawableBuilder builder=MaterialDrawableBuilder.with(context).setIcon(MaterialDrawableBuilder.IconValue.SHUFFLE).setColor(TimberUtils.getBlackWhiteColor(Config.accentColor(context`Helpers.getATEKey(context))));" is 218.,176
+Timber-1.8,com.naman14.timber.fragments,AlbumDetailFragment,setAlbumart,Long Statement,The length of the statement "MaterialDrawableBuilder builder=MaterialDrawableBuilder.with(getActivity()).setIcon(MaterialDrawableBuilder.IconValue.SHUFFLE).setSizeDp(30);" is 141.,176
+Timber-1.8,com.naman14.timber.fragments,AlbumDetailFragment,setAlbumart,Magic Number,The method contains a magic number: 30,176
+Timber-1.8,com.naman14.timber.fragments,AlbumDetailFragment,onLoadingFailed,Long Statement,The length of the statement "MaterialDrawableBuilder builder=MaterialDrawableBuilder.with(context).setIcon(MaterialDrawableBuilder.IconValue.SHUFFLE).setColor(TimberUtils.getBlackWhiteColor(Config.accentColor(context`Helpers.getATEKey(context))));" is 218.,182
+Timber-1.8,com.naman14.timber.fragments,AlbumDetailFragment,onLoadingComplete,Complex Method,Cyclomatic complexity of the method is 8,192
+Timber-1.8,com.naman14.timber.fragments,AlbumDetailFragment,onLoadingComplete,Empty catch clause,The method has an empty catch block.,192
+Timber-1.8,com.naman14.timber.fragments,AlbumDetailFragment,onLoadingComplete,Long Statement,The length of the statement "MaterialDrawableBuilder builder=MaterialDrawableBuilder.with(getActivity()).setIcon(MaterialDrawableBuilder.IconValue.SHUFFLE).setSizeDp(30);" is 141.,192
+Timber-1.8,com.naman14.timber.fragments,AlbumDetailFragment,onLoadingComplete,Magic Number,The method contains a magic number: 30,192
+Timber-1.8,com.naman14.timber.fragments,AlbumDetailFragment,onGenerated,Complex Method,Cyclomatic complexity of the method is 8,196
+Timber-1.8,com.naman14.timber.fragments,AlbumDetailFragment,onGenerated,Long Statement,The length of the statement "MaterialDrawableBuilder builder=MaterialDrawableBuilder.with(getActivity()).setIcon(MaterialDrawableBuilder.IconValue.SHUFFLE).setSizeDp(30);" is 141.,196
+Timber-1.8,com.naman14.timber.fragments,AlbumDetailFragment,onGenerated,Magic Number,The method contains a magic number: 30,196
+Timber-1.8,com.naman14.timber.fragments,AlbumDetailFragment,onOptionsItemSelected,Complex Method,Cyclomatic complexity of the method is 9,309
+Timber-1.8,com.naman14.timber.fragments,PlaylistFragment,initPager,Magic Number,The method contains a magic number: 3,111
+Timber-1.8,com.naman14.timber.fragments,PlaylistFragment,setLayoutManager,Magic Number,The method contains a magic number: 2,146
+Timber-1.8,com.naman14.timber.fragments,PlaylistFragment,onOptionsItemSelected,Magic Number,The method contains a magic number: 2,226
+Timber-1.8,com.naman14.timber.fragments,PlaylistFragment,updatePlaylists,Magic Number,The method contains a magic number: 200,267
+Timber-1.8,com.naman14.timber.fragments,AlbumFragment,setLayoutManager,Magic Number,The method contains a magic number: 2,76
+Timber-1.8,com.naman14.timber.fragments,AlbumFragment,onOptionsItemSelected,Complex Method,Cyclomatic complexity of the method is 8,136
+Timber-1.8,com.naman14.timber.fragments,AlbumFragment,onOptionsItemSelected,Magic Number,The method contains a magic number: 2,136
+Timber-1.8,com.naman14.timber.fragments,MainFragment,onCreateView,Magic Number,The method contains a magic number: 2,52
+Timber-1.8,com.naman14.timber.cast,TimberCastHelper,startCasting,Long Statement,The length of the statement "MediaInfo mediaInfo=new MediaInfo.Builder(songUrl).setStreamType(MediaInfo.STREAM_TYPE_BUFFERED).setContentType("audio/mpeg").setMetadata(musicMetadata).setStreamDuration(song.duration).build();" is 194.,25
+Timber-1.8,com.naman14.timber.cast,CastOptionsProvider,getCastOptions,Long Statement,The length of the statement "NotificationOptions notificationOptions=new NotificationOptions.Builder().setActions(buttonActions`compatButtonActionsIndicies).setTargetActivityClassName(ExpandedControlsActivity.class.getName()).build();" is 205.,18
+Timber-1.8,com.naman14.timber.cast,CastOptionsProvider,getCastOptions,Long Statement,The length of the statement "CastMediaOptions mediaOptions=new CastMediaOptions.Builder().setNotificationOptions(notificationOptions).setExpandedControllerActivityClassName(ExpandedControlsActivity.class.getName()).build();" is 194.,18
+Timber-1.8,com.naman14.timber.cast,CastOptionsProvider,getCastOptions,Long Statement,The length of the statement "CastOptions castOptions=new CastOptions.Builder().setReceiverApplicationId(appContext.getString(R.string.cast_app_id)).setCastMediaOptions(mediaOptions).build();" is 161.,18
+Timber-1.8,com.naman14.timber.cast,WebServer,serve,Long Parameter List,The method has 5 parameters. ,27
+Timber-1.8,com.naman14.timber.nowplaying,Timber4,updateShuffleState,Long Statement,The length of the statement "MaterialDrawableBuilder builder=MaterialDrawableBuilder.with(getActivity()).setIcon(MaterialDrawableBuilder.IconValue.SHUFFLE).setSizeDp(30);" is 141.,62
+Timber-1.8,com.naman14.timber.nowplaying,Timber4,updateShuffleState,Magic Number,The method contains a magic number: 30,62
+Timber-1.8,com.naman14.timber.nowplaying,Timber4,updateRepeatState,Magic Number,The method contains a magic number: 30,85
+Timber-1.8,com.naman14.timber.nowplaying,Timber4,setupHorizontalQueue,Magic Number,The method contains a magic number: 3,123
+Timber-1.8,com.naman14.timber.nowplaying,Timber5,updateShuffleState,Long Statement,The length of the statement "MaterialDrawableBuilder builder=MaterialDrawableBuilder.with(getActivity()).setIcon(MaterialDrawableBuilder.IconValue.SHUFFLE).setSizeDp(30);" is 141.,52
+Timber-1.8,com.naman14.timber.nowplaying,Timber5,updateShuffleState,Magic Number,The method contains a magic number: 30,52
+Timber-1.8,com.naman14.timber.nowplaying,Timber5,updateRepeatState,Magic Number,The method contains a magic number: 30,75
+Timber-1.8,com.naman14.timber.nowplaying,Timber5,setupSlidingQueue,Magic Number,The method contains a magic number: 3,114
+Timber-1.8,com.naman14.timber.nowplaying,Timber2,updateShuffleState,Long Statement,The length of the statement "MaterialDrawableBuilder builder=MaterialDrawableBuilder.with(getActivity()).setIcon(MaterialDrawableBuilder.IconValue.SHUFFLE).setSizeDp(30);" is 141.,54
+Timber-1.8,com.naman14.timber.nowplaying,Timber2,updateShuffleState,Magic Number,The method contains a magic number: 30,54
+Timber-1.8,com.naman14.timber.nowplaying,Timber2,updateRepeatState,Magic Number,The method contains a magic number: 30,77
+Timber-1.8,com.naman14.timber.nowplaying,Timber1,updateShuffleState,Long Statement,The length of the statement "MaterialDrawableBuilder builder=MaterialDrawableBuilder.with(getActivity()).setIcon(MaterialDrawableBuilder.IconValue.SHUFFLE).setSizeDp(30);" is 141.,44
+Timber-1.8,com.naman14.timber.nowplaying,Timber1,updateShuffleState,Magic Number,The method contains a magic number: 30,44
+Timber-1.8,com.naman14.timber.nowplaying,Timber1,updateShuffleState,Magic Number,The method contains a magic number: 150,44
+Timber-1.8,com.naman14.timber.nowplaying,Timber1,onClick,Magic Number,The method contains a magic number: 150,55
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,run,Long Statement,The length of the statement "if (elapsedtime != null && getActivity() != null) elapsedtime.setText(TimberUtils.makeShortTimeString(getActivity()`position / 1000));" is 134.,104
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,run,Magic Number,The method contains a magic number: 1000,104
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,run,Magic Number,The method contains a magic number: 250,104
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,run,Long Statement,The length of the statement "if (elapsedtime != null && getActivity() != null) elapsedtime.setText(TimberUtils.makeShortTimeString(getActivity()`position / 1000));" is 134.,125
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,run,Magic Number,The method contains a magic number: 1000,125
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,run,Magic Number,The method contains a magic number: 1500,125
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,run,Magic Number,The method contains a magic number: 1000,125
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,run,Magic Number,The method contains a magic number: 1000,147
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,run,Magic Number,The method contains a magic number: 5,147
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,run,Magic Number,The method contains a magic number: 2,147
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,run,Magic Number,The method contains a magic number: 3,147
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,run,Magic Number,The method contains a magic number: 5,147
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,run,Magic Number,The method contains a magic number: 3,147
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,run,Magic Number,The method contains a magic number: 4,147
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,run,Magic Number,The method contains a magic number: 2,147
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,run,Magic Number,The method contains a magic number: 3,147
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,run,Magic Number,The method contains a magic number: 5,147
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,run,Magic Number,The method contains a magic number: 6,147
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,run,Magic Number,The method contains a magic number: 600,147
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,onClick,Magic Number,The method contains a magic number: 200,180
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,onClick,Magic Number,The method contains a magic number: 250,205
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,onResume,Magic Number,The method contains a magic number: 10,270
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,onResume,Magic Number,The method contains a magic number: 10,270
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,setSongDetails,Complex Method,Cyclomatic complexity of the method is 9,281
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,setSongDetails,Magic Number,The method contains a magic number: 1000,281
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,setSongDetails,Magic Number,The method contains a magic number: 5,281
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,setSongDetails,Magic Number,The method contains a magic number: 2,281
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,setSongDetails,Magic Number,The method contains a magic number: 3,281
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,setSongDetails,Magic Number,The method contains a magic number: 5,281
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,setSongDetails,Magic Number,The method contains a magic number: 3,281
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,setSongDetails,Magic Number,The method contains a magic number: 4,281
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,setSongDetails,Magic Number,The method contains a magic number: 2,281
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,setSongDetails,Magic Number,The method contains a magic number: 3,281
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,setSongDetails,Magic Number,The method contains a magic number: 5,281
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,setSongDetails,Magic Number,The method contains a magic number: 6,281
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,setSongDetails,Magic Number,The method contains a magic number: 200,381
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,setSongDetails,Magic Number,The method contains a magic number: 200,381
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,onClick,Magic Number,The method contains a magic number: 200,391
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,onClick,Magic Number,The method contains a magic number: 200,407
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,updateShuffleState,Long Statement,The length of the statement "MaterialDrawableBuilder builder=MaterialDrawableBuilder.with(getActivity()).setIcon(MaterialDrawableBuilder.IconValue.SHUFFLE).setSizeDp(30);" is 141.,433
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,updateShuffleState,Magic Number,The method contains a magic number: 30,433
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,updateRepeatState,Magic Number,The method contains a magic number: 30,457
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,updateSongDetails,Complex Method,Cyclomatic complexity of the method is 16,526
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,updateSongDetails,Long Statement,The length of the statement "ImageLoader.getInstance().displayImage(TimberUtils.getAlbumArtUri(MusicPlayer.getCurrentAlbumId()).toString()`albumart`new DisplayImageOptions.Builder().cacheInMemory(true).showImageOnFail(R.drawable.ic_empty_music2).build()`new SimpleImageLoadingListener(){" is 258.,526
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,updateSongDetails,Long Statement,The length of the statement "if (songduration != null && getActivity() != null) songduration.setText(TimberUtils.makeShortTimeString(getActivity()`MusicPlayer.duration() / 1000));" is 150.,526
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,updateSongDetails,Magic Number,The method contains a magic number: 23,526
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,updateSongDetails,Magic Number,The method contains a magic number: 25,526
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,updateSongDetails,Magic Number,The method contains a magic number: 30,526
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,updateSongDetails,Magic Number,The method contains a magic number: 18,526
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,updateSongDetails,Magic Number,The method contains a magic number: 18,526
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,updateSongDetails,Magic Number,The method contains a magic number: 24,526
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,updateSongDetails,Magic Number,The method contains a magic number: 1000,526
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,updateSongDetails,Magic Number,The method contains a magic number: 10,526
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,updateSongDetails,Magic Number,The method contains a magic number: 10,526
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,updateSongDetails,Magic Number,The method contains a magic number: 600,526
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,changeDigit,Magic Number,The method contains a magic number: 400,664
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,changeDigit,Magic Number,The method contains a magic number: 400,670
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,tv13,Magic Number,The method contains a magic number: 2,694
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,tv13,Magic Number,The method contains a magic number: 2,694
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,tv13,Magic Number,The method contains a magic number: 2,694
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,tv14,Magic Number,The method contains a magic number: 3,701
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,tv14,Magic Number,The method contains a magic number: 3,701
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,tv14,Magic Number,The method contains a magic number: 3,701
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,tv15,Magic Number,The method contains a magic number: 4,708
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,tv15,Magic Number,The method contains a magic number: 4,708
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,tv15,Magic Number,The method contains a magic number: 4,708
+Timber-1.8,com.naman14.timber.nowplaying,Timber6,onCreateView,Long Statement,The length of the statement "((SeekBar)rootView.findViewById(R.id.song_progress)).getProgressDrawable().setColorFilter(new PorterDuffColorFilter(Color.WHITE`PorterDuff.Mode.MULTIPLY));" is 155.,32
+Timber-1.8,com.naman14.timber.nowplaying,Timber6,onCreateView,Long Statement,The length of the statement "((SeekBar)rootView.findViewById(R.id.song_progress)).getThumb().setColorFilter(new PorterDuffColorFilter(Color.WHITE`PorterDuff.Mode.SRC_ATOP));" is 144.,32
+Timber-1.8,com.naman14.timber.nowplaying,Timber6,updateShuffleState,Long Statement,The length of the statement "MaterialDrawableBuilder builder=MaterialDrawableBuilder.with(getActivity()).setIcon(MaterialDrawableBuilder.IconValue.SHUFFLE).setSizeDp(30);" is 141.,58
+Timber-1.8,com.naman14.timber.nowplaying,Timber6,updateShuffleState,Magic Number,The method contains a magic number: 30,58
+Timber-1.8,com.naman14.timber.nowplaying,Timber6,updateRepeatState,Magic Number,The method contains a magic number: 30,81
+Timber-1.8,com.naman14.timber.dataloaders,PlaylistSongLoader,getSongsInPlaylist,Complex Method,Cyclomatic complexity of the method is 11,40
+Timber-1.8,com.naman14.timber.dataloaders,PlaylistSongLoader,getSongsInPlaylist,Magic Number,The method contains a magic number: 1000,40
+Timber-1.8,com.naman14.timber.dataloaders,PlaylistSongLoader,cleanupPlaylist,Empty catch clause,The method has an empty catch block.,123
+Timber-1.8,com.naman14.timber.dataloaders,PlaylistSongLoader,cleanupPlaylist,Empty catch clause,The method has an empty catch block.,123
+Timber-1.8,com.naman14.timber.dataloaders,PlaylistSongLoader,cleanupPlaylist,Long Statement,The length of the statement "final ContentProviderOperation.Builder builder=ContentProviderOperation.newInsert(uri).withValue(Playlists.Members.PLAY_ORDER`cursor.getPosition()).withValue(Playlists.Members.AUDIO_ID`cursor.getLong(idCol));" is 208.,123
+Timber-1.8,com.naman14.timber.dataloaders,PlaylistSongLoader,cleanupPlaylist,Magic Number,The method contains a magic number: 100,123
+Timber-1.8,com.naman14.timber.dataloaders,PlaylistSongLoader,countPlaylist,Long Statement,The length of the statement "c=context.getContentResolver().query(MediaStore.Audio.Playlists.Members.getContentUri("external"`playlistId)`new String[]{MediaStore.Audio.Playlists.Members.AUDIO_ID}`null`null`MediaStore.Audio.Playlists.Members.DEFAULT_SORT_ORDER);" is 232.,156
+Timber-1.8,com.naman14.timber.dataloaders,PlaylistSongLoader,makePlaylistSongCursor,Long Statement,The length of the statement "return context.getContentResolver().query(MediaStore.Audio.Playlists.Members.getContentUri("external"`playlistID)`new String[]{MediaStore.Audio.Playlists.Members._ID`MediaStore.Audio.Playlists.Members.AUDIO_ID`AudioColumns.TITLE`AudioColumns.ARTIST`AudioColumns.ALBUM_ID`AudioColumns.ARTIST_ID`AudioColumns.ALBUM`AudioColumns.DURATION`AudioColumns.TRACK`Playlists.Members.PLAY_ORDER}`mSelection.toString()`null`MediaStore.Audio.Playlists.Members.DEFAULT_SORT_ORDER);" is 466.,180
+Timber-1.8,com.naman14.timber.dataloaders,QueueLoader,getQueueSongs,Magic Number,The method contains a magic number: 2,30
+Timber-1.8,com.naman14.timber.dataloaders,QueueLoader,getQueueSongs,Magic Number,The method contains a magic number: 3,30
+Timber-1.8,com.naman14.timber.dataloaders,QueueLoader,getQueueSongs,Magic Number,The method contains a magic number: 4,30
+Timber-1.8,com.naman14.timber.dataloaders,QueueLoader,getQueueSongs,Magic Number,The method contains a magic number: 5,30
+Timber-1.8,com.naman14.timber.dataloaders,QueueLoader,getQueueSongs,Magic Number,The method contains a magic number: 7,30
+Timber-1.8,com.naman14.timber.dataloaders,QueueLoader,getQueueSongs,Magic Number,The method contains a magic number: 6,30
+Timber-1.8,com.naman14.timber.dataloaders,AlbumLoader,getAlbum,Long Statement,The length of the statement "if (cursor.moveToFirst()) album=new Album(cursor.getLong(0)`cursor.getString(1)`cursor.getString(2)`cursor.getLong(3)`cursor.getInt(4)`cursor.getInt(5));" is 153.,30
+Timber-1.8,com.naman14.timber.dataloaders,AlbumLoader,getAlbum,Magic Number,The method contains a magic number: 2,30
+Timber-1.8,com.naman14.timber.dataloaders,AlbumLoader,getAlbum,Magic Number,The method contains a magic number: 3,30
+Timber-1.8,com.naman14.timber.dataloaders,AlbumLoader,getAlbum,Magic Number,The method contains a magic number: 4,30
+Timber-1.8,com.naman14.timber.dataloaders,AlbumLoader,getAlbum,Magic Number,The method contains a magic number: 5,30
+Timber-1.8,com.naman14.timber.dataloaders,AlbumLoader,getAlbumsForCursor,Long Statement,The length of the statement "arrayList.add(new Album(cursor.getLong(0)`cursor.getString(1)`cursor.getString(2)`cursor.getLong(3)`cursor.getInt(4)`cursor.getInt(5)));" is 136.,42
+Timber-1.8,com.naman14.timber.dataloaders,AlbumLoader,getAlbumsForCursor,Magic Number,The method contains a magic number: 2,42
+Timber-1.8,com.naman14.timber.dataloaders,AlbumLoader,getAlbumsForCursor,Magic Number,The method contains a magic number: 3,42
+Timber-1.8,com.naman14.timber.dataloaders,AlbumLoader,getAlbumsForCursor,Magic Number,The method contains a magic number: 4,42
+Timber-1.8,com.naman14.timber.dataloaders,AlbumLoader,getAlbumsForCursor,Magic Number,The method contains a magic number: 5,42
+Timber-1.8,com.naman14.timber.dataloaders,AlbumLoader,makeAlbumCursor,Long Statement,The length of the statement "Cursor cursor=context.getContentResolver().query(MediaStore.Audio.Albums.EXTERNAL_CONTENT_URI`new String[]{"_id"`"album"`"artist"`"artist_id"`"numsongs"`"minyear"}`selection`paramArrayOfString`albumSortOrder);" is 209.,71
+Timber-1.8,com.naman14.timber.dataloaders,ArtistSongLoader,getSongsForArtist,Magic Number,The method contains a magic number: 2,30
+Timber-1.8,com.naman14.timber.dataloaders,ArtistSongLoader,getSongsForArtist,Magic Number,The method contains a magic number: 3,30
+Timber-1.8,com.naman14.timber.dataloaders,ArtistSongLoader,getSongsForArtist,Magic Number,The method contains a magic number: 4,30
+Timber-1.8,com.naman14.timber.dataloaders,ArtistSongLoader,getSongsForArtist,Magic Number,The method contains a magic number: 5,30
+Timber-1.8,com.naman14.timber.dataloaders,ArtistSongLoader,getSongsForArtist,Magic Number,The method contains a magic number: 6,30
+Timber-1.8,com.naman14.timber.dataloaders,ArtistSongLoader,makeArtistSongCursor,Long Statement,The length of the statement "return contentResolver.query(uri`new String[]{"_id"`"title"`"artist"`"album"`"duration"`"track"`"album_id"}`string`null`artistSongSortOrder);" is 141.,53
+Timber-1.8,com.naman14.timber.dataloaders,TopTracksLoader,getCursor,Complex Method,Cyclomatic complexity of the method is 8,39
+Timber-1.8,com.naman14.timber.dataloaders,NowPlayingCursor,onMove,Complex Conditional,The conditional expression mNowPlaying == null || mCursorIndexes == null || newPosition >= mNowPlaying.length is complex.,80
+Timber-1.8,com.naman14.timber.dataloaders,NowPlayingCursor,close,Empty catch clause,The method has an empty catch block.,180
+Timber-1.8,com.naman14.timber.dataloaders,NowPlayingCursor,makeNowPlayingCursor,Complex Method,Cyclomatic complexity of the method is 10,193
+Timber-1.8,com.naman14.timber.dataloaders,NowPlayingCursor,makeNowPlayingCursor,Long Statement,The length of the statement "mQueueCursor=mContext.getContentResolver().query(MediaStore.Audio.Media.EXTERNAL_CONTENT_URI`PROJECTION`selection.toString()`null`MediaStore.Audio.Media._ID);" is 158.,193
+Timber-1.8,com.naman14.timber.dataloaders,NowPlayingCursor,removeItem,Empty catch clause,The method has an empty catch block.,251
+Timber-1.8,com.naman14.timber.dataloaders,AlbumSongLoader,getSongsForAlbum,Magic Number,The method contains a magic number: 2,32
+Timber-1.8,com.naman14.timber.dataloaders,AlbumSongLoader,getSongsForAlbum,Magic Number,The method contains a magic number: 3,32
+Timber-1.8,com.naman14.timber.dataloaders,AlbumSongLoader,getSongsForAlbum,Magic Number,The method contains a magic number: 4,32
+Timber-1.8,com.naman14.timber.dataloaders,AlbumSongLoader,getSongsForAlbum,Magic Number,The method contains a magic number: 5,32
+Timber-1.8,com.naman14.timber.dataloaders,AlbumSongLoader,getSongsForAlbum,Magic Number,The method contains a magic number: 1000,32
+Timber-1.8,com.naman14.timber.dataloaders,AlbumSongLoader,getSongsForAlbum,Magic Number,The method contains a magic number: 1000,32
+Timber-1.8,com.naman14.timber.dataloaders,AlbumSongLoader,getSongsForAlbum,Magic Number,The method contains a magic number: 6,32
+Timber-1.8,com.naman14.timber.dataloaders,AlbumSongLoader,makeAlbumSongCursor,Long Statement,The length of the statement "Cursor cursor=contentResolver.query(uri`new String[]{"_id"`"title"`"artist"`"album"`"duration"`"track"`"artist_id"}`string`null`albumSongSortOrder);" is 148.,59
+Timber-1.8,com.naman14.timber.dataloaders,FolderLoader,checkDir,Long Statement,The length of the statement "return !".".equals(name) && !"..".equals(name) && pathname.canRead()&& (pathname.isDirectory() || (pathname.isFile() && checkFileExt(name)));" is 141.,57
+Timber-1.8,com.naman14.timber.dataloaders,FolderLoader,accept,Long Statement,The length of the statement "return !".".equals(name) && !"..".equals(name) && pathname.canRead()&& (pathname.isDirectory() || (pathname.isFile() && checkFileExt(name)));" is 141.,59
+Timber-1.8,com.naman14.timber.dataloaders,LastAddedLoader,getLastAddedSongs,Magic Number,The method contains a magic number: 2,32
+Timber-1.8,com.naman14.timber.dataloaders,LastAddedLoader,getLastAddedSongs,Magic Number,The method contains a magic number: 3,32
+Timber-1.8,com.naman14.timber.dataloaders,LastAddedLoader,getLastAddedSongs,Magic Number,The method contains a magic number: 4,32
+Timber-1.8,com.naman14.timber.dataloaders,LastAddedLoader,getLastAddedSongs,Magic Number,The method contains a magic number: 5,32
+Timber-1.8,com.naman14.timber.dataloaders,LastAddedLoader,getLastAddedSongs,Magic Number,The method contains a magic number: 6,32
+Timber-1.8,com.naman14.timber.dataloaders,LastAddedLoader,getLastAddedSongs,Magic Number,The method contains a magic number: 7,32
+Timber-1.8,com.naman14.timber.dataloaders,LastAddedLoader,makeLastAddedCursor,Long Statement,The length of the statement "return context.getContentResolver().query(MediaStore.Audio.Media.EXTERNAL_CONTENT_URI`new String[]{"_id"`"title"`"artist"`"album"`"duration"`"track"`"artist_id"`"album_id"}`selection.toString()`null`MediaStore.Audio.Media.DATE_ADDED + " DESC");" is 244.,60
+Timber-1.8,com.naman14.timber.dataloaders,LastAddedLoader,makeLastAddedCursor,Magic Number,The method contains a magic number: 1000,60
+Timber-1.8,com.naman14.timber.dataloaders,LastAddedLoader,makeLastAddedCursor,Magic Number,The method contains a magic number: 4,60
+Timber-1.8,com.naman14.timber.dataloaders,LastAddedLoader,makeLastAddedCursor,Magic Number,The method contains a magic number: 3600,60
+Timber-1.8,com.naman14.timber.dataloaders,LastAddedLoader,makeLastAddedCursor,Magic Number,The method contains a magic number: 24,60
+Timber-1.8,com.naman14.timber.dataloaders,LastAddedLoader,makeLastAddedCursor,Magic Number,The method contains a magic number: 7,60
+Timber-1.8,com.naman14.timber.dataloaders,ArtistLoader,getArtist,Magic Number,The method contains a magic number: 2,29
+Timber-1.8,com.naman14.timber.dataloaders,ArtistLoader,getArtist,Magic Number,The method contains a magic number: 3,29
+Timber-1.8,com.naman14.timber.dataloaders,ArtistLoader,getArtistsForCursor,Magic Number,The method contains a magic number: 2,40
+Timber-1.8,com.naman14.timber.dataloaders,ArtistLoader,getArtistsForCursor,Magic Number,The method contains a magic number: 3,40
+Timber-1.8,com.naman14.timber.dataloaders,ArtistLoader,makeArtistCursor,Long Statement,The length of the statement "Cursor cursor=context.getContentResolver().query(MediaStore.Audio.Artists.EXTERNAL_CONTENT_URI`new String[]{"_id"`"artist"`"number_of_albums"`"number_of_tracks"}`selection`paramArrayOfString`artistSortOrder);" is 208.,69
+Timber-1.8,com.naman14.timber.dataloaders,PlaylistLoader,makeDefaultPlaylists,Long Statement,The length of the statement "final Playlist lastAdded=new Playlist(TimberUtils.PlaylistType.LastAdded.mId`resources.getString(TimberUtils.PlaylistType.LastAdded.mTitleId)`-1);" is 146.,66
+Timber-1.8,com.naman14.timber.dataloaders,PlaylistLoader,makeDefaultPlaylists,Long Statement,The length of the statement "final Playlist recentlyPlayed=new Playlist(TimberUtils.PlaylistType.RecentlyPlayed.mId`resources.getString(TimberUtils.PlaylistType.RecentlyPlayed.mTitleId)`-1);" is 161.,66
+Timber-1.8,com.naman14.timber.dataloaders,PlaylistLoader,makeDefaultPlaylists,Long Statement,The length of the statement "final Playlist topTracks=new Playlist(TimberUtils.PlaylistType.TopTracks.mId`resources.getString(TimberUtils.PlaylistType.TopTracks.mTitleId)`-1);" is 146.,66
+Timber-1.8,com.naman14.timber.dataloaders,PlaylistLoader,makePlaylistCursor,Long Statement,The length of the statement "return context.getContentResolver().query(MediaStore.Audio.Playlists.EXTERNAL_CONTENT_URI`new String[]{BaseColumns._ID`PlaylistsColumns.NAME}`null`null`MediaStore.Audio.Playlists.DEFAULT_SORT_ORDER);" is 199.,86
+Timber-1.8,com.naman14.timber.dataloaders,SongLoader,getSongsForCursor,Magic Number,The method contains a magic number: 2,36
+Timber-1.8,com.naman14.timber.dataloaders,SongLoader,getSongsForCursor,Magic Number,The method contains a magic number: 3,36
+Timber-1.8,com.naman14.timber.dataloaders,SongLoader,getSongsForCursor,Magic Number,The method contains a magic number: 4,36
+Timber-1.8,com.naman14.timber.dataloaders,SongLoader,getSongsForCursor,Magic Number,The method contains a magic number: 5,36
+Timber-1.8,com.naman14.timber.dataloaders,SongLoader,getSongsForCursor,Magic Number,The method contains a magic number: 6,36
+Timber-1.8,com.naman14.timber.dataloaders,SongLoader,getSongsForCursor,Magic Number,The method contains a magic number: 7,36
+Timber-1.8,com.naman14.timber.dataloaders,SongLoader,getSongForCursor,Magic Number,The method contains a magic number: 2,57
+Timber-1.8,com.naman14.timber.dataloaders,SongLoader,getSongForCursor,Magic Number,The method contains a magic number: 3,57
+Timber-1.8,com.naman14.timber.dataloaders,SongLoader,getSongForCursor,Magic Number,The method contains a magic number: 4,57
+Timber-1.8,com.naman14.timber.dataloaders,SongLoader,getSongForCursor,Magic Number,The method contains a magic number: 5,57
+Timber-1.8,com.naman14.timber.dataloaders,SongLoader,getSongForCursor,Magic Number,The method contains a magic number: 6,57
+Timber-1.8,com.naman14.timber.dataloaders,SongLoader,getSongForCursor,Magic Number,The method contains a magic number: 7,57
+Timber-1.8,com.naman14.timber.dataloaders,SongLoader,makeSongCursor,Long Statement,The length of the statement "return context.getContentResolver().query(MediaStore.Audio.Media.EXTERNAL_CONTENT_URI`new String[]{"_id"`"title"`"artist"`"album"`"duration"`"track"`"artist_id"`"album_id"}`selectionStatement`paramArrayOfString`sortOrder);" is 222.,145
+Timber-1.8,com.naman14.timber.dataloaders,SongLoader,songFromFile,Long Statement,The length of the statement "return new Song(-1`-1`-1`mmr.extractMetadata(MediaMetadataRetriever.METADATA_KEY_TITLE)`mmr.extractMetadata(MediaMetadataRetriever.METADATA_KEY_ARTIST)`mmr.extractMetadata(MediaMetadataRetriever.METADATA_KEY_ALBUM)`Integer.parseInt(mmr.extractMetadata(MediaMetadataRetriever.METADATA_KEY_DURATION))`0);" is 302.,155
+Timber-1.8,com.naman14.timber.provider,RecentStore,onCreate,Long Statement,The length of the statement "db.execSQL("CREATE TABLE IF NOT EXISTS " + RecentStoreColumns.NAME + " ("+ RecentStoreColumns.ID+ " LONG NOT NULL`"+ RecentStoreColumns.TIMEPLAYED+ " LONG NOT NULL);");" is 168.,43
+Timber-1.8,com.naman14.timber.provider,RecentStore,addSongId,Long Statement,The length of the statement "oldest=database.query(RecentStoreColumns.NAME`new String[]{RecentStoreColumns.TIMEPLAYED}`null`null`null`null`RecentStoreColumns.TIMEPLAYED + " ASC");" is 150.,57
+Timber-1.8,com.naman14.timber.provider,RecentStore,addSongId,Long Statement,The length of the statement "database.delete(RecentStoreColumns.NAME`RecentStoreColumns.TIMEPLAYED + " < ?"`new String[]{String.valueOf(timeOfRecordToKeep)});" is 129.,57
+Timber-1.8,com.naman14.timber.provider,RecentStore,addSongId,Magic Number,The method contains a magic number: 2,57
+Timber-1.8,com.naman14.timber.provider,RecentStore,queryRecentIds,Long Statement,The length of the statement "return database.query(RecentStoreColumns.NAME`new String[]{RecentStoreColumns.ID}`null`null`null`null`RecentStoreColumns.TIMEPLAYED + " DESC"`limit);" is 149.,126
+Timber-1.8,com.naman14.timber.provider,SearchHistory,onCreate,Long Statement,The length of the statement "db.execSQL("CREATE TABLE IF NOT EXISTS " + SearchHistoryColumns.NAME + " ("+ SearchHistoryColumns.SEARCHSTRING+ " STRING NOT NULL`"+ SearchHistoryColumns.TIMESEARCHED+ " LONG NOT NULL);");" is 188.,45
+Timber-1.8,com.naman14.timber.provider,SearchHistory,addSearchString,Long Statement,The length of the statement "database.delete(SearchHistoryColumns.NAME`SearchHistoryColumns.SEARCHSTRING + " = ? COLLATE NOCASE"`new String[]{trimmedString});" is 129.,59
+Timber-1.8,com.naman14.timber.provider,SearchHistory,addSearchString,Long Statement,The length of the statement "database.query(SearchHistoryColumns.NAME`new String[]{SearchHistoryColumns.TIMESEARCHED}`null`null`null`null`SearchHistoryColumns.TIMESEARCHED + " ASC");" is 153.,59
+Timber-1.8,com.naman14.timber.provider,SearchHistory,addSearchString,Long Statement,The length of the statement "database.delete(SearchHistoryColumns.NAME`SearchHistoryColumns.TIMESEARCHED + " < ?"`new String[]{String.valueOf(timeOfRecordToKeep)});" is 135.,59
+Timber-1.8,com.naman14.timber.provider,SearchHistory,addSearchString,Magic Number,The method contains a magic number: 2,59
+Timber-1.8,com.naman14.timber.provider,SearchHistory,queryRecentSearches,Long Statement,The length of the statement "return database.query(SearchHistoryColumns.NAME`new String[]{SearchHistoryColumns.SEARCHSTRING}`null`null`null`null`SearchHistoryColumns.TIMESEARCHED + " DESC"`limit);" is 167.,112
+Timber-1.8,com.naman14.timber.provider,MusicPlaybackState,onUpgrade,Magic Number,The method contains a magic number: 2,81
+Timber-1.8,com.naman14.timber.provider,MusicPlaybackState,onUpgrade,Magic Number,The method contains a magic number: 2,81
+Timber-1.8,com.naman14.timber.provider,MusicPlaybackState,saveState,Magic Number,The method contains a magic number: 20,95
+Timber-1.8,com.naman14.timber.provider,MusicPlaybackState,saveState,Magic Number,The method contains a magic number: 4,95
+Timber-1.8,com.naman14.timber.provider,MusicPlaybackState,getQueue,Long Statement,The length of the statement "results.add(new MusicPlaybackTrack(cursor.getLong(0)`cursor.getLong(1)`TimberUtils.IdType.getTypeById(cursor.getInt(2))`cursor.getInt(3)));" is 139.,151
+Timber-1.8,com.naman14.timber.provider,MusicPlaybackState,getQueue,Magic Number,The method contains a magic number: 2,151
+Timber-1.8,com.naman14.timber.provider,MusicPlaybackState,getQueue,Magic Number,The method contains a magic number: 3,151
+Timber-1.8,com.naman14.timber.provider,SongPlayCount,createNewPlayedEntry,Magic Number,The method contains a magic number: 3,179
+Timber-1.8,com.naman14.timber.provider,SongPlayCount,updateExistingRow,Complex Method,Cyclomatic complexity of the method is 14,199
+Timber-1.8,com.naman14.timber.provider,SongPlayCount,updateExistingRow,Long Statement,The length of the statement "final Cursor cursor=database.query(SongPlayCountColumns.NAME`null`WHERE_ID_EQUALS`new String[]{stringId}`null`null`null);" is 121.,199
+Timber-1.8,com.naman14.timber.provider,SongPlayCount,updateExistingRow,Magic Number,The method contains a magic number: .01f,199
+Timber-1.8,com.naman14.timber.provider,SongPlayCount,updateExistingRow,Magic Number,The method contains a magic number: 2,199
+Timber-1.8,com.naman14.timber.provider,SongPlayCount,updateExistingRow,Magic Number,The method contains a magic number: 2,199
+Timber-1.8,com.naman14.timber.provider,SongPlayCount,getTopPlayedResults,Long Statement,The length of the statement "return database.query(SongPlayCountColumns.NAME`new String[]{SongPlayCountColumns.ID}`null`null`null`null`SongPlayCountColumns.PLAYCOUNTSCORE + " DESC"`(numResults <= 0 ? null : String.valueOf(numResults)));" is 207.,309
+Timber-1.8,com.naman14.timber.provider,SongPlayCount,getTopPlayedResultsForList,Complex Method,Cyclomatic complexity of the method is 9,325
+Timber-1.8,com.naman14.timber.provider,SongPlayCount,getTopPlayedResultsForList,Long Statement,The length of the statement "topSongsCursor=database.query(SongPlayCountColumns.NAME`new String[]{SongPlayCountColumns.ID}`selection.toString()`null`null`null`SongPlayCountColumns.PLAYCOUNTSCORE + " DESC");" is 177.,325
+Timber-1.8,com.naman14.timber.provider,SongPlayCount,getTopPlayedResultsForList,Magic Number,The method contains a magic number: 250,325
+Timber-1.8,com.naman14.timber.provider,SongPlayCount,updateResults,Long Statement,The length of the statement "database.delete(SongPlayCountColumns.NAME`SongPlayCountColumns.LAST_UPDATED_WEEK_INDEX + " < " + oldestWeekWeCareAbout`null);" is 125.,405
+Timber-1.8,com.naman14.timber.timely,TimelyView,onDraw,Long Statement,The length of the statement "mPath.cubicTo(minDimen * controlPoints[i][0]`minDimen * controlPoints[i][1]`minDimen * controlPoints[i + 1][0]`minDimen * controlPoints[i + 1][1]`minDimen * controlPoints[i + 2][0]`minDimen * controlPoints[i + 2][1]);" is 217.,94
+Timber-1.8,com.naman14.timber.timely,TimelyView,onDraw,Magic Number,The method contains a magic number: 3,94
+Timber-1.8,com.naman14.timber.timely,TimelyView,onDraw,Magic Number,The method contains a magic number: 2,94
+Timber-1.8,com.naman14.timber.timely,TimelyView,onDraw,Magic Number,The method contains a magic number: 2,94
+Timber-1.8,com.naman14.timber.timely,TimelyView,init,Magic Number,The method contains a magic number: 5.0f,137
+Timber-1.8,com.naman14.timber.timely.animation,TimelyEvaluator,initCache,Magic Number,The method contains a magic number: 2,37
+Timber-1.8,com.naman14.timber.timely.model.core,Figure,Figure,Magic Number,The method contains a magic number: 2,30
+Timber-1.8,com.naman14.timber.timely.model.core,Figure,Figure,Magic Number,The method contains a magic number: 3,30
+Timber-1.8,com.naman14.timber.timely.model,NumberUtils,getControlPointsFor,Complex Method,Cyclomatic complexity of the method is 12,9
+Timber-1.8,com.naman14.timber.timely.model,NumberUtils,getControlPointsFor,Magic Number,The method contains a magic number: 2,9
+Timber-1.8,com.naman14.timber.timely.model,NumberUtils,getControlPointsFor,Magic Number,The method contains a magic number: 3,9
+Timber-1.8,com.naman14.timber.timely.model,NumberUtils,getControlPointsFor,Magic Number,The method contains a magic number: 4,9
+Timber-1.8,com.naman14.timber.timely.model,NumberUtils,getControlPointsFor,Magic Number,The method contains a magic number: 5,9
+Timber-1.8,com.naman14.timber.timely.model,NumberUtils,getControlPointsFor,Magic Number,The method contains a magic number: 6,9
+Timber-1.8,com.naman14.timber.timely.model,NumberUtils,getControlPointsFor,Magic Number,The method contains a magic number: 7,9
+Timber-1.8,com.naman14.timber.timely.model,NumberUtils,getControlPointsFor,Magic Number,The method contains a magic number: 8,9
+Timber-1.8,com.naman14.timber.timely.model,NumberUtils,getControlPointsFor,Magic Number,The method contains a magic number: 9,9
+Timber-1.8,com.naman14.timber.timely.model,NumberUtils,getControlPointsFor,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@1f81734c,9
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,getLyrics,Empty catch clause,The method has an empty catch block.,15
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,readOgg,Magic Number,The method contains a magic number: 4,34
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,readOgg,Magic Number,The method contains a magic number: 23,34
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,readOgg,Magic Number,The method contains a magic number: 22,34
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,readOgg,Magic Number,The method contains a magic number: 0xFF,34
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,getLyricsVorbis,Magic Number,The method contains a magic number: 7,65
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,getLyricsVorbis,Magic Number,The method contains a magic number: 23,65
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,getLyricsVorbis,Magic Number,The method contains a magic number: 4,65
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,getLyricsMP4,Long Statement,The length of the statement "final byte path[][]=new byte[][]{{'m'`'o'`'o'`'v'}`{'u'`'d'`'t'`'a'}`{'m'`'e'`'t'`'a'}`{'i'`'l'`'s'`'t'}`{(byte)'©'`'l'`'y'`'r'}`{'d'`'a'`'t'`'a'}};" is 148.,110
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,getLyricsMP4,Magic Number,The method contains a magic number: 4,110
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,getLyricsMP4,Magic Number,The method contains a magic number: 8,110
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,getLyricsMP4,Magic Number,The method contains a magic number: 4,110
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,getLyricsMP4,Magic Number,The method contains a magic number: 8,110
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,getLyricsMP4,Magic Number,The method contains a magic number: 8,110
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,getLyricsMP4,Magic Number,The method contains a magic number: 8,110
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,getLyricsMP4,Magic Number,The method contains a magic number: 8,110
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,getLyricsID3,Complex Method,Cyclomatic complexity of the method is 12,157
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,getLyricsID3,Magic Number,The method contains a magic number: 4,157
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,getLyricsID3,Magic Number,The method contains a magic number: 3,157
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,getLyricsID3,Magic Number,The method contains a magic number: 3,157
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,getLyricsID3,Magic Number,The method contains a magic number: 2,157
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,getLyricsID3,Magic Number,The method contains a magic number: 3,157
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,getLyricsID3,Magic Number,The method contains a magic number: 0x7F,157
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,getLyricsID3,Magic Number,The method contains a magic number: 2,157
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,getLyricsID3,Magic Number,The method contains a magic number: 0x7F,157
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,getLyricsID3,Magic Number,The method contains a magic number: 7,157
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,getLyricsID3,Magic Number,The method contains a magic number: 0x7F,157
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,getLyricsID3,Magic Number,The method contains a magic number: 14,157
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,getLyricsID3,Magic Number,The method contains a magic number: 0x7F,157
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,getLyricsID3,Magic Number,The method contains a magic number: 21,157
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,getLyricsID3,Magic Number,The method contains a magic number: 4,157
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,getLyricsID3,Magic Number,The method contains a magic number: 4,157
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,getLyricsID3,Magic Number,The method contains a magic number: 4,157
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,getLyricsID3,Magic Number,The method contains a magic number: 4,157
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,getLyricsID3,Magic Number,The method contains a magic number: 2,157
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,getLyricsID3,Magic Number,The method contains a magic number: 2,157
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,getLyricsID3,Magic Number,The method contains a magic number: 4,157
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,getLyricsID3,Magic Number,The method contains a magic number: 4,157
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,getLyricsID3,Magic Number,The method contains a magic number: 4,157
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,getLyricsID3,Magic Number,The method contains a magic number: 2,157
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,getLyricsID3,Magic Number,The method contains a magic number: 3,157
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,getLyricsID3,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@34152006,157
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,byteArrayToInt,Magic Number,The method contains a magic number: 3,219
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,byteArrayToInt,Magic Number,The method contains a magic number: 0xFF,219
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,byteArrayToInt,Magic Number,The method contains a magic number: 2,219
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,byteArrayToInt,Magic Number,The method contains a magic number: 0xFF,219
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,byteArrayToInt,Magic Number,The method contains a magic number: 8,219
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,byteArrayToInt,Magic Number,The method contains a magic number: 0xFF,219
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,byteArrayToInt,Magic Number,The method contains a magic number: 16,219
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,byteArrayToInt,Magic Number,The method contains a magic number: 0xFF,219
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,byteArrayToInt,Magic Number,The method contains a magic number: 24,219
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,byteArrayToIntLE,Magic Number,The method contains a magic number: 0xFF,223
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,byteArrayToIntLE,Magic Number,The method contains a magic number: 0xFF,223
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,byteArrayToIntLE,Magic Number,The method contains a magic number: 8,223
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,byteArrayToIntLE,Magic Number,The method contains a magic number: 2,223
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,byteArrayToIntLE,Magic Number,The method contains a magic number: 0xFF,223
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,byteArrayToIntLE,Magic Number,The method contains a magic number: 16,223
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,byteArrayToIntLE,Magic Number,The method contains a magic number: 3,223
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,byteArrayToIntLE,Magic Number,The method contains a magic number: 0xFF,223
+Timber-1.8,com.naman14.timber.utils,LyricsExtractor,byteArrayToIntLE,Magic Number,The method contains a magic number: 24,223
+Timber-1.8,com.naman14.timber.utils,Helpers,getATEKey,Long Statement,The length of the statement "return PreferenceManager.getDefaultSharedPreferences(context).getBoolean("dark_theme"`false) ? "dark_theme" : "light_theme";" is 124.,56
+Timber-1.8,com.naman14.timber.utils,ImageUtils,loadAlbumArtFromDiskWithLastfmFallback,Long Statement,The length of the statement "ImageLoader.getInstance().displayImage(TimberUtils.getAlbumArtUri(albumId).toString()`view`diskDisplayImageOptions`new SimpleImageLoadingListener(){" is 148.,68
+Timber-1.8,com.naman14.timber.utils,ImageUtils,loadAlbumArtFromLastfm,Long Statement,The length of the statement "LastFmClient.getInstance(albumArt.getContext()).getAlbumInfo(new AlbumQuery(album.title`album.artistName)`new AlbumInfoListener(){" is 130.,89
+Timber-1.8,com.naman14.timber.utils,ImageUtils,loadAlbumArtFromLastfm,Long Statement,The length of the statement "ImageLoader.getInstance().displayImage(album.mArtwork.get(4).mUrl`albumArt`lastfmDisplayImageOptions`new SimpleImageLoadingListener(){" is 134.,89
+Timber-1.8,com.naman14.timber.utils,ImageUtils,loadAlbumArtFromLastfm,Magic Number,The method contains a magic number: 4,89
+Timber-1.8,com.naman14.timber.utils,ImageUtils,albumInfoSuccess,Long Statement,The length of the statement "ImageLoader.getInstance().displayImage(album.mArtwork.get(4).mUrl`albumArt`lastfmDisplayImageOptions`new SimpleImageLoadingListener(){" is 134.,94
+Timber-1.8,com.naman14.timber.utils,ImageUtils,albumInfoSuccess,Magic Number,The method contains a magic number: 4,94
+Timber-1.8,com.naman14.timber.utils,ImageUtils,createBlurredImageFromBitmap,Long Statement,The length of the statement "final androidx.renderscript.ScriptIntrinsicBlur script=androidx.renderscript.ScriptIntrinsicBlur.create(rs`androidx.renderscript.Element.U8_4(rs));" is 147.,119
+Timber-1.8,com.naman14.timber.utils,ImageUtils,createBlurredImageFromBitmap,Magic Number,The method contains a magic number: 100,119
+Timber-1.8,com.naman14.timber.utils,ImageUtils,createBlurredImageFromBitmap,Magic Number,The method contains a magic number: 8f,119
+Timber-1.8,com.naman14.timber.utils,PreferencesUtility,setLastOpenedAsStartPagePreference,Long Identifier,The length of the field START_PAGE_PREFERENCE_LASTOPENED is 32.,124
+Timber-1.8,com.naman14.timber.utils,PreferencesUtility,lastOpenedIsStartPagePreference,Long Identifier,The length of the field START_PAGE_PREFERENCE_LASTOPENED is 32.,130
+Timber-1.8,com.naman14.timber.utils,PreferencesUtility,getLastFolder,Long Statement,The length of the statement "return mPreferences.getString(LAST_FOLDER`Environment.getExternalStoragePublicDirectory(Environment.DIRECTORY_MUSIC).getPath());" is 128.,244
+Timber-1.8,com.naman14.timber.utils,PreferencesUtility,alwaysLoadAlbumImagesFromLastfm,Long Identifier,The length of the field ALWAYS_LOAD_ALBUM_IMAGES_LASTFM is 31.,282
+Timber-1.8,com.naman14.timber.utils,TimberUtils,makeShortTimeString,Long Statement,The length of the statement "final String durationFormat=context.getResources().getString(hours == 0 ? R.string.durationformatshort : R.string.durationformatlong);" is 134.,103
+Timber-1.8,com.naman14.timber.utils,TimberUtils,makeShortTimeString,Magic Number,The method contains a magic number: 3600,103
+Timber-1.8,com.naman14.timber.utils,TimberUtils,makeShortTimeString,Magic Number,The method contains a magic number: 3600,103
+Timber-1.8,com.naman14.timber.utils,TimberUtils,makeShortTimeString,Magic Number,The method contains a magic number: 60,103
+Timber-1.8,com.naman14.timber.utils,TimberUtils,makeShortTimeString,Magic Number,The method contains a magic number: 60,103
+Timber-1.8,com.naman14.timber.utils,TimberUtils,getSongCountForPlaylist,Long Statement,The length of the statement "Cursor c=context.getContentResolver().query(MediaStore.Audio.Playlists.Members.getContentUri("external"`playlistId)`new String[]{BaseColumns._ID}`MUSIC_ONLY_SELECTION`null`null);" is 178.,127
+Timber-1.8,com.naman14.timber.utils,TimberUtils,getBlackWhiteColor,Magic Number,The method contains a magic number: 0.299,157
+Timber-1.8,com.naman14.timber.utils,TimberUtils,getBlackWhiteColor,Magic Number,The method contains a magic number: 0.587,157
+Timber-1.8,com.naman14.timber.utils,TimberUtils,getBlackWhiteColor,Magic Number,The method contains a magic number: 0.114,157
+Timber-1.8,com.naman14.timber.utils,TimberUtils,getBlackWhiteColor,Magic Number,The method contains a magic number: 255,157
+Timber-1.8,com.naman14.timber.utils,TimberUtils,getBlackWhiteColor,Magic Number,The method contains a magic number: 0.5,157
+Timber-1.8,com.naman14.timber.utils,TimberUtils,showDeleteDialog,Long Parameter List,The method has 5 parameters. ,233
+Timber-1.8,com.naman14.timber.utils,TimberUtils,showDeleteDialog,Long Statement,The length of the statement "new MaterialDialog.Builder(context).title("Delete song?").content("Are you sure you want to delete " + name + " ?").positiveText("Delete").negativeText("Cancel").onPositive(new MaterialDialog.SingleButtonCallback(){" is 215.,233
+Timber-1.8,com.naman14.timber.utils,TimberUtils,showDeleteDialog,Long Parameter List,The method has 5 parameters. ,258
+Timber-1.8,com.naman14.timber.utils,TimberUtils,showDeleteDialog,Long Statement,The length of the statement "new MaterialDialog.Builder(context).title("Delete song?").content("Are you sure you want to delete " + name + " ?").positiveText("Delete").negativeText("Cancel").onPositive(new MaterialDialog.SingleButtonCallback(){" is 215.,258
+Timber-1.8,com.naman14.timber.utils,TimberUtils,deleteTracks,Long Statement,The length of the statement "final String[] projection=new String[]{BaseColumns._ID`MediaStore.MediaColumns.DATA`MediaStore.Audio.AudioColumns.ALBUM_ID};" is 124.,284
+Timber-1.8,com.naman14.timber.utils,TimberUtils,deleteTracks,Long Statement,The length of the statement "final Cursor c=context.getContentResolver().query(MediaStore.Audio.Media.EXTERNAL_CONTENT_URI`projection`selection.toString()`null`null);" is 137.,284
+Timber-1.8,com.naman14.timber.utils,TimberUtils,getSongUri,Long Statement,The length of the statement "final String[] projection=new String[]{BaseColumns._ID`MediaStore.MediaColumns.DATA`MediaStore.Audio.AudioColumns.ALBUM_ID};" is 124.,357
+Timber-1.8,com.naman14.timber.utils,TimberUtils,getSongUri,Long Statement,The length of the statement "final Cursor c=context.getContentResolver().query(MediaStore.Audio.Media.EXTERNAL_CONTENT_URI`projection`selection.toString()`null`null);" is 137.,357
+Timber-1.8,com.naman14.timber.utils,TimberUtils,getIPAddress,Empty catch clause,The method has an empty catch block.,387
+Timber-1.8,com.naman14.timber.utils,NavigationUtils,navigateToAlbum,Long Statement,The length of the statement "transaction.setCustomAnimations(R.anim.activity_fade_in`R.anim.activity_fade_out`R.anim.activity_fade_in`R.anim.activity_fade_out);" is 131.,50
+Timber-1.8,com.naman14.timber.utils,NavigationUtils,navigateToAlbum,Magic Number,The method contains a magic number: 21,50
+Timber-1.8,com.naman14.timber.utils,NavigationUtils,navigateToArtist,Long Statement,The length of the statement "transaction.setCustomAnimations(R.anim.activity_fade_in`R.anim.activity_fade_out`R.anim.activity_fade_in`R.anim.activity_fade_out);" is 131.,66
+Timber-1.8,com.naman14.timber.utils,NavigationUtils,navigateToArtist,Magic Number,The method contains a magic number: 21,66
+Timber-1.8,com.naman14.timber.utils,NavigationUtils,navigateToPlaylistDetail,Long Parameter List,The method has 7 parameters. ,129
+Timber-1.8,com.naman14.timber.utils,NavigationUtils,navigateToPlaylistDetail,Long Statement,The length of the statement "ActivityOptions options=ActivityOptions.makeSceneTransitionAnimation(context`transitionViews.get(0)`transitionViews.get(1)`transitionViews.get(2));" is 147.,129
+Timber-1.8,com.naman14.timber.utils,NavigationUtils,navigateToPlaylistDetail,Magic Number,The method contains a magic number: 21,129
+Timber-1.8,com.naman14.timber.utils,NavigationUtils,navigateToPlaylistDetail,Magic Number,The method contains a magic number: 2,129
+Timber-1.8,com.naman14.timber.utils,NavigationUtils,navigateToEqualizer,Magic Number,The method contains a magic number: 666,147
+Timber-1.8,com.naman14.timber.utils,NavigationUtils,getFragmentForNowplayingID,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@209a2edb,163
+Timber-1.8,com.naman14.timber.utils,NavigationUtils,getIntForCurrentNowplaying,Magic Number,The method contains a magic number: 2,183
+Timber-1.8,com.naman14.timber.utils,NavigationUtils,getIntForCurrentNowplaying,Magic Number,The method contains a magic number: 3,183
+Timber-1.8,com.naman14.timber.utils,NavigationUtils,getIntForCurrentNowplaying,Magic Number,The method contains a magic number: 4,183
+Timber-1.8,com.naman14.timber.utils,NavigationUtils,getIntForCurrentNowplaying,Magic Number,The method contains a magic number: 5,183
+Timber-1.8,com.naman14.timber.utils,NavigationUtils,getIntForCurrentNowplaying,Magic Number,The method contains a magic number: 2,183
+Timber-1.8,com.naman14.timber.utils,NavigationUtils,getIntForCurrentNowplaying,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@e47618f,183
+Timber-1.8,com.naman14.timber.utils,FabAnimationUtils,scaleIn,Long Statement,The length of the statement "ViewCompat.animate(fab).scaleX(1.0F).scaleY(1.0F).alpha(1.0F).setDuration(duration).setInterpolator(FAST_OUT_SLOW_IN_INTERPOLATOR).withLayer().setListener(new ViewPropertyAnimatorListener(){" is 190.,37
+Timber-1.8,com.naman14.timber.utils,FabAnimationUtils,scaleOut,Long Statement,The length of the statement "ViewCompat.animate(fab).scaleX(0.0F).scaleY(0.0F).alpha(0.0F).setInterpolator(FAST_OUT_SLOW_IN_INTERPOLATOR).setDuration(duration).withLayer().setListener(new ViewPropertyAnimatorListener(){" is 190.,91
+Timber-1.8,com.naman14.timber.utils,ATEUtils,setStatusBarColor,Complex Method,Cyclomatic complexity of the method is 11,26
+Timber-1.8,com.naman14.timber.utils,ATEUtils,setStatusBarColor,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@3a050bcf,26
+Timber-1.8,com.naman14.timber.utils,ATEUtils,applyTaskDescription,Empty catch clause,The method has an empty catch block.,74
+Timber-1.8,com.naman14.timber.utils,ATEUtils,applyTaskDescription,Long Statement,The length of the statement "ActivityManager.TaskDescription td=new ActivityManager.TaskDescription((String)activity.getTitle()`((BitmapDrawable)activity.getApplicationInfo().loadIcon(activity.getPackageManager())).getBitmap()`color);" is 205.,74
+Timber-1.8,com.naman14.timber.utils,ATEUtils,getStatusBarColor,Magic Number,The method contains a magic number: 3,88
+Timber-1.8,com.naman14.timber.utils,ATEUtils,getStatusBarColor,Magic Number,The method contains a magic number: 2,88
+Timber-1.8,com.naman14.timber.utils,ATEUtils,getStatusBarColor,Magic Number,The method contains a magic number: 0.9F,88
+Timber-1.8,com.naman14.timber.utils,LyricsLoader,LyricsLoader,Long Statement,The length of the statement "request.addHeader("Cache-Control"`String.format("max-age=%d`max-stale=%d"`Integer.valueOf(60 * 60 * 24* 7)`Integer.valueOf(31536000)));" is 135.,41
+Timber-1.8,com.naman14.timber.utils,LyricsLoader,LyricsLoader,Long Statement,The length of the statement "RestAdapter.Builder builder=new RestAdapter.Builder().setEndpoint(BASE_API_URL).setRequestInterceptor(interceptor).setConverter(new Converter(){" is 144.,41
+Timber-1.8,com.naman14.timber.utils,LyricsLoader,LyricsLoader,Magic Number,The method contains a magic number: 20,41
+Timber-1.8,com.naman14.timber.utils,LyricsLoader,LyricsLoader,Magic Number,The method contains a magic number: 60,41
+Timber-1.8,com.naman14.timber.utils,LyricsLoader,LyricsLoader,Magic Number,The method contains a magic number: 60,41
+Timber-1.8,com.naman14.timber.utils,LyricsLoader,LyricsLoader,Magic Number,The method contains a magic number: 24,41
+Timber-1.8,com.naman14.timber.utils,LyricsLoader,LyricsLoader,Magic Number,The method contains a magic number: 7,41
+Timber-1.8,com.naman14.timber.utils,LyricsLoader,LyricsLoader,Magic Number,The method contains a magic number: 31536000,41
+Timber-1.8,com.naman14.timber.utils,LyricsLoader,intercept,Long Statement,The length of the statement "request.addHeader("Cache-Control"`String.format("max-age=%d`max-stale=%d"`Integer.valueOf(60 * 60 * 24* 7)`Integer.valueOf(31536000)));" is 135.,49
+Timber-1.8,com.naman14.timber.utils,LyricsLoader,intercept,Magic Number,The method contains a magic number: 60,49
+Timber-1.8,com.naman14.timber.utils,LyricsLoader,intercept,Magic Number,The method contains a magic number: 60,49
+Timber-1.8,com.naman14.timber.utils,LyricsLoader,intercept,Magic Number,The method contains a magic number: 24,49
+Timber-1.8,com.naman14.timber.utils,LyricsLoader,intercept,Magic Number,The method contains a magic number: 7,49
+Timber-1.8,com.naman14.timber.utils,LyricsLoader,intercept,Magic Number,The method contains a magic number: 31536000,49
+Timber-1.8,com.naman14.timber.models,Song,Song,Long Parameter List,The method has 8 parameters. ,39
+Timber-1.8,com.naman14.timber.models,Album,Album,Long Parameter List,The method has 6 parameters. ,34
+Timber-1.8,com.naman14.timber.subfragments,QuickControlsFragment,run,Magic Number,The method contains a magic number: 1500,73
+Timber-1.8,com.naman14.timber.subfragments,QuickControlsFragment,run,Magic Number,The method contains a magic number: 1000,73
+Timber-1.8,com.naman14.timber.subfragments,QuickControlsFragment,onClick,Magic Number,The method contains a magic number: 200,93
+Timber-1.8,com.naman14.timber.subfragments,QuickControlsFragment,onClick,Magic Number,The method contains a magic number: 200,115
+Timber-1.8,com.naman14.timber.subfragments,QuickControlsFragment,onCreateView,Magic Number,The method contains a magic number: 2,136
+Timber-1.8,com.naman14.timber.subfragments,QuickControlsFragment,onCreateView,Magic Number,The method contains a magic number: 200,136
+Timber-1.8,com.naman14.timber.subfragments,QuickControlsFragment,onCreateView,Magic Number,The method contains a magic number: 200,136
+Timber-1.8,com.naman14.timber.subfragments,QuickControlsFragment,onClick,Magic Number,The method contains a magic number: 200,186
+Timber-1.8,com.naman14.timber.subfragments,QuickControlsFragment,onClick,Magic Number,The method contains a magic number: 200,200
+Timber-1.8,com.naman14.timber.subfragments,QuickControlsFragment,updateNowplayingCard,Long Statement,The length of the statement "ImageLoader.getInstance().displayImage(TimberUtils.getAlbumArtUri(MusicPlayer.getCurrentAlbumId()).toString()`mAlbumArt`new DisplayImageOptions.Builder().cacheInMemory(true).showImageOnFail(R.drawable.ic_empty_music2).resetViewBeforeLoading(true).build()`new ImageLoadingListener(){" is 282.,235
+Timber-1.8,com.naman14.timber.subfragments,QuickControlsFragment,updateNowplayingCard,Magic Number,The method contains a magic number: 10,235
+Timber-1.8,com.naman14.timber.subfragments,QuickControlsFragment,onResume,Magic Number,The method contains a magic number: 10,289
+Timber-1.8,com.naman14.timber.subfragments,PlaylistPagerFragment,onCreateView,Long Statement,The length of the statement "NavigationUtils.navigateToPlaylistDetail(getActivity()`getPlaylistType()`firstAlbumID`String.valueOf(playlistame.getText())`foregroundColor`playlist.id`tranitionViews);" is 168.,72
+Timber-1.8,com.naman14.timber.subfragments,PlaylistPagerFragment,onCreateView,Magic Number,The method contains a magic number: 2,72
+Timber-1.8,com.naman14.timber.subfragments,PlaylistPagerFragment,onClick,Long Statement,The length of the statement "NavigationUtils.navigateToPlaylistDetail(getActivity()`getPlaylistType()`firstAlbumID`String.valueOf(playlistame.getText())`foregroundColor`playlist.id`tranitionViews);" is 168.,92
+Timber-1.8,com.naman14.timber.subfragments,PlaylistPagerFragment,onClick,Magic Number,The method contains a magic number: 2,92
+Timber-1.8,com.naman14.timber.subfragments,PlaylistPagerFragment,setUpPlaylistDetails,Magic Number,The method contains a magic number: 9,113
+Timber-1.8,com.naman14.timber.subfragments,PlaylistPagerFragment,setUpPlaylistDetails,Magic Number,The method contains a magic number: 2,113
+Timber-1.8,com.naman14.timber.subfragments,PlaylistPagerFragment,getPlaylistType,Magic Number,The method contains a magic number: 2,139
+Timber-1.8,com.naman14.timber.subfragments,PlaylistPagerFragment,getPlaylistType,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@278d1999,139
+Timber-1.8,com.naman14.timber.subfragments,StyleSelectorFragment,onCreateView,Magic Number,The method contains a magic number: 6,58
+Timber-1.8,com.naman14.timber.subfragments,StyleSelectorFragment,getCount,Magic Number,The method contains a magic number: 6,70
+Timber-1.8,com.naman14.timber.subfragments,LyricsFragment,loadLyrics,Long Statement,The length of the statement "String filename=getRealPathFromURI(Uri.parse(MediaStore.Audio.Media.EXTERNAL_CONTENT_URI + "/" + MusicPlayer.getCurrentAudioId()));" is 131.,53
+Timber-1.8,com.naman14.timber.subfragments,SubStyleSelectorFragment,onCreateView,Complex Method,Cyclomatic complexity of the method is 9,58
+Timber-1.8,com.naman14.timber.subfragments,SubStyleSelectorFragment,onCreateView,Magic Number,The method contains a magic number: 4,58
+Timber-1.8,com.naman14.timber.subfragments,SubStyleSelectorFragment,onCreateView,Magic Number,The method contains a magic number: 2,58
+Timber-1.8,com.naman14.timber.subfragments,SubStyleSelectorFragment,onCreateView,Magic Number,The method contains a magic number: 3,58
+Timber-1.8,com.naman14.timber.subfragments,SubStyleSelectorFragment,onCreateView,Magic Number,The method contains a magic number: 4,58
+Timber-1.8,com.naman14.timber.subfragments,SubStyleSelectorFragment,onCreateView,Magic Number,The method contains a magic number: 5,58
+Timber-1.8,com.naman14.timber.subfragments,SubStyleSelectorFragment,onClick,Magic Number,The method contains a magic number: 4,71
+Timber-1.8,com.naman14.timber.subfragments,SubStyleSelectorFragment,updateLockedStatus,Magic Number,The method contains a magic number: 4,123
+Timber-1.8,com.naman14.timber.subfragments,SubStyleSelectorFragment,showPurchaseDialog,Long Statement,The length of the statement "MaterialDialog dialog=new MaterialDialog.Builder(getActivity()).title("Purchase").content("This now playing style is available after a one time purchase of any amount. Support development and unlock this style?").positiveText("Support development").neutralText("Restore purchases").onPositive(new MaterialDialog.SingleButtonCallback(){" is 335.,133
+Timber-1.8,com.naman14.timber.subfragments,SubStyleSelectorFragment,getStyleForPageNumber,Magic Number,The method contains a magic number: 2,184
+Timber-1.8,com.naman14.timber.subfragments,SubStyleSelectorFragment,getStyleForPageNumber,Magic Number,The method contains a magic number: 3,184
+Timber-1.8,com.naman14.timber.subfragments,SubStyleSelectorFragment,getStyleForPageNumber,Magic Number,The method contains a magic number: 4,184
+Timber-1.8,com.naman14.timber.subfragments,SubStyleSelectorFragment,getStyleForPageNumber,Magic Number,The method contains a magic number: 5,184
+Timber-1.8,com.naman14.timber.subfragments,SubStyleSelectorFragment,getStyleForPageNumber,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@56100745,184
+Timber-1.8,com.naman14.timber.permissions,PermissionRequest,PermissionRequest,Magic Number,The method contains a magic number: 32768,40
+Timber-1.8,com.naman14.timber.permissions,Nammu,askForPermission,Long Statement,The length of the statement "PermissionRequest permissionRequest=new PermissionRequest(new ArrayList<String>(Arrays.asList(permissions))`permissionCallback);" is 128.,99
+Timber-1.8,com.naman14.timber.permissions,Nammu,getGrantedPermissions,Complex Method,Cyclomatic complexity of the method is 8,132
+Timber-1.8,com.naman14.timber.permissions,Nammu,permissionCompare,Complex Method,Cyclomatic complexity of the method is 13,245
+Timber-1.8,com.naman14.timber.adapters,PlayingQueueAdapter,onBindViewHolder,Long Statement,The length of the statement "ImageLoader.getInstance().displayImage(TimberUtils.getAlbumArtUri(localItem.albumId).toString()`itemHolder.albumArt`new DisplayImageOptions.Builder().cacheInMemory(true).showImageOnLoading(R.drawable.ic_empty_music2).resetViewBeforeLoading(true).build());" is 255.,66
+Timber-1.8,com.naman14.timber.adapters,PlayingQueueAdapter,setOnPopupMenuListener,Long Statement,The length of the statement "AddPlaylistDialog.newInstance(arraylist.get(position)).show(((AppCompatActivity)mContext).getSupportFragmentManager()`"ADD_PLAYLIST");" is 134.,91
+Timber-1.8,com.naman14.timber.adapters,PlayingQueueAdapter,onClick,Long Statement,The length of the statement "AddPlaylistDialog.newInstance(arraylist.get(position)).show(((AppCompatActivity)mContext).getSupportFragmentManager()`"ADD_PLAYLIST");" is 134.,94
+Timber-1.8,com.naman14.timber.adapters,PlayingQueueAdapter,onMenuItemClick,Long Statement,The length of the statement "AddPlaylistDialog.newInstance(arraylist.get(position)).show(((AppCompatActivity)mContext).getSupportFragmentManager()`"ADD_PLAYLIST");" is 134.,99
+Timber-1.8,com.naman14.timber.adapters,AlbumAdapter,onBindViewHolder,Long Statement,The length of the statement "ImageLoader.getInstance().displayImage(TimberUtils.getAlbumArtUri(localItem.id).toString()`itemHolder.albumArt`new DisplayImageOptions.Builder().cacheInMemory(true).showImageOnLoading(R.drawable.ic_empty_music2).resetViewBeforeLoading(true).displayer(new FadeInBitmapDisplayer(400)).build()`new SimpleImageLoadingListener(){" is 324.,69
+Timber-1.8,com.naman14.timber.adapters,AlbumAdapter,onBindViewHolder,Magic Number,The method contains a magic number: 400,69
+Timber-1.8,com.naman14.timber.adapters,SongsListAdapter,onBindViewHolder,Long Statement,The length of the statement "ImageLoader.getInstance().displayImage(TimberUtils.getAlbumArtUri(localItem.albumId).toString()`itemHolder.albumArt`new DisplayImageOptions.Builder().cacheInMemory(true).showImageOnLoading(R.drawable.ic_empty_music2).resetViewBeforeLoading(true).build());" is 255.,81
+Timber-1.8,com.naman14.timber.adapters,SongsListAdapter,onBindViewHolder,Magic Number,The method contains a magic number: 10,81
+Timber-1.8,com.naman14.timber.adapters,SongsListAdapter,setOnPopupMenuListener,Complex Method,Cyclomatic complexity of the method is 11,134
+Timber-1.8,com.naman14.timber.adapters,SongsListAdapter,onClick,Complex Method,Cyclomatic complexity of the method is 11,137
+Timber-1.8,com.naman14.timber.adapters,SongsListAdapter,onMenuItemClick,Complex Method,Cyclomatic complexity of the method is 10,143
+Timber-1.8,com.naman14.timber.adapters,ArtistSongAdapter,onBindViewHolder,Long Statement,The length of the statement "ImageLoader.getInstance().displayImage(TimberUtils.getAlbumArtUri(localItem.albumId).toString()`itemHolder.albumArt`new DisplayImageOptions.Builder().cacheInMemory(true).showImageOnLoading(R.drawable.ic_empty_music2).resetViewBeforeLoading(true).build());" is 255.,71
+Timber-1.8,com.naman14.timber.adapters,ArtistSongAdapter,setOnPopupMenuListener,Complex Method,Cyclomatic complexity of the method is 9,103
+Timber-1.8,com.naman14.timber.adapters,ArtistSongAdapter,setOnPopupMenuListener,Long Statement,The length of the statement "AddPlaylistDialog.newInstance(arraylist.get(position + 1)).show(((AppCompatActivity)mContext).getSupportFragmentManager()`"ADD_PLAYLIST");" is 138.,103
+Timber-1.8,com.naman14.timber.adapters,ArtistSongAdapter,onClick,Complex Method,Cyclomatic complexity of the method is 9,106
+Timber-1.8,com.naman14.timber.adapters,ArtistSongAdapter,onClick,Long Statement,The length of the statement "AddPlaylistDialog.newInstance(arraylist.get(position + 1)).show(((AppCompatActivity)mContext).getSupportFragmentManager()`"ADD_PLAYLIST");" is 138.,106
+Timber-1.8,com.naman14.timber.adapters,ArtistSongAdapter,onMenuItemClick,Complex Method,Cyclomatic complexity of the method is 9,111
+Timber-1.8,com.naman14.timber.adapters,ArtistSongAdapter,onMenuItemClick,Long Statement,The length of the statement "AddPlaylistDialog.newInstance(arraylist.get(position + 1)).show(((AppCompatActivity)mContext).getSupportFragmentManager()`"ADD_PLAYLIST");" is 138.,111
+Timber-1.8,com.naman14.timber.adapters,ArtistSongAdapter,setUpAlbums,Long Statement,The length of the statement "ArtistAlbumAdapter mAlbumAdapter=new ArtistAlbumAdapter(mContext`ArtistAlbumLoader.getAlbumsForArtist(mContext`artistID));" is 122.,153
+Timber-1.8,com.naman14.timber.adapters,FolderAdapter,FolderAdapter,Long Statement,The length of the statement "mIcons=new Drawable[]{ContextCompat.getDrawable(context`R.drawable.ic_folder_open_black_24dp)`ContextCompat.getDrawable(context`R.drawable.ic_folder_parent_dark)`ContextCompat.getDrawable(context`R.drawable.ic_file_music_dark)`ContextCompat.getDrawable(context`R.drawable.ic_timer_wait)};" is 288.,49
+Timber-1.8,com.naman14.timber.adapters,FolderAdapter,onBindViewHolder,Long Statement,The length of the statement "ImageLoader.getInstance().displayImage(TimberUtils.getAlbumArtUri(song.albumId).toString()`itemHolder.albumArt`new DisplayImageOptions.Builder().cacheInMemory(true).showImageOnFail(mIcons[2]).resetViewBeforeLoading(true).build());" is 230.,78
+Timber-1.8,com.naman14.timber.adapters,FolderAdapter,onBindViewHolder,Magic Number,The method contains a magic number: 2,78
+Timber-1.8,com.naman14.timber.adapters,BaseSongAdapter,playAll,Long Parameter List,The method has 8 parameters. ,54
+Timber-1.8,com.naman14.timber.adapters,ArtistAdapter,getOpaqueColor,Magic Number,The method contains a magic number: 0xFF000000,62
+Timber-1.8,com.naman14.timber.adapters,ArtistAdapter,onBindViewHolder,Complex Method,Cyclomatic complexity of the method is 8,79
+Timber-1.8,com.naman14.timber.adapters,ArtistAdapter,onBindViewHolder,Long Statement,The length of the statement "ImageLoader.getInstance().displayImage(artist.mArtwork.get(2).mUrl`itemHolder.artistImage`new DisplayImageOptions.Builder().cacheInMemory(true).cacheOnDisk(true).showImageOnLoading(R.drawable.ic_empty_music2).resetViewBeforeLoading(true).displayer(new FadeInBitmapDisplayer(400)).build()`new SimpleImageLoadingListener(){" is 321.,79
+Timber-1.8,com.naman14.timber.adapters,ArtistAdapter,onBindViewHolder,Long Statement,The length of the statement "ImageLoader.getInstance().displayImage(artist.mArtwork.get(1).mUrl`itemHolder.artistImage`new DisplayImageOptions.Builder().cacheInMemory(true).cacheOnDisk(true).showImageOnLoading(R.drawable.ic_empty_music2).resetViewBeforeLoading(true).displayer(new FadeInBitmapDisplayer(400)).build());" is 289.,79
+Timber-1.8,com.naman14.timber.adapters,ArtistAdapter,onBindViewHolder,Magic Number,The method contains a magic number: 2,79
+Timber-1.8,com.naman14.timber.adapters,ArtistAdapter,onBindViewHolder,Magic Number,The method contains a magic number: 400,79
+Timber-1.8,com.naman14.timber.adapters,ArtistAdapter,onBindViewHolder,Magic Number,The method contains a magic number: 400,79
+Timber-1.8,com.naman14.timber.adapters,ArtistAdapter,artistInfoSucess,Long Statement,The length of the statement "ImageLoader.getInstance().displayImage(artist.mArtwork.get(2).mUrl`itemHolder.artistImage`new DisplayImageOptions.Builder().cacheInMemory(true).cacheOnDisk(true).showImageOnLoading(R.drawable.ic_empty_music2).resetViewBeforeLoading(true).displayer(new FadeInBitmapDisplayer(400)).build()`new SimpleImageLoadingListener(){" is 321.,90
+Timber-1.8,com.naman14.timber.adapters,ArtistAdapter,artistInfoSucess,Long Statement,The length of the statement "ImageLoader.getInstance().displayImage(artist.mArtwork.get(1).mUrl`itemHolder.artistImage`new DisplayImageOptions.Builder().cacheInMemory(true).cacheOnDisk(true).showImageOnLoading(R.drawable.ic_empty_music2).resetViewBeforeLoading(true).displayer(new FadeInBitmapDisplayer(400)).build());" is 289.,90
+Timber-1.8,com.naman14.timber.adapters,ArtistAdapter,artistInfoSucess,Magic Number,The method contains a magic number: 2,90
+Timber-1.8,com.naman14.timber.adapters,ArtistAdapter,artistInfoSucess,Magic Number,The method contains a magic number: 400,90
+Timber-1.8,com.naman14.timber.adapters,ArtistAdapter,artistInfoSucess,Magic Number,The method contains a magic number: 400,90
+Timber-1.8,com.naman14.timber.adapters,PlaylistAdapter,onBindViewHolder,Long Statement,The length of the statement "ImageLoader.getInstance().displayImage(s`itemHolder.albumArt`new DisplayImageOptions.Builder().cacheInMemory(true).showImageOnFail(R.drawable.ic_empty_music2).resetViewBeforeLoading(true).build()`new SimpleImageLoadingListener(){" is 229.,73
+Timber-1.8,com.naman14.timber.adapters,PlaylistAdapter,onBindViewHolder,Long Statement,The length of the statement "itemHolder.artist.setText(" " + String.valueOf(songCountInt) + " "+ mContext.getString(R.string.songs)+ " - "+ TimberUtils.makeShortTimeString(mContext`totalRuntime));" is 167.,73
+Timber-1.8,com.naman14.timber.adapters,PlaylistAdapter,getAlbumArtUri,Complex Method,Cyclomatic complexity of the method is 16,136
+Timber-1.8,com.naman14.timber.adapters,PlaylistAdapter,getAlbumArtUri,Magic Number,The method contains a magic number: 1000,136
+Timber-1.8,com.naman14.timber.adapters,PlaylistAdapter,getAlbumArtUri,Magic Number,The method contains a magic number: 1000,136
+Timber-1.8,com.naman14.timber.adapters,PlaylistAdapter,getAlbumArtUri,Magic Number,The method contains a magic number: 2,136
+Timber-1.8,com.naman14.timber.adapters,PlaylistAdapter,getAlbumArtUri,Magic Number,The method contains a magic number: 1000,136
+Timber-1.8,com.naman14.timber.adapters,PlaylistAdapter,getAlbumArtUri,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@636e5f11,136
+Timber-1.8,com.naman14.timber.adapters,PlaylistAdapter,getPlaylistType,Magic Number,The method contains a magic number: 2,243
+Timber-1.8,com.naman14.timber.adapters,PlaylistAdapter,getPlaylistType,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@71a77bc0,243
+Timber-1.8,com.naman14.timber.adapters,SearchAdapter,onCreateViewHolder,Magic Number,The method contains a magic number: 2,58
+Timber-1.8,com.naman14.timber.adapters,SearchAdapter,onCreateViewHolder,Magic Number,The method contains a magic number: 10,58
+Timber-1.8,com.naman14.timber.adapters,SearchAdapter,onCreateViewHolder,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@3ea9f5bc,58
+Timber-1.8,com.naman14.timber.adapters,SearchAdapter,onBindViewHolder,Long Statement,The length of the statement "ImageLoader.getInstance().displayImage(TimberUtils.getAlbumArtUri(song.albumId).toString()`itemHolder.albumArt`new DisplayImageOptions.Builder().cacheInMemory(true).cacheOnDisk(true).showImageOnFail(R.drawable.ic_empty_music2).resetViewBeforeLoading(true).displayer(new FadeInBitmapDisplayer(400)).build());" is 307.,84
+Timber-1.8,com.naman14.timber.adapters,SearchAdapter,onBindViewHolder,Long Statement,The length of the statement "ImageLoader.getInstance().displayImage(TimberUtils.getAlbumArtUri(album.id).toString()`itemHolder.albumArt`new DisplayImageOptions.Builder().cacheInMemory(true).cacheOnDisk(true).showImageOnFail(R.drawable.ic_empty_music2).resetViewBeforeLoading(true).displayer(new FadeInBitmapDisplayer(400)).build());" is 303.,84
+Timber-1.8,com.naman14.timber.adapters,SearchAdapter,onBindViewHolder,Long Statement,The length of the statement "ImageLoader.getInstance().displayImage(artist.mArtwork.get(1).mUrl`itemHolder.artistImage`new DisplayImageOptions.Builder().cacheInMemory(true).cacheOnDisk(true).showImageOnFail(R.drawable.ic_empty_music2).resetViewBeforeLoading(true).displayer(new FadeInBitmapDisplayer(400)).build());" is 286.,84
+Timber-1.8,com.naman14.timber.adapters,SearchAdapter,onBindViewHolder,Magic Number,The method contains a magic number: 400,84
+Timber-1.8,com.naman14.timber.adapters,SearchAdapter,onBindViewHolder,Magic Number,The method contains a magic number: 400,84
+Timber-1.8,com.naman14.timber.adapters,SearchAdapter,onBindViewHolder,Magic Number,The method contains a magic number: 2,84
+Timber-1.8,com.naman14.timber.adapters,SearchAdapter,onBindViewHolder,Magic Number,The method contains a magic number: 400,84
+Timber-1.8,com.naman14.timber.adapters,SearchAdapter,onBindViewHolder,Magic Number,The method contains a magic number: 10,84
+Timber-1.8,com.naman14.timber.adapters,SearchAdapter,onBindViewHolder,Magic Number,The method contains a magic number: 3,84
+Timber-1.8,com.naman14.timber.adapters,SearchAdapter,artistInfoSucess,Long Statement,The length of the statement "ImageLoader.getInstance().displayImage(artist.mArtwork.get(1).mUrl`itemHolder.artistImage`new DisplayImageOptions.Builder().cacheInMemory(true).cacheOnDisk(true).showImageOnFail(R.drawable.ic_empty_music2).resetViewBeforeLoading(true).displayer(new FadeInBitmapDisplayer(400)).build());" is 286.,119
+Timber-1.8,com.naman14.timber.adapters,SearchAdapter,artistInfoSucess,Magic Number,The method contains a magic number: 400,119
+Timber-1.8,com.naman14.timber.adapters,SearchAdapter,setOnPopupMenuListener,Long Statement,The length of the statement "AddPlaylistDialog.newInstance(((Song)searchResults.get(position))).show(((AppCompatActivity)mContext).getSupportFragmentManager()`"ADD_PLAYLIST");" is 146.,155
+Timber-1.8,com.naman14.timber.adapters,SearchAdapter,onClick,Long Statement,The length of the statement "AddPlaylistDialog.newInstance(((Song)searchResults.get(position))).show(((AppCompatActivity)mContext).getSupportFragmentManager()`"ADD_PLAYLIST");" is 146.,158
+Timber-1.8,com.naman14.timber.adapters,SearchAdapter,onMenuItemClick,Long Statement,The length of the statement "AddPlaylistDialog.newInstance(((Song)searchResults.get(position))).show(((AppCompatActivity)mContext).getSupportFragmentManager()`"ADD_PLAYLIST");" is 146.,163
+Timber-1.8,com.naman14.timber.adapters,SearchAdapter,getItemViewType,Magic Number,The method contains a magic number: 2,199
+Timber-1.8,com.naman14.timber.adapters,SearchAdapter,getItemViewType,Magic Number,The method contains a magic number: 10,199
+Timber-1.8,com.naman14.timber.adapters,SearchAdapter,getItemViewType,Magic Number,The method contains a magic number: 3,199
+Timber-1.8,com.naman14.timber.adapters,BaseQueueAdapter,onBindViewHolder,Long Statement,The length of the statement "ImageLoader.getInstance().displayImage(TimberUtils.getAlbumArtUri(localItem.albumId).toString()`itemHolder.albumArt`new DisplayImageOptions.Builder().cacheInMemory(true).showImageOnLoading(R.drawable.ic_empty_music2).resetViewBeforeLoading(true).build());" is 255.,63
+Timber-1.8,com.naman14.timber.adapters,BaseQueueAdapter,setOnPopupMenuListener,Complex Method,Cyclomatic complexity of the method is 9,93
+Timber-1.8,com.naman14.timber.adapters,BaseQueueAdapter,onClick,Complex Method,Cyclomatic complexity of the method is 9,96
+Timber-1.8,com.naman14.timber.adapters,BaseQueueAdapter,onMenuItemClick,Complex Method,Cyclomatic complexity of the method is 9,101
+Timber-1.8,com.naman14.timber.adapters,SlidingQueueAdapter,onBindViewHolder,Long Statement,The length of the statement "ImageLoader.getInstance().displayImage(TimberUtils.getAlbumArtUri(localItem.albumId).toString()`itemHolder.albumArt`new DisplayImageOptions.Builder().cacheInMemory(true).showImageOnLoading(R.drawable.ic_empty_music2).resetViewBeforeLoading(true).build());" is 255.,56
+Timber-1.8,com.naman14.timber.adapters,AlbumSongsAdapter,onBindViewHolder,Magic Number,The method contains a magic number: 1000,62
+Timber-1.8,com.naman14.timber.adapters,AlbumSongsAdapter,setOnPopupMenuListener,Complex Method,Cyclomatic complexity of the method is 9,79
+Timber-1.8,com.naman14.timber.adapters,AlbumSongsAdapter,setOnPopupMenuListener,Long Statement,The length of the statement "AddPlaylistDialog.newInstance(arraylist.get(position)).show(((AppCompatActivity)mContext).getSupportFragmentManager()`"ADD_PLAYLIST");" is 134.,79
+Timber-1.8,com.naman14.timber.adapters,AlbumSongsAdapter,onClick,Complex Method,Cyclomatic complexity of the method is 9,82
+Timber-1.8,com.naman14.timber.adapters,AlbumSongsAdapter,onClick,Long Statement,The length of the statement "AddPlaylistDialog.newInstance(arraylist.get(position)).show(((AppCompatActivity)mContext).getSupportFragmentManager()`"ADD_PLAYLIST");" is 134.,82
+Timber-1.8,com.naman14.timber.adapters,AlbumSongsAdapter,onMenuItemClick,Complex Method,Cyclomatic complexity of the method is 9,87
+Timber-1.8,com.naman14.timber.adapters,AlbumSongsAdapter,onMenuItemClick,Long Statement,The length of the statement "AddPlaylistDialog.newInstance(arraylist.get(position)).show(((AppCompatActivity)mContext).getSupportFragmentManager()`"ADD_PLAYLIST");" is 134.,87
+Timber-1.8,com.naman14.timber.lastfmapi,LastFmClient,getUserLoginInfo,Long Statement,The length of the statement "mUserRestService.getUserLoginInfo(UserLoginQuery.Method`JSON`API_KEY`generateMD5(userLoginQuery.getSignature())`userLoginQuery.mUsername`userLoginQuery.mPassword`new Callback<UserLoginInfo>(){" is 192.,134
+Timber-1.8,com.naman14.timber.lastfmapi,LastFmUserRestService,getUserLoginInfo,Long Parameter List,The method has 7 parameters. ,21
+Timber-1.8,com.naman14.timber.lastfmapi,RestServiceFactory,createStatic,Long Statement,The length of the statement "request.addHeader("Cache-Control"`String.format("max-age=%d`%smax-stale=%d"`Integer.valueOf(60 * 60 * 24* 7)`prefs.loadArtistAndAlbumImages() ? "" : "only-if-cached`"`Integer.valueOf(31536000)));" is 195.,33
+Timber-1.8,com.naman14.timber.lastfmapi,RestServiceFactory,createStatic,Long Statement,The length of the statement "RestAdapter.Builder builder=new RestAdapter.Builder().setEndpoint(baseUrl).setRequestInterceptor(interceptor).setClient(new OkClient(okHttpClient));" is 148.,33
+Timber-1.8,com.naman14.timber.lastfmapi,RestServiceFactory,createStatic,Magic Number,The method contains a magic number: 40,33
+Timber-1.8,com.naman14.timber.lastfmapi,RestServiceFactory,createStatic,Magic Number,The method contains a magic number: 60,33
+Timber-1.8,com.naman14.timber.lastfmapi,RestServiceFactory,createStatic,Magic Number,The method contains a magic number: 60,33
+Timber-1.8,com.naman14.timber.lastfmapi,RestServiceFactory,createStatic,Magic Number,The method contains a magic number: 24,33
+Timber-1.8,com.naman14.timber.lastfmapi,RestServiceFactory,createStatic,Magic Number,The method contains a magic number: 7,33
+Timber-1.8,com.naman14.timber.lastfmapi,RestServiceFactory,createStatic,Magic Number,The method contains a magic number: 31536000,33
+Timber-1.8,com.naman14.timber.lastfmapi,RestServiceFactory,intercept,Long Statement,The length of the statement "request.addHeader("Cache-Control"`String.format("max-age=%d`%smax-stale=%d"`Integer.valueOf(60 * 60 * 24* 7)`prefs.loadArtistAndAlbumImages() ? "" : "only-if-cached`"`Integer.valueOf(31536000)));" is 195.,43
+Timber-1.8,com.naman14.timber.lastfmapi,RestServiceFactory,intercept,Magic Number,The method contains a magic number: 60,43
+Timber-1.8,com.naman14.timber.lastfmapi,RestServiceFactory,intercept,Magic Number,The method contains a magic number: 60,43
+Timber-1.8,com.naman14.timber.lastfmapi,RestServiceFactory,intercept,Magic Number,The method contains a magic number: 24,43
+Timber-1.8,com.naman14.timber.lastfmapi,RestServiceFactory,intercept,Magic Number,The method contains a magic number: 7,43
+Timber-1.8,com.naman14.timber.lastfmapi,RestServiceFactory,intercept,Magic Number,The method contains a magic number: 31536000,43
+Timber-1.8,com.naman14.timber.lastfmapi.models,UserLoginQuery,getSignature,Long Statement,The length of the statement "return "api_key" + LastFmClient.API_KEY + "method"+ Method+ "password"+ mPassword+ "username"+ mUsername+ LastFmClient.API_SECRET;" is 130.,26
+Timber-1.8,com.naman14.timber.lastfmapi.models,ScrobbleQuery,ScrobbleQuery,Empty catch clause,The method has an empty catch block.,29
+Timber-1.8,com.naman14.timber.lastfmapi.models,ScrobbleQuery,ScrobbleQuery,Magic Number,The method contains a magic number: 2,29
+Timber-1.8,com.naman14.timber.lastfmapi.models,ScrobbleQuery,ScrobbleQuery,Magic Number,The method contains a magic number: 16,29
+Timber-1.8,com.naman14.timber.slidinguppanel,SlidingUpPanelLayout,SlidingUpPanelLayout,Complex Method,Cyclomatic complexity of the method is 11,197
+Timber-1.8,com.naman14.timber.slidinguppanel,SlidingUpPanelLayout,SlidingUpPanelLayout,Long Statement,The length of the statement "mSlidePanelOffset=ta.getDimensionPixelSize(R.styleable.SlidingUpPanelLayout_slidePanelOffset`DEFAULT_SLIDE_PANEL_OFFSET);" is 121.,197
+Timber-1.8,com.naman14.timber.slidinguppanel,SlidingUpPanelLayout,SlidingUpPanelLayout,Magic Number,The method contains a magic number: 0.5f,197
+Timber-1.8,com.naman14.timber.slidinguppanel,SlidingUpPanelLayout,SlidingUpPanelLayout,Magic Number,The method contains a magic number: 0.5f,197
+Timber-1.8,com.naman14.timber.slidinguppanel,SlidingUpPanelLayout,SlidingUpPanelLayout,Magic Number,The method contains a magic number: 0.5f,197
+Timber-1.8,com.naman14.timber.slidinguppanel,SlidingUpPanelLayout,updateObscuredViewVisibility,Complex Conditional,The conditional expression clampedChildLeft >= left && clampedChildTop >= top && clampedChildRight <= right && clampedChildBottom <= bottom is complex.,477
+Timber-1.8,com.naman14.timber.slidinguppanel,SlidingUpPanelLayout,onMeasure,Complex Conditional,The conditional expression child == mMainView && !mOverlayContent && mSlideState != SlideState.HIDDEN is complex.,533
+Timber-1.8,com.naman14.timber.slidinguppanel,SlidingUpPanelLayout,onMeasure,Complex Method,Cyclomatic complexity of the method is 15,533
+Timber-1.8,com.naman14.timber.slidinguppanel,SlidingUpPanelLayout,onMeasure,Magic Number,The method contains a magic number: 2,533
+Timber-1.8,com.naman14.timber.slidinguppanel,SlidingUpPanelLayout,onMeasure,Magic Number,The method contains a magic number: 3,533
+Timber-1.8,com.naman14.timber.slidinguppanel,SlidingUpPanelLayout,onMeasure,Magic Number,The method contains a magic number: 2,533
+Timber-1.8,com.naman14.timber.slidinguppanel,SlidingUpPanelLayout,onMeasure,Magic Number,The method contains a magic number: 2,533
+Timber-1.8,com.naman14.timber.slidinguppanel,SlidingUpPanelLayout,onLayout,Complex Conditional,The conditional expression child.getVisibility() == GONE && (child == mMainView || mFirstLayout) is complex.,616
+Timber-1.8,com.naman14.timber.slidinguppanel,SlidingUpPanelLayout,onLayout,Complex Method,Cyclomatic complexity of the method is 11,616
+Timber-1.8,com.naman14.timber.slidinguppanel,SlidingUpPanelLayout,onLayout,Long Parameter List,The method has 5 parameters. ,616
+Timber-1.8,com.naman14.timber.slidinguppanel,SlidingUpPanelLayout,onLayout,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@6855e703,616
+Timber-1.8,com.naman14.timber.slidinguppanel,SlidingUpPanelLayout,onInterceptTouchEvent,Complex Conditional,The conditional expression !isEnabled() || !mIsSlidingEnabled || (mIsUnableToDrag && action != MotionEvent.ACTION_DOWN) is complex.,702
+Timber-1.8,com.naman14.timber.slidinguppanel,SlidingUpPanelLayout,onInterceptTouchEvent,Complex Conditional,The conditional expression mIsUsingDragViewTouchEvents && adx > dragSlop && ady < dragSlop is complex.,702
+Timber-1.8,com.naman14.timber.slidinguppanel,SlidingUpPanelLayout,onInterceptTouchEvent,Complex Conditional,The conditional expression (ady > dragSlop && adx > ady) || !isDragViewUnder((int)mInitialMotionX`(int)mInitialMotionY) is complex.,702
+Timber-1.8,com.naman14.timber.slidinguppanel,SlidingUpPanelLayout,isDragViewUnder,Long Statement,The length of the statement "return screenX >= viewLocation[0] && screenX < viewLocation[0] + mDragView.getWidth() && screenY >= viewLocation[1] && screenY < viewLocation[1] + mDragView.getHeight();" is 169.,759
+Timber-1.8,com.naman14.timber.slidinguppanel,SlidingUpPanelLayout,isDragViewUnder,Magic Number,The method contains a magic number: 2,759
+Timber-1.8,com.naman14.timber.slidinguppanel,SlidingUpPanelLayout,isDragViewUnder,Magic Number,The method contains a magic number: 2,759
+Timber-1.8,com.naman14.timber.slidinguppanel,SlidingUpPanelLayout,computePanelTopPosition,Long Statement,The length of the statement "return mIsSlidingUp ? getMeasuredHeight() - getPaddingBottom() - mPanelHeight- slidePixelOffset : getPaddingTop() - slidingViewHeight + mPanelHeight + slidePixelOffset;" is 168.,782
+Timber-1.8,com.naman14.timber.slidinguppanel,SlidingUpPanelLayout,computeSlideOffset,Long Statement,The length of the statement "return (mIsSlidingUp ? (float)(topBoundCollapsed - topPosition) / mSlideRange : (float)(topPosition - topBoundCollapsed) / mSlideRange);" is 136.,794
+Timber-1.8,com.naman14.timber.slidinguppanel,SlidingUpPanelLayout,onPanelDragged,Complex Conditional,The conditional expression (mParallaxOffset > 0 || mDirectOffset) && mSlideOffset >= 0 is complex.,916
+Timber-1.8,com.naman14.timber.slidinguppanel,SlidingUpPanelLayout,onPanelDragged,Long Statement,The length of the statement "lp.height=mIsSlidingUp ? (newTop - getPaddingBottom()) : (getHeight() - getPaddingBottom() - mSlideableView.getMeasuredHeight()- newTop);" is 137.,916
+Timber-1.8,com.naman14.timber.slidinguppanel,SlidingUpPanelLayout,drawChild,Magic Number,The method contains a magic number: 0xff000000,945
+Timber-1.8,com.naman14.timber.slidinguppanel,SlidingUpPanelLayout,drawChild,Magic Number,The method contains a magic number: 24,945
+Timber-1.8,com.naman14.timber.slidinguppanel,SlidingUpPanelLayout,drawChild,Magic Number,The method contains a magic number: 24,945
+Timber-1.8,com.naman14.timber.slidinguppanel,SlidingUpPanelLayout,drawChild,Magic Number,The method contains a magic number: 0xffffff,945
+Timber-1.8,com.naman14.timber.slidinguppanel,SlidingUpPanelLayout,canScroll,Complex Conditional,The conditional expression x + scrollX >= child.getLeft() && x + scrollX < child.getRight() && y + scrollY >= child.getTop() && y + scrollY < child.getBottom() && canScroll(child`true`dx`x + scrollX - child.getLeft()`y + scrollY - child.getTop()) is complex.,1038
+Timber-1.8,com.naman14.timber.slidinguppanel,SlidingUpPanelLayout,canScroll,Long Parameter List,The method has 5 parameters. ,1038
+Timber-1.8,com.naman14.timber.slidinguppanel,SlidingUpPanelLayout,canScroll,Long Statement,The length of the statement "if (x + scrollX >= child.getLeft() && x + scrollX < child.getRight() && y + scrollY >= child.getTop() && y + scrollY < child.getBottom() && canScroll(child`true`dx`x + scrollX - child.getLeft()`y + scrollY - child.getTop())) {" is 226.,1038
+Timber-1.8,com.naman14.timber.slidinguppanel,ViewDragHelper,ViewDragHelper,Magic Number,The method contains a magic number: 0.5f,134
+Timber-1.8,com.naman14.timber.slidinguppanel,ViewDragHelper,captureChildView,Long Statement,The length of the statement "throw new IllegalArgumentException("captureChildView: parameter must be a descendant " + "of the ViewDragHelper's tracked parent view (" + mParentView + ")");" is 158.,247
+Timber-1.8,com.naman14.timber.slidinguppanel,ViewDragHelper,settleCapturedViewAt,Long Statement,The length of the statement "return forceSettleCapturedViewAt(finalLeft`finalTop`(int)VelocityTrackerCompat.getXVelocity(mVelocityTracker`mActivePointerId)`(int)VelocityTrackerCompat.getYVelocity(mVelocityTracker`mActivePointerId));" is 203.,341
+Timber-1.8,com.naman14.timber.slidinguppanel,ViewDragHelper,computeSettleDuration,Long Parameter List,The method has 5 parameters. ,392
+Timber-1.8,com.naman14.timber.slidinguppanel,ViewDragHelper,computeAxisDuration,Magic Number,The method contains a magic number: 2,413
+Timber-1.8,com.naman14.timber.slidinguppanel,ViewDragHelper,computeAxisDuration,Magic Number,The method contains a magic number: 4,413
+Timber-1.8,com.naman14.timber.slidinguppanel,ViewDragHelper,computeAxisDuration,Magic Number,The method contains a magic number: 1000,413
+Timber-1.8,com.naman14.timber.slidinguppanel,ViewDragHelper,distanceInfluenceForSnapDuration,Magic Number,The method contains a magic number: 0.5f,469
+Timber-1.8,com.naman14.timber.slidinguppanel,ViewDragHelper,distanceInfluenceForSnapDuration,Magic Number,The method contains a magic number: 0.3f,469
+Timber-1.8,com.naman14.timber.slidinguppanel,ViewDragHelper,distanceInfluenceForSnapDuration,Magic Number,The method contains a magic number: 2.0f,469
+Timber-1.8,com.naman14.timber.slidinguppanel,ViewDragHelper,flingCapturedView,Long Statement,The length of the statement "mScroller.fling(mCapturedView.getLeft()`mCapturedView.getTop()`(int)VelocityTrackerCompat.getXVelocity(mVelocityTracker`mActivePointerId)`(int)VelocityTrackerCompat.getYVelocity(mVelocityTracker`mActivePointerId)`minLeft`maxLeft`minTop`maxTop);" is 244.,475
+Timber-1.8,com.naman14.timber.slidinguppanel,ViewDragHelper,continueSettling,Complex Conditional,The conditional expression keepGoing && x == mScroller.getFinalX() && y == mScroller.getFinalY() is complex.,499
+Timber-1.8,com.naman14.timber.slidinguppanel,ViewDragHelper,continueSettling,Complex Method,Cyclomatic complexity of the method is 8,499
+Timber-1.8,com.naman14.timber.slidinguppanel,ViewDragHelper,canScroll,Complex Conditional,The conditional expression x + scrollX >= child.getLeft() && x + scrollX < child.getRight() && y + scrollY >= child.getTop() && y + scrollY < child.getBottom() && canScroll(child`true`dx`dy`x + scrollX - child.getLeft()`y + scrollY - child.getTop()) is complex.,691
+Timber-1.8,com.naman14.timber.slidinguppanel,ViewDragHelper,canScroll,Long Parameter List,The method has 6 parameters. ,691
+Timber-1.8,com.naman14.timber.slidinguppanel,ViewDragHelper,canScroll,Long Statement,The length of the statement "if (x + scrollX >= child.getLeft() && x + scrollX < child.getRight() && y + scrollY >= child.getTop() && y + scrollY < child.getBottom() && canScroll(child`true`dx`dy`x + scrollX - child.getLeft()`y + scrollY - child.getTop())) {" is 229.,691
+Timber-1.8,com.naman14.timber.slidinguppanel,ViewDragHelper,shouldInterceptTouchEvent,Complex Conditional,The conditional expression toCapture != null && checkTouchSlop(toCapture`dx`dy) && tryCaptureViewForDrag(toCapture`pointerId) is complex.,727
+Timber-1.8,com.naman14.timber.slidinguppanel,ViewDragHelper,shouldInterceptTouchEvent,Complex Method,Cyclomatic complexity of the method is 18,727
+Timber-1.8,com.naman14.timber.slidinguppanel,ViewDragHelper,processTouchEvent,Complex Method,Cyclomatic complexity of the method is 24,835
+Timber-1.8,com.naman14.timber.slidinguppanel,ViewDragHelper,processTouchEvent,Long Method,The method has 119 lines of code.,835
+Timber-1.8,com.naman14.timber.slidinguppanel,ViewDragHelper,checkNewEdgeDrag,Complex Conditional,The conditional expression (mInitialEdgesTouched[pointerId] & edge) != edge || (mTrackingEdges & edge) == 0 || (mEdgeDragsLocked[pointerId] & edge) == edge || (mEdgeDragsInProgress[pointerId] & edge) == edge || (absDelta <= mTouchSlop && absODelta <= mTouchSlop) is complex.,1013
+Timber-1.8,com.naman14.timber.slidinguppanel,ViewDragHelper,checkNewEdgeDrag,Long Statement,The length of the statement "if ((mInitialEdgesTouched[pointerId] & edge) != edge || (mTrackingEdges & edge) == 0 || (mEdgeDragsLocked[pointerId] & edge) == edge || (mEdgeDragsInProgress[pointerId] & edge) == edge || (absDelta <= mTouchSlop && absODelta <= mTouchSlop)) {" is 242.,1013
+Timber-1.8,com.naman14.timber.slidinguppanel,ViewDragHelper,checkNewEdgeDrag,Magic Number,The method contains a magic number: 0.5f,1013
+Timber-1.8,com.naman14.timber.slidinguppanel,ViewDragHelper,releaseViewForPointerUp,Long Statement,The length of the statement "final float xvel=clampMag(VelocityTrackerCompat.getXVelocity(mVelocityTracker`mActivePointerId)`mMinVelocity`mMaxVelocity);" is 123.,1150
+Timber-1.8,com.naman14.timber.slidinguppanel,ViewDragHelper,releaseViewForPointerUp,Long Statement,The length of the statement "final float yvel=clampMag(VelocityTrackerCompat.getYVelocity(mVelocityTracker`mActivePointerId)`mMinVelocity`mMaxVelocity);" is 123.,1150
+Timber-1.8,com.naman14.timber.slidinguppanel,ViewDragHelper,releaseViewForPointerUp,Magic Number,The method contains a magic number: 1000,1150
+Timber-1.8,com.naman14.timber.slidinguppanel,ViewDragHelper,findTopChildUnder,Complex Conditional,The conditional expression x >= child.getLeft() && x < child.getRight() && y >= child.getTop() && y < child.getBottom() is complex.,1215
+Timber-1.8,com.naman14.timber.dialogs,StorageSelectDialog,StorageSelectDialog,Long Statement,The length of the statement "mDialog=new AlertDialog.Builder(context).setItems(names`this).setNegativeButton(android.R.string.cancel`null).setNeutralButton(R.string.menu_show_as_entry_default`new DialogInterface.OnClickListener(){" is 201.,23
+Timber-1.8,com.naman14.timber.dialogs,AddPlaylistDialog,onCreateDialog,Long Statement,The length of the statement "return new MaterialDialog.Builder(getActivity()).title("Add to playlist").items(chars).itemsCallback(new MaterialDialog.ListCallback(){" is 135.,36
+Timber-1.8,com.naman14.timber.dialogs,LastFmLoginDialog,onCreateDialog,Long Statement,The length of the statement "return new MaterialDialog.Builder(getActivity()).positiveText("Login").negativeText(getString(R.string.cancel)).title(getString(R.string.lastfm_login)).customView(R.layout.dialog_lastfm_login`false).onPositive(new MaterialDialog.SingleButtonCallback(){" is 252.,25
+Timber-1.8,com.naman14.timber.dialogs,CreatePlaylistDialog,onCreateDialog,Long Statement,The length of the statement "return new MaterialDialog.Builder(getActivity()).positiveText("Create").negativeText("Cancel").input("Enter playlist name"`""`false`new MaterialDialog.InputCallback(){" is 167.,42
+Timber-1.8,com.naman14.timber.activities,DonateActivity,onOptionsItemSelected,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@79d2abcf,210
+Timber-1.8,com.naman14.timber.activities,PlaylistDetailActivity,onCreate,Magic Number,The method contains a magic number: 21,104
+Timber-1.8,com.naman14.timber.activities,PlaylistDetailActivity,loadBitmap,Long Statement,The length of the statement "ImageLoader.getInstance().displayImage(uri`blurFrame`new DisplayImageOptions.Builder().cacheInMemory(true).showImageOnFail(R.drawable.ic_empty_music2).resetViewBeforeLoading(true).build());" is 189.,188
+Timber-1.8,com.naman14.timber.activities,PlaylistDetailActivity,setRecyclerViewAapter,Long Statement,The length of the statement "recyclerView.addItemDecoration(new DividerItemDecoration(mContext`DividerItemDecoration.VERTICAL_LIST`R.drawable.item_divider_white));" is 134.,196
+Timber-1.8,com.naman14.timber.activities,PlaylistDetailActivity,setRecyclerViewAapter,Long Statement,The length of the statement "else recyclerView.addItemDecoration(new DividerItemDecoration(mContext`DividerItemDecoration.VERTICAL_LIST`R.drawable.item_divider_white));" is 139.,196
+Timber-1.8,com.naman14.timber.activities,PlaylistDetailActivity,setRecyclerViewAapter,Magic Number,The method contains a magic number: 250,196
+Timber-1.8,com.naman14.timber.activities,PlaylistDetailActivity,run,Long Statement,The length of the statement "recyclerView.addItemDecoration(new DividerItemDecoration(mContext`DividerItemDecoration.VERTICAL_LIST`R.drawable.item_divider_white));" is 134.,201
+Timber-1.8,com.naman14.timber.activities,PlaylistDetailActivity,getActivityTheme,Long Statement,The length of the statement "return PreferenceManager.getDefaultSharedPreferences(this).getBoolean("dark_theme"`false) ? R.style.AppTheme_FullScreen_Dark : R.style.AppTheme_FullScreen_Light;" is 161.,210
+Timber-1.8,com.naman14.timber.activities,PlaylistDetailActivity,onOptionsItemSelected,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@3361a64e,333
+Timber-1.8,com.naman14.timber.activities,PlaylistDetailActivity,showDeletePlaylistDialog,Long Statement,The length of the statement "new MaterialDialog.Builder(this).title("Delete playlist?").content("Are you sure you want to delete playlist " + playlistname.getText().toString() + " ?").positiveText("Delete").negativeText("Cancel").onPositive(new MaterialDialog.SingleButtonCallback(){" is 254.,351
+Timber-1.8,com.naman14.timber.activities,MainActivity,onCreate,Long Statement,The length of the statement "final FrameLayout.LayoutParams params=new FrameLayout.LayoutParams(FrameLayout.LayoutParams.WRAP_CONTENT`FrameLayout.LayoutParams.WRAP_CONTENT);" is 144.,169
+Timber-1.8,com.naman14.timber.activities,MainActivity,onCreate,Magic Number,The method contains a magic number: 700,169
+Timber-1.8,com.naman14.timber.activities,MainActivity,onCreate,Magic Number,The method contains a magic number: 350,169
+Timber-1.8,com.naman14.timber.activities,MainActivity,checkPermissionAndThenLoad,Long Statement,The length of the statement "if (Nammu.checkPermission(Manifest.permission.READ_EXTERNAL_STORAGE) && Nammu.checkPermission(Manifest.permission.WRITE_EXTERNAL_STORAGE)) {" is 140.,266
+Timber-1.8,com.naman14.timber.activities,MainActivity,checkPermissionAndThenLoad,Long Statement,The length of the statement "Snackbar.make(panelLayout`"Timber will need to read external storage to display songs on your device."`Snackbar.LENGTH_INDEFINITE).setAction("OK"`new View.OnClickListener(){" is 173.,266
+Timber-1.8,com.naman14.timber.activities,MainActivity,checkPermissionAndThenLoad,Long Statement,The length of the statement "Nammu.askForPermission(MainActivity.this`new String[]{Manifest.permission.READ_EXTERNAL_STORAGE`Manifest.permission.WRITE_EXTERNAL_STORAGE}`permissionReadstorageCallback);" is 171.,266
+Timber-1.8,com.naman14.timber.activities,MainActivity,checkPermissionAndThenLoad,Long Statement,The length of the statement "Nammu.askForPermission(this`new String[]{Manifest.permission.READ_EXTERNAL_STORAGE`Manifest.permission.WRITE_EXTERNAL_STORAGE}`permissionReadstorageCallback);" is 158.,266
+Timber-1.8,com.naman14.timber.activities,MainActivity,onClick,Long Statement,The length of the statement "Nammu.askForPermission(MainActivity.this`new String[]{Manifest.permission.READ_EXTERNAL_STORAGE`Manifest.permission.WRITE_EXTERNAL_STORAGE}`permissionReadstorageCallback);" is 171.,275
+Timber-1.8,com.naman14.timber.activities,MainActivity,updatePosition,Complex Method,Cyclomatic complexity of the method is 11,366
+Timber-1.8,com.naman14.timber.activities,MainActivity,updatePosition,Magic Number,The method contains a magic number: 350,366
+Timber-1.8,com.naman14.timber.activities,MainActivity,updatePosition,Magic Number,The method contains a magic number: 350,366
+Timber-1.8,com.naman14.timber.activities,MainActivity,setDetailsToHeader,Long Statement,The length of the statement "ImageLoader.getInstance().displayImage(TimberUtils.getAlbumArtUri(MusicPlayer.getCurrentAlbumId()).toString()`albumart`new DisplayImageOptions.Builder().cacheInMemory(true).showImageOnFail(R.drawable.ic_empty_music2).resetViewBeforeLoading(true).build());" is 255.,425
+Timber-1.8,com.naman14.timber.activities,MainActivity,isNavigatingMain,Long Statement,The length of the statement "return (currentFragment instanceof MainFragment || currentFragment instanceof QueueFragment || currentFragment instanceof PlaylistFragment|| currentFragment instanceof FoldersFragment);" is 185.,456
+Timber-1.8,com.naman14.timber.activities,NowPlayingActivity,getActivityTheme,Long Statement,The length of the statement "return PreferenceManager.getDefaultSharedPreferences(this).getBoolean("dark_theme"`false) ? R.style.AppTheme_FullScreen_Dark : R.style.AppTheme_FullScreen_Light;" is 161.,41
+Timber-1.8,com.naman14.timber.activities,BaseActivity,onCreate,Empty catch clause,The method has an empty catch block.,117
+Timber-1.8,com.naman14.timber.activities,BaseActivity,onCreate,Long Statement,The length of the statement "playServicesAvailable=GoogleApiAvailability.getInstance().isGooglePlayServicesAvailable(this) == ConnectionResult.SUCCESS;" is 122.,117
+Timber-1.8,com.naman14.timber.activities,BaseActivity,onDestroy,Empty catch clause,The method has an empty catch block.,203
+Timber-1.8,com.naman14.timber.activities,BaseActivity,onOptionsItemSelected,Magic Number,The method contains a magic number: 80,284
+Timber-1.8,com.naman14.timber.activities,SettingsActivity,onOptionsItemSelected,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@4294a18b,76
+Timber-1.8,com.naman14.timber.activities,SettingsActivity,getActivityTheme,Long Statement,The length of the statement "return PreferenceManager.getDefaultSharedPreferences(this).getBoolean("dark_theme"`false) ? R.style.AppThemeDark : R.style.AppThemeLight;" is 137.,88
+Timber-1.8,com.naman14.timber.activities,SearchActivity,onOptionsItemSelected,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@53e3b25,141
+Timber-1.8,com.naman14.timber.helpers,MusicPlaybackTrack,equals,Long Statement,The length of the statement "return mId == other.mId && mSourceId == other.mSourceId && mSourceType == other.mSourceType && mSourcePosition == other.mSourcePosition;" is 136.,74
+Timber-1.8,com.naman14.timber.helpers,MediaButtonIntentReceiver,handleMessage,Complex Method,Cyclomatic complexity of the method is 10,54
+Timber-1.8,com.naman14.timber.helpers,MediaButtonIntentReceiver,handleMessage,Long Identifier,The length of the field MSG_HEADSET_DOUBLE_CLICK_TIMEOUT is 32.,54
+Timber-1.8,com.naman14.timber.helpers,MediaButtonIntentReceiver,handleMessage,Magic Number,The method contains a magic number: 2,54
+Timber-1.8,com.naman14.timber.helpers,MediaButtonIntentReceiver,handleMessage,Magic Number,The method contains a magic number: 3,54
+Timber-1.8,com.naman14.timber.helpers,MediaButtonIntentReceiver,handleMessage,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@695e749e,54
+Timber-1.8,com.naman14.timber.helpers,MediaButtonIntentReceiver,acquireWakeLockAndSendMessage,Magic Number,The method contains a magic number: 10000,110
+Timber-1.8,com.naman14.timber.helpers,MediaButtonIntentReceiver,releaseWakeLockIfHandlerIdle,Long Identifier,The length of the field MSG_HEADSET_DOUBLE_CLICK_TIMEOUT is 32.,124
+Timber-1.8,com.naman14.timber.helpers,MediaButtonIntentReceiver,onReceive,Complex Method,Cyclomatic complexity of the method is 23,138
+Timber-1.8,com.naman14.timber.helpers,MediaButtonIntentReceiver,onReceive,Long Identifier,The length of the field MSG_HEADSET_DOUBLE_CLICK_TIMEOUT is 32.,138
+Timber-1.8,com.naman14.timber.helpers,MediaButtonIntentReceiver,onReceive,Magic Number,The method contains a magic number: 3,138
+Timber-1.8,com.naman14.timber.helpers,MediaButtonIntentReceiver,onReceive,Magic Number,The method contains a magic number: 3,138
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,initAttributes,Complex Method,Cyclomatic complexity of the method is 9,345
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,initAttributes,Long Identifier,The length of the field DEFAULT_POINTER_HALO_BORDER_WIDTH is 33.,345
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,initAttributes,Long Identifier,The length of the field DEFAULT_POINTER_HALO_COLOR_ONTOUCH is 34.,345
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,initAttributes,Long Statement,The length of the statement "mPointerHaloWidth=attrArray.getFloat(R.styleable.CircularSeekBar_pointer_halo_width`DEFAULT_POINTER_HALO_WIDTH) * DPTOPX_SCALE;" is 127.,345
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,initAttributes,Long Statement,The length of the statement "mPointerHaloBorderWidth=attrArray.getFloat(R.styleable.CircularSeekBar_pointer_halo_border_width`DEFAULT_POINTER_HALO_BORDER_WIDTH) * DPTOPX_SCALE;" is 147.,345
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,initAttributes,Long Statement,The length of the statement "mCircleStrokeWidth=attrArray.getFloat(R.styleable.CircularSeekBar_circle_stroke_width`DEFAULT_CIRCLE_STROKE_WIDTH) * DPTOPX_SCALE;" is 130.,345
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,initAttributes,Long Statement,The length of the statement "mMaintainEqualCircle=attrArray.getBoolean(R.styleable.CircularSeekBar_maintain_equal_circle`DEFAULT_MAINTAIN_EQUAL_CIRCLE);" is 123.,345
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,initAttributes,Long Statement,The length of the statement "mStartAngle=((360f + (attrArray.getFloat((R.styleable.CircularSeekBar_start_angle)`DEFAULT_START_ANGLE) % 360f)) % 360f);" is 121.,345
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,initAttributes,Magic Number,The method contains a magic number: 255,345
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,initAttributes,Magic Number,The method contains a magic number: 360f,345
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,initAttributes,Magic Number,The method contains a magic number: 360f,345
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,initAttributes,Magic Number,The method contains a magic number: 360f,345
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,initAttributes,Magic Number,The method contains a magic number: 360f,345
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,initAttributes,Magic Number,The method contains a magic number: 360f,345
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,initAttributes,Magic Number,The method contains a magic number: 360f,345
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,initAttributes,Magic Number,The method contains a magic number: .1f,345
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,initPaints,Magic Number,The method contains a magic number: 5f,439
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,calculateTotalDegrees,Magic Number,The method contains a magic number: 360f,491
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,calculateTotalDegrees,Magic Number,The method contains a magic number: 360f,491
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,calculateTotalDegrees,Magic Number,The method contains a magic number: 360f,491
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,calculateProgressDegrees,Magic Number,The method contains a magic number: 360f,502
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,calculatePointerAngle,Magic Number,The method contains a magic number: 360f,511
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,onDraw,Long Statement,The length of the statement "canvas.drawCircle(mPointerPositionXY[0]`mPointerPositionXY[1]`mPointerRadius + mPointerHaloWidth + (mPointerHaloBorderWidth / 2f)`mPointerHaloBorderPaint);" is 155.,548
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,onDraw,Magic Number,The method contains a magic number: 2,548
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,onDraw,Magic Number,The method contains a magic number: 2,548
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,onDraw,Magic Number,The method contains a magic number: 2f,548
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,setProgress,Long Identifier,The length of the field mOnCircularSeekBarChangeListener is 32.,577
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,onMeasure,Magic Number,The method contains a magic number: 2f,613
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,onMeasure,Magic Number,The method contains a magic number: 1.5f,613
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,onMeasure,Magic Number,The method contains a magic number: 2f,613
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,onMeasure,Magic Number,The method contains a magic number: 1.5f,613
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,onMeasure,Magic Number,The method contains a magic number: 1.5f,613
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,onMeasure,Magic Number,The method contains a magic number: 1.5f,613
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,onTouchEvent,Complex Conditional,The conditional expression ((touchEventRadius >= innerRadius) && (touchEventRadius <= outerRadius)) && ((cwDistanceFromPointer <= pointerRadiusDegrees) || (ccwDistanceFromPointer <= pointerRadiusDegrees)) is complex.,657
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,onTouchEvent,Complex Conditional,The conditional expression lockAtStart && !mIsMovingCW && (ccwDistanceFromStart > 90) is complex.,657
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,onTouchEvent,Complex Conditional,The conditional expression lockAtEnd && mIsMovingCW && (cwDistanceFromEnd > 90) is complex.,657
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,onTouchEvent,Complex Conditional,The conditional expression !lockAtEnd && cwDistanceFromStart > mTotalCircleDegrees && mIsMovingCW && lastCWDistanceFromStart < mTotalCircleDegrees is complex.,657
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,onTouchEvent,Complex Method,Cyclomatic complexity of the method is 31,657
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,onTouchEvent,Long Identifier,The length of the field mOnCircularSeekBarChangeListener is 32.,657
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,onTouchEvent,Long Method,The method has 173 lines of code.,657
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,onTouchEvent,Long Statement,The length of the statement "if (((touchEventRadius >= innerRadius) && (touchEventRadius <= outerRadius)) && ((cwDistanceFromPointer <= pointerRadiusDegrees) || (ccwDistanceFromPointer <= pointerRadiusDegrees))) {" is 184.,657
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,onTouchEvent,Long Statement,The length of the statement "if (!lockAtEnd && cwDistanceFromStart > mTotalCircleDegrees && mIsMovingCW && lastCWDistanceFromStart < mTotalCircleDegrees) {" is 126.,657
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,onTouchEvent,Magic Number,The method contains a magic number: 2,657
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,onTouchEvent,Magic Number,The method contains a magic number: 2,657
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,onTouchEvent,Magic Number,The method contains a magic number: 2,657
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,onTouchEvent,Magic Number,The method contains a magic number: 2,657
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,onTouchEvent,Magic Number,The method contains a magic number: 2,657
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,onTouchEvent,Magic Number,The method contains a magic number: 2,657
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,onTouchEvent,Magic Number,The method contains a magic number: 2,657
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,onTouchEvent,Magic Number,The method contains a magic number: 2,657
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,onTouchEvent,Magic Number,The method contains a magic number: 180,657
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,onTouchEvent,Magic Number,The method contains a magic number: 360,657
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,onTouchEvent,Magic Number,The method contains a magic number: 360,657
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,onTouchEvent,Magic Number,The method contains a magic number: 360f,657
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,onTouchEvent,Magic Number,The method contains a magic number: 360f,657
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,onTouchEvent,Magic Number,The method contains a magic number: 360f,657
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,onTouchEvent,Magic Number,The method contains a magic number: 360f,657
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,onTouchEvent,Magic Number,The method contains a magic number: 180,657
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,onTouchEvent,Magic Number,The method contains a magic number: 360f,657
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,onTouchEvent,Magic Number,The method contains a magic number: 360f,657
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,onTouchEvent,Magic Number,The method contains a magic number: 180f,657
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,onTouchEvent,Magic Number,The method contains a magic number: 180f,657
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,onTouchEvent,Magic Number,The method contains a magic number: 90,657
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,onTouchEvent,Magic Number,The method contains a magic number: 90,657
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,setOnSeekBarChangeListener,Long Identifier,The length of the field mOnCircularSeekBarChangeListener is 32.,895
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,setPointerAlpha,Magic Number,The method contains a magic number: 255,988
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,setPointerAlphaOnTouch,Magic Number,The method contains a magic number: 255,1010
+Timber-1.8,com.naman14.timber.widgets,CircularSeekBar,setMax,Long Identifier,The length of the field mOnCircularSeekBarChangeListener is 32.,1050
+Timber-1.8,com.naman14.timber.widgets,PlayPauseButton,setUpAnimator,Magic Number,The method contains a magic number: 0.2f,118
+Timber-1.8,com.naman14.timber.widgets,PlayPauseButton,setUpAnimator,Magic Number,The method contains a magic number: 0.2f,118
+Timber-1.8,com.naman14.timber.widgets,PlayPauseButton,setUpAnimator,Magic Number,The method contains a magic number: 0.5f,118
+Timber-1.8,com.naman14.timber.widgets,PlayPauseButton,setUpAnimator,Magic Number,The method contains a magic number: 0.5f,118
+Timber-1.8,com.naman14.timber.widgets,PlayPauseButton,onDraw,Long Statement,The length of the statement "mLeftPath.lineTo(mPoint.getY((Float)mLeftEdgeAnimator.getAnimatedValue()) + 0.7f`mPoint.getY((Float)mCenterEdgeAnimator.getAnimatedValue()));" is 141.,156
+Timber-1.8,com.naman14.timber.widgets,PlayPauseButton,onDraw,Long Statement,The length of the statement "mLeftPath.lineTo(mPoint.getY((Float)mLeftEdgeAnimator.getAnimatedValue()) + 0.7f`mPoint.getY(-1 * (Float)mCenterEdgeAnimator.getAnimatedValue()));" is 146.,156
+Timber-1.8,com.naman14.timber.widgets,PlayPauseButton,onDraw,Long Statement,The length of the statement "mRightPath.moveTo(mPoint.getY(-1 * (Float)mLeftEdgeAnimator.getAnimatedValue())`mPoint.getY((Float)mCenterEdgeAnimator.getAnimatedValue()));" is 140.,156
+Timber-1.8,com.naman14.timber.widgets,PlayPauseButton,onDraw,Long Statement,The length of the statement "mRightPath.lineTo(mPoint.getY(-1 * (Float)mLeftEdgeAnimator.getAnimatedValue())`mPoint.getY(-1 * (Float)mCenterEdgeAnimator.getAnimatedValue()));" is 145.,156
+Timber-1.8,com.naman14.timber.widgets,PlayPauseButton,onDraw,Magic Number,The method contains a magic number: 0.5,156
+Timber-1.8,com.naman14.timber.widgets,PlayPauseButton,onDraw,Magic Number,The method contains a magic number: 0.7f,156
+Timber-1.8,com.naman14.timber.widgets,PlayPauseButton,onDraw,Magic Number,The method contains a magic number: 0.7f,156
+Timber-1.8,com.naman14.timber.widgets,PlayPauseButton,onDraw,Magic Number,The method contains a magic number: 0.5,156
+Timber-1.8,com.naman14.timber.widgets,PlayPauseButton,onDraw,Magic Number,The method contains a magic number: 0.5,156
+Timber-1.8,com.naman14.timber.widgets,PlayPauseButton,onDraw,Magic Number,The method contains a magic number: 0.5,156
+Timber-1.8,com.naman14.timber.widgets,PlayPauseButton,startAnimation,Magic Number,The method contains a magic number: 0.5f,190
+Timber-1.8,com.naman14.timber.widgets,PlayPauseButton,startAnimation,Magic Number,The method contains a magic number: 100,190
+Timber-1.8,com.naman14.timber.widgets,PlayPauseButton,startAnimation,Magic Number,The method contains a magic number: 0.2,190
+Timber-1.8,com.naman14.timber.widgets,PlayPauseButton,startAnimation,Magic Number,The method contains a magic number: 100,190
+Timber-1.8,com.naman14.timber.widgets,PlayPauseButton,startAnimation,Magic Number,The method contains a magic number: 150,190
+Timber-1.8,com.naman14.timber.widgets,CircleImageView,onDraw,Magic Number,The method contains a magic number: 2,114
+Timber-1.8,com.naman14.timber.widgets,CircleImageView,onDraw,Magic Number,The method contains a magic number: 2,114
+Timber-1.8,com.naman14.timber.widgets,CircleImageView,onDraw,Magic Number,The method contains a magic number: 2,114
+Timber-1.8,com.naman14.timber.widgets,CircleImageView,onDraw,Magic Number,The method contains a magic number: 2,114
+Timber-1.8,com.naman14.timber.widgets,CircleImageView,setup,Magic Number,The method contains a magic number: 2,242
+Timber-1.8,com.naman14.timber.widgets,CircleImageView,setup,Magic Number,The method contains a magic number: 2,242
+Timber-1.8,com.naman14.timber.widgets,CircleImageView,setup,Magic Number,The method contains a magic number: 2,242
+Timber-1.8,com.naman14.timber.widgets,CircleImageView,setup,Magic Number,The method contains a magic number: 2,242
+Timber-1.8,com.naman14.timber.widgets,CircleImageView,updateShaderMatrix,Magic Number,The method contains a magic number: 0.5f,278
+Timber-1.8,com.naman14.timber.widgets,CircleImageView,updateShaderMatrix,Magic Number,The method contains a magic number: 0.5f,278
+Timber-1.8,com.naman14.timber.widgets,CircleImageView,updateShaderMatrix,Magic Number,The method contains a magic number: 0.5f,278
+Timber-1.8,com.naman14.timber.widgets,CircleImageView,updateShaderMatrix,Magic Number,The method contains a magic number: 0.5f,278
+Timber-1.8,com.naman14.timber.widgets,PlayPauseDrawable,draw,Long Statement,The length of the statement "canvas.rotate(interpolate(startingRotation`startingRotation + 90.0F`rotationProgress)`getBounds().width() / 2.0F`getBounds().height() / 2.0F);" is 142.,85
+Timber-1.8,com.naman14.timber.widgets,PlayPauseDrawable,draw,Long Statement,The length of the statement "canvas.translate(getBounds().width() / 2.0F - ((2.0F * barWidth + barDist) / 2.0F)`getBounds().height() / 2.0F + (pauseBarHeight / 2.0F));" is 138.,85
+Timber-1.8,com.naman14.timber.widgets,PlayPauseDrawable,draw,Magic Number,The method contains a magic number: 7.0F,85
+Timber-1.8,com.naman14.timber.widgets,PlayPauseDrawable,draw,Magic Number,The method contains a magic number: 12.0F,85
+Timber-1.8,com.naman14.timber.widgets,PlayPauseDrawable,draw,Magic Number,The method contains a magic number: 3.0F,85
+Timber-1.8,com.naman14.timber.widgets,PlayPauseDrawable,draw,Magic Number,The method contains a magic number: 3.6F,85
+Timber-1.8,com.naman14.timber.widgets,PlayPauseDrawable,draw,Magic Number,The method contains a magic number: 1.75F,85
+Timber-1.8,com.naman14.timber.widgets,PlayPauseDrawable,draw,Magic Number,The method contains a magic number: 2.0F,85
+Timber-1.8,com.naman14.timber.widgets,PlayPauseDrawable,draw,Magic Number,The method contains a magic number: 2.0F,85
+Timber-1.8,com.naman14.timber.widgets,PlayPauseDrawable,draw,Magic Number,The method contains a magic number: 8.0F,85
+Timber-1.8,com.naman14.timber.widgets,PlayPauseDrawable,draw,Magic Number,The method contains a magic number: 90.0F,85
+Timber-1.8,com.naman14.timber.widgets,PlayPauseDrawable,draw,Magic Number,The method contains a magic number: 90.0F,85
+Timber-1.8,com.naman14.timber.widgets,PlayPauseDrawable,draw,Magic Number,The method contains a magic number: 2.0F,85
+Timber-1.8,com.naman14.timber.widgets,PlayPauseDrawable,draw,Magic Number,The method contains a magic number: 2.0F,85
+Timber-1.8,com.naman14.timber.widgets,PlayPauseDrawable,draw,Magic Number,The method contains a magic number: 2.0F,85
+Timber-1.8,com.naman14.timber.widgets,PlayPauseDrawable,draw,Magic Number,The method contains a magic number: 2.0F,85
+Timber-1.8,com.naman14.timber.widgets,PlayPauseDrawable,draw,Magic Number,The method contains a magic number: 2.0F,85
+Timber-1.8,com.naman14.timber.widgets,PlayPauseDrawable,draw,Magic Number,The method contains a magic number: 2.0F,85
+Timber-1.8,com.naman14.timber.widgets,PlayPauseDrawable,draw,Magic Number,The method contains a magic number: 2.0F,85
+Timber-1.8,com.naman14.timber.widgets,PlayPauseDrawable,draw,Magic Number,The method contains a magic number: 16,85
+Timber-1.8,com.naman14.timber.widgets,PlayPauseDrawable,toggle,Magic Number,The method contains a magic number: 200,183
+Timber-1.8,com.naman14.timber.widgets,MusicVisualizer,run,Magic Number,The method contains a magic number: 120,21
+Timber-1.8,com.naman14.timber.widgets,MusicVisualizer,onDraw,Long Statement,The length of the statement "canvas.drawRect(getDimensionInPixel(0)`getHeight() - (40 + random.nextInt((int)(getHeight() / 1.5f) - 25))`getDimensionInPixel(7)`getHeight() - 15`paint);" is 154.,44
+Timber-1.8,com.naman14.timber.widgets,MusicVisualizer,onDraw,Long Statement,The length of the statement "canvas.drawRect(getDimensionInPixel(10)`getHeight() - (40 + random.nextInt((int)(getHeight() / 1.5f) - 25))`getDimensionInPixel(17)`getHeight() - 15`paint);" is 156.,44
+Timber-1.8,com.naman14.timber.widgets,MusicVisualizer,onDraw,Long Statement,The length of the statement "canvas.drawRect(getDimensionInPixel(20)`getHeight() - (40 + random.nextInt((int)(getHeight() / 1.5f) - 25))`getDimensionInPixel(27)`getHeight() - 15`paint);" is 156.,44
+Timber-1.8,com.naman14.timber.widgets,MusicVisualizer,onDraw,Magic Number,The method contains a magic number: 40,44
+Timber-1.8,com.naman14.timber.widgets,MusicVisualizer,onDraw,Magic Number,The method contains a magic number: 1.5f,44
+Timber-1.8,com.naman14.timber.widgets,MusicVisualizer,onDraw,Magic Number,The method contains a magic number: 25,44
+Timber-1.8,com.naman14.timber.widgets,MusicVisualizer,onDraw,Magic Number,The method contains a magic number: 7,44
+Timber-1.8,com.naman14.timber.widgets,MusicVisualizer,onDraw,Magic Number,The method contains a magic number: 15,44
+Timber-1.8,com.naman14.timber.widgets,MusicVisualizer,onDraw,Magic Number,The method contains a magic number: 10,44
+Timber-1.8,com.naman14.timber.widgets,MusicVisualizer,onDraw,Magic Number,The method contains a magic number: 40,44
+Timber-1.8,com.naman14.timber.widgets,MusicVisualizer,onDraw,Magic Number,The method contains a magic number: 1.5f,44
+Timber-1.8,com.naman14.timber.widgets,MusicVisualizer,onDraw,Magic Number,The method contains a magic number: 25,44
+Timber-1.8,com.naman14.timber.widgets,MusicVisualizer,onDraw,Magic Number,The method contains a magic number: 17,44
+Timber-1.8,com.naman14.timber.widgets,MusicVisualizer,onDraw,Magic Number,The method contains a magic number: 15,44
+Timber-1.8,com.naman14.timber.widgets,MusicVisualizer,onDraw,Magic Number,The method contains a magic number: 20,44
+Timber-1.8,com.naman14.timber.widgets,MusicVisualizer,onDraw,Magic Number,The method contains a magic number: 40,44
+Timber-1.8,com.naman14.timber.widgets,MusicVisualizer,onDraw,Magic Number,The method contains a magic number: 1.5f,44
+Timber-1.8,com.naman14.timber.widgets,MusicVisualizer,onDraw,Magic Number,The method contains a magic number: 25,44
+Timber-1.8,com.naman14.timber.widgets,MusicVisualizer,onDraw,Magic Number,The method contains a magic number: 27,44
+Timber-1.8,com.naman14.timber.widgets,MusicVisualizer,onDraw,Magic Number,The method contains a magic number: 15,44
+Timber-1.8,com.naman14.timber.widgets,TextDrawable,getDarkerShade,Long Statement,The length of the statement "return Color.rgb((int)(SHADE_FACTOR * Color.red(color))`(int)(SHADE_FACTOR * Color.green(color))`(int)(SHADE_FACTOR * Color.blue(color)));" is 138.,72
+Timber-1.8,com.naman14.timber.widgets,TextDrawable,draw,Magic Number,The method contains a magic number: 2,78
+Timber-1.8,com.naman14.timber.widgets,TextDrawable,draw,Magic Number,The method contains a magic number: 2,78
+Timber-1.8,com.naman14.timber.widgets,TextDrawable,draw,Magic Number,The method contains a magic number: 2,78
+Timber-1.8,com.naman14.timber.widgets,TextDrawable,draw,Magic Number,The method contains a magic number: 2,78
+Timber-1.8,com.naman14.timber.widgets,TextDrawable,drawBorder,Magic Number,The method contains a magic number: 2,103
+Timber-1.8,com.naman14.timber.widgets,TextDrawable,drawBorder,Magic Number,The method contains a magic number: 2,103
+Timber-1.8,com.naman14.timber.widgets,MultiViewPager,onMeasurePage,Long Statement,The length of the statement "throw new NullPointerException("MatchWithChildResId did not find that ID in the first fragment of the ViewPager; " + "is that view defined in the child view's layout? Note that MultiViewPager " + "only measures the child for index 0.");" is 236.,86
+Timber-1.8,com.naman14.timber.widgets,DragSortRecycler,getItemOffsets,Complex Method,Cyclomatic complexity of the method is 8,99
+Timber-1.8,com.naman14.timber.widgets,DragSortRecycler,getItemOffsets,Magic Number,The method contains a magic number: 2,99
+Timber-1.8,com.naman14.timber.widgets,DragSortRecycler,getNewPostion,Complex Method,Cyclomatic complexity of the method is 11,162
+Timber-1.8,com.naman14.timber.widgets,DragSortRecycler,getNewPostion,Magic Number,The method contains a magic number: 2,162
+Timber-1.8,com.naman14.timber.widgets,DragSortRecycler,getNewPostion,Magic Number,The method contains a magic number: 2,162
+Timber-1.8,com.naman14.timber.widgets,DragSortRecycler,onInterceptTouchEvent,Complex Method,Cyclomatic complexity of the method is 8,214
+Timber-1.8,com.naman14.timber.widgets,DragSortRecycler,onInterceptTouchEvent,Long Statement,The length of the statement "Rect touchBounds=new Rect(itemView.getLeft() + xRel`itemView.getTop() + yRel`itemView.getLeft() + xRel + handleView.getWidth()`itemView.getTop() + yRel + handleView.getHeight());" is 178.,214
+Timber-1.8,com.naman14.timber.widgets,DragSortRecycler,onInterceptTouchEvent,Magic Number,The method contains a magic number: 2,214
+Timber-1.8,com.naman14.timber.widgets,DragSortRecycler,onInterceptTouchEvent,Magic Number,The method contains a magic number: 2,214
+Timber-1.8,com.naman14.timber.widgets,DragSortRecycler,onTouchEvent,Complex Method,Cyclomatic complexity of the method is 8,292
+Timber-1.8,com.naman14.timber.widgets,DragSortRecycler,onTouchEvent,Long Statement,The length of the statement "if (floatingItemBounds.top < -floatingItemStatingBounds.height() / 2) floatingItemBounds.top=-floatingItemStatingBounds.height() / 2;" is 133.,292
+Timber-1.8,com.naman14.timber.widgets,DragSortRecycler,onTouchEvent,Magic Number,The method contains a magic number: 2,292
+Timber-1.8,com.naman14.timber.widgets,DragSortRecycler,onTouchEvent,Magic Number,The method contains a magic number: 2,292
+Timber-1.8,com.naman14.timber.widgets,DragSortRecycler,onDrawOver,Magic Number,The method contains a magic number: 255,357
+Timber-1.8,com.naman14.timber.widgets,DragSortRecycler,createFloatingBitmap,Long Statement,The length of the statement "Bitmap bitmap=Bitmap.createBitmap(floatingItemStatingBounds.width()`floatingItemStatingBounds.height()`Bitmap.Config.ARGB_8888);" is 128.,375
+Timber-1.8,com.naman14.timber.widgets,PopupImageView,PopupImageView,Magic Number,The method contains a magic number: 21,32
+Timber-1.8,com.naman14.timber.widgets,FastScroller,onTouchEvent,Complex Method,Cyclomatic complexity of the method is 8,64
+Timber-1.8,com.naman14.timber.widgets,FastScroller,setBubbleAndHandlePosition,Magic Number,The method contains a magic number: 2,118
+Timber-1.8,com.naman14.timber.widgets,FastScroller,setBubbleAndHandlePosition,Magic Number,The method contains a magic number: 2,118
+Timber-1.8,com.naman14.timber.widgets,DividerItemDecoration,DividerItemDecoration,Long Statement,The length of the statement "if (PreferencesUtility.getInstance(context).getTheme().equals("light")) mDivider=ContextCompat.getDrawable(context`R.drawable.item_divider_black);" is 146.,27
+Timber-1.8,com.naman14.timber.widgets,BaseRecyclerView,setEmptyView,Long Statement,The length of the statement "MaterialDrawableBuilder builder=MaterialDrawableBuilder.with(context).setIcon(MaterialDrawableBuilder.IconValue.MUSIC_NOTE).setColor(Config.textColorPrimary(context`Helpers.getATEKey(context))).setSizeDp(30);" is 208.,61
+Timber-1.8,com.naman14.timber.widgets,BaseRecyclerView,setEmptyView,Magic Number,The method contains a magic number: 30,61
+Timber-1.8,com.naman14.timber.widgets.desktop,StandardWidget,onViewsUpdate,Long Statement,The length of the statement "remoteViews.setOnClickPendingIntent(R.id.image_next`PendingIntent.getService(context`REQUEST_NEXT`new Intent(context`MusicService.class).setAction(MusicService.NEXT_ACTION).setComponent(serviceName)`0));" is 203.,29
+Timber-1.8,com.naman14.timber.widgets.desktop,StandardWidget,onViewsUpdate,Long Statement,The length of the statement "remoteViews.setOnClickPendingIntent(R.id.image_prev`PendingIntent.getService(context`REQUEST_PREV`new Intent(context`MusicService.class).setAction(MusicService.PREVIOUS_ACTION).setComponent(serviceName)`0));" is 207.,29
+Timber-1.8,com.naman14.timber.widgets.desktop,StandardWidget,onViewsUpdate,Long Statement,The length of the statement "remoteViews.setOnClickPendingIntent(R.id.image_playpause`PendingIntent.getService(context`REQUEST_PLAYPAUSE`new Intent(context`MusicService.class).setAction(MusicService.TOGGLEPAUSE_ACTION).setComponent(serviceName)`0));" is 220.,29
+Timber-1.8,com.naman14.timber.widgets.desktop,StandardWidget,onViewsUpdate,Long Statement,The length of the statement "remoteViews.setImageViewResource(R.id.image_playpause`extras.getBoolean("playing") ? R.drawable.ic_pause_white_36dp : R.drawable.ic_play_white_36dp);" is 149.,29
+Timber-1.8,com.naman14.timber.widgets.desktop,StandardWidget,onViewsUpdate,Long Statement,The length of the statement "remoteViews.setOnClickPendingIntent(R.id.imageView_cover`PendingIntent.getActivity(context`0`NavigationUtils.getNowPlayingIntent(context)`PendingIntent.FLAG_UPDATE_CURRENT));" is 174.,29
+Timber-1.8,com.naman14.timber.widgets.desktop,SmallWidget,onViewsUpdate,Long Statement,The length of the statement "remoteViews.setOnClickPendingIntent(R.id.image_next`PendingIntent.getService(context`REQUEST_NEXT`new Intent(context`MusicService.class).setAction(MusicService.NEXT_ACTION).setComponent(serviceName)`0));" is 203.,28
+Timber-1.8,com.naman14.timber.widgets.desktop,SmallWidget,onViewsUpdate,Long Statement,The length of the statement "remoteViews.setOnClickPendingIntent(R.id.image_playpause`PendingIntent.getService(context`REQUEST_PLAYPAUSE`new Intent(context`MusicService.class).setAction(MusicService.TOGGLEPAUSE_ACTION).setComponent(serviceName)`0));" is 220.,28
+Timber-1.8,com.naman14.timber.widgets.desktop,SmallWidget,onViewsUpdate,Long Statement,The length of the statement "remoteViews.setImageViewResource(R.id.image_playpause`extras.getBoolean("playing") ? R.drawable.ic_pause_white_36dp : R.drawable.ic_play_white_36dp);" is 149.,28
+Timber-1.8,com.naman14.timber.widgets.desktop,SmallWidget,onViewsUpdate,Long Statement,The length of the statement "remoteViews.setOnClickPendingIntent(R.id.textView_title`PendingIntent.getActivity(context`0`NavigationUtils.getNowPlayingIntent(context)`PendingIntent.FLAG_UPDATE_CURRENT));" is 173.,28

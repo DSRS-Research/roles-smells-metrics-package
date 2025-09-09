@@ -1,0 +1,4 @@
+Project Name,Package Name,Type Name,Testability Smell,Cause of the Smell
+LogFX-0.9.1,org.slf4j.impl,StaticLoggerBinder,Global State,The tool detected the smell in this class because the class declares global variables. The detected global variables are: REQUESTED_API_VERSION (23)
+LogFX-0.9.1,com.athaydes.logfx,LogFX,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 13
+LogFX-0.9.1,com.athaydes.logfx.ui,LogView,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 11

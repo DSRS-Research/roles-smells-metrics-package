@@ -1,0 +1,17 @@
+FullClassPath,AntiPattern
+nl.tudelft.jpacman.npc.ghost.Blinky,LongMethod
+nl.tudelft.jpacman.board.BoardFactory,LongMethod
+nl.tudelft.jpacman.npc.ghost.Pinky,LongMethod
+nl.tudelft.jpacman.level.CollisionInteractionMap,LongMethod
+nl.tudelft.jpacman.level.Level,LongMethod
+nl.tudelft.jpacman.sprite.AnimatedSprite,LongMethod
+nl.tudelft.jpacman.npc.Ghost,LongMethod
+nl.tudelft.jpacman.ui.BoardPanel,LongMethod
+nl.tudelft.jpacman.level.MapParser,LongMethod
+nl.tudelft.jpacman.sprite.PacManSprites,LongMethod
+nl.tudelft.jpacman.sprite.ImageSprite,LongMethod
+nl.tudelft.jpacman.sprite.SpriteStore,LongMethod
+nl.tudelft.jpacman.npc.ghost.Clyde,LongMethod
+nl.tudelft.jpacman.points.PointCalculatorLoader,LongMethod
+nl.tudelft.jpacman.npc.ghost.Navigation,LongMethod
+nl.tudelft.jpacman.npc.ghost.Inky,LongMethod

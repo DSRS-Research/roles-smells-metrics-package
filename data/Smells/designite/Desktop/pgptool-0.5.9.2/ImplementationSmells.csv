@@ -1,0 +1,650 @@
+Project Name,Package Name,Type Name,Method Name,Implementation Smell,Cause of the Smell,Method start line no
+pgptool-0.5.9.2,org.pgptool.gui.encryption.implpgp,KeyFilesOperationsPgpImplTest,testCanReadMultipleKeysFrom1File,Magic Number,The method contains a magic number: 2,121
+pgptool-0.5.9.2,org.pgptool.gui.encryption.implpgp,KeyGeneratorServicePgpImpl,createNewKey,Long Identifier,The length of the field masterKeySignerHashingAlgorithm is 31.,90
+pgptool-0.5.9.2,org.pgptool.gui.encryption.implpgp,KeyGeneratorServicePgpImpl,createNewKey,Long Statement,The length of the statement "BcPGPContentSignerBuilder keySignerBuilderBc=new BcPGPContentSignerBuilder(algorithmNameToTag(masterKeyPurpose)`hashAlgorithmNameToTag(masterKeySignerHashingAlgorithm));" is 169.,90
+pgptool-0.5.9.2,org.pgptool.gui.encryption.implpgp,KeyGeneratorServicePgpImpl,createNewKey,Long Statement,The length of the statement "PGPDigestCalculator digestCalc=new BcPGPDigestCalculatorProvider().get(hashAlgorithmNameToTag(secretKeyHashingAlgorithm));" is 122.,90
+pgptool-0.5.9.2,org.pgptool.gui.encryption.implpgp,KeyGeneratorServicePgpImpl,createNewKey,Long Statement,The length of the statement "BcPBESecretKeyEncryptorBuilder encryptorBuilderBC=new BcPBESecretKeyEncryptorBuilder(symmetricKeyAlgorithmNameToTag(getSecretKeyEncryptionAlgorithmForOptionalPassphrase(emptyPassphraseConsent))`digestCalc);" is 206.,90
+pgptool-0.5.9.2,org.pgptool.gui.encryption.implpgp,KeyGeneratorServicePgpImpl,createNewKey,Long Statement,The length of the statement "PGPKeyRingGenerator keyPairGeneratorBc=new PGPKeyRingGenerator(PGPSignature.POSITIVE_CERTIFICATION`masterKeyBc`userName`digestCalc`null`null`keySignerBuilderBc`keyEncryptorBc);" is 176.,90
+pgptool-0.5.9.2,org.pgptool.gui.encryption.implpgp,KeyGeneratorServicePgpImpl,createNewKey,Long Statement,The length of the statement "throw new IllegalArgumentException("Hanlding of parameter creation for " + encryptionKeyAlgorithm + " is not implemented");" is 123.,90
+pgptool-0.5.9.2,org.pgptool.gui.encryption.implpgp,KeyGeneratorServicePgpImpl,assertParamsValid,Long Statement,The length of the statement "if (StringUtils.hasText(params.getPassphrase()) && ctx.validateNotEmpty(params.getPassphraseAgain()`CreateKeyParams.FN_PASSPHRASE_AGAIN)) {" is 139.,212
+pgptool-0.5.9.2,org.pgptool.gui.encryption.implpgp,KeyGeneratorServicePgpImpl,assertParamsValid,Long Statement,The length of the statement "ctx.equals(params.getPassphrase()`"term." + CreateKeyParams.FN_PASSPHRASE`params.getPassphraseAgain()`"term." + CreateKeyParams.FN_PASSPHRASE_AGAIN`CreateKeyParams.FN_PASSPHRASE_AGAIN);" is 185.,212
+pgptool-0.5.9.2,org.pgptool.gui.encryption.implpgp,KeyGeneratorServicePgpImpl,getMasterKeySignerHashingAlgorithm,Long Identifier,The length of the field masterKeySignerHashingAlgorithm is 31.,310
+pgptool-0.5.9.2,org.pgptool.gui.encryption.implpgp,KeyGeneratorServicePgpImpl,setMasterKeySignerHashingAlgorithm,Long Identifier,The length of the parameter masterKeySignerHashingAlgorithm is 31.,314
+pgptool-0.5.9.2,org.pgptool.gui.encryption.implpgp,KeyGeneratorServicePgpImpl,setMasterKeySignerHashingAlgorithm,Long Identifier,The length of the field masterKeySignerHashingAlgorithm is 31.,314
+pgptool-0.5.9.2,org.pgptool.gui.encryption.implpgp,EncryptionServicePgpImpl,encrypt,Long Identifier,The length of the parameter optionalOutputStreamSupervisor is 30.,119
+pgptool-0.5.9.2,org.pgptool.gui.encryption.implpgp,EncryptionServicePgpImpl,encrypt,Long Parameter List,The method has 6 parameters. ,119
+pgptool-0.5.9.2,org.pgptool.gui.encryption.implpgp,EncryptionServicePgpImpl,encrypt,Long Statement,The length of the statement "InputStreamSupervisor inputStreamSupervisor=optionalInputStreamSupervisor != null ? optionalInputStreamSupervisor : new InputStreamSupervisorImpl();" is 148.,119
+pgptool-0.5.9.2,org.pgptool.gui.encryption.implpgp,EncryptionServicePgpImpl,encrypt,Long Statement,The length of the statement "OutputStreamSupervisor outputStreamSupervisor=optionalOutputStreamSupervisor != null ? optionalOutputStreamSupervisor : new OutputStreamSupervisorImpl();" is 153.,119
+pgptool-0.5.9.2,org.pgptool.gui.encryption.implpgp,EncryptionServicePgpImpl,doEncryptFile,Long Parameter List,The method has 6 parameters. ,155
+pgptool-0.5.9.2,org.pgptool.gui.encryption.implpgp,EncryptionServicePgpImpl,writeFileToLiteralData,Long Parameter List,The method has 6 parameters. ,175
+pgptool-0.5.9.2,org.pgptool.gui.encryption.implpgp,EncryptionServicePgpImpl,writeFileToLiteralData,Long Statement,The length of the statement "OutputStream pOut=lData.open(out`fileType`encryptionSourceInfo.getName()`new Date(encryptionSourceInfo.getModifiedAt())`buffer);" is 128.,175
+pgptool-0.5.9.2,org.pgptool.gui.encryption.implpgp,EncryptionServicePgpImpl,pipeStream,Long Parameter List,The method has 5 parameters. ,187
+pgptool-0.5.9.2,org.pgptool.gui.encryption.implpgp,EncryptionServicePgpImpl,buildKeysListForEncryption,Long Statement,The length of the statement "Preconditions.checkState(encryptionKey != null`"Wasn't able to find encryption key for recipient " + key.getKeyInfo().getUser());" is 129.,221
+pgptool-0.5.9.2,org.pgptool.gui.encryption.implpgp,EncryptionServicePgpImpl,buildEncryptedDataGenerator,Long Statement,The length of the statement "BcPGPDataEncryptorBuilder builder=new BcPGPDataEncryptorBuilder(PGPEncryptedData.CAST5).setSecureRandom(new SecureRandom()).setWithIntegrityPacket(true);" is 153.,232
+pgptool-0.5.9.2,org.pgptool.gui.encryption.implpgp,EncryptionServicePgpImpl,findKeyIdsForDecryption,Long Statement,The length of the statement "Preconditions.checkArgument(StringUtils.hasText(filePathName) && new File(filePathName).exists()`"filePathName has to point to existing file");" is 143.,243
+pgptool-0.5.9.2,org.pgptool.gui.encryption.implpgp,EncryptionServicePgpImpl,findKeyIdsForDecryption,Long Statement,The length of the statement "PGPObjectFactory factory=new PGPObjectFactory(PGPUtil.getDecoderStream(inputStream)`KeyFilesOperationsPgpImpl.fingerprintCalculator);" is 133.,263
+pgptool-0.5.9.2,org.pgptool.gui.encryption.implpgp,EncryptionServicePgpImpl,decrypt,Long Identifier,The length of the parameter optionalOutputStreamSupervisor is 30.,332
+pgptool-0.5.9.2,org.pgptool.gui.encryption.implpgp,EncryptionServicePgpImpl,decrypt,Long Parameter List,The method has 5 parameters. ,332
+pgptool-0.5.9.2,org.pgptool.gui.encryption.implpgp,EncryptionServicePgpImpl,decrypt,Long Statement,The length of the statement "OutputStreamSupervisor outputStreamSupervisor=optionalOutputStreamSupervisor != null ? optionalOutputStreamSupervisor : new OutputStreamSupervisorImpl();" is 153.,332
+pgptool-0.5.9.2,org.pgptool.gui.encryption.implpgp,EncryptionServicePgpImpl,decrypt,Long Statement,The length of the statement "Preconditions.checkArgument(StringUtils.hasText(sourceFile) && new File(sourceFile).exists()`"Source file name must be correct");" is 129.,332
+pgptool-0.5.9.2,org.pgptool.gui.encryption.implpgp,EncryptionServicePgpImpl,decryptStream,Complex Method,Cyclomatic complexity of the method is 10,393
+pgptool-0.5.9.2,org.pgptool.gui.encryption.implpgp,EncryptionServicePgpImpl,decryptStream,Long Parameter List,The method has 5 parameters. ,393
+pgptool-0.5.9.2,org.pgptool.gui.encryption.implpgp,EncryptionServicePgpImpl,decryptStream,Long Statement,The length of the statement "Preconditions.checkArgument(pgpFactory != null`"File format is not supported. pgpFact is supposed to be initialized by that time");" is 131.,393
+pgptool-0.5.9.2,org.pgptool.gui.encryption.implpgp,EncryptionServicePgpImpl,decryptStream,Long Statement,The length of the statement "Preconditions.checkArgument(pgpFactory != null`"File format is not supported. pgpFact is supposed to be initialized by that time");" is 131.,393
+pgptool-0.5.9.2,org.pgptool.gui.encryption.implpgp,EncryptionServicePgpImpl,decryptStream,Magic Number,The method contains a magic number: 100,393
+pgptool-0.5.9.2,org.pgptool.gui.encryption.implpgp,EncryptionServicePgpImpl,getPublicKeyEncryptedDataByKeyId,Long Statement,The length of the statement "PGPObjectFactory factory=new PGPObjectFactory(PGPUtil.getDecoderStream(in)`KeyFilesOperationsPgpImpl.fingerprintCalculator);" is 124.,469
+pgptool-0.5.9.2,org.pgptool.gui.encryption.implpgp,EncryptionServicePgpImpl,getPublicKeyEncryptedDataByKeyId,Long Statement,The length of the statement "throw new RuntimeException("Encryption data matching given key " + KeyDataPgp.buildKeyIdStr(secretKey.getKeyID()) + " wasn't found");" is 133.,469
+pgptool-0.5.9.2,org.pgptool.gui.encryption.implpgp,EncryptionServicePgpImpl,getPrivateKey,Long Statement,The length of the statement "PBESecretKeyDecryptor decryptorFactory=new BcPBESecretKeyDecryptorBuilder(new BcPGPDigestCalculatorProvider()).build(passphrase.toCharArray());" is 143.,497
+pgptool-0.5.9.2,org.pgptool.gui.encryption.implpgp,EncryptionServicePgpImpl,getNameOfFileEncrypted,Long Statement,The length of the statement "Preconditions.checkArgument(StringUtils.hasText(encryptedFile) && new File(encryptedFile).exists()`"Source file name must be correct");" is 135.,509
+pgptool-0.5.9.2,org.pgptool.gui.encryption.implpgp,EncryptionServicePgpImpl,getInitialFileName,Magic Number,The method contains a magic number: 100,540
+pgptool-0.5.9.2,org.pgptool.gui.encryption.implpgp,KeyFilesOperationsPgpImpl,combinePrivateAndPublicIfAny,Long Statement,The length of the statement "Key existingKey=ret.stream().filter(x -> keyId.equals(x.getKeyInfo().getKeyId()) || x.getKeyData().isHasAlternativeId(keyId)).findFirst().orElse(null);" is 151.,93
+pgptool-0.5.9.2,org.pgptool.gui.encryption.implpgp,KeyFilesOperationsPgpImpl,savePublicKey,Long Statement,The length of the statement "Preconditions.checkArgument(key != null && key.getKeyData() != null && key.getKeyInfo() != null`"Key must be providedand fully described");" is 139.,251
+pgptool-0.5.9.2,org.pgptool.gui.encryption.implpgp,KeyFilesOperationsPgpImpl,exportPrivateKey,Long Statement,The length of the statement "Preconditions.checkArgument(key != null && key.getKeyData() != null && key.getKeyInfo() != null`"Key must be providedand fully described");" is 139.,282
+pgptool-0.5.9.2,org.pgptool.gui.encryption.implpgp,KeyFilesOperationsPgpImpl,getPrivateKey,Long Statement,The length of the statement "PBESecretKeyDecryptor decryptorFactory=new BcPBESecretKeyDecryptorBuilder(new BcPGPDigestCalculatorProvider()).build(passphrase.toCharArray());" is 143.,324
+pgptool-0.5.9.2,org.pgptool.gui.encryption.implpgp,KeyDataPgp,parseIdString,Magic Number,The method contains a magic number: 16,160
+pgptool-0.5.9.2,org.pgptool.gui.encryption.implpgp,KeyRingServicePgpImpl,ensureRead,Long Statement,The length of the statement "log.info("User doesn't seem to have private key pair. Proactively generating one so that key creation will happen faster");" is 123.,77
+pgptool-0.5.9.2,org.pgptool.gui.encryption.implpgp,KeyRingServicePgpImpl,findMatchingDecryptionKeys,Long Statement,The length of the statement "List<Key> decryptionKeys=allKeys.stream().filter(x -> x.getKeyData().isCanBeUsedForDecryption()).collect(Collectors.toList());" is 126.,168
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptone,EncryptOneView,buildControllsPanel,Long Identifier,The length of the identifier lblNoPrivateKeysSelectedWarning is 31.,91
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptone,EncryptOneView,buildControllsPanel,Long Identifier,The length of the field panelNoPrivateKeysSelectedWarning is 33.,91
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptone,EncryptOneView,buildControllsPanel,Magic Number,The method contains a magic number: 2,91
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptone,EncryptOneView,buildControllsPanel,Magic Number,The method contains a magic number: 10,91
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptone,EncryptOneView,buildControllsPanel,Magic Number,The method contains a magic number: 2,91
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptone,EncryptOneView,buildControllsPanel,Magic Number,The method contains a magic number: 30,91
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptone,EncryptOneView,buildControllsPanel,Magic Number,The method contains a magic number: 10,91
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptone,EncryptOneView,buildControllsPanel,Magic Number,The method contains a magic number: 10,91
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptone,EncryptOneView,buildControllsPanel,Magic Number,The method contains a magic number: 10,91
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptone,EncryptOneView,buildControllsPanel,Magic Number,The method contains a magic number: 10,91
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptone,EncryptOneView,buildControllsPanel,Magic Number,The method contains a magic number: 2,91
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptone,EncryptOneView,buildControllsPanel,Magic Number,The method contains a magic number: 2,91
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptone,EncryptOneView,buildControllsPanel,Magic Number,The method contains a magic number: 221,91
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptone,EncryptOneView,buildControllsPanel,Magic Number,The method contains a magic number: 253,91
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptone,EncryptOneView,buildControllsPanel,Magic Number,The method contains a magic number: 191,91
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptone,EncryptOneView,buildControllsPanel,Magic Number,The method contains a magic number: 2,91
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptone,EncryptOneView,buildControllsPanel,Magic Number,The method contains a magic number: 30,91
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptone,EncryptOneView,buildControllsPanel,Magic Number,The method contains a magic number: 2,91
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptone,EncryptOneView,wrapIntoMessagePanel,Magic Number,The method contains a magic number: 2,161
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptone,EncryptOneView,wrapIntoMessagePanel,Magic Number,The method contains a magic number: 2,161
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptone,EncryptOneView,wrapIntoMessagePanel,Magic Number,The method contains a magic number: 5,161
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptone,EncryptOneView,wrapIntoMessagePanel,Magic Number,The method contains a magic number: 2,161
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptone,EncryptOneView,wrapIntoMessagePanel,Magic Number,The method contains a magic number: 5,161
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptone,EncryptOneView,buildPanelButtons,Magic Number,The method contains a magic number: 10,181
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptone,EncryptOneView,buildPanelButtons,Magic Number,The method contains a magic number: 10,181
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptone,EncryptOneView,buildPanelButtons,Magic Number,The method contains a magic number: 10,181
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptone,EncryptOneView,buildPanelButtons,Magic Number,The method contains a magic number: 10,181
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptone,EncryptOneView,buildPanelButtons,Magic Number,The method contains a magic number: 10,181
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptone,EncryptOneView,buildPanelButtons,Magic Number,The method contains a magic number: 100,181
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptone,EncryptOneView,internalBindToPm,Long Statement,The length of the statement "onNoPrivateKeysSelected.handlePropertyChanged(pm`pm.getIsNoPrivateKeysSelected().getPropertyName()`null`pm.getIsNoPrivateKeysSelected().getValue());" is 148.,197
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptone,EncryptOneView,handlePropertyChanged,Long Identifier,The length of the field panelNoPrivateKeysSelectedWarning is 33.,234
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptone,EncryptOneView,initDialog,Magic Number,The method contains a magic number: 50,245
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptone,EncryptOneView,initDialog,Magic Number,The method contains a magic number: 40,245
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptone,EncryptionDialogParameters,isSameInputAs,Complex Conditional,The conditional expression b == null || b.getSourceFile() == null || sourceFile == null is complex.,55
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptone,EncryptOnePm,getTargetFileChooser,Long Statement,The length of the statement "targetFileChooser=new SaveFileChooserDialog("action.chooseTargetFile"`"action.choose"`appProps`"EncryptionTargetChooser"){" is 122.,161
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptone,EncryptOnePm,getTargetFileChooser,Long Statement,The length of the statement "use(ofd`makeUpTargetFileName(sourceFile.getValue()`FilenameUtils.getFullPathNoEndSeparator(encryptionDialogParameters.getTargetFile())));" is 137.,161
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptone,EncryptOnePm,suggestTarget,Long Statement,The length of the statement "use(ofd`makeUpTargetFileName(sourceFile.getValue()`FilenameUtils.getFullPathNoEndSeparator(encryptionDialogParameters.getTargetFile())));" is 137.,183
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptone,EncryptOnePm,initModelProperties,Long Statement,The length of the statement "availabileRecipients=new ModelListProperty<Key>(this`new ValueAdapterReadonlyImpl<List<Key>>(allKeys)`"availabileRecipients");" is 126.,225
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptone,EncryptOnePm,initModelProperties,Long Statement,The length of the statement "selectedRecipients=new ModelMultSelInListProperty<Key>(this`new ValueAdapterHolderImpl<List<Key>>(new ArrayList<Key>())`"projects"`availabileRecipients);" is 153.,225
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptone,EncryptOnePm,useSuggestedTargetFile,Long Statement,The length of the statement "targetFile.setValueByOwner(makeUpTargetFileName(sourceFile.getValue()`FilenameUtils.getFullPathNoEndSeparator(params.getTargetFile())));" is 136.,339
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptone,EncryptOnePm,preselectRecipients,Long Statement,The length of the statement "Optional<Key> key=availabileRecipients.getList().stream().filter(x -> x.getKeyData().isHasAlternativeId(keyId)).findFirst();" is 124.,354
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptone,EncryptOnePm,notifyUserOfMissingKeysIfAny,Long Statement,The length of the statement "UiUtils.messageBox(UiUtils.actionEvent(evt)`text("error.notAllRecipientsAvailable"`Arrays.asList(missedKeys))`text("term.attention")`JOptionPane.WARNING_MESSAGE);" is 162.,369
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptone,EncryptOnePm,onListChanged,Long Statement,The length of the statement "isNoPrivateKeysSelected.setValueByOwner(selectedRecipients.getList().size() == 0 || selectedRecipients.getList().stream().filter(x -> x.getKeyData().isCanBeUsedForDecryption()).count() == 0);" is 191.,413
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptone,EncryptOnePm,makeUpTargetFileName,Long Identifier,The length of the identifier fileNameOnlyWoPathAndExtension is 30.,623
+pgptool-0.5.9.2,org.pgptool.gui.tools,HttpTools,httpGet,Magic Number,The method contains a magic number: 200,29
+pgptool-0.5.9.2,org.pgptool.gui.tools,HttpTools,httpPost,Magic Number,The method contains a magic number: 200,63
+pgptool-0.5.9.2,org.pgptool.gui.tools,ConsoleExceptionUtils,getAllMessages,Complex Method,Cyclomatic complexity of the method is 8,33
+pgptool-0.5.9.2,org.pgptool.gui.autoupdate.impl,NewVersionCheckerGitHubImpl,getUrlBasedOnOS,Long Statement,The length of the statement "return latestRelease.getAssets().stream().filter(x -> x.getName().endsWith(".msi")).findAny().orElseThrow(() -> new IllegalStateException("no *.msi asset found")).getBrowserDownloadUrl();" is 187.,103
+pgptool-0.5.9.2,org.pgptool.gui.autoupdate.impl,NewVersionCheckerGitHubImpl,getUrlBasedOnOS,Long Statement,The length of the statement "return latestRelease.getAssets().stream().filter(x -> x.getName().endsWith(".zip")).findAny().orElseThrow(() -> new IllegalStateException("no *.zip asset found")).getBrowserDownloadUrl();" is 187.,103
+pgptool-0.5.9.2,org.pgptool.gui.autoupdate.impl,NewVersionCheckerGitHubImpl,getCurrentVersion,Long Statement,The length of the statement "Preconditions.checkState(StringUtils.hasText(ret)`"ImplementationVersion cannot be resolved. Perhaps we're in the DEV mode");" is 125.,135
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,JXLabel,getPreferredSize,Complex Method,Cyclomatic complexity of the method is 23,414
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,JXLabel,getPreferredSize,Long Method,The method has 138 lines of code.,414
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,JXLabel,getPreferredSize,Magic Number,The method contains a magic number: 2,414
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,JXLabel,getPreferredSize,Magic Number,The method contains a magic number: 2,414
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,JXLabel,getPreferredSize,Magic Number,The method contains a magic number: 2,414
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,JXLabel,getPreferredSize,Magic Number,The method contains a magic number: 2,414
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,JXLabel,getPreferredSize,Magic Number,The method contains a magic number: 2,414
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,JXLabel,getPreferredSize,Magic Number,The method contains a magic number: 2,414
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,JXLabel,getPreferredSize,Magic Number,The method contains a magic number: 2,414
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,JXLabel,getPreferredSize,Magic Number,The method contains a magic number: 2,414
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,JXLabel,paintComponent,Complex Conditional,The conditional expression painting || backgroundPainter == null && foregroundPainter == null is complex.,735
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,JXLabel,paintComponent,Magic Number,The method contains a magic number: 2,735
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,JXLabel,paintComponent,Magic Number,The method contains a magic number: 2,735
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,JXLabel,calculateT,Complex Conditional,The conditional expression (textRotation > 4.697 && textRotation < 4.727) || (textRotation > 1.555 && textRotation < 1.585) is complex.,802
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,JXLabel,calculateT,Complex Conditional,The conditional expression (textRotation > -0.015 && textRotation < 0.015) || (textRotation > 3.140 && textRotation < 3.1430) is complex.,802
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,JXLabel,calculateT,Complex Method,Cyclomatic complexity of the method is 9,802
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,JXLabel,calculateT,Magic Number,The method contains a magic number: 4.697,802
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,JXLabel,calculateT,Magic Number,The method contains a magic number: 4.727,802
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,JXLabel,calculateT,Magic Number,The method contains a magic number: 1.555,802
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,JXLabel,calculateT,Magic Number,The method contains a magic number: 1.585,802
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,JXLabel,calculateT,Magic Number,The method contains a magic number: 0.015,802
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,JXLabel,calculateT,Magic Number,The method contains a magic number: 0.015,802
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,JXLabel,calculateT,Magic Number,The method contains a magic number: 3.140,802
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,JXLabel,calculateT,Magic Number,The method contains a magic number: 3.1430,802
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,JXLabel,calculateT,Magic Number,The method contains a magic number: 4d,802
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,JXLabel,calculateT,Magic Number,The method contains a magic number: 10,802
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,JXLabel,calculateT,Magic Number,The method contains a magic number: 100000,802
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,JXLabel,calculateT,Magic Number,The method contains a magic number: 10,802
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,JXLabel,calculateT,Magic Number,The method contains a magic number: 10,802
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,JXLabel,calculateT,Magic Number,The method contains a magic number: 10,802
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,JXLabel,repaint,Long Parameter List,The method has 5 parameters. ,920
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,GraphicsUtilities,createColorModelCompatibleImage,Long Statement,The length of the statement "return new BufferedImage(cm`cm.createCompatibleWritableRaster(image.getWidth()`image.getHeight())`cm.isAlphaPremultiplied()`null);" is 130.,130
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,GraphicsUtilities,createCompatibleImage,Long Statement,The length of the statement "return isHeadless() ? new BufferedImage(width`height`image.getType()) : getGraphicsConfiguration().createCompatibleImage(width`height`image.getTransparency());" is 159.,175
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,GraphicsUtilities,createCompatibleImage,Long Statement,The length of the statement "return isHeadless() ? new BufferedImage(width`height`BufferedImage.TYPE_INT_RGB) : getGraphicsConfiguration().createCompatibleImage(width`height);" is 146.,205
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,GraphicsUtilities,createCompatibleTranslucentImage,Long Statement,The length of the statement "return isHeadless() ? new BufferedImage(width`height`BufferedImage.TYPE_INT_ARGB) : getGraphicsConfiguration().createCompatibleImage(width`height`Transparency.TRANSLUCENT);" is 172.,230
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,GraphicsUtilities,toCompatibleImage,Long Statement,The length of the statement "BufferedImage compatibleImage=getGraphicsConfiguration().createCompatibleImage(image.getWidth()`image.getHeight()`image.getTransparency());" is 139.,303
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,GraphicsUtilities,createThumbnail,Complex Method,Cyclomatic complexity of the method is 12,464
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,GraphicsUtilities,createThumbnail,Magic Number,The method contains a magic number: 2,464
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,GraphicsUtilities,createThumbnail,Magic Number,The method contains a magic number: 2,464
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,GraphicsUtilities,createThumbnail,Complex Method,Cyclomatic complexity of the method is 11,576
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,GraphicsUtilities,createThumbnail,Magic Number,The method contains a magic number: 2,576
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,GraphicsUtilities,createThumbnail,Magic Number,The method contains a magic number: 2,576
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,GraphicsUtilities,getPixels,Long Parameter List,The method has 6 parameters. ,681
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,GraphicsUtilities,setPixels,Complex Conditional,The conditional expression pixels == null || w == 0 || h == 0 is complex.,727
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,GraphicsUtilities,setPixels,Long Parameter List,The method has 6 parameters. ,727
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,AbstractPainter,paint,Complex Conditional,The conditional expression !isVisible() || width < 1 || height < 1 is complex.,412
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,AbstractPainter,paint,Complex Conditional,The conditional expression cacheCleared || invalidCache || isDirty() is complex.,412
+pgptool-0.5.9.2,org.jdesktop.swingx.imported,AbstractPainter,paint,Complex Method,Cyclomatic complexity of the method is 9,412
+pgptool-0.5.9.2,org.pgptool.gui.encryption.api,EncryptionService,encrypt,Long Identifier,The length of the parameter optionalOutputStreamSupervisor is 30.,32
+pgptool-0.5.9.2,org.pgptool.gui.encryption.api,EncryptionService,encrypt,Long Parameter List,The method has 6 parameters. ,32
+pgptool-0.5.9.2,org.pgptool.gui.encryption.api,EncryptionService,decrypt,Long Identifier,The length of the parameter optionalOutputStreamSupervisor is 30.,38
+pgptool-0.5.9.2,org.pgptool.gui.encryption.api,EncryptionService,decrypt,Long Parameter List,The method has 5 parameters. ,38
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextPm,initModelProperties,Long Identifier,The length of the field isShowMissingPrivateKeyWarning is 30.,102
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextPm,initModelProperties,Long Statement,The length of the statement "isShowMissingPrivateKeyWarning=new ModelProperty<>(this`new ValueAdapterHolderImpl<>(false)`"isShowMissingPrivateKeyWarning");" is 126.,102
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextPm,propertyChange,Long Identifier,The length of the field isShowMissingPrivateKeyWarning is 30.,119
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextPm,decrypt,Long Statement,The length of the statement "Preconditions.checkState(!CollectionUtils.isEmpty(keysIds)`"Invalid state. Expected to have list of keys which could be used for decryption");" is 142.,186
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextPm,pasteFromClipboard,Long Statement,The length of the statement "UiUtils.messageBox(originAction`text("warning.noTextInClipboard")`text("term.attention")`JOptionPane.INFORMATION_MESSAGE);" is 122.,216
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextPm,getIsShowMissingPrivateKeyWarning,Long Identifier,The length of the field isShowMissingPrivateKeyWarning is 30.,247
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextPm,onKeyPasswordResult,Long Identifier,The length of the field isShowMissingPrivateKeyWarning is 30.,252
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextPm,actionPerformed,Long Statement,The length of the statement "Preconditions.checkState(StringUtils.hasText(sourceText.getValue())`"Action must not be invoked if source text is empty");" is 122.,319
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextView,buildControllsPanel,Long Identifier,The length of the identifier lblNoPrivateKeysSelectedWarning is 31.,79
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextView,buildControllsPanel,Long Statement,The length of the statement "panelMissingPrivateKeyWarning=EncryptOneView.wrapIntoMessagePanel(lblNoPrivateKeysSelectedWarning`new Color(253`221`191));" is 122.,79
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 2,79
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 5,79
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 2,79
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 50,79
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 50,79
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 70,79
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 3,79
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 30,79
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 10,79
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 10,79
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 10,79
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 10,79
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 5,79
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 5,79
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 5,79
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 5,79
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 2,79
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 5,79
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 5,79
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 5,79
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 5,79
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 3,79
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 253,79
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 221,79
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 191,79
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 10,79
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 4,79
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 3,79
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 5,79
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 5,79
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 5,79
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 5,79
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 10,79
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 4,79
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextView,buildPanelButtons,Magic Number,The method contains a magic number: 10,136
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextView,buildPanelButtons,Magic Number,The method contains a magic number: 10,136
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextView,buildPanelButtons,Magic Number,The method contains a magic number: 10,136
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextView,buildPanelButtons,Magic Number,The method contains a magic number: 10,136
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextView,internalBindToPm,Long Identifier,The length of the field onShowMissingPrivateKeyWarning is 30.,143
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextView,handleDialogShown,Long Identifier,The length of the field onShowMissingPrivateKeyWarning is 30.,162
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextView,handleDialogShown,Long Statement,The length of the statement "onShowMissingPrivateKeyWarning.handlePropertyChanged(pm`pm.getIsShowMissingPrivateKeyWarning().getPropertyName()`null`pm.getIsShowMissingPrivateKeyWarning().getValue());" is 169.,162
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextView,initDialog,Magic Number,The method contains a magic number: 80,184
+pgptool-0.5.9.2,org.pgptool.gui.ui.decrypttext,DecryptTextView,initDialog,Magic Number,The method contains a magic number: 40,184
+pgptool-0.5.9.2,org.pgptool.gui.ui.importkey,KeyImporterPm,getSourceFileChooser,Complex Method,Cyclomatic complexity of the method is 10,124
+pgptool-0.5.9.2,org.pgptool.gui.ui.importkey,KeyImporterView,internalInitComponents,Magic Number,The method contains a magic number: 10,47
+pgptool-0.5.9.2,org.pgptool.gui.ui.importkey,KeyImporterView,internalInitComponents,Magic Number,The method contains a magic number: 10,47
+pgptool-0.5.9.2,org.pgptool.gui.ui.importkey,KeyImporterView,internalInitComponents,Magic Number,The method contains a magic number: 10,47
+pgptool-0.5.9.2,org.pgptool.gui.ui.importkey,KeyImporterView,internalInitComponents,Magic Number,The method contains a magic number: 10,47
+pgptool-0.5.9.2,org.pgptool.gui.ui.importkey,KeyImporterView,buildPanelButtons,Magic Number,The method contains a magic number: 5,58
+pgptool-0.5.9.2,org.pgptool.gui.ui.importkey,KeyImporterView,initDialog,Magic Number,The method contains a magic number: 60,82
+pgptool-0.5.9.2,org.pgptool.gui.ui.importkey,KeyImporterView,initDialog,Magic Number,The method contains a magic number: 30,82
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,TextEditUxUtils,setHistoryActions,Empty catch clause,The method has an empty catch block.,116
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,TextEditUxUtils,setHistoryActions,Empty catch clause,The method has an empty catch block.,116
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,TextEditUxUtils,setHistoryActions,Magic Number,The method contains a magic number: 2048749213313143683L,116
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,TextEditUxUtils,setHistoryActions,Magic Number,The method contains a magic number: 2048749213313143683L,116
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,TextEditUxUtils,actionPerformed,Empty catch clause,The method has an empty catch block.,129
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,TextEditUxUtils,actionPerformed,Empty catch clause,The method has an empty catch block.,144
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,UiUtils,centerWindow,Long Statement,The length of the statement "log.debug("Parent window " + format(optionalOrigin.getBounds()) + " belongs to screen "+ format(index`device.getLeft()`device.getRight()));" is 139.,72
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,UiUtils,centerWindow,Magic Number,The method contains a magic number: 2,72
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,UiUtils,centerWindow,Magic Number,The method contains a magic number: 2,72
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,UiUtils,centerWindow,Magic Number,The method contains a magic number: 2,72
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,UiUtils,centerWindow,Magic Number,The method contains a magic number: 2,72
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,UiUtils,offsetWindowLocation,Magic Number,The method contains a magic number: 2,117
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,UiUtils,offsetWindowLocation,Magic Number,The method contains a magic number: 2,117
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,UiUtils,format,Long Statement,The length of the statement "return "x=" + (int)bounds.getX() + "`y="+ (int)bounds.getY()+ "`w="+ (int)bounds.getWidth()+ "`h="+ (int)bounds.getHeight();" is 124.,173
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,UiUtils,confirm,Long Statement,The length of the statement "response=JOptionPane.showConfirmDialog(findWindow(originEvent)`getMultilineMessage(msg)`Messages.get("term.confirmation")`JOptionPane.OK_CANCEL_OPTION`severity);" is 161.,196
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,UiUtils,confirm,Long Statement,The length of the statement "response=JOptionPane.showConfirmDialog(findWindow(originEvent)`msg`Messages.get("term.confirmation")`JOptionPane.OK_CANCEL_OPTION`severity);" is 140.,196
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,UiUtils,confirm,Magic Number,The method contains a magic number: 70,196
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,UiUtils,promptUserForTextString,Long Statement,The length of the statement "String ret=JOptionPane.showInputDialog(findWindow(originEvent)`Messages.get(fieldLabel`fieldLabelMsgArgs)`Messages.get(windowTitle)`JOptionPane.QUESTION_MESSAGE);" is 162.,211
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,UiUtils,setLookAndFeel,Complex Method,Cyclomatic complexity of the method is 10,228
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,UiUtils,setLookAndFeel,Long Statement,The length of the statement "* In some cases (depends on OS theme) check menu item foreground is same as background - thus it's invisible when checked" is 121.,228
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,UiUtils,setLookAndFeel,Long Statement,The length of the statement "log.warn("Failed to see oif JRE can handle font scaling. Will assume it does. JRE version: " + System.getProperty("java.version")`t);" is 133.,228
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,UiUtils,setLookAndFeel,Magic Number,The method contains a magic number: 10,228
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,UiUtils,setLookAndFeel,Magic Number,The method contains a magic number: 255,228
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,UiUtils,setLookAndFeel,Magic Number,The method contains a magic number: 255,228
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,UiUtils,setLookAndFeel,Magic Number,The method contains a magic number: 255,228
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,UiUtils,setLookAndFeel,Magic Number,The method contains a magic number: 3,228
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,UiUtils,setLookAndFeel,Magic Number,The method contains a magic number: 100,228
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,UiUtils,setLookAndFeel,Magic Number,The method contains a magic number: 96,228
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,UiUtils,setLookAndFeel,Magic Number,The method contains a magic number: 12,228
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,UiUtils,setLookAndFeel,Magic Number,The method contains a magic number: 96,228
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,UiUtils,fixCheckBoxMenuItemForeground,Magic Number,The method contains a magic number: 10,243
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,UiUtils,colorsDiffPercentage,Magic Number,The method contains a magic number: 255,258
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,UiUtils,colorsDiffPercentage,Magic Number,The method contains a magic number: 255,258
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,UiUtils,colorsDiffPercentage,Magic Number,The method contains a magic number: 255,258
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,UiUtils,colorsDiffPercentage,Magic Number,The method contains a magic number: 3,258
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,UiUtils,colorsDiffPercentage,Magic Number,The method contains a magic number: 100,258
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,UiUtils,fixFontSize,Magic Number,The method contains a magic number: 96,270
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,UiUtils,fixFontSize,Magic Number,The method contains a magic number: 12,270
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,UiUtils,fixFontSize,Magic Number,The method contains a magic number: 96,270
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,UiUtils,isJreHandlesScaling,Long Statement,The length of the statement "log.warn("Failed to see oif JRE can handle font scaling. Will assume it does. JRE version: " + System.getProperty("java.version")`t);" is 133.,294
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,UiUtils,messageBox,Long Statement,The length of the statement "int result=JOptionPane.showOptionDialog(parent`content`title`JOptionPane.YES_NO_OPTION`messageType`null`options`JOptionPane.YES_OPTION);" is 136.,367
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,UiUtils,buildMessageContentDependingOnLength,Magic Number,The method contains a magic number: 300,413
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,UiUtils,buildMessageContentDependingOnLength,Magic Number,The method contains a magic number: 2,413
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,UiUtils,buildMessageContentDependingOnLength,Magic Number,The method contains a magic number: 100,413
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,UiUtils,getScrollableMessage,Magic Number,The method contains a magic number: 5,425
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,UiUtils,getScrollableMessage,Magic Number,The method contains a magic number: 5,425
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,UiUtils,getScrollableMessage,Magic Number,The method contains a magic number: 5,425
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,UiUtils,getScrollableMessage,Magic Number,The method contains a magic number: 5,425
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,UiUtils,getScrollableMessage,Magic Number,The method contains a magic number: 700,425
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,UiUtils,getScrollableMessage,Magic Number,The method contains a magic number: 150,425
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,UiUtils,getMultilineMessage,Magic Number,The method contains a magic number: 50,438
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,UiUtils,findWindow,Complex Method,Cyclomatic complexity of the method is 8,445
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,JreVersion,parseString,Magic Number,The method contains a magic number: 9,37
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,JreVersion,parseString,Magic Number,The method contains a magic number: 2,37
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,JreVersion,parseString,Magic Number,The method contains a magic number: 3,37
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,JreVersion,parseString,Magic Number,The method contains a magic number: 2,37
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,JreVersion,parseString,Magic Number,The method contains a magic number: 2,37
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,JreVersion,parseString,Magic Number,The method contains a magic number: 4,37
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,JreVersion,parseString,Magic Number,The method contains a magic number: 3,37
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,JreVersion,toString,Magic Number,The method contains a magic number: 9,79
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,JreVersion,hashCode,Magic Number,The method contains a magic number: 31,88
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,JreVersion,equals,Complex Method,Cyclomatic complexity of the method is 8,99
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,JreVersion,compareTo,Long Statement,The length of the statement "throw new IllegalStateException("We shouldn't be here` it would mean versions are equald and shouldn't been handled by equals check");" is 134.,119
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools,FileBasedLock,tryLockWaitMs,Magic Number,The method contains a magic number: 100,59
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools.browsefs,SaveFileChooserDialog,askUserForFile,Long Statement,The length of the statement "if (UiUtils.confirmRegular(originEvent`"confirm.overWriteExistingFile"`new Object[]{retFileWithExt.getAbsolutePath()})) {" is 121.,57
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools.browsefs,SaveFileChooserDialog,suggestTarget,Long Statement,The length of the statement "String pathname=StringUtils.hasText(lastChosenDestination) ? lastChosenDestination : SystemUtils.getUserHome().getAbsolutePath();" is 129.,101
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools.browsefs,MultipleFilesChooserDialog,suggestInitialDirectory,Long Statement,The length of the statement "String pathname=StringUtils.hasText(lastChosenDestination) ? lastChosenDestination : SystemUtils.getUserHome().getAbsolutePath();" is 129.,94
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools.browsefs,ExistingFileChooserDialog,askUserForFile,Long Statement,The length of the statement "UiUtils.messageBox(originEvent`Messages.get("phrase.cannotWorkWithEmptyFile")`Messages.get("term.attention")`MessageSeverity.WARNING);" is 134.,45
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools.browsefs,ExistingFileChooserDialog,suggestInitialDirectory,Long Statement,The length of the statement "String pathname=StringUtils.hasText(lastChosenDestination) ? lastChosenDestination : SystemUtils.getUserHome().getAbsolutePath();" is 129.,96
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools.checklistbox,CheckListCellRenderer,getListCellRendererComponent,Long Parameter List,The method has 5 parameters. ,69
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools.checklistbox,CheckListCellRenderer,doLayout,Magic Number,The method contains a magic number: 2,117
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools.checklistbox,CheckListCellRenderer,doLayout,Magic Number,The method contains a magic number: 2,117
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools.checklistbox,JCheckList,valueChanged,Magic Number,The method contains a magic number: 2,82
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools.checklistbox,JCheckList,mouseClicked,Magic Number,The method contains a magic number: 2,122
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools.checklistbox,JCheckList,mouseClicked,Magic Number,The method contains a magic number: 2,122
+pgptool-0.5.9.2,org.pgptool.gui.ui.tools.geometrymemory,ConfigPairsMonitorsDependentImpl,getAll,Long Statement,The length of the statement "return configPairs.getAll().stream().filter(x -> x.getKey().startsWith(prefix)).map(x -> Pair.of(x.getKey().substring(prefix.length())`x.getValue())).collect(Collectors.toSet());" is 178.,103
+pgptool-0.5.9.2,org.pgptool.gui.ui.createkey,CreateKeyView,buildPanelKeyInfo,Magic Number,The method contains a magic number: 2,69
+pgptool-0.5.9.2,org.pgptool.gui.ui.createkey,CreateKeyView,buildPanelKeyInfo,Magic Number,The method contains a magic number: 4,69
+pgptool-0.5.9.2,org.pgptool.gui.ui.createkey,CreateKeyView,buildPanelKeyInfo,Magic Number,The method contains a magic number: 2,69
+pgptool-0.5.9.2,org.pgptool.gui.ui.createkey,CreateKeyView,buildPanelKeyInfo,Magic Number,The method contains a magic number: 25,69
+pgptool-0.5.9.2,org.pgptool.gui.ui.createkey,CreateKeyView,buildPanelKeyInfo,Magic Number,The method contains a magic number: 5,69
+pgptool-0.5.9.2,org.pgptool.gui.ui.createkey,CreateKeyView,buildPanelKeyInfo,Magic Number,The method contains a magic number: 10,69
+pgptool-0.5.9.2,org.pgptool.gui.ui.createkey,CreateKeyView,buildPanelKeyInfo,Magic Number,The method contains a magic number: 10,69
+pgptool-0.5.9.2,org.pgptool.gui.ui.createkey,CreateKeyView,buildPanelKeyInfo,Magic Number,The method contains a magic number: 10,69
+pgptool-0.5.9.2,org.pgptool.gui.ui.createkey,CreateKeyView,buildPanelButtons,Magic Number,The method contains a magic number: 100,97
+pgptool-0.5.9.2,org.pgptool.gui.ui.createkey,CreateKeyView,buildPanelButtons,Magic Number,The method contains a magic number: 5,97
+pgptool-0.5.9.2,org.pgptool.gui.ui.createkey,CreateKeyView,buildPanelButtons,Magic Number,The method contains a magic number: 10,97
+pgptool-0.5.9.2,org.pgptool.gui.ui.createkey,CreateKeyView,buildPanelButtons,Magic Number,The method contains a magic number: 10,97
+pgptool-0.5.9.2,org.pgptool.gui.ui.createkey,CreateKeyView,buildPanelButtons,Magic Number,The method contains a magic number: 10,97
+pgptool-0.5.9.2,org.pgptool.gui.ui.createkey,CreateKeyPm,initStringModelProp,Long Statement,The length of the statement "return new ModelProperty<String>(this`new NullToEmptyStringConverter(new ValueAdapterReflectionImpl<String>(createKeyParams`fieldName))`fieldName`validationErrors);" is 164.,103
+pgptool-0.5.9.2,org.pgptool.gui.ui.tempfolderfordecrypted,TempFolderChooserPm,present,Long Statement,The length of the statement "UiUtils.messageBox(originEvent`text("phrase.settingsChangedConfirmFolder"`newFolder)`text("term.success")`JOptionPane.INFORMATION_MESSAGE);" is 139.,52
+pgptool-0.5.9.2,org.pgptool.gui.ui.historyquicksearch,HistoryQuickSearchTableModel,getColumnCount,Magic Number,The method contains a magic number: 2,41
+pgptool-0.5.9.2,org.pgptool.gui.ui.historyquicksearch,HistoryQuickSearchTableModel,getColumnName,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@65052c7a,46
+pgptool-0.5.9.2,org.pgptool.gui.ui.historyquicksearch,HistoryQuickSearchTableModel,getValueAt,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@4a47eb58,63
+pgptool-0.5.9.2,org.pgptool.gui.ui.historyquicksearch,HistoryQuickSearchPm,init,Long Statement,The length of the statement "tableLabel=new ModelProperty<String>(this`new ValueAdapterHolderImpl<String>(Messages.get("term.recentlyDecrypted"))`"tableLabel");" is 131.,81
+pgptool-0.5.9.2,org.pgptool.gui.ui.historyquicksearch,HistoryQuickSearchPm,call,Long Statement,The length of the statement "List<DecryptionDialogParameters> results=all.stream().map(x -> (DecryptionDialogParameters)x.getValue()).filter(distinctByKey(x -> x.getSourceFile())).filter(x -> x.getSourceFile().toLowerCase().contains(query.toLowerCase())).sorted(byTimestampDesc).map(x -> Pair.of(x`new File(x.getSourceFile()))).filter(x -> x.getRight().isFile() && x.getRight().exists()).map(x -> x.getLeft()).collect(Collectors.toList());" is 410.,133
+pgptool-0.5.9.2,org.pgptool.gui.ui.historyquicksearch,HistoryQuickSearchPm,call,Long Statement,The length of the statement "HistoryQuickSearchTableModel tableModel=CollectionUtils.isEmpty(results) ? null : new HistoryQuickSearchTableModel(results);" is 124.,133
+pgptool-0.5.9.2,org.pgptool.gui.ui.historyquicksearch,HistoryQuickSearchPm,call,Long Statement,The length of the statement "List<DecryptionDialogParameters> topRecords=decryptionParams.getAll().stream().map(x -> (DecryptionDialogParameters)x.getValue()).filter(distinctByKey(x -> x.getSourceFile())).sorted(byTimestampDesc).map(x -> Pair.of(x`new File(x.getSourceFile()))).filter(x -> x.getRight().isFile() && x.getRight().exists()).map(x -> x.getLeft()).limit(15).collect(Collectors.toList());" is 370.,205
+pgptool-0.5.9.2,org.pgptool.gui.ui.historyquicksearch,HistoryQuickSearchPm,call,Magic Number,The method contains a magic number: 15,205
+pgptool-0.5.9.2,org.pgptool.gui.ui.historyquicksearch,HistoryQuickSearchView,internalInitComponents,Long Statement,The length of the statement "CompoundBorder panelBorder=BorderFactory.createCompoundBorder(BorderFactory.createRaisedBevelBorder()`BorderFactory.createEmptyBorder(5`5`5`5));" is 144.,101
+pgptool-0.5.9.2,org.pgptool.gui.ui.historyquicksearch,HistoryQuickSearchView,internalInitComponents,Magic Number,The method contains a magic number: 2,101
+pgptool-0.5.9.2,org.pgptool.gui.ui.historyquicksearch,HistoryQuickSearchView,internalInitComponents,Magic Number,The method contains a magic number: 5,101
+pgptool-0.5.9.2,org.pgptool.gui.ui.historyquicksearch,HistoryQuickSearchView,internalInitComponents,Magic Number,The method contains a magic number: 100,101
+pgptool-0.5.9.2,org.pgptool.gui.ui.historyquicksearch,HistoryQuickSearchView,internalInitComponents,Magic Number,The method contains a magic number: 3,101
+pgptool-0.5.9.2,org.pgptool.gui.ui.historyquicksearch,HistoryQuickSearchView,internalInitComponents,Magic Number,The method contains a magic number: 26,101
+pgptool-0.5.9.2,org.pgptool.gui.ui.historyquicksearch,HistoryQuickSearchView,internalInitComponents,Magic Number,The method contains a magic number: 5,101
+pgptool-0.5.9.2,org.pgptool.gui.ui.historyquicksearch,HistoryQuickSearchView,internalInitComponents,Magic Number,The method contains a magic number: 5,101
+pgptool-0.5.9.2,org.pgptool.gui.ui.historyquicksearch,HistoryQuickSearchView,internalInitComponents,Magic Number,The method contains a magic number: 5,101
+pgptool-0.5.9.2,org.pgptool.gui.ui.historyquicksearch,HistoryQuickSearchView,internalInitComponents,Magic Number,The method contains a magic number: 5,101
+pgptool-0.5.9.2,org.pgptool.gui.ui.historyquicksearch,HistoryQuickSearchView,internalInitComponents,Magic Number,The method contains a magic number: 2,101
+pgptool-0.5.9.2,org.pgptool.gui.ui.historyquicksearch,HistoryQuickSearchView,internalInitComponents,Magic Number,The method contains a magic number: 5,101
+pgptool-0.5.9.2,org.pgptool.gui.ui.historyquicksearch,HistoryQuickSearchView,internalInitComponents,Magic Number,The method contains a magic number: 2,101
+pgptool-0.5.9.2,org.pgptool.gui.ui.historyquicksearch,HistoryQuickSearchView,internalInitComponents,Magic Number,The method contains a magic number: 2,101
+pgptool-0.5.9.2,org.pgptool.gui.ui.historyquicksearch,HistoryQuickSearchView,internalInitComponents,Magic Number,The method contains a magic number: 2,101
+pgptool-0.5.9.2,org.pgptool.gui.ui.historyquicksearch,HistoryQuickSearchView,internalInitComponents,Magic Number,The method contains a magic number: 3,101
+pgptool-0.5.9.2,org.pgptool.gui.ui.historyquicksearch,HistoryQuickSearchView,internalInitComponents,Magic Number,The method contains a magic number: 2,101
+pgptool-0.5.9.2,org.pgptool.gui.ui.historyquicksearch,HistoryQuickSearchView,internalInitComponents,Magic Number,The method contains a magic number: 4,101
+pgptool-0.5.9.2,org.pgptool.gui.ui.historyquicksearch,HistoryQuickSearchView,internalInitComponents,Magic Number,The method contains a magic number: 4,101
+pgptool-0.5.9.2,org.pgptool.gui.ui.historyquicksearch,HistoryQuickSearchView,keyPressed,Complex Method,Cyclomatic complexity of the method is 10,143
+pgptool-0.5.9.2,org.pgptool.gui.ui.historyquicksearch,HistoryQuickSearchView,initTableComponent,Magic Number,The method contains a magic number: 22,185
+pgptool-0.5.9.2,org.pgptool.gui.ui.historyquicksearch,HistoryQuickSearchView,initTableComponent,Magic Number,The method contains a magic number: 2,185
+pgptool-0.5.9.2,org.pgptool.gui.ui.historyquicksearch,HistoryQuickSearchView,initTableComponent,Magic Number,The method contains a magic number: 2,185
+pgptool-0.5.9.2,org.pgptool.gui.ui.historyquicksearch,HistoryQuickSearchView,initTableComponent,Magic Number,The method contains a magic number: 2,185
+pgptool-0.5.9.2,org.pgptool.gui.ui.historyquicksearch,HistoryQuickSearchView,initTableComponent,Magic Number,The method contains a magic number: 2,185
+pgptool-0.5.9.2,org.pgptool.gui.ui.historyquicksearch,HistoryQuickSearchView,mouseClicked,Magic Number,The method contains a magic number: 2,209
+pgptool-0.5.9.2,org.pgptool.gui.ui.historyquicksearch,HistoryQuickSearchView,internalBindToPm,Long Statement,The length of the statement "tableModelChangeHandler.handlePropertyChanged(this`pm.getRowsTableModel().getPropertyName()`null`pm.getRowsTableModel().getValue());" is 132.,272
+pgptool-0.5.9.2,org.pgptool.gui.ui.historyquicksearch,HistoryQuickSearchView,handlePropertyChanged,Long Statement,The length of the statement "tableColumnsGeometryPersister=new TableColumnsGeometryPersisterImpl(table`"tblHstQSrch"`uiGeom`scheduledExecutorService);" is 121.,301
+pgptool-0.5.9.2,org.pgptool.gui.ui.historyquicksearch,HistoryQuickSearchView,internalRenderTo,Magic Number,The method contains a magic number: 50,339
+pgptool-0.5.9.2,org.pgptool.gui.ui.historyquicksearch,HistoryQuickSearchView,internalRenderTo,Magic Number,The method contains a magic number: 25,339
+pgptool-0.5.9.2,org.pgptool.gui.ui.getkeypassword,GetKeyPasswordManyKeysView,buildControllsPanel,Magic Number,The method contains a magic number: 2,59
+pgptool-0.5.9.2,org.pgptool.gui.ui.getkeypassword,GetKeyPasswordManyKeysView,buildControllsPanel,Magic Number,The method contains a magic number: 3,59
+pgptool-0.5.9.2,org.pgptool.gui.ui.getkeypassword,GetKeyPasswordManyKeysView,buildControllsPanel,Magic Number,The method contains a magic number: 2,59
+pgptool-0.5.9.2,org.pgptool.gui.ui.getkeypassword,GetKeyPasswordManyKeysView,buildControllsPanel,Magic Number,The method contains a magic number: 30,59
+pgptool-0.5.9.2,org.pgptool.gui.ui.getkeypassword,GetKeyPasswordManyKeysView,buildControllsPanel,Magic Number,The method contains a magic number: 10,59
+pgptool-0.5.9.2,org.pgptool.gui.ui.getkeypassword,GetKeyPasswordManyKeysView,buildControllsPanel,Magic Number,The method contains a magic number: 10,59
+pgptool-0.5.9.2,org.pgptool.gui.ui.getkeypassword,GetKeyPasswordManyKeysView,buildControllsPanel,Magic Number,The method contains a magic number: 10,59
+pgptool-0.5.9.2,org.pgptool.gui.ui.getkeypassword,GetKeyPasswordManyKeysView,buildControllsPanel,Magic Number,The method contains a magic number: 10,59
+pgptool-0.5.9.2,org.pgptool.gui.ui.getkeypassword,GetKeyPasswordManyKeysView,buildControllsPanel,Magic Number,The method contains a magic number: 2,59
+pgptool-0.5.9.2,org.pgptool.gui.ui.getkeypassword,GetKeyPasswordManyKeysView,buildPanelButtons,Magic Number,The method contains a magic number: 10,82
+pgptool-0.5.9.2,org.pgptool.gui.ui.getkeypassword,GetKeyPasswordManyKeysView,buildPanelButtons,Magic Number,The method contains a magic number: 10,82
+pgptool-0.5.9.2,org.pgptool.gui.ui.getkeypassword,GetKeyPasswordManyKeysView,buildPanelButtons,Magic Number,The method contains a magic number: 10,82
+pgptool-0.5.9.2,org.pgptool.gui.ui.getkeypassword,GetKeyPasswordManyKeysView,buildPanelButtons,Magic Number,The method contains a magic number: 10,82
+pgptool-0.5.9.2,org.pgptool.gui.ui.getkeypassword,GetKeyPasswordOneKeyView,buildControllsPanel,Magic Number,The method contains a magic number: 2,57
+pgptool-0.5.9.2,org.pgptool.gui.ui.getkeypassword,GetKeyPasswordOneKeyView,buildControllsPanel,Magic Number,The method contains a magic number: 3,57
+pgptool-0.5.9.2,org.pgptool.gui.ui.getkeypassword,GetKeyPasswordOneKeyView,buildControllsPanel,Magic Number,The method contains a magic number: 2,57
+pgptool-0.5.9.2,org.pgptool.gui.ui.getkeypassword,GetKeyPasswordOneKeyView,buildControllsPanel,Magic Number,The method contains a magic number: 30,57
+pgptool-0.5.9.2,org.pgptool.gui.ui.getkeypassword,GetKeyPasswordOneKeyView,buildControllsPanel,Magic Number,The method contains a magic number: 10,57
+pgptool-0.5.9.2,org.pgptool.gui.ui.getkeypassword,GetKeyPasswordOneKeyView,buildControllsPanel,Magic Number,The method contains a magic number: 10,57
+pgptool-0.5.9.2,org.pgptool.gui.ui.getkeypassword,GetKeyPasswordOneKeyView,buildControllsPanel,Magic Number,The method contains a magic number: 10,57
+pgptool-0.5.9.2,org.pgptool.gui.ui.getkeypassword,GetKeyPasswordOneKeyView,buildControllsPanel,Magic Number,The method contains a magic number: 10,57
+pgptool-0.5.9.2,org.pgptool.gui.ui.getkeypassword,GetKeyPasswordOneKeyView,buildControllsPanel,Magic Number,The method contains a magic number: 2,57
+pgptool-0.5.9.2,org.pgptool.gui.ui.getkeypassword,GetKeyPasswordOneKeyView,buildPanelButtons,Magic Number,The method contains a magic number: 10,80
+pgptool-0.5.9.2,org.pgptool.gui.ui.getkeypassword,GetKeyPasswordOneKeyView,buildPanelButtons,Magic Number,The method contains a magic number: 10,80
+pgptool-0.5.9.2,org.pgptool.gui.ui.getkeypassword,GetKeyPasswordOneKeyView,buildPanelButtons,Magic Number,The method contains a magic number: 10,80
+pgptool-0.5.9.2,org.pgptool.gui.ui.getkeypassword,GetKeyPasswordOneKeyView,buildPanelButtons,Magic Number,The method contains a magic number: 10,80
+pgptool-0.5.9.2,org.pgptool.gui.ui.getkeypassword,GetKeyPasswordPm,init,Long Statement,The length of the statement "throw new UnsupportedOperationException("GetKeyPasswordPm is not meant to be initialized by regular init. Use initEx instead");" is 127.,97
+pgptool-0.5.9.2,org.pgptool.gui.ui.getkeypassword,GetKeyPasswordPm,passwordWasCached,Empty catch clause,The method has an empty catch block.,140
+pgptool-0.5.9.2,org.pgptool.gui.ui.getkeypassword,GetKeyPasswordPm,initModelProperties,Long Statement,The length of the statement "selectedKey=new ModelSelInComboBoxProperty<Key>(this`new ValueAdapterHolderImpl<Key>(keys.get(0))`"selectedKey"`decryptionKeys);" is 128.,166
+pgptool-0.5.9.2,org.pgptool.gui.ui.encrypttext,EncryptTextView,buildControllsPanel,Long Identifier,The length of the field btnSelectRecipientsFromClipboard is 32.,76
+pgptool-0.5.9.2,org.pgptool.gui.ui.encrypttext,EncryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 3,76
+pgptool-0.5.9.2,org.pgptool.gui.ui.encrypttext,EncryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 3,76
+pgptool-0.5.9.2,org.pgptool.gui.ui.encrypttext,EncryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 2,76
+pgptool-0.5.9.2,org.pgptool.gui.ui.encrypttext,EncryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 20,76
+pgptool-0.5.9.2,org.pgptool.gui.ui.encrypttext,EncryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 50,76
+pgptool-0.5.9.2,org.pgptool.gui.ui.encrypttext,EncryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 2,76
+pgptool-0.5.9.2,org.pgptool.gui.ui.encrypttext,EncryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 50,76
+pgptool-0.5.9.2,org.pgptool.gui.ui.encrypttext,EncryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 100,76
+pgptool-0.5.9.2,org.pgptool.gui.ui.encrypttext,EncryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 10,76
+pgptool-0.5.9.2,org.pgptool.gui.ui.encrypttext,EncryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 10,76
+pgptool-0.5.9.2,org.pgptool.gui.ui.encrypttext,EncryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 10,76
+pgptool-0.5.9.2,org.pgptool.gui.ui.encrypttext,EncryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 10,76
+pgptool-0.5.9.2,org.pgptool.gui.ui.encrypttext,EncryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 2,76
+pgptool-0.5.9.2,org.pgptool.gui.ui.encrypttext,EncryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 5,76
+pgptool-0.5.9.2,org.pgptool.gui.ui.encrypttext,EncryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 5,76
+pgptool-0.5.9.2,org.pgptool.gui.ui.encrypttext,EncryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 5,76
+pgptool-0.5.9.2,org.pgptool.gui.ui.encrypttext,EncryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 5,76
+pgptool-0.5.9.2,org.pgptool.gui.ui.encrypttext,EncryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 10,76
+pgptool-0.5.9.2,org.pgptool.gui.ui.encrypttext,EncryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 2,76
+pgptool-0.5.9.2,org.pgptool.gui.ui.encrypttext,EncryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 2,76
+pgptool-0.5.9.2,org.pgptool.gui.ui.encrypttext,EncryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 2,76
+pgptool-0.5.9.2,org.pgptool.gui.ui.encrypttext,EncryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 5,76
+pgptool-0.5.9.2,org.pgptool.gui.ui.encrypttext,EncryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 5,76
+pgptool-0.5.9.2,org.pgptool.gui.ui.encrypttext,EncryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 5,76
+pgptool-0.5.9.2,org.pgptool.gui.ui.encrypttext,EncryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 5,76
+pgptool-0.5.9.2,org.pgptool.gui.ui.encrypttext,EncryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 2,76
+pgptool-0.5.9.2,org.pgptool.gui.ui.encrypttext,EncryptTextView,buildControllsPanel,Magic Number,The method contains a magic number: 2,76
+pgptool-0.5.9.2,org.pgptool.gui.ui.encrypttext,EncryptTextView,buildPanelButtons,Magic Number,The method contains a magic number: 10,121
+pgptool-0.5.9.2,org.pgptool.gui.ui.encrypttext,EncryptTextView,buildPanelButtons,Magic Number,The method contains a magic number: 10,121
+pgptool-0.5.9.2,org.pgptool.gui.ui.encrypttext,EncryptTextView,buildPanelButtons,Magic Number,The method contains a magic number: 10,121
+pgptool-0.5.9.2,org.pgptool.gui.ui.encrypttext,EncryptTextView,buildPanelButtons,Magic Number,The method contains a magic number: 10,121
+pgptool-0.5.9.2,org.pgptool.gui.ui.encrypttext,EncryptTextView,internalBindToPm,Long Identifier,The length of the field btnSelectRecipientsFromClipboard is 32.,128
+pgptool-0.5.9.2,org.pgptool.gui.ui.encrypttext,EncryptTextView,initDialog,Magic Number,The method contains a magic number: 80,146
+pgptool-0.5.9.2,org.pgptool.gui.ui.encrypttext,EncryptTextView,initDialog,Magic Number,The method contains a magic number: 40,146
+pgptool-0.5.9.2,org.pgptool.gui.ui.encrypttext,EncryptTextPm,preselectRecipients,Long Statement,The length of the statement "Optional<Key> key=availabileRecipients.getList().stream().filter(x -> x.getKeyData().isHasAlternativeId(keyId)).findFirst();" is 124.,99
+pgptool-0.5.9.2,org.pgptool.gui.ui.encrypttext,EncryptTextPm,notifyUserOfMissingKeysIfAny,Long Statement,The length of the statement "UiUtils.messageBox(originAction`text("error.notAllRecipientsAvailable"`Arrays.asList(missedKeys))`text("term.attention")`JOptionPane.WARNING_MESSAGE);" is 150.,114
+pgptool-0.5.9.2,org.pgptool.gui.ui.encrypttext,EncryptTextPm,initModelProperties,Long Statement,The length of the statement "availabileRecipients=new ModelListProperty<Key>(this`new ValueAdapterReadonlyImpl<List<Key>>(allKeys)`"availabileRecipients");" is 126.,136
+pgptool-0.5.9.2,org.pgptool.gui.ui.encrypttext,EncryptTextPm,initModelProperties,Long Statement,The length of the statement "selectedRecipients=new ModelMultSelInListProperty<Key>(this`new ValueAdapterHolderImpl<List<Key>>(new ArrayList<Key>())`"projects"`availabileRecipients);" is 153.,136
+pgptool-0.5.9.2,org.pgptool.gui.ui.encrypttext,EncryptTextPm,actionPerformed,Long Statement,The length of the statement "usageLogger.write(new EncryptTextRecipientsUsage(selectedRecipients.getList().stream().map(x -> x.getKeyInfo().getKeyId()).collect(Collectors.toSet())));" is 153.,185
+pgptool-0.5.9.2,org.pgptool.gui.ui.encrypttext,EncryptTextPm,selectRecipientsByEmails,Long Statement,The length of the statement "Optional<Key> key=availabileRecipients.getList().stream().filter(x -> x.getKeyInfo().getUser().contains(email)).findFirst();" is 124.,233
+pgptool-0.5.9.2,org.pgptool.gui.ui.encrypttext,EncryptTextPm,notifyUserOfMissingKeysIfAny,Long Statement,The length of the statement "UiUtils.messageBox(e`text("error.notAllEmailsAvailable"`Arrays.asList(missedKeys))`text("term.attention")`JOptionPane.WARNING_MESSAGE);" is 135.,251
+pgptool-0.5.9.2,org.pgptool.gui.ui.decryptonedialog,DecryptOneDialogPm,askUserForKeyAndPassword,Long Statement,The length of the statement "GetKeyPasswordPmInitResult initResult=getGetKeyPasswordPm().initEx(surrogateEvent`getPasswordHost`new GetKeyPasswordPo(sourceFileRecipientsKeysIds`purpose`keyAndPasswordCallback));" is 180.,82
+pgptool-0.5.9.2,org.pgptool.gui.ui.decryptonedialog,DecryptOneDialogView,handlePropertyChanged,Complex Method,Cyclomatic complexity of the method is 11,88
+pgptool-0.5.9.2,org.pgptool.gui.ui.checkForUpdates,UpdatesPolicy,start,Long Statement,The length of the statement "isAutoUpdatesEnabled=new ModelProperty<>(this`new ValueAdapterPersistentPropertyImpl<Boolean>(appProps`PROP_IS_AUTO`null)`PROP_IS_AUTO);" is 136.,55
+pgptool-0.5.9.2,org.pgptool.gui.ui.checkForUpdates,CheckForUpdatesPm,afterPropertiesSet,Long Statement,The length of the statement "currentVersion=new ModelProperty<String>(this`new ValueAdapterReadonlyImpl<String>(newVersionChecker.getCurrentVersion())`"version");" is 133.,59
+pgptool-0.5.9.2,org.pgptool.gui.ui.checkForUpdates,CheckForUpdatesView,internalInitComponents,Magic Number,The method contains a magic number: 2,61
+pgptool-0.5.9.2,org.pgptool.gui.ui.checkForUpdates,CheckForUpdatesView,internalInitComponents,Magic Number,The method contains a magic number: 5,61
+pgptool-0.5.9.2,org.pgptool.gui.ui.checkForUpdates,CheckForUpdatesView,internalInitComponents,Magic Number,The method contains a magic number: 2,61
+pgptool-0.5.9.2,org.pgptool.gui.ui.checkForUpdates,CheckForUpdatesView,internalInitComponents,Magic Number,The method contains a magic number: 30,61
+pgptool-0.5.9.2,org.pgptool.gui.ui.checkForUpdates,CheckForUpdatesView,internalInitComponents,Magic Number,The method contains a magic number: 3,61
+pgptool-0.5.9.2,org.pgptool.gui.ui.checkForUpdates,CheckForUpdatesView,internalInitComponents,Magic Number,The method contains a magic number: 9,61
+pgptool-0.5.9.2,org.pgptool.gui.ui.checkForUpdates,CheckForUpdatesView,internalInitComponents,Magic Number,The method contains a magic number: 10,61
+pgptool-0.5.9.2,org.pgptool.gui.ui.checkForUpdates,CheckForUpdatesView,internalInitComponents,Magic Number,The method contains a magic number: 10,61
+pgptool-0.5.9.2,org.pgptool.gui.ui.checkForUpdates,CheckForUpdatesView,internalInitComponents,Magic Number,The method contains a magic number: 10,61
+pgptool-0.5.9.2,org.pgptool.gui.ui.checkForUpdates,CheckForUpdatesView,internalInitComponents,Magic Number,The method contains a magic number: 10,61
+pgptool-0.5.9.2,org.pgptool.gui.ui.checkForUpdates,CheckForUpdatesView,internalInitComponents,Magic Number,The method contains a magic number: 5,61
+pgptool-0.5.9.2,org.pgptool.gui.ui.checkForUpdates,CheckForUpdatesView,internalInitComponents,Magic Number,The method contains a magic number: 5,61
+pgptool-0.5.9.2,org.pgptool.gui.ui.checkForUpdates,CheckForUpdatesView,internalInitComponents,Magic Number,The method contains a magic number: 2,61
+pgptool-0.5.9.2,org.pgptool.gui.ui.checkForUpdates,CheckForUpdatesView,internalInitComponents,Magic Number,The method contains a magic number: 2,61
+pgptool-0.5.9.2,org.pgptool.gui.ui.checkForUpdates,CheckForUpdatesView,internalInitComponents,Magic Number,The method contains a magic number: 5,61
+pgptool-0.5.9.2,org.pgptool.gui.ui.checkForUpdates,CheckForUpdatesView,internalInitComponents,Magic Number,The method contains a magic number: 5,61
+pgptool-0.5.9.2,org.pgptool.gui.ui.checkForUpdates,CheckForUpdatesView,internalInitComponents,Magic Number,The method contains a magic number: 5,61
+pgptool-0.5.9.2,org.pgptool.gui.ui.checkForUpdates,CheckForUpdatesView,internalInitComponents,Magic Number,The method contains a magic number: 5,61
+pgptool-0.5.9.2,org.pgptool.gui.ui.checkForUpdates,CheckForUpdatesView,internalInitComponents,Magic Number,The method contains a magic number: 5,61
+pgptool-0.5.9.2,org.pgptool.gui.ui.checkForUpdates,CheckForUpdatesView,internalInitComponents,Magic Number,The method contains a magic number: 6,61
+pgptool-0.5.9.2,org.pgptool.gui.ui.checkForUpdates,CheckForUpdatesView,internalInitComponents,Magic Number,The method contains a magic number: 5,61
+pgptool-0.5.9.2,org.pgptool.gui.ui.checkForUpdates,CheckForUpdatesView,internalInitComponents,Magic Number,The method contains a magic number: 2,61
+pgptool-0.5.9.2,org.pgptool.gui.ui.checkForUpdates,CheckForUpdatesView,internalBindToPm,Long Statement,The length of the statement "onReleaseNotesChanged.handlePropertyChanged(pm`pm.getNewVersionReleaseNotes().getPropertyName()`""`pm.getNewVersionReleaseNotes().getValue());" is 142.,150
+pgptool-0.5.9.2,org.pgptool.gui.ui.about,AboutPm,afterPropertiesSet,Long Statement,The length of the statement "version=new ModelProperty<String>(this`new ValueAdapterReadonlyImpl<String>(newVersionChecker.getCurrentVersion())`"version");" is 126.,60
+pgptool-0.5.9.2,org.pgptool.gui.ui.about,AboutView,internalInitComponents,Magic Number,The method contains a magic number: 2,54
+pgptool-0.5.9.2,org.pgptool.gui.ui.about,AboutView,internalInitComponents,Magic Number,The method contains a magic number: 5,54
+pgptool-0.5.9.2,org.pgptool.gui.ui.about,AboutView,internalInitComponents,Magic Number,The method contains a magic number: 2,54
+pgptool-0.5.9.2,org.pgptool.gui.ui.about,AboutView,internalInitComponents,Magic Number,The method contains a magic number: 64,54
+pgptool-0.5.9.2,org.pgptool.gui.ui.about,AboutView,internalInitComponents,Magic Number,The method contains a magic number: 20,54
+pgptool-0.5.9.2,org.pgptool.gui.ui.about,AboutView,internalInitComponents,Magic Number,The method contains a magic number: 10,54
+pgptool-0.5.9.2,org.pgptool.gui.ui.about,AboutView,internalInitComponents,Magic Number,The method contains a magic number: 10,54
+pgptool-0.5.9.2,org.pgptool.gui.ui.about,AboutView,internalInitComponents,Magic Number,The method contains a magic number: 10,54
+pgptool-0.5.9.2,org.pgptool.gui.ui.about,AboutView,internalInitComponents,Magic Number,The method contains a magic number: 10,54
+pgptool-0.5.9.2,org.pgptool.gui.ui.about,AboutView,internalInitComponents,Magic Number,The method contains a magic number: 4,54
+pgptool-0.5.9.2,org.pgptool.gui.ui.about,AboutView,internalInitComponents,Magic Number,The method contains a magic number: 5,54
+pgptool-0.5.9.2,org.pgptool.gui.ui.about,AboutView,internalInitComponents,Magic Number,The method contains a magic number: 5,54
+pgptool-0.5.9.2,org.pgptool.gui.ui.about,AboutView,internalInitComponents,Magic Number,The method contains a magic number: 2,54
+pgptool-0.5.9.2,org.pgptool.gui.ui.about,AboutView,internalInitComponents,Magic Number,The method contains a magic number: 3,54
+pgptool-0.5.9.2,org.pgptool.gui.ui.about,AboutView,internalInitComponents,Magic Number,The method contains a magic number: 6,54
+pgptool-0.5.9.2,org.pgptool.gui.ui.about,AboutView,internalInitComponents,Magic Number,The method contains a magic number: 4,54
+pgptool-0.5.9.2,org.pgptool.gui.ui.about,AboutView,internalInitComponents,Magic Number,The method contains a magic number: 2,54
+pgptool-0.5.9.2,org.pgptool.gui.ui.decryptone,DecryptOneView,buildControllsPanel,Magic Number,The method contains a magic number: 2,81
+pgptool-0.5.9.2,org.pgptool.gui.ui.decryptone,DecryptOneView,buildControllsPanel,Magic Number,The method contains a magic number: 8,81
+pgptool-0.5.9.2,org.pgptool.gui.ui.decryptone,DecryptOneView,buildControllsPanel,Magic Number,The method contains a magic number: 2,81
+pgptool-0.5.9.2,org.pgptool.gui.ui.decryptone,DecryptOneView,buildControllsPanel,Magic Number,The method contains a magic number: 40,81
+pgptool-0.5.9.2,org.pgptool.gui.ui.decryptone,DecryptOneView,buildControllsPanel,Magic Number,The method contains a magic number: 10,81
+pgptool-0.5.9.2,org.pgptool.gui.ui.decryptone,DecryptOneView,buildControllsPanel,Magic Number,The method contains a magic number: 10,81
+pgptool-0.5.9.2,org.pgptool.gui.ui.decryptone,DecryptOneView,buildControllsPanel,Magic Number,The method contains a magic number: 10,81
+pgptool-0.5.9.2,org.pgptool.gui.ui.decryptone,DecryptOneView,buildControllsPanel,Magic Number,The method contains a magic number: 10,81
+pgptool-0.5.9.2,org.pgptool.gui.ui.decryptone,DecryptOneView,buildControllsPanel,Magic Number,The method contains a magic number: 2,81
+pgptool-0.5.9.2,org.pgptool.gui.ui.decryptone,DecryptOneView,buildControllsPanel,Magic Number,The method contains a magic number: 2,81
+pgptool-0.5.9.2,org.pgptool.gui.ui.decryptone,DecryptOneView,buildPanelButtons,Magic Number,The method contains a magic number: 10,144
+pgptool-0.5.9.2,org.pgptool.gui.ui.decryptone,DecryptOneView,buildPanelButtons,Magic Number,The method contains a magic number: 10,144
+pgptool-0.5.9.2,org.pgptool.gui.ui.decryptone,DecryptOneView,buildPanelButtons,Magic Number,The method contains a magic number: 10,144
+pgptool-0.5.9.2,org.pgptool.gui.ui.decryptone,DecryptOneView,buildPanelButtons,Magic Number,The method contains a magic number: 10,144
+pgptool-0.5.9.2,org.pgptool.gui.ui.decryptone,DecryptOneView,buildPanelButtons,Magic Number,The method contains a magic number: 10,144
+pgptool-0.5.9.2,org.pgptool.gui.ui.decryptone,DecryptOneView,buildPanelButtons,Magic Number,The method contains a magic number: 100,144
+pgptool-0.5.9.2,org.pgptool.gui.ui.decryptone,DecryptOnePm,getTargetFileChooser,Long Statement,The length of the statement "targetFileChooser=new SaveFileChooserDialog("action.chooseTargetFile"`"action.choose"`appProps`"DecryptionTargetChooser"){" is 122.,184
+pgptool-0.5.9.2,org.pgptool.gui.ui.decryptone,DecryptionDialogParameters,hashCode,Magic Number,The method contains a magic number: 31,120
+pgptool-0.5.9.2,org.pgptool.gui.ui.decryptone,DecryptionDialogParameters,hashCode,Magic Number,The method contains a magic number: 32,120
+pgptool-0.5.9.2,org.pgptool.gui.ui.decryptone,DecryptionDialogParameters,hashCode,Magic Number,The method contains a magic number: 1231,120
+pgptool-0.5.9.2,org.pgptool.gui.ui.decryptone,DecryptionDialogParameters,hashCode,Magic Number,The method contains a magic number: 1237,120
+pgptool-0.5.9.2,org.pgptool.gui.ui.decryptone,DecryptionDialogParameters,hashCode,Magic Number,The method contains a magic number: 1231,120
+pgptool-0.5.9.2,org.pgptool.gui.ui.decryptone,DecryptionDialogParameters,hashCode,Magic Number,The method contains a magic number: 1237,120
+pgptool-0.5.9.2,org.pgptool.gui.ui.decryptone,DecryptionDialogParameters,hashCode,Magic Number,The method contains a magic number: 1231,120
+pgptool-0.5.9.2,org.pgptool.gui.ui.decryptone,DecryptionDialogParameters,hashCode,Magic Number,The method contains a magic number: 1237,120
+pgptool-0.5.9.2,org.pgptool.gui.ui.decryptone,DecryptionDialogParameters,hashCode,Magic Number,The method contains a magic number: 1231,120
+pgptool-0.5.9.2,org.pgptool.gui.ui.decryptone,DecryptionDialogParameters,hashCode,Magic Number,The method contains a magic number: 1237,120
+pgptool-0.5.9.2,org.pgptool.gui.ui.decryptone,DecryptionDialogParameters,hashCode,Magic Number,The method contains a magic number: 1231,120
+pgptool-0.5.9.2,org.pgptool.gui.ui.decryptone,DecryptionDialogParameters,hashCode,Magic Number,The method contains a magic number: 1237,120
+pgptool-0.5.9.2,org.pgptool.gui.ui.decryptone,DecryptionDialogParameters,equals,Complex Method,Cyclomatic complexity of the method is 19,136
+pgptool-0.5.9.2,org.pgptool.gui.ui.validationerrorsballoon,ValidationErrorsBalloonView,ValidationErrorsBalloonView,Magic Number,The method contains a magic number: 3,67
+pgptool-0.5.9.2,org.pgptool.gui.ui.validationerrorsballoon,ValidationErrorsBalloonView,ValidationErrorsBalloonView,Magic Number,The method contains a magic number: 5,67
+pgptool-0.5.9.2,org.pgptool.gui.ui.validationerrorsballoon,ValidationErrorsBalloonView,ValidationErrorsBalloonView,Magic Number,The method contains a magic number: 5,67
+pgptool-0.5.9.2,org.pgptool.gui.ui.validationerrorsballoon,ValidationErrorsBalloonView,ValidationErrorsBalloonView,Magic Number,The method contains a magic number: 255,67
+pgptool-0.5.9.2,org.pgptool.gui.ui.validationerrorsballoon,ValidationErrorsBalloonView,buildErrorBorder,Long Statement,The length of the statement "return BorderFactory.createMatteBorder(borderInsets.top`borderInsets.left`borderInsets.bottom`borderInsets.right`Color.RED);" is 124.,140
+pgptool-0.5.9.2,org.pgptool.gui.ui.validationerrorsballoon,ValidationErrorsBalloonView,showBalloonIfNeeded,Complex Conditional,The conditional expression balloon == null || balloon.isVisible() || pm == null || pm.isEmpty() is complex.,167
+pgptool-0.5.9.2,org.pgptool.gui.ui.validationerrorsballoon,ValidationErrorsBalloonView,showBalloonIfNeeded,Long Identifier,The length of the field contentsInitedAfterErrorsUpdate is 31.,167
+pgptool-0.5.9.2,org.pgptool.gui.ui.validationerrorsballoon,ValidationErrorsBalloonView,onItemAdded,Long Identifier,The length of the field contentsInitedAfterErrorsUpdate is 31.,197
+pgptool-0.5.9.2,org.pgptool.gui.ui.validationerrorsballoon,ValidationErrorsBalloonView,onAllItemsRemoved,Long Identifier,The length of the field contentsInitedAfterErrorsUpdate is 31.,229
+pgptool-0.5.9.2,org.pgptool.gui.ui.validationerrorsballoon,ValidationErrorsBalloonView,buildMessagePresentation,Magic Number,The method contains a magic number: 255,242
+pgptool-0.5.9.2,org.pgptool.gui.ui.validationerrorsballoon,ValidationErrorsBalloonView,buildMessagePresentation,Magic Number,The method contains a magic number: 230,242
+pgptool-0.5.9.2,org.pgptool.gui.ui.validationerrorsballoon,ValidationErrorsBalloonView,buildMessagePresentation,Magic Number,The method contains a magic number: 230,242
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptbackmultiple,EncryptBackMultiplePm,init,Long Statement,The length of the statement "Preconditions.checkArgument(decryptedFiles != null && decryptedFiles.size() > 0`"decryptedFiles array must not be empty");" is 122.,111
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptbackmultiple,EncryptBackMultiplePm,initModelProperties,Long Identifier,The length of the field isIgnoreMissingRecipientsWarning is 32.,139
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptbackmultiple,EncryptBackMultiplePm,initModelProperties,Long Statement,The length of the statement "isDeleteSourceAfter=new ModelProperty<>(this`new ValueAdapterPersistentPropertyImpl<>(appProps`"EncryptBackMultiplePm.isDeleteUnencryptedAfter"`true)`"isDeleteUnencryptedAfter");" is 178.,139
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptbackmultiple,EncryptBackMultiplePm,initModelProperties,Long Statement,The length of the statement "isIgnoreMissingRecipientsWarning=new ModelProperty<>(this`new ValueAdapterHolderImpl<>(false)`"isIgnoreMissingRecipientsWarning");" is 130.,139
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptbackmultiple,EncryptBackMultiplePm,initModelProperties,Long Statement,The length of the statement "isEncryptOnlyChanged=new ModelProperty<>(this`new ValueAdapterPersistentPropertyImpl<>(appProps`"EncryptBackMultiplePm.isEncryptOnlyChanged"`true)`"isEncryptOnlyChanged");" is 171.,139
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptbackmultiple,EncryptBackMultiplePm,initModelProperties,Long Statement,The length of the statement "sourceFilesSummary=new ModelProperty<>(this`new ValueAdapterHolderImpl<>(text("encrypBackMany.operationInfo"`initParams.size()))`"sourceFilesSummary");" is 151.,139
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptbackmultiple,EncryptBackMultiplePm,initModelProperties,Long Statement,The length of the statement "recipientsSummary=new ModelProperty<>(this`new ValueAdapterHolderImpl<>("(collecting information...)")`"recipientsSummary");" is 124.,139
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptbackmultiple,EncryptBackMultiplePm,run,Long Statement,The length of the statement "int severity=ret.errors.size() + ret.warnings.size() == 0 ? JOptionPane.INFORMATION_MESSAGE : JOptionPane.WARNING_MESSAGE;" is 122.,228
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptbackmultiple,EncryptBackMultiplePm,run,Long Statement,The length of the statement "UiUtils.messageBox(UiUtils.actionEvent(findRegisteredWindowIfAny()`"BkgOpEncryptBackAll")`msg`Messages.get("encrypBackMany.action")`severity);" is 142.,228
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptbackmultiple,EncryptBackMultiplePm,onProgressUpdated,Long Statement,The length of the statement "progressNote.setValueByOwner("" + filesProcessed + "/"+ totalFiles+ ": "+ text(progress.getStepCode()`progress.getStepArgs()));" is 127.,258
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptbackmultiple,EncryptBackMultiplePm,encryptFiles,Long Identifier,The length of the field isIgnoreMissingRecipientsWarning is 32.,280
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptbackmultiple,EncryptBackMultiplePm,encryptFiles,Long Statement,The length of the statement "boolean fileClearedForDeletion=oneResult == EncryptBackResult.Encrypted || oneResult == EncryptBackResult.TargetNotChanged;" is 123.,280
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptbackmultiple,EncryptBackMultiplePm,encryptBackOne,Complex Conditional,The conditional expression targetFileExists && proceedOnlyIfChanged && hasFingerprintOfDecrypted is complex.,314
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptbackmultiple,EncryptBackMultiplePm,encryptBackOne,Long Identifier,The length of the parameter isShouldSkipIfissingRecipients is 30.,314
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptbackmultiple,EncryptBackMultiplePm,encryptBackOne,Long Identifier,The length of the field monitoringDecryptedFilesService is 31.,314
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptbackmultiple,EncryptBackMultiplePm,encryptBackOne,Long Statement,The length of the statement "ChecksumCalcOutputStreamSupervisor outputStreamSupervisor=new ChecksumCalcOutputStreamSupervisorImpl(messageDigestFactory);" is 123.,314
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptbackmultiple,EncryptBackMultiplePm,encryptBackOne,Long Statement,The length of the statement "FileUtilsEx.baitAndSwitch(encryptionParams.getTargetFile()`x -> encryptionService.encrypt(decryptedFile`x`recipients`progressHandler`inputStreamSupervisor`outputStreamSupervisor));" is 180.,314
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptbackmultiple,EncryptBackMultiplePm,encryptBackOne,Long Statement,The length of the statement "updateBaselineFingerprintsIfApplicable(decryptedFileDto`decryptedFile`encryptionParams`inputStreamSupervisor.getFingerprint()`outputStreamSupervisor.getFingerprint());" is 167.,314
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptbackmultiple,EncryptBackMultiplePm,updateBaselineFingerprintsIfApplicable,Long Identifier,The length of the field monitoringDecryptedFilesService is 31.,382
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptbackmultiple,EncryptBackMultiplePm,updateBaselineFingerprintsIfApplicable,Long Parameter List,The method has 5 parameters. ,382
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptbackmultiple,EncryptBackMultiplePm,getIsIgnoreMissingRecipientsWarning,Long Identifier,The length of the field isIgnoreMissingRecipientsWarning is 32.,458
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptbackmultiple,EncryptBackMultipleView,buildControllsPanel,Magic Number,The method contains a magic number: 2,75
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptbackmultiple,EncryptBackMultipleView,buildControllsPanel,Magic Number,The method contains a magic number: 7,75
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptbackmultiple,EncryptBackMultipleView,buildControllsPanel,Magic Number,The method contains a magic number: 2,75
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptbackmultiple,EncryptBackMultipleView,buildControllsPanel,Magic Number,The method contains a magic number: 30,75
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptbackmultiple,EncryptBackMultipleView,buildControllsPanel,Magic Number,The method contains a magic number: 10,75
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptbackmultiple,EncryptBackMultipleView,buildControllsPanel,Magic Number,The method contains a magic number: 10,75
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptbackmultiple,EncryptBackMultipleView,buildControllsPanel,Magic Number,The method contains a magic number: 10,75
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptbackmultiple,EncryptBackMultipleView,buildControllsPanel,Magic Number,The method contains a magic number: 10,75
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptbackmultiple,EncryptBackMultipleView,buildControllsPanel,Magic Number,The method contains a magic number: 2,75
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptbackmultiple,EncryptBackMultipleView,buildControllsPanel,Magic Number,The method contains a magic number: 2,75
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptbackmultiple,EncryptBackMultipleView,buildPanelButtons,Magic Number,The method contains a magic number: 10,129
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptbackmultiple,EncryptBackMultipleView,buildPanelButtons,Magic Number,The method contains a magic number: 10,129
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptbackmultiple,EncryptBackMultipleView,buildPanelButtons,Magic Number,The method contains a magic number: 10,129
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptbackmultiple,EncryptBackMultipleView,buildPanelButtons,Magic Number,The method contains a magic number: 10,129
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptbackmultiple,EncryptBackMultipleView,buildPanelButtons,Magic Number,The method contains a magic number: 10,129
+pgptool-0.5.9.2,org.pgptool.gui.ui.encryptbackmultiple,EncryptBackMultipleView,buildPanelButtons,Magic Number,The method contains a magic number: 100,129
+pgptool-0.5.9.2,org.pgptool.gui.ui.root,RootPm,present,Long Statement,The length of the statement "UiUtils.messageBox(null`ConsoleExceptionUtils.getAllMessages(t)`Messages.get("exception.unexpected.failedToStartupApplication")`MessageSeverity.ERROR);" is 151.,147
+pgptool-0.5.9.2,org.pgptool.gui.ui.mainframe,MainFramePm,init,Long Identifier,The length of the field monitoringDecryptedFilesService is 31.,86
+pgptool-0.5.9.2,org.pgptool.gui.ui.mainframe,MainFramePm,onActionPerformed,Long Statement,The length of the statement "if (!UiUtils.confirmWarning(e`"confirmation.areUserSureToDeletDecryptedFileWhileSourceIsNotFound"`new Object[]{FilenameUtils.getName(row.getDecryptedFile())`row.getEncryptedFile()})) {" is 184.,216
+pgptool-0.5.9.2,org.pgptool.gui.ui.mainframe,MainFramePm,onActionPerformed,Long Statement,The length of the statement "if (!UiUtils.confirmRegular(e`"confirmation.areUserSureToDeletDecryptedFile"`new Object[]{FilenameUtils.getName(row.getDecryptedFile())})) {" is 140.,216
+pgptool-0.5.9.2,org.pgptool.gui.ui.mainframe,MainFramePm,onActionPerformed,Long Statement,The length of the statement "UiUtils.messageBox(e`Messages.get("error.cannotDeletebecauseFileIsLocked")`Messages.get("term.error")`JOptionPane.ERROR_MESSAGE);" is 129.,216
+pgptool-0.5.9.2,org.pgptool.gui.ui.mainframe,MainFramePm,onActionPerformed,Long Identifier,The length of the field monitoringDecryptedFilesService is 31.,245
+pgptool-0.5.9.2,org.pgptool.gui.ui.mainframe,MainFramePm,actionPerformed,Long Statement,The length of the statement "Preconditions.checkState(files.size() > 0`"This action supposed to be available only when ther is at least one decrypted file monitored");" is 138.,265
+pgptool-0.5.9.2,org.pgptool.gui.ui.mainframe,MainFrameView,initFormComponents,Magic Number,The method contains a magic number: 3,141
+pgptool-0.5.9.2,org.pgptool.gui.ui.mainframe,MainFrameView,initFormComponents,Magic Number,The method contains a magic number: 100,141
+pgptool-0.5.9.2,org.pgptool.gui.ui.mainframe,MainFrameView,initFormComponents,Magic Number,The method contains a magic number: 100,141
+pgptool-0.5.9.2,org.pgptool.gui.ui.mainframe,MainFrameView,initFormComponents,Magic Number,The method contains a magic number: 7,141
+pgptool-0.5.9.2,org.pgptool.gui.ui.mainframe,MainFrameView,initFormComponents,Magic Number,The method contains a magic number: 7,141
+pgptool-0.5.9.2,org.pgptool.gui.ui.mainframe,MainFrameView,initFormComponents,Magic Number,The method contains a magic number: 7,141
+pgptool-0.5.9.2,org.pgptool.gui.ui.mainframe,MainFrameView,initFormComponents,Magic Number,The method contains a magic number: 7,141
+pgptool-0.5.9.2,org.pgptool.gui.ui.mainframe,MainFrameView,initFormComponents,Magic Number,The method contains a magic number: 14,141
+pgptool-0.5.9.2,org.pgptool.gui.ui.mainframe,MainFrameView,initTableComponent,Magic Number,The method contains a magic number: 22,260
+pgptool-0.5.9.2,org.pgptool.gui.ui.mainframe,MainFrameView,myPopupEvent,Complex Conditional,The conditional expression r >= 0 && r < table.getRowCount() && pm.getRows().findRowByIdx(r) != null is complex.,343
+pgptool-0.5.9.2,org.pgptool.gui.ui.mainframe,MainFrameView,mouseClicked,Complex Conditional,The conditional expression e.getComponent() == table && e.getClickCount() == 2 && e.getButton() == MouseEvent.BUTTON1 is complex.,364
+pgptool-0.5.9.2,org.pgptool.gui.ui.mainframe,MainFrameView,mouseClicked,Magic Number,The method contains a magic number: 2,364
+pgptool-0.5.9.2,org.pgptool.gui.ui.mainframe,MainFrameView,initMenuBar,Long Identifier,The length of the field miChangeTempFolderForDecrypted is 30.,420
+pgptool-0.5.9.2,org.pgptool.gui.ui.mainframe,MainFrameView,handlePropertyChanged,Long Statement,The length of the statement "tableColumnsGeometryPersister=new TableColumnsGeometryPersisterImpl(table`"mfrmDecrMon"`uiGeom`scheduledExecutorService);" is 121.,501
+pgptool-0.5.9.2,org.pgptool.gui.ui.mainframe,MainFrameView,bindToActions,Long Identifier,The length of the field miChangeTempFolderForDecrypted is 30.,530
+pgptool-0.5.9.2,org.pgptool.gui.ui.mainframe,MainFrameView,adjustColumnsWidths,Magic Number,The method contains a magic number: 5,562
+pgptool-0.5.9.2,org.pgptool.gui.ui.mainframe,MainFrameView,adjustColumnsWidths,Magic Number,The method contains a magic number: 50,562
+pgptool-0.5.9.2,org.pgptool.gui.ui.mainframe,MainFrameView,adjustColumnsWidths,Magic Number,The method contains a magic number: 50,562
+pgptool-0.5.9.2,org.pgptool.gui.ui.mainframe,MainFrameView,internalRenderTo,Long Statement,The length of the statement "Preconditions.checkArgument(owner == null || owner instanceof Window`"Target must not be specified or be sub-calss of Window");" is 127.,576
+pgptool-0.5.9.2,org.pgptool.gui.ui.mainframe,MainFrameView,internalRenderTo,Long Statement,The length of the statement "frame.setMinimumSize(new Dimension((int)(toolbar.getPreferredSize().getWidth() + UiUtils.getFontRelativeSize(2))`UiUtils.getFontRelativeSize(35)));" is 147.,576
+pgptool-0.5.9.2,org.pgptool.gui.ui.mainframe,MainFrameView,internalRenderTo,Magic Number,The method contains a magic number: 2,576
+pgptool-0.5.9.2,org.pgptool.gui.ui.mainframe,MainFrameView,internalRenderTo,Magic Number,The method contains a magic number: 35,576
+pgptool-0.5.9.2,org.pgptool.gui.ui.mainframe,DecryptedFilesModel,getColumnCount,Magic Number,The method contains a magic number: 3,47
+pgptool-0.5.9.2,org.pgptool.gui.ui.mainframe,DecryptedFilesModel,getColumnName,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@422bf178,52
+pgptool-0.5.9.2,org.pgptool.gui.ui.mainframe,DecryptedFilesModel,getValueAt,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@6ff05f0b,75
+pgptool-0.5.9.2,org.pgptool.gui.ui.mainframe,EncryptBackActionCellRenderer,EncryptBackActionCellRenderer,Magic Number,The method contains a magic number: 4,47
+pgptool-0.5.9.2,org.pgptool.gui.ui.mainframe,EncryptBackActionCellRenderer,getTableCellRendererComponent,Complex Conditional,The conditional expression dropLocation != null && !dropLocation.isInsertRow() && !dropLocation.isInsertColumn() && dropLocation.getRow() == row && dropLocation.getColumn() == column is complex.,57
+pgptool-0.5.9.2,org.pgptool.gui.ui.mainframe,EncryptBackActionCellRenderer,getTableCellRendererComponent,Complex Method,Cyclomatic complexity of the method is 12,57
+pgptool-0.5.9.2,org.pgptool.gui.ui.mainframe,EncryptBackActionCellRenderer,getTableCellRendererComponent,Long Parameter List,The method has 6 parameters. ,57
+pgptool-0.5.9.2,org.pgptool.gui.ui.mainframe,EncryptBackActionCellRenderer,getTableCellRendererComponent,Long Statement,The length of the statement "if (dropLocation != null && !dropLocation.isInsertRow() && !dropLocation.isInsertColumn() && dropLocation.getRow() == row && dropLocation.getColumn() == column) {" is 162.,57
+pgptool-0.5.9.2,org.pgptool.gui.ui.mainframe,EncryptBackActionCellRenderer,getTableCellRendererComponent,Magic Number,The method contains a magic number: 2,57
+pgptool-0.5.9.2,org.pgptool.gui.ui.keyslist,KeysListPm,actionPerformed,Long Statement,The length of the statement "Preconditions.checkState(keys.size() > 0`"Export all public keys action was triggered while there is no keys to export");" is 121.,203
+pgptool-0.5.9.2,org.pgptool.gui.ui.keyslist,KeysListView,initDialog,Magic Number,The method contains a magic number: 50,89
+pgptool-0.5.9.2,org.pgptool.gui.ui.keyslist,KeysListView,initDialog,Magic Number,The method contains a magic number: 25,89
+pgptool-0.5.9.2,org.pgptool.gui.ui.keyslist,KeysTableView,initTableComponent,Magic Number,The method contains a magic number: 22,99
+pgptool-0.5.9.2,org.pgptool.gui.ui.keyslist,KeysTableView,initTableComponent,Magic Number,The method contains a magic number: 2,99
+pgptool-0.5.9.2,org.pgptool.gui.ui.keyslist,KeysTableView,initTableComponent,Magic Number,The method contains a magic number: 2,99
+pgptool-0.5.9.2,org.pgptool.gui.ui.keyslist,KeysTableView,initTableComponent,Magic Number,The method contains a magic number: 2,99
+pgptool-0.5.9.2,org.pgptool.gui.ui.keyslist,KeysTableView,initTableComponent,Magic Number,The method contains a magic number: 2,99
+pgptool-0.5.9.2,org.pgptool.gui.ui.keyslist,KeysTableView,myPopupEvent,Complex Conditional,The conditional expression r >= 0 && r < table.getRowCount() && pm.getKeys().findRowByIdx(r) != null is complex.,153
+pgptool-0.5.9.2,org.pgptool.gui.ui.keyslist,KeysTableView,mouseClicked,Complex Conditional,The conditional expression e.getComponent() == table && e.getClickCount() == 2 && e.getButton() == MouseEvent.BUTTON1 is complex.,174
+pgptool-0.5.9.2,org.pgptool.gui.ui.keyslist,KeysTableView,mouseClicked,Magic Number,The method contains a magic number: 2,174
+pgptool-0.5.9.2,org.pgptool.gui.ui.keyslist,KeysTableView,handlePropertyChanged,Long Statement,The length of the statement "tableColumnsGeometryPersister=new TableColumnsGeometryPersisterImpl(table`persistenceCode`uiGeom`scheduledExecutorService);" is 123.,268
+pgptool-0.5.9.2,org.pgptool.gui.ui.keyslist,KeysTableView,adjustColumnsWidths,Magic Number,The method contains a magic number: 5,310
+pgptool-0.5.9.2,org.pgptool.gui.ui.keyslist,KeysTableView,adjustColumnsWidths,Magic Number,The method contains a magic number: 5,310
+pgptool-0.5.9.2,org.pgptool.gui.ui.keyslist,KeysTableView,adjustColumnsWidths,Magic Number,The method contains a magic number: 30,310
+pgptool-0.5.9.2,org.pgptool.gui.ui.keyslist,KeysTableView,adjustColumnsWidths,Magic Number,The method contains a magic number: 16,310
+pgptool-0.5.9.2,org.pgptool.gui.ui.keyslist,KeysTableView,adjustColumnsWidths,Magic Number,The method contains a magic number: 8,310
+pgptool-0.5.9.2,org.pgptool.gui.ui.keyslist,KeysTableView,adjustColumnsWidths,Magic Number,The method contains a magic number: 13,310
+pgptool-0.5.9.2,org.pgptool.gui.ui.keyslist,KeysTableView,adjustColumnsWidths,Magic Number,The method contains a magic number: 10,310
+pgptool-0.5.9.2,org.pgptool.gui.ui.keyslist,KeysTableView,adjustColumnsWidths,Magic Number,The method contains a magic number: 10,310
+pgptool-0.5.9.2,org.pgptool.gui.ui.keyslist,KeysExporterUiImpl,exportPrivateKey,Long Statement,The length of the statement "UiUtils.messageBox(originEvent`text("keys.privateKey.exportWarning")`text("term.attention")`JOptionPane.WARNING_MESSAGE);" is 121.,103
+pgptool-0.5.9.2,org.pgptool.gui.ui.keyslist,KeysExporterUiImpl,suggestFileNameForKey,Long Parameter List,The method has 5 parameters. ,147
+pgptool-0.5.9.2,org.pgptool.gui.ui.keyslist,KeysExporterUiImpl,getFolderChooserDialog,Long Statement,The length of the statement "ValueAdapterPersistentPropertyImpl<String> exportedKeysLocation=new ValueAdapterPersistentPropertyImpl<String>(appProps`"KeysListPm.exportedKeysLocation"`null);" is 160.,208
+pgptool-0.5.9.2,org.pgptool.gui.ui.keyslist,KeysTableModel,getColumnCount,Magic Number,The method contains a magic number: 6,35
+pgptool-0.5.9.2,org.pgptool.gui.ui.keyslist,KeysTableModel,getColumnName,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@235ac873,40
+pgptool-0.5.9.2,org.pgptool.gui.ui.keyslist,KeysTableModel,getValueAt,Complex Method,Cyclomatic complexity of the method is 8,65
+pgptool-0.5.9.2,org.pgptool.gui.ui.keyslist,KeysTableModel,getValueAt,Missing default,The following switch statement is missing a default case: !org.eclipse.jdt.core.dom.SwitchStatement@56b2ea6b,65
+pgptool-0.5.9.2,org.pgptool.gui.decryptedlist.impl,MonitoringDecryptedFilesServiceImpl,getDecryptedFiles,Long Statement,The length of the statement "return new ArrayList<>(monitoredDecrypted.getAll().stream().map(x -> (DecryptedFile)x.getValue()).collect(Collectors.toList()));" is 128.,149
+pgptool-0.5.9.2,org.pgptool.gui.decryptedlist.impl,MonitoringDecryptedFilesServiceImpl,findByEncryptedFile,Long Statement,The length of the statement "return getDecryptedFiles().stream().filter(x -> x.getEncryptedFile().equals(encryptedFile) && filter.test(x)).findFirst().orElse(null);" is 135.,161
+pgptool-0.5.9.2,org.pgptool.gui.decryptedlist.api,DecryptedFile,hashCode,Magic Number,The method contains a magic number: 31,56
+pgptool-0.5.9.2,org.pgptool.gui.decryptedlist.api,DecryptedFile,equals,Complex Method,Cyclomatic complexity of the method is 10,67
+pgptool-0.5.9.2,org.pgptool.gui.tools.fileswatcher,MultipleFilesWatcher,startWatcher,Magic Number,The method contains a magic number: 2000,69
+pgptool-0.5.9.2,org.pgptool.gui.tools.fileswatcher,MultipleFilesWatcher,watchForFileChanges,Long Statement,The length of the statement "log.debug("Parent directory is already being watched " + baseFolderStr + "` will just add file to watch "+ relativeFilename);" is 125.,97
+pgptool-0.5.9.2,org.pgptool.gui.tools.fileswatcher,MultipleFilesWatcher,buildThreadAndStart,Complex Method,Cyclomatic complexity of the method is 8,157
+pgptool-0.5.9.2,org.pgptool.gui.tools.fileswatcher,MultipleFilesWatcher,buildThreadAndStart,Magic Number,The method contains a magic number: 500,157
+pgptool-0.5.9.2,org.pgptool.gui.tools.fileswatcher,MultipleFilesWatcher,idleIfNoKeysRegistered,Magic Number,The method contains a magic number: 500,220
+pgptool-0.5.9.2,org.pgptool.gui.tools.fileswatcher,MultipleFilesWatcher,stopWatcher,Magic Number,The method contains a magic number: 1000,235
+pgptool-0.5.9.2,org.pgptool.gui.tools.singleinstance,SingleInstanceFileBasedImpl,getDirForSingleInstance,Long Statement,The length of the statement "Preconditions.checkState(singleInstFolder.exists() || singleInstFolder.mkdirs()`"Cannot ensure sync folder for multiple instances: " + ret);" is 140.,111
+pgptool-0.5.9.2,org.pgptool.gui.tools.singleinstance,SingleInstanceFileBasedImpl,tryReadArgs,Magic Number,The method contains a magic number: 50,145
+pgptool-0.5.9.2,org.pgptool.gui.tools.singleinstance,SingleInstanceFileBasedImpl,isCommandReceived,Magic Number,The method contains a magic number: 50,199
+pgptool-0.5.9.2,org.pgptool.gui.tempfolderfordecrypted.impl,DecryptedTempFolderImpl,afterPropertiesSet,Long Statement,The length of the statement "UiUtils.messageBox(surrogateEvent`Messages.get("decrypt.temp.folder.changedDueToFailure"`tempFolderBasePath`defaultValue1)`Messages.get("term.attention")`MessageSeverity.WARNING);" is 179.,57
+pgptool-0.5.9.2,org.pgptool.gui.tempfolderfordecrypted.impl,DecryptedTempFolderImpl,afterPropertiesSet,Long Statement,The length of the statement "UiUtils.messageBox(surrogateEvent`Messages.get("decrypt.temp.folder.changedDueToFailure"`tempFolderBasePath`defaultValue2)`Messages.get("term.attention")`MessageSeverity.WARNING);" is 179.,57
+pgptool-0.5.9.2,org.pgptool.gui.tempfolderfordecrypted.impl,DecryptedTempFolderImpl,afterPropertiesSet,Long Statement,The length of the statement "UiUtils.messageBox(surrogateEvent`Messages.get("decrypt.temp.folder.failure")`Messages.get("term.attention")`MessageSeverity.WARNING);" is 134.,57
+pgptool-0.5.9.2,org.pgptool.gui.tempfolderfordecrypted.impl,DecryptedTempFolderImpl,validate,Long Statement,The length of the statement "throw new FieldValidationException(new ValidationError("error.temporaryFolderCannotbeUsed"`CONFIG_DECRYPTED_TEMP_FOLDER`ConsoleExceptionUtils.getAllMessages(t)));" is 162.,102
+pgptool-0.5.9.2,org.pgptool.gui.app,SplashScreenView,initComponents,Magic Number,The method contains a magic number: 300,40
+pgptool-0.5.9.2,org.pgptool.gui.app,SplashScreenView,initComponents,Magic Number,The method contains a magic number: 50,40
+pgptool-0.5.9.2,org.pgptool.gui.app,EntryPoint,processPendingArgsIfAny,Long Identifier,The length of the field postponedArgsFromSecondaryInstances is 35.,128
+pgptool-0.5.9.2,org.pgptool.gui.app,EntryPoint,handleArgsFromOtherInstance,Long Identifier,The length of the field postponedArgsFromSecondaryInstances is 35.,172
+pgptool-0.5.9.2,org.pgptool.gui.app,EntryPoint,reportAppInitFailureMessageToUser,Long Statement,The length of the statement "UiUtils.messageBox(UiUtils.actionEvent(window`"reportAppInitFailureMessageToUser")`msg`"PGP Tool startup failed" + versionInfo`JOptionPane.ERROR_MESSAGE);" is 154.,218
+pgptool-0.5.9.2,org.pgptool.gui.hintsforusage.impl,HintsCoordinatorImpl,scheduleHint,Complex Conditional,The conditional expression scheduledHints.contains(hintPm) || (hintsHolder != null && hintPm.equals(hintsHolder.getHint())) is complex.,48
+pgptool-0.5.9.2,org.pgptool.gui.hintsforusage.impl,HintsCoordinatorImpl,isHintScheduled,Complex Conditional,The conditional expression hintsHolder != null && hintsHolder.getHint() != null && hintClazz.equals(hintsHolder.getHint().getClass()) is complex.,79
+pgptool-0.5.9.2,org.pgptool.gui.hintsforusage.ui,HintView,internalInitComponents,Magic Number,The method contains a magic number: 2,41
+pgptool-0.5.9.2,org.pgptool.gui.hintsforusage.ui,HintView,internalInitComponents,Magic Number,The method contains a magic number: 5,41
+pgptool-0.5.9.2,org.pgptool.gui.hintsforusage.ui,HintView,internalInitComponents,Magic Number,The method contains a magic number: 2,41
+pgptool-0.5.9.2,org.pgptool.gui.hintsforusage.ui,HintView,internalInitComponents,Magic Number,The method contains a magic number: 5,41
+pgptool-0.5.9.2,org.pgptool.gui.hintsforusage.ui,HintView,internalInitComponents,Magic Number,The method contains a magic number: 2,41
+pgptool-0.5.9.2,org.pgptool.gui.hintsforusage.ui,HintView,internalInitComponents,Magic Number,The method contains a magic number: 5,41
+pgptool-0.5.9.2,org.pgptool.gui.hintsforusage.ui,HintView,internalInitComponents,Magic Number,The method contains a magic number: 221,41
+pgptool-0.5.9.2,org.pgptool.gui.hintsforusage.ui,HintView,internalInitComponents,Magic Number,The method contains a magic number: 253,41
+pgptool-0.5.9.2,org.pgptool.gui.hintsforusage.ui,HintView,internalInitComponents,Magic Number,The method contains a magic number: 191,41
+pgptool-0.5.9.2,org.pgptool.gui.hintsforusage.hints,PrivateKeyBackupHint,findKeyWhichbackIsDue,Long Statement,The length of the statement "Set<String> presentKeys=keyRingService.readKeys().stream().map(x -> x.getKeyInfo().getKeyId()).collect(Collectors.toSet());" is 123.,87
+pgptool-0.5.9.2,org.pgptool.gui.hintsforusage.hints,PrivateKeyBackupHint,findKeyWhichbackIsDue,Long Statement,The length of the statement "PrivateKeyBackupReminderData ret=reminders.stream().filter(x -> x.timestamp <= triggerForCreatedBefore && presentKeys.contains(x.keyId)).findFirst().orElse(null);" is 162.,87
+pgptool-0.5.9.2,org.pgptool.gui.config.impl,ConfigsBasePathResolverUserHomeImpl,getConfigsBasePath,Long Statement,The length of the statement "Preconditions.checkState(false`"No config path was chosen as acceptable. Verify that the application has rights to write files on the disk");" is 141.,39
+pgptool-0.5.9.2,org.pgptool.gui.config.impl,ConfigsBasePathResolverUserHomeImpl,tryAccept,Long Statement,The length of the statement "throw new RuntimeException("Failed to delete test file " + testFile + "` this might break app logic` path is not reliable");" is 124.,59
+pgptool-0.5.9.2,org.pgptool.gui.config.impl,ConfigsBasePathResolverUserHomeImpl,tryAccept,Magic Number,The method contains a magic number: 2,59
+pgptool-0.5.9.2,org.pgptool.gui.config.impl,ConfigRepositoryImpl,safeClose,Empty catch clause,The method has an empty catch block.,146
+pgptool-0.5.9.2,org.pgptool.gui.config.impl,ConfigRepositoryImpl,safeClose,Empty catch clause,The method has an empty catch block.,177
+pgptool-0.5.9.2,org.pgptool.gui.usage.api,UsageLoggerDelegator,UsageLoggerDelegator,Long Statement,The length of the statement "isUsageRecordingEnabled=new ModelProperty<>(this`new ValueAdapterPersistentPropertyImpl<Boolean>(appProps`IS_USAGE_RECORDING_ENABLED`null)`IS_USAGE_RECORDING_ENABLED);" is 167.,33
+pgptool-0.5.9.2,org.pgptool.gui.bkgoperation,ProgressMonitorRenderer,onProgressUpdated,Magic Number,The method contains a magic number: 100,41
+pgptool-0.5.9.2,org.pgptool.gui.filecomparison,Fingerprint,hashCode,Magic Number,The method contains a magic number: 31,55
+pgptool-0.5.9.2,org.pgptool.gui.filecomparison,Fingerprint,hashCode,Magic Number,The method contains a magic number: 32,55
+pgptool-0.5.9.2,org.pgptool.gui.filecomparison,Fingerprint,equals,Complex Method,Cyclomatic complexity of the method is 8,64
+pgptool-0.5.9.2,org.pgptool.gui.filecomparison,ChecksumCalcOutputStreamSupervisorImpl,get,Long Statement,The length of the statement "Preconditions.checkState(fingerprintFuture == null`"This wrapper is done` you can't use it anymore. CLone it if you need another one");" is 135.,40
+pgptool-0.5.9.2,org.pgptool.gui.filecomparison,ChecksumCalcInputStreamSupervisorImpl,get,Long Statement,The length of the statement "Preconditions.checkState(fingerprintFuture == null`"This wrapper is done` you can't use it anymore. CLone it if you need another one");" is 135.,40
+pgptool-0.5.9.2,ru.skarpushin.swingpm.modelprops.slider,ModelSliderProperty,ModelSliderProperty,Long Parameter List,The method has 5 parameters. ,52
+pgptool-0.5.9.2,ru.skarpushin.swingpm.modelprops.slider,ModelSliderProperty,ModelSliderProperty,Long Parameter List,The method has 6 parameters. ,57
+pgptool-0.5.9.2,ru.skarpushin.swingpm.modelprops.slider,ModelSliderProperty,setRangeProperties,Long Parameter List,The method has 5 parameters. ,183
+pgptool-0.5.9.2,ru.skarpushin.swingpm.EXPORT.base,DialogViewBase,internalRenderTo,Long Statement,The length of the statement "Preconditions.checkArgument(owner == null || owner instanceof Window`"Target must not be specified or be sub-calss of Window");" is 127.,41
+pgptool-0.5.9.2,ru.skarpushin.swingpm.EXPORT.base,DialogViewBase,installEscapeCloseOperation,Long Identifier,The length of the field dispatchWindowClosingActionMapKey is 33.,77

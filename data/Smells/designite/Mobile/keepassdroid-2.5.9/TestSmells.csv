@@ -1,0 +1,38 @@
+Project Name,Package Name,Type Name,Method Name,Test Smell,Cause of the Smell
+keepassdroid-2.5.9,com.keepassdroid.tests,PwDateTest,testDate,Assertion roulette,The tool detected the smell in this test method because the test uses multiple assertion in the test. Total number of assertions in the test are: 2
+keepassdroid-2.5.9,com.keepassdroid.tests,PwEntryTestV4,testAssign,Missing assertion,The tool detected the smell in this test method because the test doesn't have any assertion.
+keepassdroid-2.5.9,com.keepassdroid.tests,TypesTest,testReadWriteLongZero,Missing assertion,The tool detected the smell in this test method because the test doesn't have any assertion.
+keepassdroid-2.5.9,com.keepassdroid.tests,TypesTest,testReadWriteLongMax,Missing assertion,The tool detected the smell in this test method because the test doesn't have any assertion.
+keepassdroid-2.5.9,com.keepassdroid.tests,TypesTest,testReadWriteLongMin,Missing assertion,The tool detected the smell in this test method because the test doesn't have any assertion.
+keepassdroid-2.5.9,com.keepassdroid.tests,TypesTest,testReadWriteLongRnd,Missing assertion,The tool detected the smell in this test method because the test doesn't have any assertion.
+keepassdroid-2.5.9,com.keepassdroid.tests,TypesTest,testReadWriteIntZero,Missing assertion,The tool detected the smell in this test method because the test doesn't have any assertion.
+keepassdroid-2.5.9,com.keepassdroid.tests,TypesTest,testReadWriteIntMin,Missing assertion,The tool detected the smell in this test method because the test doesn't have any assertion.
+keepassdroid-2.5.9,com.keepassdroid.tests,TypesTest,testReadWriteIntMax,Missing assertion,The tool detected the smell in this test method because the test doesn't have any assertion.
+keepassdroid-2.5.9,com.keepassdroid.tests,TypesTest,testReadWriteShortMin,Missing assertion,The tool detected the smell in this test method because the test doesn't have any assertion.
+keepassdroid-2.5.9,com.keepassdroid.tests,TypesTest,testReadWriteShortMax,Missing assertion,The tool detected the smell in this test method because the test doesn't have any assertion.
+keepassdroid-2.5.9,com.keepassdroid.tests,TypesTest,testReadWriteByteZero,Missing assertion,The tool detected the smell in this test method because the test doesn't have any assertion.
+keepassdroid-2.5.9,com.keepassdroid.tests,TypesTest,testReadWriteByteMin,Missing assertion,The tool detected the smell in this test method because the test doesn't have any assertion.
+keepassdroid-2.5.9,com.keepassdroid.tests,TypesTest,testReadWriteByteMax,Missing assertion,The tool detected the smell in this test method because the test doesn't have any assertion.
+keepassdroid-2.5.9,com.keepassdroid.tests,TypesTest,testDate,Assertion roulette,The tool detected the smell in this test method because the test uses multiple assertion in the test. Total number of assertions in the test are: 6
+keepassdroid-2.5.9,com.keepassdroid.tests,AccentTest,testOpen,Exceptional handling,The tool detected the smell in this test method because the test uses try-catch block to assert/fail a check.
+keepassdroid-2.5.9,com.keepassdroid.tests,PwEntryTestV3,testCreation,Assertion roulette,The tool detected the smell in this test method because the test uses multiple assertion in the test. Total number of assertions in the test are: 3
+keepassdroid-2.5.9,com.keepassdroid.tests.database,DeleteEntry,testDelete,Assertion roulette,The tool detected the smell in this test method because the test uses multiple assertion in the test. Total number of assertions in the test are: 7
+keepassdroid-2.5.9,com.keepassdroid.tests.database,DeleteEntry,testDelete,Exceptional handling,The tool detected the smell in this test method because the test uses try-catch block to assert/fail a check.
+keepassdroid-2.5.9,com.keepassdroid.tests.database,Kdb3,testXMLKeyFile,Missing assertion,The tool detected the smell in this test method because the test doesn't have any assertion.
+keepassdroid-2.5.9,com.keepassdroid.tests.database,Kdb3,testBinary64KeyFile,Missing assertion,The tool detected the smell in this test method because the test doesn't have any assertion.
+keepassdroid-2.5.9,com.keepassdroid.tests.database,Kdb4,testParsing,Missing assertion,The tool detected the smell in this test method because the test doesn't have any assertion.
+keepassdroid-2.5.9,com.keepassdroid.tests.database,Kdb4,testSavingKDBXV3,Missing assertion,The tool detected the smell in this test method because the test doesn't have any assertion.
+keepassdroid-2.5.9,com.keepassdroid.tests.database,Kdb4,testSavingKDBXV4,Missing assertion,The tool detected the smell in this test method because the test doesn't have any assertion.
+keepassdroid-2.5.9,com.keepassdroid.tests.database,Kdb4,testComposite,Missing assertion,The tool detected the smell in this test method because the test doesn't have any assertion.
+keepassdroid-2.5.9,com.keepassdroid.tests.database,Kdb4,testCompositeBinary,Missing assertion,The tool detected the smell in this test method because the test doesn't have any assertion.
+keepassdroid-2.5.9,com.keepassdroid.tests.database,Kdb4,testKeyfile,Missing assertion,The tool detected the smell in this test method because the test doesn't have any assertion.
+keepassdroid-2.5.9,com.keepassdroid.tests.database,Kdb4,testNoGzip,Missing assertion,The tool detected the smell in this test method because the test doesn't have any assertion.
+keepassdroid-2.5.9,com.keepassdroid.tests.database,Kdb4Header,testReadHeader,Assertion roulette,The tool detected the smell in this test method because the test uses multiple assertion in the test. Total number of assertions in the test are: 2
+keepassdroid-2.5.9,com.keepassdroid.tests.database,EntryV4,testBackup,Assertion roulette,The tool detected the smell in this test method because the test uses multiple assertion in the test. Total number of assertions in the test are: 2
+keepassdroid-2.5.9,com.keepassdroid.tests.crypto,AESTest,testEncrypt,Missing assertion,The tool detected the smell in this test method because the test doesn't have any assertion.
+keepassdroid-2.5.9,com.keepassdroid.tests.crypto,FinalKeyTest,testNativeAndroid,Missing assertion,The tool detected the smell in this test method because the test doesn't have any assertion.
+keepassdroid-2.5.9,com.keepassdroid.tests.stream,HashedBlock,testBlockAligned,Missing assertion,The tool detected the smell in this test method because the test doesn't have any assertion.
+keepassdroid-2.5.9,com.keepassdroid.tests.stream,HashedBlock,testOffset,Missing assertion,The tool detected the smell in this test method because the test doesn't have any assertion.
+keepassdroid-2.5.9,com.keepassdroid.tests.output,PwManagerOutputTest,testPlainContent,Assertion roulette,The tool detected the smell in this test method because the test uses multiple assertion in the test. Total number of assertions in the test are: 2
+keepassdroid-2.5.9,com.keepassdroid.tests.output,PwManagerOutputTest,testChecksum,Assertion roulette,The tool detected the smell in this test method because the test uses multiple assertion in the test. Total number of assertions in the test are: 2
+keepassdroid-2.5.9,com.keepassdroid.tests.output,PwManagerOutputTest,testHeader,Assertion roulette,The tool detected the smell in this test method because the test uses multiple assertion in the test. Total number of assertions in the test are: 2

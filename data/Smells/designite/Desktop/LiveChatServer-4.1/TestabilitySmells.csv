@@ -1,0 +1,3 @@
+Project Name,Package Name,Type Name,Testability Smell,Cause of the Smell
+LiveChatServer-4.1,com.chatroom.configuration,Config,Global State,The tool detected the smell in this class because the class declares global variables. The detected global variables are: USER_NAME (7); USER_PWD (8); DATABASE_HOST (9); DATABASE_URL (10); errors (17)
+LiveChatServer-4.1,com.chatroom.client,ClientModel,Global State,The tool detected the smell in this class because the class declares global variables. The detected global variables are: objectOutputStream (16); objectInputStream (17)

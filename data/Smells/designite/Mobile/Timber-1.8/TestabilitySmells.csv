@@ -1,0 +1,26 @@
+Project Name,Package Name,Type Name,Testability Smell,Cause of the Smell
+Timber-1.8,com.naman14.timber,MusicService,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 11
+Timber-1.8,com.naman14.timber,MusicPlayer,Global State,The tool detected the smell in this class because the class declares global variables. The detected global variables are: mService (46)
+Timber-1.8,com.naman14.timber,MusicPlayer.ServiceBinder,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+Timber-1.8,com.naman14.timber,MusicPlayer.ServiceToken,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+Timber-1.8,com.naman14.timber,WearBrowserService,Global State,The tool detected the smell in this class because the class declares global variables. The detected global variables are: sInstance (60)
+Timber-1.8,com.naman14.timber,WearBrowserService,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 9
+Timber-1.8,com.naman14.timber.fragments,ArtistMusicFragment,Global State,The tool detected the smell in this class because the class declares global variables. The detected global variables are: songsRecyclerview (36)
+Timber-1.8,com.naman14.timber.fragments,ArtistDetailFragment,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 13
+Timber-1.8,com.naman14.timber.fragments,AlbumDetailFragment,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 15
+Timber-1.8,com.naman14.timber.fragments,PlaylistFragment,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 8
+Timber-1.8,com.naman14.timber.nowplaying,BaseNowplayingFragment,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 13
+Timber-1.8,com.naman14.timber.utils,Helpers.AboutDialog,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+Timber-1.8,com.naman14.timber.subfragments,QuickControlsFragment,Global State,The tool detected the smell in this class because the class declares global variables. The detected global variables are: topContainer (57)
+Timber-1.8,com.naman14.timber.adapters,PlaylistAdapter,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 9
+Timber-1.8,com.naman14.timber.adapters,SearchAdapter,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 9
+Timber-1.8,com.naman14.timber.adapters,BaseQueueAdapter,Global State,The tool detected the smell in this class because the class declares global variables. The detected global variables are: currentlyPlayingPosition (44)
+Timber-1.8,com.naman14.timber.adapters,SlidingQueueAdapter,Global State,The tool detected the smell in this class because the class declares global variables. The detected global variables are: currentlyPlayingPosition (38)
+Timber-1.8,com.naman14.timber.lastfmapi,LastFmClient,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 15
+Timber-1.8,com.naman14.timber.slidinguppanel,SlidingUpPanelLayout.SimplePanelSlideListener,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+Timber-1.8,com.naman14.timber.slidinguppanel,SlidingUpPanelLayout.LayoutParams,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+Timber-1.8,com.naman14.timber.slidinguppanel,ViewDragHelper.Callback,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
+Timber-1.8,com.naman14.timber.activities,PlaylistDetailActivity,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 8
+Timber-1.8,com.naman14.timber.activities,MainActivity,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 10
+Timber-1.8,com.naman14.timber.activities,BaseActivity,Excessive Dependency,The tool detected the smell in this class because the class depends on too many dependencies. The total number of dependencies is: 9
+Timber-1.8,com.naman14.timber.widgets,TextDrawable.Builder,Global State,The tool detected the smell in this class because the class can be accessed as a `global` state.
